@@ -17,6 +17,7 @@ These instructions will get you a copy of the project up and running on your loc
 ```bash
 git clone https://github.com/OOPProject20232/NewsAggregator_Backend.git
 ```
+
 2. Navigate to the project directory
 
 ```bash
@@ -58,7 +59,7 @@ cd NewsAggregator_Backend
 
    The example Dockerfile should be like this:
   
-       ```Dockerfile
+   ```Dockerfile
        FROM maven:3.9.6-eclipse-temurin-21 AS builder
        WORKDIR /app
        COPY pom.xml .
@@ -72,52 +73,53 @@ cd NewsAggregator_Backend
        COPY --from=builder /app/target/classes/log4j.properties ./src/main/resources/log4j.properties
        EXPOSE 8080
        CMD ["java", "-jar", "newsaggregator_backend-jar-with-dependencies.jar"]
-       ```
+    ```
 
       Then you can build a docker image using the following command:
-      
-       ```bash
-       docker build -t newsaggregator_backend .
-       ```
-      
-      This will create a docker image named newsaggregator_backend.
-       <br>
-       Now you can run the docker image using the following command:
-      
-       ```bash
-       docker run -d newsaggregator_backend
-       ```
+   
+    ```bash
+    docker build -t newsaggregator_backend .
+    ```
+   This will create a docker image named newsaggregator_backend.
+
+   Now you can run the docker image using the following command:
+
+
+   ```bash
+   docker run -d newsaggregator_backend
+   ```
        
       or
       
-       ```bash
-        docker run -d -p 5000:8000 newsaggregator_backend
-        ```
+   ```bash
+   docker run -d -p 5000:8000 newsaggregator_backend
+   ```
        
       This will run docker image on port 5000 for your host machine and port 8000 for the container.
    
       And there you go, the project is running on your machine.
 
-      <br><br><b>But wait, there is more!</b>
-       As you want to constantly fetch the news articles, you can use crontab on linux or Task scheduler on windows.
+      <br><b>But wait, there is more!</b>
+      
+      As you want to constantly fetch the news articles, you can use crontab on linux or Task scheduler on windows.
 
-   I am using Windows so i will be showing you how to do it
+      I am using Windows so i will be showing you how to do it
    
-       - Open Task Scheduler and click on `Create Basic Task`
+    - Open Task Scheduler and click on `Create Basic Task`
 
-       
-       ![img.png](docs/assets/Task_Scheduler_Create.png)
+    
+    ![img.png](docs/assets/Task_Scheduler_Create.png)
 
-       Just give it a name and description to your liking.
-       - Follow the wizard with the default settings until you reach `Action` tab
+    Just give it a name and description to your liking.
+    - Follow the wizard with the default settings until you reach `Action` tab
+
+    ![img.png](docs/assets/Task_Scheduler_Action.png)
+
+    Select `Start a program` and click next 
+    - In the `Program/script` field, write the path to a batch file executable
+
+    The batch file should contain the following command:
    
-       ![img.png](docs/assets/Task_Scheduler_Action.png)
-   
-       Select `Start a program` and click next 
-       - In the `Program/script` field, write the path to a batch file executable
-   
-       The batch file should contain the following command:
-   
-       ```bash
+   ```bash
        docker run -d newsaggregator_backend
-       ```
+   ```
