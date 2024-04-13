@@ -100,17 +100,24 @@ cd NewsAggregator_Backend
 
       <br><br><b>But wait, there is more!</b>
        As you want to constantly fetch the news articles, you can use crontab on linux or Task scheduler on windows.
-       <br>I am using Windows so i will be showing you how to do it
-       <br>
+
+   I am using Windows so i will be showing you how to do it
+   
        - Open Task Scheduler and click on `Create Basic Task`
-       <br>
+
+       
        ![img.png](docs/assets/Task_Scheduler_Create.png)
-       <br> Just give it a name and description to your liking.
+
+       Just give it a name and description to your liking.
        - Follow the wizard with the default settings until you reach `Action` tab
+   
        ![img.png](docs/assets/Task_Scheduler_Action.png)
-       <br> Select `Start a program` and click next 
+   
+       Select `Start a program` and click next 
        - In the `Program/script` field, write the path to a batch file executable
+   
        The batch file should contain the following command:
+   
        ```bash
        docker run -d newsaggregator_backend
        ```
