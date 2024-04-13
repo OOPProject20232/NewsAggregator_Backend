@@ -12,7 +12,6 @@ target/
 *.iml
 *.ipr
 src/main/resources/.env
-Dockerfile
 
 ### Eclipse ###
 .apt_generated
