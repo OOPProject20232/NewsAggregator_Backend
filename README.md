@@ -66,20 +66,27 @@ cd NewsAggregator_Backend
        EXPOSE 8080
        CMD ["java", "-jar", "newsaggregator_backend-jar-with-dependencies.jar"]
        ```
+       
       Then you can build a docker image using the following command:
-      ```bash
+      
+       ```bash
        docker build -t newsaggregator_backend .
        ```
+      
       This will create a docker image named newsaggregator_backend.
        <br>
        Now you can run the docker image using the following command:
+      
        ```bash
        docker run -d newsaggregator_backend
        ```
-      or 
+       
+      or
+      
        ```bash
         docker run -d -p 5000:8000 newsaggregator_backend
         ```
+       
       This will run docker image on port 5000 for your host machine and port 8000 for the container.
       <br>And there you go, the project is running on your machine.
       <br><br><b>But wait, there is more!</b>
