@@ -33,7 +33,7 @@ public class MongoDB implements IPostDataAccess {
     @Override
     public void exportDataToJson(String filePath) {
         try (MongoClient mongoClient = MongoClients.create(dotenv.get("MONGODB_CONNECTION_STRING"))) {
-            MongoDatabase db = mongoClient.getDatabase(System.getenv("MONGODB_DATABASE_NAME"));
+            MongoDatabase db = mongoClient.getDatabase(dotenv.get("MONGODB_DATABASE_NAME"));
             MongoCollection<Document> articlesCollection = db.getCollection("articles");
             FindIterable<Document> documents = articlesCollection.find();
             List<Document> converted_documents = documents.into(new ArrayList<>());
@@ -93,7 +93,7 @@ public class MongoDB implements IPostDataAccess {
                         }
                         count++;
                     }
-                } catch (MongoException e) {
+                } catch (Exception e) {
                     System.out.println(e.getMessage());
                 }
             }
@@ -130,7 +130,7 @@ public class MongoDB implements IPostDataAccess {
         Request request = new Request.Builder()
                 .header("Content-Type", "application/json")
                 .url("https://cloud.mongodb.com/api/atlas/v1.0/groups/" + dotenv.get("MONGO_DB_GROUP_ID") + "/clusters/"
-                        + System.getenv("MONGODB_CLUSTER_NAME") + "/fts/indexes?pretty=true")
+                        + dotenv.get("MONGODB_CLUSTER_NAME") + "/fts/indexes?pretty=true")
                 .post(RequestBody.create(
                         "{\"collectionName\": \"articles\", " +
                                 "\"database\": \"" + dotenv.get("MONGODB_DATABASE_NAME") + "\", " +
