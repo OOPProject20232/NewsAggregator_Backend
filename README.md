@@ -29,6 +29,7 @@ cd NewsAggregator_Backend
 - `MONGODB_DATABASE_NAME`
 - `MONGODB_CLUSTER_NAME`
 - `MONGODB_CONNECTION_STRING`
+
 (It will work with your own MongoDB database so you don't have to worry)
 
 4. Run the project
