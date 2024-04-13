@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	xmlns:media="http://search.yahoo.com/mrss/"
+>
+
+<channel>
+	<title>CryptoSlate</title>
+	<atom:link href="https://cryptoslate.com/feed/" rel="self" type="application/rss+xml" />
+	<link>https://cryptoslate.com/</link>
+	<description>Cryptocurrency News and Real-time Coin Data</description>
+	<lastBuildDate>Sat, 13 Apr 2024 00:10:40 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.4.3</generator>
+
+<image>
+	<url>https://cryptoslate.com/wp-content/uploads/2023/06/cropped-cryptoslate-transparent-icon-256x256-1-32x32.png</url>
+	<title>CryptoSlate</title>
+	<link>https://cryptoslate.com/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Bitfarms expands Bitcoin mining hashrate to 7 EH/s with Quebec upgrades</title>
+		<link>https://cryptoslate.com/bitfarms-expands-bitcoin-mining-hashrate-to-7-eh-s-with-quebec-upgrades/</link>
+					<comments>https://cryptoslate.com/bitfarms-expands-bitcoin-mining-hashrate-to-7-eh-s-with-quebec-upgrades/#respond</comments>
+		
+		<dc:creator><![CDATA[Mike Dalton]]></dc:creator>
+		<pubDate>Sat, 13 Apr 2024 00:10:40 +0000</pubDate>
+				<category><![CDATA[Mining]]></category>
+		<guid isPermaLink="false">https://cryptoslate.com/?p=412105</guid>
+
+					<description><![CDATA[<p>Bitfarms announced on April 12 that it completed upgrades to its Bitcoin mining facilities in two locations, bringing its total hash rate to 7 EH/s. The company installed and activated over 5,000 T21 miners at two facilities in Québec, Canada. Bitfarms installed 3,168 T21s devices at its Garlock, Québec facility, plus 1,710 T21s and 100 [&#8230;]</p>
+<p>The post <a href="https://cryptoslate.com/bitfarms-expands-bitcoin-mining-hashrate-to-7-eh-s-with-quebec-upgrades/">Bitfarms expands Bitcoin mining hashrate to 7 EH/s with Quebec upgrades</a> appeared first on <a href="https://cryptoslate.com">CryptoSlate</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p><a href="https://cryptoslate.com/companies/bitfarms/">Bitfarms</a> announced on <a href="https://investor.bitfarms.com/news-events/press-releases/detail/235/bitfarms-reaches-7-ehs-with-completion-of-fleet-upgrade-at">April 12</a> that it completed upgrades to its Bitcoin mining facilities in two locations, bringing its total hash rate to 7 EH/s.</p>
+<p>The company installed and activated over 5,000 T21 miners at two facilities in Québec, Canada.</p>
+<p>Bitfarms installed 3,168 T21s devices at its Garlock, Québec facility, plus 1,710 T21s and 100 M53S+ hydro miners at its Farnham, Québec site. The latest upgrades improve energy efficiency by about 51%.</p>
+<p>Geoff Morphy, President and CEO of Bitfarms, emphasized the benefit of efficiency, asserting the &#8220;transformative nature of [the] upgrade plan.&#8221; He noted that greater efficiency prepares the company for Bitcoin&#8217;s upcoming halving event.</p>
+<p>Bitfarms intends to deploy another 30,000 miners this quarter. The company will introduce these upgrades in existing locations, including its new Paso Pe, Paraguay facility. The 30,000 deployments will help the company approach its 2024 targets of 12 EH/s and 21 EH/s.</p>
+<h2>Halving is fast approaching</h2>
+<p>Bitfarms is just one of many companies expanding ahead of Bitcoin&#8217;s upcoming halving event, which is expected to occur on April 19.</p>
+<p><a href="https://cryptoslate.com/companies/cleanspark/">CleanSpark</a> announced on April 12 that it <a href="https://cryptoslate.com/cleanspark-to-add-23eh-s-new-btc-miners-amid-potential-hash-rate-drop-post-halving/">expanded</a> its hash rate to 17 EH/s. CleanSpark CEO Zach Bradford said the company is &#8220;well-suited&#8221; for the halving, both because of its own efficiency and because competitors&#8217; old, inefficient machines will leave the network.</p>
+<p><a href="https://cryptoslate.com/companies/marathon-digital/">Marathon</a> said in a Bloomberg interview in March that it plans to expand in light of the halving. <a href="https://cryptoslate.com/companies/hut-8/">Hut 8</a> said in <a href="https://cryptoslate.com/hut-8-to-finance-new-texas-mining-facility-with-bitcoin-reserves/">February</a> that the halving would provide opportunities for future growth and announced plans to construct a new Texas facility. <a href="https://cryptoslate.com/companies/cipher-mining/">Cipher Mining</a> and <a href="https://cryptoslate.com/companies/stronghold-digital-mining/">Stronghold Digital Mining</a> also <a href="https://cryptoslate.com/bitcoin-miners-increase-capacity-though-inscription-fueled-transaction-fee-surge-cools-ahead-of-halving/">announced expansions</a> in January.</p>
+<p>The halving will reduce mining rewards per block. Not accounting for possible fluctuations in BTC prices, lower rewards will likely reduce profitability for some mining companies. However, lower profits can potentially be offset by more efficient operations.</p>
+<p>The post <a href="https://cryptoslate.com/bitfarms-expands-bitcoin-mining-hashrate-to-7-eh-s-with-quebec-upgrades/">Bitfarms expands Bitcoin mining hashrate to 7 EH/s with Quebec upgrades</a> appeared first on <a href="https://cryptoslate.com">CryptoSlate</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://cryptoslate.com/bitfarms-expands-bitcoin-mining-hashrate-to-7-eh-s-with-quebec-upgrades/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<media:content url="https://cryptoslate.com/wp-content/uploads/2023/12/bitfarms-mining.jpg" medium="image"/>
+<enclosure url="https://cryptoslate.com/wp-content/uploads/2023/12/bitfarms-mining.jpg" length="1200" type="image/jpg"/>
+	</item>
+		<item>
+		<title>Top IRS official says &#8216;pure crypto tax crimes&#8217; on the rise alongside scams</title>
+		<link>https://cryptoslate.com/top-irs-member-says-pure-crypto-tax-crimes-on-the-rise-alongside-scams/</link>
+					<comments>https://cryptoslate.com/top-irs-member-says-pure-crypto-tax-crimes-on-the-rise-alongside-scams/#respond</comments>
+		
+		<dc:creator><![CDATA[Mike Dalton]]></dc:creator>
+		<pubDate>Fri, 12 Apr 2024 23:10:03 +0000</pubDate>
+				<category><![CDATA[Crime]]></category>
+		<category><![CDATA[Featured]]></category>
+		<category><![CDATA[Regulation]]></category>
+		<category><![CDATA[Taxes]]></category>
+		<guid isPermaLink="false">https://cryptoslate.com/?p=412064</guid>
+
+					<description><![CDATA[<p>IRS criminal investigation chief Guy Ficco told CNBC on April 12 that taxpayers are increasingly committing tax crimes involving crypto. Ficco said the IRS has seen an increase in &#8220;pure crypto tax crimes&#8221; that fall under Title 26 of the US Code, which includes federal income tax violations. Crimes considered pure tax crimes involve failing [&#8230;]</p>
+<p>The post <a href="https://cryptoslate.com/top-irs-member-says-pure-crypto-tax-crimes-on-the-rise-alongside-scams/">Top IRS official says &#8216;pure crypto tax crimes&#8217; on the rise alongside scams</a> appeared first on <a href="https://cryptoslate.com">CryptoSlate</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>IRS criminal investigation chief Guy Ficco told CNBC on <a href="https://www.cnbc.com/video/2024/04/12/irs-criminal-investigation-chief-agency-prepared-crypto-tax-crimes-cnbc-crypto-world.html">April 12</a> that taxpayers are increasingly committing tax crimes involving crypto.</p>
+<p>Ficco said the IRS has seen an increase in &#8220;pure crypto tax crimes&#8221; that fall under Title 26 of the US Code, which includes federal income tax violations.</p>
+<p>Crimes considered pure tax crimes involve failing to report income from crypto sales and hiding or shielding one&#8217;s actual basis in crypto.</p>
+<p>The issue will likely persist. Ficco observed an &#8220;uptick&#8221; in tax-reporting crimes and expects the IRS to bring forward more charges this year and in the future.</p>
+<p>Until recently, IRS investigations have primarily been a part of broader investigations into crypto crimes such as scams and embezzlement.</p>
+<p>Ficco acknowledged that crypto is &#8220;becoming more pervasive&#8221; and will &#8220;maintain or probably have a larger part&#8221; in broader crimes such as phone scams, romance scams, and pig butchering. Crypto scams are distinct from tax-reporting crimes.</p>
+<h2>Reporting failures widespread</h2>
+<p>Ficco&#8217;s comments come after the IRS published a <a href="https://www.irs.gov/newsroom/taxpayers-need-to-report-crypto-other-digital-asset-transactions-on-their-tax-return">reminder</a> that individuals must report taxes if they sold crypto, received crypto as payment, or engaged in other crypto transactions.</p>
+<p>The IRS has included some form of tax reporting rules for crypto investors since at least 2014, but past reports suggest that reporting failures remain high.</p>
+<p>A 2023 report from Divly <a href="https://cryptoslate.com/only-0-53-of-investors-declared-their-crypto-for-tax-in-2022/">found that</a> in the US, just 1.62% of investors paid taxes on crypto as required. The US rate is only slightly above the global average of 0.53%.</p>
+<p>IRS enforcement efforts around crypto could become especially strong starting this year. In February, the agency <a href="https://www.irs.gov/newsroom/irs-adds-two-key-experts-to-focus-on-cryptocurrency-other-digital-assets">hired two experts</a> to focus on crypto, and <a href="https://www.cnbc.com/2024/03/04/tax-pros-brace-for-tidal-wave-of-crypto-tax-scrutiny-from-irs.html">past reports</a> from CNBC suggest that tax professionals are preparing for a &#8220;tidal wave&#8221; of scrutiny.</p>
+<p>Ficco&#8217;s predecessor, Jim Lee, also suggested an increased focus on tax issues in <a href="https://cryptoslate.com/irs-targets-tax-crimes-in-crypto-crackdown/">December 2023</a>. Lee said half of 2023&#8217;s then-active crypto investigations involved tax issues.</p>
+<p>The post <a href="https://cryptoslate.com/top-irs-member-says-pure-crypto-tax-crimes-on-the-rise-alongside-scams/">Top IRS official says &#8216;pure crypto tax crimes&#8217; on the rise alongside scams</a> appeared first on <a href="https://cryptoslate.com">CryptoSlate</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://cryptoslate.com/top-irs-member-says-pure-crypto-tax-crimes-on-the-rise-alongside-scams/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<media:content url="https://cryptoslate.com/wp-content/uploads/2023/08/crypto-tax-irs.jpg" medium="image"/>
+<enclosure url="https://cryptoslate.com/wp-content/uploads/2023/08/crypto-tax-irs.jpg" length="1200" type="image/jpg"/>
+	</item>
+		<item>
+		<title>Bitwise reveals spot Bitcoin ETFs outperformed pre-release predictions by a significant margin</title>
+		<link>https://cryptoslate.com/bitwise-reveals-spot-bitcoin-etfs-outperformed-pre-release-predictions-by-a-significant-margin/</link>
+					<comments>https://cryptoslate.com/bitwise-reveals-spot-bitcoin-etfs-outperformed-pre-release-predictions-by-a-significant-margin/#respond</comments>
+		
+		<dc:creator><![CDATA[Mike Dalton]]></dc:creator>
+		<pubDate>Fri, 12 Apr 2024 22:25:11 +0000</pubDate>
+				<category><![CDATA[Crypto]]></category>
+		<category><![CDATA[ETF]]></category>
+		<category><![CDATA[Featured]]></category>
+		<guid isPermaLink="false">https://cryptoslate.com/?p=411996</guid>
+
+					<description><![CDATA[<p>Spot Bitcoin exchange-traded funds (ETFs) surpassed several predictions about their assets as their collective assets under management (AUM) hit $59.1 billion within the first three months of the year, Bitwise revealed in a research report on April 11. JP Morgan and Bitcoin investment management firm NYDIG anticipated that spot Bitcoin ETFs could achieve an AUM [&#8230;]</p>
+<p>The post <a href="https://cryptoslate.com/bitwise-reveals-spot-bitcoin-etfs-outperformed-pre-release-predictions-by-a-significant-margin/">Bitwise reveals spot Bitcoin ETFs outperformed pre-release predictions by a significant margin</a> appeared first on <a href="https://cryptoslate.com">CryptoSlate</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>Spot Bitcoin exchange-traded funds (ETFs) surpassed several predictions about their assets as their collective assets under management (AUM) hit $59.1 billion within the first three months of the year, <a href="https://cryptoslate.com/companies/bitwise/">Bitwise</a> revealed in a research report on <a href="https://s3.amazonaws.com/static.bitwiseinvestments.com/Research/Bitwise-Crypto-Market-Review-Q1-2024.pdf">April 11</a>.</p>
+<p><a href="https://cryptoslate.com/companies/jpmorgan/">JP Morgan</a> and Bitcoin investment management firm <a href="https://cryptoslate.com/companies/nydig/">NYDIG</a> anticipated that spot Bitcoin ETFs could achieve an AUM of $36 billion and $30 billion by the year&#8217;s end. Meanwhile, <a href="https://cryptoslate.com/companies/matrixport/">Matrixport</a> predicted the ETF would garner an AUM between $24 billion and $50 billion by Dec. 31, 2024.</p>
+<p>The actual AUM is nearly twice as high as each company&#8217;s earlier prediction, and spot Bitcoin ETFs are on the way to meet the more optimistic predictions made by CryptoQuant, Standard Chartered, and Bloomberg Intelligence.</p>
+<p>Bloomberg and Standard Chartered project an end-of-year AUM of roughly $100 billion for the ETFs, while <a href="https://cryptoslate.com/companies/cryptoquant/">CryptoQuant</a> believes they will reach $150 billion.</p>
+<p>The data includes Grayscale&#8217;s GBTC, which accounts for $22.26 billion of the collective AUM and has mostly seen outflows since its launch.</p>
+<h2>Other key ETF data</h2>
+<p>Bitwise&#8217;s report also revealed that spot Bitcoin ETF demand far exceeded new BTC production during the first quarter of 2024. Miners produced 74,756 BTC during the first quarter, while the ETFs collectively took in 212,852 BTC — 2.8x higher than the amount produced.</p>
+<p>The report said that the reduction in mining output caused by <a href="https://cryptoslate.com/btc-halving/">Bitcoin&#8217;s upcoming halving</a> — expected roughly around April 20 — could affect the supply-demand ratio.</p>
+<p>Bitcoin ETFs also demonstrated strong performance against the two largest US gold ETFs. During the first quarter, spot Bitcoin ETFs saw $12 billion in inflows against $3 billion in gold ETF outflows.</p>
+<p>Despite their broader success, Bitcoin ETFs represent only a minority of Bitcoin ownership. Bitcoin ETFs hold 800,000 BTC, amounting to 3.9% of all Bitcoin ownership. Individuals (57%), inactive accounts (17.6%), and several other small categories hold the remainder of Bitcoin.</p>
+<h2>Bitcoin findings</h2>
+<p>The Bitwise report also noted that Bitcoin had demonstrated high performance year-to-date, with its value rising 66.99% year-to-date — outperforming growth in almost every market, including the US equities (10.56%), gold (8.09%), DM equities (5.81%), and other markets.</p>
+<p>Bitwise CIO Matt Hougan also noted &#8220;low correlations between Bitcoin and the S&amp;P 500,&#8221; represented in the report by a 0.11 correlation between Bitcoin and the US equities market.</p>
+<p>The correlation is critical, as the degree to which Bitcoin correlates with traditional markets <a href="https://cryptoslate.com/market-reports/bitcoin-and-indices-exploring-the-volatile-correlation-with-spx-and-dji/">determines whether</a> Bitcoin is a risk-on asset or a hedge against conventional markets.</p>
+<p>Hougan said Bitwise&#8217;s report should provoke a &#8220;staggeringly bullish&#8221; attitude toward the crypto market. He noted crypto has been in the bull market phase for the past 1.25 years and that bull markets typically last three years, meaning strong performance may persist.</p>
+<p>The post <a href="https://cryptoslate.com/bitwise-reveals-spot-bitcoin-etfs-outperformed-pre-release-predictions-by-a-significant-margin/">Bitwise reveals spot Bitcoin ETFs outperformed pre-release predictions by a significant margin</a> appeared first on <a href="https://cryptoslate.com">CryptoSlate</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://cryptoslate.com/bitwise-reveals-spot-bitcoin-etfs-outperformed-pre-release-predictions-by-a-significant-margin/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<media:content url="https://cryptoslate.com/wp-content/uploads/2024/03/bitwise-bitcoin-etf.jpg" medium="image"/>
+<enclosure url="https://cryptoslate.com/wp-content/uploads/2024/03/bitwise-bitcoin-etf.jpg" length="1200" type="image/jpg"/>
+	</item>
+		<item>
+		<title>Lisbon Blockchain Conference to focus on education and connectivity in its fourth edition</title>
+		<link>https://cryptoslate.com/lisbon-blockchain-conference-focuses-on-education-and-connectivity-in-its-fourth-edition/</link>
+					<comments>https://cryptoslate.com/lisbon-blockchain-conference-focuses-on-education-and-connectivity-in-its-fourth-edition/#respond</comments>
+		
+		<dc:creator><![CDATA[Oluwapelumi Adejumo]]></dc:creator>
+		<pubDate>Fri, 12 Apr 2024 21:30:28 +0000</pubDate>
+				<category><![CDATA[Culture]]></category>
+		<category><![CDATA[Nova]]></category>
+		<guid isPermaLink="false">https://cryptoslate.com/?p=411950</guid>
+
+					<description><![CDATA[<p>Portugal-based Nova SBE Blockchain Club is hosting the fourth edition of the Lisbon Blockchain Conference on April 24 to discuss blockchain technology and its impact on business and the economy, according to a statement shared with CryptoSlate. The event will feature over 20 distinguished speakers slated to cover various aspects of the industry and is [&#8230;]</p>
+<p>The post <a href="https://cryptoslate.com/lisbon-blockchain-conference-focuses-on-education-and-connectivity-in-its-fourth-edition/">Lisbon Blockchain Conference to focus on education and connectivity in its fourth edition</a> appeared first on <a href="https://cryptoslate.com">CryptoSlate</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>Portugal-based Nova SBE Blockchain Club is hosting the fourth edition of the <a href="https://www.tickettailor.com/events/novablockchainclub/1192494">Lisbon Blockchain Conference</a> on April 24 to discuss blockchain technology and its impact on business and the economy, according to a statement shared with <em>CryptoSlate</em>.</p>
+<p>The event will feature over 20 distinguished speakers slated to cover various aspects of the industry and is expected to draw participation from key players like Morais Leitão, Bison Bank, and ReFi Lisboa.</p>
+<h2>Learning and networking</h2>
+<p>The theme for this year&#8217;s event is learning and networking. According to the Nova SBE Blockchain Student Club, the event aims to help students build better networks within the industry.</p>
+<p>Per the statement, the students-focused event will equip attendees with a deeper understanding of blockchain technology while facilitating networking opportunities with peers from across the country.</p>
+<p>Beyond blockchain, the conference will cover diverse subjects, including marketing, sustainability, venture capital, and compliance.</p>
+<p>Attendees can choose between free tickets and VIP passes, the latter offering perks like a buffet lunch and exclusive entry to a networking session with speakers and sponsors.</p>
+<p>Notably, Nova SBE Blockchain Club is Portugal&#8217;s pioneering student-led organization dedicated to blockchain exploration.</p>
+<p>Nova SBE is a business school offering various academic programs, including Bachelor&#8217;s, Master&#8217;s, Ph.D., MBA, and Executive Education programs. The school is ranked first in Portugal and ranked 21 among Business Schools in Europe.</p>
+<p>The post <a href="https://cryptoslate.com/lisbon-blockchain-conference-focuses-on-education-and-connectivity-in-its-fourth-edition/">Lisbon Blockchain Conference to focus on education and connectivity in its fourth edition</a> appeared first on <a href="https://cryptoslate.com">CryptoSlate</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://cryptoslate.com/lisbon-blockchain-conference-focuses-on-education-and-connectivity-in-its-fourth-edition/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<media:content url="https://cryptoslate.com/wp-content/uploads/2024/04/bitcoin-lisbon-portugal.jpg" medium="image"/>
+<enclosure url="https://cryptoslate.com/wp-content/uploads/2024/04/bitcoin-lisbon-portugal.jpg" length="1200" type="image/jpg"/>
+	</item>
+		<item>
+		<title>Bitcoin&#8217;s crash to $64k causes meltdown for alts</title>
+		<link>https://cryptoslate.com/bitcoins-crash-to-65k-causes-meltdown-for-alts/</link>
+					<comments>https://cryptoslate.com/bitcoins-crash-to-65k-causes-meltdown-for-alts/#respond</comments>
+		
+		<dc:creator><![CDATA[Assad Jafri]]></dc:creator>
+		<pubDate>Fri, 12 Apr 2024 20:58:16 +0000</pubDate>
+				<category><![CDATA[Crypto]]></category>
+		<category><![CDATA[Featured]]></category>
+		<category><![CDATA[Market]]></category>
+		<category><![CDATA[Price Watch]]></category>
+		<category><![CDATA[Trading]]></category>
+		<guid isPermaLink="false">https://cryptoslate.com/?p=412015</guid>
+
+					<description><![CDATA[<p>Bitcoin&#8217;s (BTC) value plummeted below $65,000 on April 12, a stark drop from its $71,000 peak earlier in the day, as a wave of selling hit the crypto and equities markets, causing some altcoins to fall more than 15% in a matter of minutes. The decline mirrored a broader selloff across asset classes amid heightened [&#8230;]</p>
+<p>The post <a href="https://cryptoslate.com/bitcoins-crash-to-65k-causes-meltdown-for-alts/">Bitcoin&#8217;s crash to $64k causes meltdown for alts</a> appeared first on <a href="https://cryptoslate.com">CryptoSlate</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>Bitcoin&#8217;s (<a href="https://cryptoslate.com/coins/solana/">BTC</a>) value plummeted below $65,000 on April 12, a stark drop from its $71,000 peak earlier in the day, as a wave of selling hit the crypto and equities markets, causing some altcoins to fall more than 15% in a matter of minutes.</p>
+<p>The decline mirrored a broader selloff across asset classes amid heightened global economic uncertainties and geopolitical risks.</p>
+<p>Bitcoin has slightly recovered since the violent drawdown, trading at around $67,300 as of press time, based on CryptoSlate data.</p>
+<p><a href="https://cryptoslate.com/coins/ethereum/"> Ethereum</a>, the second-largest crypto by market capitalization, fell 12% to $3,100 before paring some losses to close 8% lower at $3244 as of press time.</p>
+<p>Meanwhile, <a href="https://cryptoslate.com/coins/bnb/">BNB</a> and <a href="https://cryptoslate.com/coins/solana/">Solana</a> (SOL) dropped almost 14% before recovering some losses. Both tokens were down roughly 12% over the past 24 hours as of press time — trading at $593 and $153, respectively.</p>
+<p>Smaller cryptocurrencies faced even steeper declines, with tokens like Cardano (<a href="https://cryptoslate.com/coins/cardano/">ADA</a>), Avalanche (<a href="https://cryptoslate.com/coins/avalanche/">AVAX</a>), and Bitcoin Cash (<a href="https://cryptoslate.com/coins/bitcoin-cash/">BCH</a>) recording losses ranging from 15% to 20%.</p>
+<p>The crypto market&#8217;s downturn triggered one of the largest leverage washouts of the month, erasing approximately $850 million in leveraged derivatives positions, with CoinGlass <a href="https://www.coinglass.com/LiquidationData">data</a> indicating that $770 million of these were long positions expecting price increases.</p>
+<p>Traditional stock markets also suffered losses as investors feared an escalation in Middle Eastern conflicts following warnings from US officials about potential aggressive actions by Iran against Israel.</p>
+<p>This uncertainty drove investors toward safer assets, boosting Treasury bonds and the US dollar. Meanwhile, the S&amp;P 500 and Nasdaq 100 each dropped about 1.7%. Gold prices briefly soared to an all-time high of over $2,400, and oil prices increased by 1%.</p>
+<p>Ryze Labs commented on the day&#8217;s events, forecasting continued volatility for cryptocurrencies in the short term due to the upcoming tax season. Despite the immediate market jitters, the firm maintains a positive long-term view, anticipating that an easing monetary policy and a slowdown in quantitative tightening might stabilize and boost the crypto sector.</p>
+<p>As global markets navigate through economic indicators and geopolitical tensions, the crypto sector remains particularly sensitive to such developments, preparing for possible further fluctuations as it approaches tax season and beyond.</p>
+<p>The post <a href="https://cryptoslate.com/bitcoins-crash-to-65k-causes-meltdown-for-alts/">Bitcoin&#8217;s crash to $64k causes meltdown for alts</a> appeared first on <a href="https://cryptoslate.com">CryptoSlate</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://cryptoslate.com/bitcoins-crash-to-65k-causes-meltdown-for-alts/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<media:content url="https://cryptoslate.com/wp-content/uploads/2024/01/bitcoin-price-crash.jpg" medium="image"/>
+<enclosure url="https://cryptoslate.com/wp-content/uploads/2024/01/bitcoin-price-crash.jpg" length="1792" type="image/jpg"/>
+	</item>
+		<item>
+		<title>US court hands down historic sentence for smart contract hacker</title>
+		<link>https://cryptoslate.com/us-court-hands-down-historic-sentence-for-smart-contract-hacker/</link>
+					<comments>https://cryptoslate.com/us-court-hands-down-historic-sentence-for-smart-contract-hacker/#respond</comments>
+		
+		<dc:creator><![CDATA[Oluwapelumi Adejumo]]></dc:creator>
+		<pubDate>Fri, 12 Apr 2024 19:02:36 +0000</pubDate>
+				<category><![CDATA[DeFi]]></category>
+		<category><![CDATA[Hacks]]></category>
+		<category><![CDATA[Nirvana]]></category>
+		<guid isPermaLink="false">https://cryptoslate.com/?p=411976</guid>
+
+					<description><![CDATA[<p>A US court has sentenced Shakeeb Ahmed to three years in prison for hacking two separate decentralized crypto exchanges and stealing digital assets worth over $12 million, according to an April 12 statement from the US Department of Justice. The sentencing marks the first time someone has been convicted for hacking a smart contract. US [&#8230;]</p>
+<p>The post <a href="https://cryptoslate.com/us-court-hands-down-historic-sentence-for-smart-contract-hacker/">US court hands down historic sentence for smart contract hacker</a> appeared first on <a href="https://cryptoslate.com">CryptoSlate</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>A US court has sentenced Shakeeb Ahmed to three years in prison for hacking two separate decentralized crypto exchanges and stealing digital assets worth over $12 million, according to an April 12 <a href="https://www.justice.gov/usao-sdny/pr/former-security-engineer-sentenced-three-years-prison-hacking-two-decentralized">statement</a> from the US Department of Justice.</p>
+<p>The sentencing marks the first time someone has been convicted for hacking a <a href="https://cryptoslate.com/glossary/smart-contracts/">smart contract</a>.</p>
+<p>US attorney Damian Williams said:</p>
+<blockquote><p>&#8220;No matter how novel or sophisticated the hack, this Office and our law enforcement partners are committed to following the money and bringing hackers to justice. And as today’s sentence shows, time in prison — and forfeiture of all the stolen crypto — is the inevitable consequence of such destructive hacks.&#8221;</p></blockquote>
+<p>Ahmed was also ordered to forfeit approximately $12.3 million and a significant quantity of crypto and pay over $5 million in restitution to the unnamed crypto exchange and Nirvana.</p>
+<h2>The hacks</h2>
+<p>In 2022, Ahmed hacked the smart contracts of two decentralized crypto exchanges, including Nirvana and an unnamed protocol, for a substantial amount of a digital asset.</p>
+<p>The DOJ said Ahmed manipulated pricing data on the unnamed platform to siphon approximately $9 million in inflated fees and withdrew the funds in crypto. Subsequently, Ahmed agreed to return around $7.5 million under the condition that the exchange refrains from involving law enforcement.</p>
+<p>Shortly after, Ahmed <a href="https://cryptoslate.com/solana-based-nirvana-loses-3-49m-to-flash-loan-exploit-tokens-tank-90/">targeted Nirvana Finance</a>, stealing about $3.6 million. According to the DOJ, Ahmed exploited Nirvana&#8217;s smart contracts to purchase crypto at lower prices from the exchange and sold it at higher prices.</p>
+<p>Despite the exchange offering a $600,000 bounty, Ahmed demanded $1.4 million, leading to a stalemate and the retention of all stolen funds, culminating in the exchange&#8217;s closure.</p>
+<p>Subsequently, Ahmed laundered the stolen digital assets using sophisticated techniques such as token-swap transactions and advanced crypto mixers like Samourai Whirlpool.</p>
+<p>At the time of these thefts, Ahmed was a senior security engineer for an unnamed international technology company.</p>
+<p>The post <a href="https://cryptoslate.com/us-court-hands-down-historic-sentence-for-smart-contract-hacker/">US court hands down historic sentence for smart contract hacker</a> appeared first on <a href="https://cryptoslate.com">CryptoSlate</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://cryptoslate.com/us-court-hands-down-historic-sentence-for-smart-contract-hacker/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<media:content url="https://cryptoslate.com/wp-content/uploads/2024/04/jail.jpg" medium="image"/>
+<enclosure url="https://cryptoslate.com/wp-content/uploads/2024/04/jail.jpg" length="1200" type="image/jpg"/>
+	</item>
+		<item>
+		<title>Solana deploys congestion fix on devnet</title>
+		<link>https://cryptoslate.com/solana-deploys-congestion-fix-on-devnet/</link>
+					<comments>https://cryptoslate.com/solana-deploys-congestion-fix-on-devnet/#respond</comments>
+		
+		<dc:creator><![CDATA[Assad Jafri]]></dc:creator>
+		<pubDate>Fri, 12 Apr 2024 18:15:40 +0000</pubDate>
+				<category><![CDATA[Featured]]></category>
+		<category><![CDATA[Technology]]></category>
+		<guid isPermaLink="false">https://cryptoslate.com/?p=411979</guid>
+
+					<description><![CDATA[<p>Solana developers have released a new version of the validator client software to address persistent congestion issues and are urging validators to upgrade immediately. Anza, a spinoff of Solana Labs, spearheaded the development with the release of version 1.18.11 aimed at mitigating network congestion. Validator clients, essential in proof-of-stake blockchains like Solana, verify transactions to [&#8230;]</p>
+<p>The post <a href="https://cryptoslate.com/solana-deploys-congestion-fix-on-devnet/">Solana deploys congestion fix on devnet</a> appeared first on <a href="https://cryptoslate.com">CryptoSlate</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p><a href="https://cryptoslate.com/coins/solana/">Solana</a> developers have released a new version of the validator client software to address persistent <a href="https://cryptoslate.com/solana-congestion-issue-caused-by-too-much-demand-devs-working-on-fix-without-sleeping-much/">congestion issues</a> and are urging validators to upgrade immediately.</p>
+<p>Anza, a spinoff of Solana Labs, spearheaded the development with the release of <a href="https://github.com/solana-labs/solana/releases/tag/v1.18.11">version 1.18.11</a> aimed at mitigating network congestion.</p>
+<p>Validator clients, essential in proof-of-stake blockchains like Solana, verify transactions to ensure compliance with network rules and confirm the sender&#8217;s fund sufficiency before appending new blocks to the blockchain.</p>
+<p>Recently, spam transactions have significantly slowed processing times and increased transaction drop rates on Solana, which uniquely processes transactions directly without a mempool, adding complexity to its congestion issues.</p>
+<p>Anza initially deployed the updated software version 1.18.11 on a devnet, and they are now calling for testnet validators to test the effectiveness of these fixes. Anza tweeted on April 12:</p>
+<blockquote><p>&#8220;The v1.18.11 release is now deployed to devnet, recommended for use on testnet. Please upgrade ASAP to help us start analyzing the effects of the proposed congestion fixes.&#8221;</p></blockquote>
+<p>In response to the congestion, Solana developers are also exploring strategies to enhance network efficiency. These include optimizing computing unit usage, implementing priority fees to improve user experiences, and developing a stake-weighted Quality-of-Service (QoS) system to prioritize transactions more efficiently.</p>
+<p>External analyses have highlighted the negative impact of congestion on Solana&#8217;s operational performance. The network serves as a significant hub for DeFi activities, which has escalated the congestion problem with <a href="https://cryptoslate.com/solanas-growing-pains-why-75-of-non-vote-transactions-failed/">increased demand,</a> leading to record-high trading volumes on decentralized exchanges in March.</p>
+<p>Austin Federa, Head of Strategy at the Solana Foundation, recently addressed the root causes of these issues in a tweet:</p>
+<blockquote><p>&#8220;The issues stem from an implementation of the QUIC protocol and can be attributed to a known issue that suddenly got much worse due to unprecedented demand.&#8221;</p></blockquote>
+<p>Teams from Anza, Firedancer, Jito, and other core contributors are actively working to strengthen Solana&#8217;s networking stack in response to this demand. Federa remains optimistic about overcoming these challenges, drawing parallels to similar obstacles the network faced in early 2022.</p>
+<p>As these developments unfold, the upcoming weeks will be critical in assessing whether the implemented fixes will restore Solana&#8217;s efficiency and reliability.</p>
+<p>The post <a href="https://cryptoslate.com/solana-deploys-congestion-fix-on-devnet/">Solana deploys congestion fix on devnet</a> appeared first on <a href="https://cryptoslate.com">CryptoSlate</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://cryptoslate.com/solana-deploys-congestion-fix-on-devnet/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<media:content url="https://cryptoslate.com/wp-content/uploads/2024/04/solana.jpg" medium="image"/>
+<enclosure url="https://cryptoslate.com/wp-content/uploads/2024/04/solana.jpg" length="1200" type="image/jpg"/>
+	</item>
+		<item>
+		<title>Ethereum Pectra upgrade promises major wallet improvements with EIP 3074 integration</title>
+		<link>https://cryptoslate.com/ethereum-pectra-upgrade-promises-major-wallet-improvements-with-eip-3074-integration/</link>
+					<comments>https://cryptoslate.com/ethereum-pectra-upgrade-promises-major-wallet-improvements-with-eip-3074-integration/#respond</comments>
+		
+		<dc:creator><![CDATA[Oluwapelumi Adejumo]]></dc:creator>
+		<pubDate>Fri, 12 Apr 2024 16:00:30 +0000</pubDate>
+				<category><![CDATA[Crypto]]></category>
+		<category><![CDATA[DeFi]]></category>
+		<category><![CDATA[EIP 3074]]></category>
+		<category><![CDATA[ethereum]]></category>
+		<category><![CDATA[Pectra upgrade]]></category>
+		<guid isPermaLink="false">https://cryptoslate.com/?p=411843</guid>
+
+					<description><![CDATA[<p>Ethereum developers are currently deliberating the Pectra upgrade, which is poised to enhance various facets of the blockchain&#8217;s functionality. Tim Beiko, the Ethereum Foundation&#8216;s protocol support lead, confirmed the development, revealing that the developers have agreed to include Ethereum Improvement Proposals (EIP) 3074 in the network&#8217;s slated overhaul. EIP 3074 EIP 3074 is a pivotal [&#8230;]</p>
+<p>The post <a href="https://cryptoslate.com/ethereum-pectra-upgrade-promises-major-wallet-improvements-with-eip-3074-integration/">Ethereum Pectra upgrade promises major wallet improvements with EIP 3074 integration</a> appeared first on <a href="https://cryptoslate.com">CryptoSlate</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p><a href="https://cryptoslate.com/coins/ethereum/">Ethereum</a> developers are currently deliberating the Pectra upgrade, which is poised to enhance various facets of the blockchain&#8217;s functionality.</p>
+<p><a href="https://cryptoslate.com/people/tim-beiko/">Tim Beiko</a>, the <a href="https://cryptoslate.com/companies/ethereum-foundation/">Ethereum Foundation</a>&#8216;s protocol support lead, <a href="https://twitter.com/TimBeiko/status/1778490341437681684">confirmed</a> the development, revealing that the developers have agreed to include Ethereum Improvement Proposals (EIP) 3074 in the network&#8217;s slated overhaul.</p>
+<h2>EIP 3074</h2>
+<p>EIP 3074 is a pivotal advancement within Ethereum&#8217;s ecosystem and was <a href="https://youtu.be/AffftIs6XFE?si=gYAMPYxCQ1f1m4ha">introduced</a> by Lightclients in 2020. The proposal has garnered widespread support from the crypto community as it aims to enhance the user experience (UX) of Ethereum wallets.</p>
+<p>Fundamentally, <a href="https://eips.ethereum.org/EIPS/eip-3074">EIP 3074</a> enables conventional crypto wallets like <a href="https://cryptoslate.com/products/metamask/">MetaMask</a> to function akin to smart contracts.</p>
+<p>This upgrade facilitates various functionalities, including transaction bundling, streamlining the signing process to a single step, and sponsored transactions. The latter feature empowers wallets to delegate funds for others to utilize, offering a more versatile and efficient transaction framework.</p>
+<p>Trading a new token on a DEX such as Uniswap will now only require one signature from a user&#8217;s wallet as opposed to having to approve the new token and then sign the transaction to purchase.</p>
+<h2>Crypto community reacts</h2>
+<p>The announcement of the impending upgrade has sparked various reactions within the crypto community.</p>
+<p>Georgios Konstantopoulous, <a href="https://cryptoslate.com/companies/paradigm/">Paradigm&#8217;s</a> CTO, <a href="https://twitter.com/gakonst/status/1778445908633387304?t=NVA_mcqEei5_JrWaPblEiA&amp;s=19">highlighted</a> the update&#8217;s potential to enhance wallet usability tenfold, noting Reth&#8217;s successful implementation and testing.</p>
+<p>Echoing this sentiment, <a href="https://cryptoslate.com/people/hayden-adams/">Hayden Adams</a>, the mind behind <a href="https://cryptoslate.com/coins/uniswap/">Uniswap</a>, lauded the upgrade as a significant boost to Ethereum&#8217;s user experience. He <a href="https://twitter.com/haydenzadams/status/1778513861408129181?t=Lb6oRYcSl72Q4C0GeMg5kQ&amp;s=19">added</a>:</p>
+<blockquote><p>&#8220;Industry should make an effort to create compatibility for 4337 wallets to interact with 3074 contracts (much like eip1271 has created compatibility between safes and EOAs today).&#8221;</p></blockquote>
+<p>However, EVM developer Alex Watts <a href="https://twitter.com/ThogardPvP/status/1778524655026127162?t=D-DkE8lwywsz5YXmMXFRJw&amp;s=19">cautioned</a> against solely focusing on user experience improvements, emphasizing the broader implications for application and mechanism design.</p>
+<p>Despite the optimism, concerns linger among some community members regarding the EIP 3074 upgrade.</p>
+<p>Ansgar Dietrich, an Ethereum Researcher involved in the proposal&#8217;s inception, <a href="https://twitter.com/adietrichs/status/1778442942115377277?t=BXmcsZUrkLYxdJcFk47uyQ&amp;s=19">expressed</a> ambivalence, reflecting on the lengthy journey to its impending mainnet integration and questioning its alignment with the evolving account abstraction roadmap.</p>
+<p>Similarly, 0xngmi, the pseudonymous developer of DeFiLlama, raised <a href="https://twitter.com/0xngmi/status/1778539816180965778?t=_3pEEyz9LcF7fc47Yqd2hg&amp;s=19">apprehensions</a> about the upgrade potentially enabling the complete depletion of addresses, encompassing tokens, NFTs, and other DeFi assets.</p>
+<p>The post <a href="https://cryptoslate.com/ethereum-pectra-upgrade-promises-major-wallet-improvements-with-eip-3074-integration/">Ethereum Pectra upgrade promises major wallet improvements with EIP 3074 integration</a> appeared first on <a href="https://cryptoslate.com">CryptoSlate</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://cryptoslate.com/ethereum-pectra-upgrade-promises-major-wallet-improvements-with-eip-3074-integration/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<media:content url="https://cryptoslate.com/wp-content/uploads/2024/04/ethereum-eip3074.jpg" medium="image"/>
+<enclosure url="https://cryptoslate.com/wp-content/uploads/2024/04/ethereum-eip3074.jpg" length="1200" type="image/jpg"/>
+	</item>
+		<item>
+		<title>Bitcoin&#8217;s looming halving event prompts massive accumulation</title>
+		<link>https://cryptoslate.com/insights/bitcoins-looming-halving-event-prompts-massive-accumulation/</link>
+		
+		<dc:creator><![CDATA[James Van Straten]]></dc:creator>
+		<pubDate>Fri, 12 Apr 2024 15:18:45 +0000</pubDate>
+				<guid isPermaLink="false">https://cryptoslate.com/?post_type=crypto_insight&#038;p=411826</guid>
+
+					<description><![CDATA[<p>Quick Take The aggregate accumulation by various Bitcoin cohorts, ranging from shrimps (holding less than one BTC) to super whales (10,000+ BTC), has surpassed the monthly issuance, painting a bullish picture for the future of BTC. We are rapidly approaching the next Bitcoin (BTC) halving, with the event now just days away. Currently, around 900 [&#8230;]</p>
+<p>The post <a href="https://cryptoslate.com/insights/bitcoins-looming-halving-event-prompts-massive-accumulation/">Bitcoin&#8217;s looming halving event prompts massive accumulation</a> appeared first on <a href="https://cryptoslate.com">CryptoSlate</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<h2>Quick Take</h2>
+<p class="whitespace-pre-wrap break-words">The aggregate <a href="https://cryptoslate.com/insights/bitcoin-market-absorbs-mining-output-and-more-sparking-price-spike/">accumulation</a> by various Bitcoin cohorts, ranging from shrimps (holding less than one BTC) to super whales (10,000+ BTC), has surpassed the monthly issuance, painting a bullish picture for the future of BTC.</p>
+<figure id="attachment_411889" aria-describedby="caption-attachment-411889" style="width: 1800px" class="wp-caption aligncenter"><img fetchpriority="high" decoding="async" class="wp-image-411889 size-full" src="https://cryptoslate.com/wp-content/uploads/2024/04/monthly.png" alt="All Cohorts vs Issuance: (Source: Glassnode)" width="1800" height="1013" srcset="https://cryptoslate.com/wp-content/uploads/2024/04/monthly.png 1800w, https://cryptoslate.com/wp-content/uploads/2024/04/monthly-300x169.png 300w, https://cryptoslate.com/wp-content/uploads/2024/04/monthly-1024x576.png 1024w, https://cryptoslate.com/wp-content/uploads/2024/04/monthly-768x432.png 768w, https://cryptoslate.com/wp-content/uploads/2024/04/monthly-1536x864.png 1536w" sizes="(max-width: 1800px) 100vw, 1800px" /><figcaption id="caption-attachment-411889" class="wp-caption-text">All Cohorts vs Issuance: (Source: Glassnode)</figcaption></figure>
+<p>We are rapidly approaching the next Bitcoin (BTC) <a href="https://cryptoslate.com/bitcoin-and-ethereum-etfs-to-launch-in-hong-kong-before-halving-reports/">halving</a>, with the event now just days away. Currently, around 900 BTC are mined daily, amounting to approximately 27,000 BTC per month. Amid this data, <a href="https://studio.glassnode.com/workbench/7c96ff90-0f2d-4ccc-70f5-f60ee141d7eb?s=1681388414&amp;u=1712924414&amp;zoom=365">Glassnode</a> reveals an astonishing accumulation of 115,000 BTC over the past 30 days, marking one of the most bullish periods in a year.</p>
+<figure id="attachment_411891" aria-describedby="caption-attachment-411891" style="width: 1800px" class="wp-caption aligncenter"><img decoding="async" class="wp-image-411891 size-full" style="color: #383838;" src="https://cryptoslate.com/wp-content/uploads/2024/04/miners.png" alt="Miners vs Issuance: (Source: Glassnode)" width="1800" height="1013" srcset="https://cryptoslate.com/wp-content/uploads/2024/04/miners.png 1800w, https://cryptoslate.com/wp-content/uploads/2024/04/miners-300x169.png 300w, https://cryptoslate.com/wp-content/uploads/2024/04/miners-1024x576.png 1024w, https://cryptoslate.com/wp-content/uploads/2024/04/miners-768x432.png 768w, https://cryptoslate.com/wp-content/uploads/2024/04/miners-1536x864.png 1536w" sizes="(max-width: 1800px) 100vw, 1800px" /><figcaption id="caption-attachment-411891" class="wp-caption-text">Miners vs Issuance: (Source: Glassnode)</figcaption></figure>
+<p class="whitespace-pre-wrap break-words">Interestingly, while miners have been continuously distributing since the end of 2023, shrimps are now accumulating for the first time since February, with a strong accumulation of roughly 12,500 BTC over the past 30 days.</p>
+<figure id="attachment_411890" aria-describedby="caption-attachment-411890" style="width: 1800px" class="wp-caption aligncenter"><img decoding="async" class="wp-image-411890 size-full" style="color: #383838;" src="https://cryptoslate.com/wp-content/uploads/2024/04/shrimp.png" alt="Shrimps vs Issuance: (Source: Glassnode)" width="1800" height="1013" srcset="https://cryptoslate.com/wp-content/uploads/2024/04/shrimp.png 1800w, https://cryptoslate.com/wp-content/uploads/2024/04/shrimp-300x169.png 300w, https://cryptoslate.com/wp-content/uploads/2024/04/shrimp-1024x576.png 1024w, https://cryptoslate.com/wp-content/uploads/2024/04/shrimp-768x432.png 768w, https://cryptoslate.com/wp-content/uploads/2024/04/shrimp-1536x864.png 1536w" sizes="(max-width: 1800px) 100vw, 1800px" /><figcaption id="caption-attachment-411890" class="wp-caption-text">Shrimps vs Issuance: (Source: Glassnode)</figcaption></figure>
+<p class="whitespace-pre-wrap break-words">As the halving looms closer, the monthly issuance is set to be cut in half to 13,500 BTC. This reduction in supply, coupled with the increasing demand outpacing the monthly issuance, sets the stage for an exciting Q2.</p>
+<p>The post <a href="https://cryptoslate.com/insights/bitcoins-looming-halving-event-prompts-massive-accumulation/">Bitcoin&#8217;s looming halving event prompts massive accumulation</a> appeared first on <a href="https://cryptoslate.com">CryptoSlate</a>.</p>
+]]></content:encoded>
+					
+		
+		
+		<media:content url="https://cryptoslate.com/wp-content/uploads/2024/04/monthly.png" medium="image"/>
+<enclosure url="https://cryptoslate.com/wp-content/uploads/2024/04/monthly.png" length="1800" type="image/jpg"/>
+	</item>
+		<item>
+		<title>Phaver disrupts web3 social scene with unique take on memecoins and creator collaboration</title>
+		<link>https://cryptoslate.com/podcasts/phaver-disrupts-web3-social-scene-with-unique-take-on-memecoins-and-creator-collaboration/</link>
+					<comments>https://cryptoslate.com/podcasts/phaver-disrupts-web3-social-scene-with-unique-take-on-memecoins-and-creator-collaboration/#respond</comments>
+		
+		<dc:creator><![CDATA[Nate Whitehill]]></dc:creator>
+		<pubDate>Fri, 12 Apr 2024 14:46:30 +0000</pubDate>
+				<guid isPermaLink="false">https://cryptoslate.com/?post_type=crypto_video&#038;p=411370</guid>
+
+					<description><![CDATA[<p>The social layer of web3 is rapidly evolving and emerging as a crucial frontier. In a recent episode of the SlateCast podcast, CryptoSlate&#8217;s Liam &#8220;Akiba&#8221; Wright and CEO Nate Whitehill sat down with Joonatan Lintala, the CEO of the web3 social app Phaver, to explore how this new paradigm is empowering creators and communities. The Meme [&#8230;]</p>
+<p>The post <a href="https://cryptoslate.com/podcasts/phaver-disrupts-web3-social-scene-with-unique-take-on-memecoins-and-creator-collaboration/">Phaver disrupts web3 social scene with unique take on memecoins and creator collaboration</a> appeared first on <a href="https://cryptoslate.com">CryptoSlate</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>The social layer of <a href="http://cryptoslate.com/web3">web3</a> is rapidly evolving and emerging as a crucial frontier. In a recent episode of the SlateCast podcast, CryptoSlate&#8217;s <a href="http://cryptoslate.com/author/liam-akiba-wright">Liam &#8220;Akiba&#8221; Wright</a> and CEO <a href="http://cryptoslate.com/people/nate-whitehill">Nate Whitehill</a> sat down with <a href="https://cryptoslate.com/people/joonatan-lintala/">Joonatan Lintala</a>, the CEO of the web3 social app <a href="https://cryptoslate.com/products/phaver/">Phaver</a>, to explore how this new paradigm is empowering creators and communities.</p>
+<h2>The Meme Coin Conundrum</h2>
+<p>The discussion started with a dive into the controversial world of meme coins. Akiba, a self-proclaimed critic of memecoins, argued that they often &#8220;hurt adoption&#8221; and represent &#8220;gambling&#8221; rather than genuine value creation. However, he acknowledged that Lens <a href="http://cryptoslate.com/cryptos/meme">memecoins</a>, such as Bonsai and <a href="https://cryptoslate.com/coins/degen/">Degen</a>, behave differently, potentially driving the adoption of decentralized social platforms.</p>
+<p>Lintala shared a similar perspective, noting the &#8220;casino and the computer&#8221; dichotomy in blockchain, where speculation can overshadow the development of real-world solutions. He explained:</p>
+<blockquote><p>&#8220;If the meme coins, in this case, the social meme coins especially, are the ones that are actually driving adoption of those computer side solutions, such as decentralized social and web free social, then obviously they can be a net positive.&#8221;</p></blockquote>
+<h2>Favor&#8217;s Approach to Tokens</h2>
+<p>Lintala delved into Phaver&#8217;s approach to building an in-app economy, emphasizing the importance of being &#8220;farming resistant&#8221; and incorporating advertising partners. He highlighted the lessons learned from the Lens ecosystem, where airdrops to bots and multi-account users have diluted the value of some meme coin distributions. Lintala explained:</p>
+<blockquote><p>&#8220;We&#8217;re hoping that&#8217;s going to be kind of even more of an adoption driver. But at the same time, it&#8217;s been very bullish to see how well Bonsai is doing on the Lens side. And of course Degen on the Farcaster side has been an even much bigger success and very much driving the adoption of Farcaster, despite being a third party meme coin on top of Warpcast right now.&#8221;</p></blockquote>
+<h2>Building Partnerships and Community</h2>
+<p>A key aspect of Phaver&#8217;s strategy is building mutually beneficial partnerships with high-quality web3 projects and local communities. Lintala highlighted the importance of these collaborations, stating:</p>
+<blockquote><p>&#8220;By far the biggest value you can bring in growth is if you build mutually beneficial partnerships with high-quality people or projects.&#8221;</p></blockquote>
+<p>This approach has allowed Phaver to create a thriving ecosystem, with creators from diverse backgrounds and locations finding a home on the platform. Lintala noted:</p>
+<blockquote><p>&#8220;We have a lot of really amazing content. Female creators, whether they are creating art or music or just in general sheet posting.&#8221;</p></blockquote>
+<h2>The Holistic Web3 Social Experience</h2>
+<p>Phaver&#8217;s vision extends beyond just social media functionality, as the platform aims to provide a seamless and accessible experience for users to engage with various web3 features. Lintala explained the company&#8217;s plans to integrate Lens, Farcaster, and Open Actions, allowing users to mint NFTs, sell digital content, and more, all within the Phaver ecosystem. Lintala shared:</p>
+<blockquote><p>&#8220;We want to include both Forecaster Frames and Lens Open Actions. Besides Lens collecting alone, we see that while collecting posts does have an amount of potential in itself, but I think there&#8217;s even more potential in the general collectibles minting of, if you&#8217;re an artist you can make kind of an actual NFT instead of a Lens post NFT out of an artwork and allow people to meet that if you&#8217;re a musician, you can sell your fantasies directly in frames or open actions, all of that, I think will have even bigger potential than just the collecting alone.&#8221;</p></blockquote>
+<h2>The Future of Web3 Social</h2>
+<p>As the web3 social landscape continues to gain adoption, Phaver&#8217;s focus on building a mainstream-friendly, farming-resistant platform that empowers creators and communities across the globe stands out. With plans to integrate various web3 functionalities and maintain a diverse and engaged user base, Phaver aims to be a leading player in the next chapter of decentralized social media.</p>
+<blockquote class="twitter-tweet" data-media-max-width="560">
+<p dir="ltr" lang="en">NEW SLATECAST <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f399.png" alt="🎙" class="wp-smiley" style="height: 1em; max-height: 1em;" /> 2024 SocialFi explosion hits as creators monetize content faster than ever before with <a href="https://twitter.com/joonatanlintala?ref_src=twsrc%5Etfw">@joonatanlintala</a> of <a href="https://twitter.com/phaverapp?ref_src=twsrc%5Etfw">@phaverapp</a></p>
+<p>Co-hosted by <a href="https://twitter.com/akibablade?ref_src=twsrc%5Etfw">@akibablade</a> and <a href="https://twitter.com/NateWhitehill?ref_src=twsrc%5Etfw">@NateWhitehill</a> <a href="https://t.co/Na0cUvDL5Q">pic.twitter.com/Na0cUvDL5Q</a></p>
+<p>— CryptoSlate (@CryptoSlate) <a href="https://twitter.com/CryptoSlate/status/1778385322327339125?ref_src=twsrc%5Etfw">April 11, 2024</a></p></blockquote>
+<p><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+<p>The post <a href="https://cryptoslate.com/podcasts/phaver-disrupts-web3-social-scene-with-unique-take-on-memecoins-and-creator-collaboration/">Phaver disrupts web3 social scene with unique take on memecoins and creator collaboration</a> appeared first on <a href="https://cryptoslate.com">CryptoSlate</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://cryptoslate.com/podcasts/phaver-disrupts-web3-social-scene-with-unique-take-on-memecoins-and-creator-collaboration/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<media:content url="https://cryptoslate.com/wp-content/uploads/2024/04/slatecast-web3.jpg" medium="image"/>
+<enclosure url="https://cryptoslate.com/wp-content/uploads/2024/04/slatecast-web3.jpg" length="1280" type="image/jpg"/>
+	</item>
+	</channel>
+</rss>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Ledger Insights &#8211; blockchain for enterprise</title>
+	<atom:link href="https://www.ledgerinsights.com/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.ledgerinsights.com/</link>
+	<description>Blockchain for business</description>
+	<lastBuildDate>Fri, 12 Apr 2024 12:16:17 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+	<item>
+		<title>JP Morgan integrates JPM Coin with Kyriba&#8217;s treasury solution</title>
+		<link>https://www.ledgerinsights.com/jp-morgan-integrates-jpm-coin-with-kyribas-treasury-solution/</link>
+		
+		<dc:creator><![CDATA[Ledger Insights]]></dc:creator>
+		<pubDate>Fri, 12 Apr 2024 12:16:16 +0000</pubDate>
+				<category><![CDATA[Blockchain for Banking]]></category>
+		<category><![CDATA[News]]></category>
+		<category><![CDATA[blockchain]]></category>
+		<category><![CDATA[cross border]]></category>
+		<category><![CDATA[cross border payments]]></category>
+		<category><![CDATA[distributed ledger]]></category>
+		<category><![CDATA[DLT]]></category>
+		<category><![CDATA[jp morgan]]></category>
+		<category><![CDATA[jpm coin]]></category>
+		<category><![CDATA[Kyriba]]></category>
+		<category><![CDATA[Onyx]]></category>
+		<category><![CDATA[tokenized cash]]></category>
+		<category><![CDATA[tokenized deposits]]></category>
+		<category><![CDATA[treasurers]]></category>
+		<guid isPermaLink="false">https://ledgerinsights.com/?p=33402</guid>
+
+					<description><![CDATA[<p>Yesterday, Kyriba announced that it had integrated Onyx by JP Morgan with its cloud treasury solution. Specifically, its clients with JP Morgan bank accounts can manage their JPM Coin blockchain-based accounts to send 24/7 cross-border payments to other branches. Kyriba is a cloud based corporate treasury solution that aims to optimize liquidity. While it only has around 3,000 customers, they manage […]</p>
+<p>The post <a href="https://www.ledgerinsights.com/jp-morgan-integrates-jpm-coin-with-kyribas-treasury-solution/">JP Morgan integrates JPM Coin with Kyriba’s treasury solution</a> appeared first on <a href="https://www.ledgerinsights.com">Ledger Insights - blockchain for enterprise</a>.</p>
+]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

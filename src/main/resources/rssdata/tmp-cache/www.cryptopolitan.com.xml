@@ -1,0 +1,1251 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	 xmlns:media="http://search.yahoo.com/mrss/" >
+
+<channel>
+	<title>Cryptopolitan</title>
+	<atom:link href="https://www.cryptopolitan.com/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.cryptopolitan.com</link>
+	<description>Neutral and Authentic News</description>
+	<lastBuildDate>Fri, 12 Apr 2024 23:43:24 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+
+<image>
+	<url>https://www.cryptopolitan.com/wp-content/uploads/2022/02/cropped-Dark_CP_Symbol-32x32.png</url>
+	<title>Cryptopolitan</title>
+	<link>https://www.cryptopolitan.com</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Australians LOVE privacy, favor commercial banks over retail CBDC</title>
+		<link>https://www.cryptopolitan.com/australia-favor-commercial-banks-over-cbdc/</link>
+		
+		<dc:creator><![CDATA[Jai Hamid]]></dc:creator>
+		<pubDate>Fri, 12 Apr 2024 23:42:10 +0000</pubDate>
+				<category><![CDATA[Industry News]]></category>
+		<category><![CDATA[Australia]]></category>
+		<category><![CDATA[cbdc]]></category>
+		<guid isPermaLink="false">https://www.cryptopolitan.com/?p=510454</guid>
+
+					<description><![CDATA[Australia seems to have made its choice clear when it comes to banking preferences, showing a strong inclination for commercial banks over the proposed retail central bank digital currency (CBDC). Recent investigations by the Reserve Bank of Australia (RBA) suggest that while Australians aren&#8217;t willing to shell out extra cash for the so-called safety perks [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>Australia seems to have made its choice clear when it comes to banking preferences, showing a strong inclination for commercial banks over the proposed retail central bank digital currency (CBDC). Recent investigations by the Reserve Bank of Australia (RBA) suggest that while Australians aren&#8217;t willing to shell out extra cash for the so-called safety perks of a digital central bank currency, they do put a price on privacy.<a href="https://x.com/RBAInfo/status/1778579187663622495" rel="nofollow" target="_blank"> </a></p>
+
+
+
+<figure class="wp-block-embed is-type-rich is-provider-twitter wp-block-embed-twitter"><div class="wp-block-embed__wrapper">
+<blockquote class="twitter-tweet" data-width="550" data-dnt="true"><p lang="en" dir="ltr">We have released a Research Discussion Paper &#39;Valuing Safety and Privacy in Retail Central Bank Digital Currency&#39; &#8211; <a href="https://t.co/Qmxwd9FmEh" rel="nofollow" target="_blank">https://t.co/Qmxwd9FmEh</a></p>&mdash; Reserve Bank of Australia (@RBAInfo) <a href="https://twitter.com/RBAInfo/status/1778579187663622495?ref_src=twsrc%5Etfw" rel="nofollow noopener" target="_blank">April 12, 2024</a></blockquote><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div></figure>
+
+
+
+<h2 class="wp-block-heading">Safety and Privacy Valuations</h2>
+
+
+
+<p>A close look at the RBA&#8217;s research reveals Australians&#8217; perspective on both safety and privacy when it comes to digital banking. The RBA pitched its hypothetical CBDC as a potentially safer and more private option than existing commercial bank offerings. Yet, the public&#8217;s reaction was lukewarm at best regarding safety. </p>
+
+
+
+<p>Despite the RBA&#8217;s role as a financial safety net and various protective measures already in place such as deposit insurance and bank supervision, the allure of a safer digital currency does not seem to tempt the average Australian wallet.</p>
+
+
+
+<figure class="wp-block-image size-full is-resized"><img fetchpriority="high" decoding="async" width="858" height="746" src="https://www.cryptopolitan.com/wp-content/uploads/2024/04/image-44.png" alt="" class="wp-image-510458" style="width:541px;height:auto" srcset="https://www.cryptopolitan.com/wp-content/uploads/2024/04/image-44.png 858w, https://www.cryptopolitan.com/wp-content/uploads/2024/04/image-44-300x261.png 300w, https://www.cryptopolitan.com/wp-content/uploads/2024/04/image-44-768x668.png 768w" sizes="(max-width: 858px) 100vw, 858px" /></figure>
+
+
+
+<p>Contrastingly, privacy is where the attention changes. Australians appear ready to pay up for enhanced privacy measures in their digital transactions. According to the RBA&#8217;s findings, the average Aussie would prefer their transaction data to be accessible by the RBA rather than a commercial bank, even if it costs them around $5 more annually. </p>
+
+
+
+<p>When this preference is projected across the adult population, it translates into an approximate $100 million per year preference for privacy handled by the RBA over commercial banks, assuming all other conditions are constant.</p>
+
+
+
+<h2 class="wp-block-heading">The Nuances of Consumer Choices</h2>
+
+
+
+<p>The discrete choice experiment conducted by the RBA sheds light on how Australians value different aspects of digital banking. The study involves a choice scenario between two hypothetical bank accounts differing in their fee structures, data privacy levels, and managing entities. The set-up avoids direct references to CBDCs, leaning instead on more relatable banking analogies to gauge public interest and understanding.</p>
+
+
+
+<p>This method, while complex, is critical for understanding real-world preferences without the skewed results that might come from less sophisticated survey techniques. Fees and privacy settings are randomized in the survey to ensure that the data reflects genuine preferences free from bias introduced by price or convenience factors.</p>
+
+
+
+<p>Further dissecting the demographics, it emerges that age and income play significant roles in how individuals value these banking attributes. Lower income individuals place a higher value on safety than their wealthier counterparts, possibly due to a more acute awareness of financial vulnerabilities. Meanwhile, the use of cash, which offers high privacy and safety, was also analyzed to understand its impact on preferences for digital banking features.</p>
+
+
+
+<p>The survey results also suggest a robust attachment to traditional banking services, with a clear preference for features that align closely with existing offerings. This implies a significant challenge for the adoption of a <a href="https://www.cryptopolitan.com/imf-benefits-cbdc-pacific-island-countries/" data-type="post" data-id="502124">CBDC</a> in Australia unless it can offer a clear and unique value proposition, especially in areas like privacy that currently resonate with the public.</p>
+
+
+
+<p>With this comprehensive exploration into the preferences of Australians regarding digital currencies and banking privacy, the RBA has provided valuable insights. However, the question remains whether these preferences will steer future policies or if the traditional banking framework will continue to dominate Australia.</p>
+]]></content:encoded>
+					
+		
+		
+		<media:content url="https://www.cryptopolitan.com/wp-content/uploads/2024/04/DALL·E-2024-04-12-19.29.00-Visualize-Australians-preference-for-privacy-and-their-favoring-of-commercial-banks-over-a-retail-Central-Bank-Digital-Currency-CBDC-without-using-.webp" medium="image"  type="image/webp" /><media:thumbnail url="https://www.cryptopolitan.com/wp-content/uploads/2024/04/DALL·E-2024-04-12-19.29.00-Visualize-Australians-preference-for-privacy-and-their-favoring-of-commercial-banks-over-a-retail-Central-Bank-Digital-Currency-CBDC-without-using-.webp"/>	</item>
+		<item>
+		<title>Russia and China&#8217;s friendship takes an interesting turn</title>
+		<link>https://www.cryptopolitan.com/russia-china-friendship-interesting-turn/</link>
+		
+		<dc:creator><![CDATA[Jai Hamid]]></dc:creator>
+		<pubDate>Fri, 12 Apr 2024 23:21:44 +0000</pubDate>
+				<category><![CDATA[Economy]]></category>
+		<category><![CDATA[News]]></category>
+		<category><![CDATA[China]]></category>
+		<category><![CDATA[Russia]]></category>
+		<guid isPermaLink="false">https://www.cryptopolitan.com/?p=510449</guid>
+
+					<description><![CDATA[BRICS nations, specifically China and Russia, are actively forming new alliances to champion a multipolar world, a move set to reshape the global financial system currently under heavy US influence. This collaboration was highlighted during a meeting between Russia’s Foreign Minister Sergey Lavrov and Chinese President Xi Jinping, where they discussed strategies to propel this [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>BRICS nations, specifically China and Russia, are actively forming new alliances to champion a multipolar world, a move set to reshape the global financial system currently under heavy US influence. This collaboration was highlighted during a <a href="https://www.scmp.com/news/china/diplomacy/article/3258422/china-and-russia-make-united-stand-reform-west-led-global-system" rel="nofollow noopener" target="_blank">meeting</a> between Russia’s Foreign Minister Sergey Lavrov and Chinese President Xi Jinping, where they discussed strategies to propel this financial transformation.</p>
+
+
+
+<h2 class="wp-block-heading">Reinforcing the Multipolar Vision</h2>
+
+
+
+<p>China and Russia have committed to advocating for a multipolar world and spreading this ideal among developing nations. Their plan includes shifting away from the <a href="https://www.cryptopolitan.com/yuan-is-performing-way-better-than-dollar/" data-type="post" data-id="510430">US dollar</a> in international transactions in favor of local currencies. </p>
+
+
+
+<p>The two countries have voiced their concerns about the US imposing what they consider &#8220;illegal sanctions&#8221; on them, prompting a coordinated effort through BRICS to counteract these measures. Their aim is clear: to overhaul the global governance system by rallying developing nations against US economic sanctions.</p>
+
+
+
+<p>In their quest for global financial reform, China and Russia are embarking on a tour across Asia, Latin America, and Africa. They are promoting the benefits of abandoning the US dollar (de-dollarization) and embracing the concept of a multipolar world.</p>
+
+
+
+<p>My man Xi Jinping emphasized the importance of these initiatives, stating, “China values the development of Sino-Russian relations highly and is eager to enhance bilateral communication and strategic coordination within BRICS and the Shanghai Cooperation Organization, to foster unity among Global South countries and push for the reform of the global governance system.”</p>
+
+
+
+<p>The success of these efforts, however, remains uncertain, as it depends on how other developing countries respond to the idea of a multipolar world. Although the de-dollarization agenda is already underway, the broader concept of a multipolar world is gradually gaining acceptance.</p>
+
+
+
+<h2 class="wp-block-heading">The Golden Strategy: China&#8217;s Economic Maneuver</h2>
+
+
+
+<p>Amidst all of these, China is strategically increasing its influence in the gold market, causing prices to soar to unprecedented heights. The recent record high of $2,342.43 per ounce is a testament to this trend. This surge in gold prices is largely driven by the People’s Bank of China, which has been aggressively purchasing gold. Economists note that gold’s appeal lies in its liquidity, return potential, and stability during economic downturns, making it a robust alternative to the US dollar.</p>
+
+
+
+<p>As the US dollar weakens, partly due to its own internal struggles with inflation and interest rate hikes in 2023, other countries, led by BRICS, are finding the prospect of investing in gold increasingly appealing. </p>
+
+
+
+<p>This enthusiasm is mirrored in China’s consistent increase in gold reserves, marked by a 16th consecutive month of growth in February, according to the World Gold Council. This bullish trend in gold is supported by central banks in emerging markets, which are also ramping up their gold reserves.</p>
+
+
+
+<p>Additionally, there is speculation that the new BRICS currency might be backed by gold, adding another layer of strategic depth to BRICS&#8217; financial maneuvers. As China and its allies continue to capitalize on the rising value of gold, they are setting the stage for further shifts in global economic power dynamics.</p>
+
+
+
+<p>As Russia and China forge ahead with their agenda, I&#8217;m over here observing how these moves will redefine economic relationships and power structures of this horrible world we all live in.</p>
+]]></content:encoded>
+					
+		
+		
+		<media:content url="https://www.cryptopolitan.com/wp-content/uploads/2024/04/DALL·E-2024-04-12-19.22.54-Design-an-engaging-and-thought-provoking-image-that-captures-the-evolving-dynamics-of-Russia-and-Chinas-friendship-taking-an-interesting-turn.-Visual.webp" medium="image"  type="image/webp" /><media:thumbnail url="https://www.cryptopolitan.com/wp-content/uploads/2024/04/DALL·E-2024-04-12-19.22.54-Design-an-engaging-and-thought-provoking-image-that-captures-the-evolving-dynamics-of-Russia-and-Chinas-friendship-taking-an-interesting-turn.-Visual.webp"/>	</item>
+		<item>
+		<title>Putin, Xi, Biden, and the U.S. national debt &#8211; A short story</title>
+		<link>https://www.cryptopolitan.com/putin-xi-biden-and-the-us-national-debt/</link>
+		
+		<dc:creator><![CDATA[Jai Hamid]]></dc:creator>
+		<pubDate>Fri, 12 Apr 2024 22:35:28 +0000</pubDate>
+				<category><![CDATA[Economy]]></category>
+		<category><![CDATA[News]]></category>
+		<category><![CDATA[joe biden]]></category>
+		<category><![CDATA[US national debt]]></category>
+		<category><![CDATA[vladimir putin]]></category>
+		<category><![CDATA[xi jinping]]></category>
+		<guid isPermaLink="false">https://www.cryptopolitan.com/?p=510438</guid>
+
+					<description><![CDATA[The economic dance floor has never been more intriguing, with major world powers moving to the rhythms of finance and strategy, directly influencing the global dominance of the U.S. dollar. The BRICS is gaining momentum in their quest to cut ties with the U.S. dollar, potentially reshaping global economic supremacy. De-dollarization Dreams of BRICS This [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>The economic dance floor has never been more intriguing, with major world powers moving to the rhythms of finance and strategy, directly influencing the global dominance of the U.S. dollar. The BRICS is gaining momentum in their quest to cut ties with the U.S. <a href="https://www.cryptopolitan.com/yuan-is-performing-way-better-than-dollar/" data-type="post" data-id="510430">dollar</a>, potentially reshaping global economic supremacy.</p>
+
+
+
+<h2 class="wp-block-heading">De-dollarization Dreams of BRICS</h2>
+
+
+
+<p>This push towards abandoning the U.S. dollar in international dealings is not just a fleeting whim but a strategic plays rooted deeply in the BRICS countries&#8217; long-term economic plans. The bloc is actively seeking to enlarge its membership, inviting new countries to join in their movement towards using a BRICS currency or other local currencies instead. This expanding influence in trade and geopolitical matters signifies a possible shift in global power dynamics, challenging the U.S.&#8217;s economic clout.</p>
+
+
+
+<p>The allure of joining BRICS extends to numerous nations, intrigued by the bloc&#8217;s commitment to reshaping global financial infrastructure. This growing alliance represents over 40% of the global population and contributes about a quarter of the world&#8217;s GDP. </p>
+
+
+
+<p>Their economic growth rates are currently eclipsing those of the U.S., which struggles with inflation and seesawing economic indicators. The shift in global trade patterns, favoring the BRICS nations, could further erode the U.S. dollar&#8217;s hegemony and by extension, impact the U.S. economy and its burgeoning national debt.</p>
+
+
+
+<p>China, a major player within BRICS, boasts a significant trade surplus with the U.S., essentially selling more to America than it buys. This relationship feeds the U.S. trade deficit, effectively increasing the national debt as more dollars flow out than come in. Similarly, Brazil and India, as vital trade partners with the U.S., hold considerable sway over America&#8217;s trade balance and debt levels through their economic policies and trade flows.</p>
+
+
+
+<h2 class="wp-block-heading">Forecasting Fiscal Futures</h2>
+
+
+
+<p>As the U.S. grapples with escalating national debt, the forecast isn&#8217;t looking particularly sunny. </p>
+
+
+
+<p>The Congressional Budget Office (CBO) <a href="https://www.cbo.gov/publication/60127" rel="nofollow noopener" target="_blank">predicts</a> that by 2054, the U.S. national debt could reach a dizzying $141 trillion, which would be a staggering 166% of the projected GDP of $85.2 trillion. This exponential growth in debt is primarily driven by soaring interest costs and persistent deficits that exclude net outlays for interest.</p>
+
+
+
+<p>Looking closer at the fiscal forecast, debt held by the public is expected to peak in 2029, reaching the highest level ever relative to GDP, before continuing its upward trajectory. This monumental debt will likely slow economic growth, inflate interest payments to foreign debt holders, and present significant risks to both the fiscal and economic outlook of the U.S. It might also limit the flexibility of future lawmakers in their policy-making decisions.</p>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" width="1200" height="568" src="https://www.cryptopolitan.com/wp-content/uploads/2024/04/image-42-1200x568.png" alt="" class="wp-image-510446" srcset="https://www.cryptopolitan.com/wp-content/uploads/2024/04/image-42-1200x568.png 1200w, https://www.cryptopolitan.com/wp-content/uploads/2024/04/image-42-300x142.png 300w, https://www.cryptopolitan.com/wp-content/uploads/2024/04/image-42-768x364.png 768w, https://www.cryptopolitan.com/wp-content/uploads/2024/04/image-42-1536x727.png 1536w, https://www.cryptopolitan.com/wp-content/uploads/2024/04/image-42-2048x970.png 2048w" sizes="(max-width: 1200px) 100vw, 1200px" /><figcaption class="wp-element-caption"><em>Source: Congressional Budget Office</em></figcaption></figure>
+
+
+
+<p>Government spending, already high by historical standards, is only expected to rise, reaching 27.3% of GDP by 2054. This increase is driven by growing costs associated with major healthcare programs, particularly Medicare. On the revenue side, despite fluctuations over the next decade, there&#8217;s an anticipated increase, with income growth expected to boost receipts from individual income taxes.</p>
+
+
+
+<h2 class="wp-block-heading">Economic Adjustments and Insights</h2>
+
+
+
+<p>The U.S. economy&#8217;s growth prospects are tempered by slower population growth expected over the next three decades. Without a boost from immigration, the population could even start to decline by 2040. The economy&#8217;s growth is also likely hindered by slower labor force growth and subdued capital accumulation, exacerbated by high levels of federal borrowing.</p>
+
+
+
+<p>Despite a grim long-term outlook, inflation is projected to decelerate, aligning with the Federal Reserve&#8217;s long-term target of 2% by 2026 and stabilizing thereafter. Interest rates are set to rise, influenced by increasing federal borrowing needs and a growing proportion of capital income relative to total income.</p>
+
+
+
+<p>These fiscal dynamics reflect adjustments from the CBO’s earlier projections, suggesting a somewhat less dire financial scenario than previously anticipated. This stems from a combination of lower discretionary spending due to legislative caps and an optimistic outlook on immigration boosting the potential labor force.</p>
+]]></content:encoded>
+					
+		
+		
+		<media:content url="https://www.cryptopolitan.com/wp-content/uploads/2024/04/DALL·E-2024-04-12-19.22.50-Create-a-complex-and-narrative-driven-image-that-tells-a-short-story-involving-Russia-China-the-White-House-and-the-U.S.-national-debt.-Visualize-a.webp" medium="image"  type="image/webp" /><media:thumbnail url="https://www.cryptopolitan.com/wp-content/uploads/2024/04/DALL·E-2024-04-12-19.22.50-Create-a-complex-and-narrative-driven-image-that-tells-a-short-story-involving-Russia-China-the-White-House-and-the-U.S.-national-debt.-Visualize-a.webp"/>	</item>
+		<item>
+		<title>EigenLayer is Enhancing Ethereum&#8217;s Ecosystem with Six New Validated Services</title>
+		<link>https://www.cryptopolitan.com/eigenlayer-ethereums-ecosystem-six-services/</link>
+		
+		<dc:creator><![CDATA[Haseeb Shaheen]]></dc:creator>
+		<pubDate>Fri, 12 Apr 2024 22:34:10 +0000</pubDate>
+				<category><![CDATA[Industry News]]></category>
+		<category><![CDATA[EigenLayer]]></category>
+		<guid isPermaLink="false">https://www.cryptopolitan.com/?p=510441</guid>
+
+					<description><![CDATA[EigenLayer, better known as a leading company in blockchain technology has announced its launch for six new services. Now These services were introduced during the third phase of their main network&#8217;s rollout and the aim of these services is simple and straightforward. They are designed to significantly improve how things work within the Ethereum ecosystem.  [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>EigenLayer, better known as a leading company in blockchain technology has announced its launch for six new services. Now These services were introduced during the third phase of their main network&#8217;s rollout and the aim of these services is simple and straightforward. They are designed to significantly improve how things work within the Ethereum ecosystem. </p>
+
+
+
+<figure class="wp-block-embed is-type-rich is-provider-twitter wp-block-embed-twitter"><div class="wp-block-embed__wrapper">
+<blockquote class="twitter-tweet" data-width="550" data-dnt="true"><p lang="en" dir="ltr">Announcing: AVS mainnet launch<br><br>Six new AVSs are coming live today alongside EigenDA! <a href="https://t.co/Rtb1yAiFl6" rel="nofollow" target="_blank">pic.twitter.com/Rtb1yAiFl6</a></p>&mdash; EigenLayer (@eigenlayer) <a href="https://twitter.com/eigenlayer/status/1778486504542597480?ref_src=twsrc%5Etfw" rel="nofollow noopener" target="_blank">April 11, 2024</a></blockquote><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div></figure>
+
+
+
+<h2 class="wp-block-heading">Expanding functionalities</h2>
+
+
+
+<p>Now the six services that are being talked about, the ones that <a href="https://www.cryptopolitan.com/eigenlayer-blackhole-ethereum/">Eigen layer</a> has launched areAltLayer, Brevis, Eoracle, Lagrange, WitnessChain, and Xterio. Each of these services play a specific role, a role that is very important for advancing the Ethereum ecosystem. Like the AltLayer&#8217;s MACH platform. This platform is designed to accelerate the finality of rollups, boasting impressive confirmation speeds of under 10 seconds.  Lagrange on the other hand is another pivotal service, that offers light client functionality, which is essential for enabling faster and more secure communication between optimistic rollups and other blockchains. </p>
+
+
+
+<p>One of the latest launches is Eoracle, the feature-rich Ethereum-native oracle network built on EigenLayer, the first ETH-focused Layer 2 scaling solution. Oracle is a very important link between the data in the real world and smart contracts that make it possible for smart contracts to send commands according to inputs gathered from the external environment. Eoracle will seek to simplify the grievous task using the data to smart contracts on the Ethereum blockchain that they will provide right, reliable, and on time. This growth, apart from ensuring the reliability of decentralized applications, also supports the creation of special transactions that are complex, such as smart blockchain functions and financial tools.</p>
+
+
+
+<p>In addition, Brevis incorporates &#8220;coprocessors&#8221; that ensure the proper purpose of computations on Blockchain, with emphasis on those that do not require storage. Such a service is important for developers who need to make their apps both productive and low-cost that, as a result, makes the technology facilitating the blockchain and its implementation more accessible for as many users as possible.</p>
+
+
+
+<h2 class="wp-block-heading">Providing enhanced security via restraking protocol.</h2>
+
+
+
+<p>With a unique identity as the securing asset, EigenLayer’s ground-breaking restacking process empowers users to leverage locked ETH/ETH-backed stablecoins to boost third-party services. The protocol, which offers a robust security system for the Ethereum network, sends the staked assets to support the growth of new services through its capability.</p>
+
+
+
+<p>The introduction of such services becomes part of a comprehensive work of EigenLayer to solidify its standing as a leader of blockchain innovations. Through the provision of many features having the aim to remedy the current technological and operational problems associated with the Ethereum network, EigenLayer is the precursor of more complicated, safe and usable relating to the blockchain.</p>
+
+
+
+<h2 class="wp-block-heading">Conclusion</h2>
+
+
+
+<p>With EigenLayer launching these six frequently validated services, the embracement of peer-to-peer economy and collaborative way of working becomes a clear manifestation in the Ethereum network evolution; providing the necessary thrust to scale and interoperability, thanks to the security being offered by constant validation. As these firms start to build up some traction and want to show that they&#8217;re really valued, I think they are bound to earn more developments and investments, especially to come up with more great solutions in the blockchain realm.</p>
+
+
+
+<p>This feature manifests the fluency of the blockchain technology system and its advanced abilities to deploy continuous solutions with comprehensive approaches. In addition to enhancing its own platform, EigenLayer is also creating something which is very unique in the bigger blockchain ecosystem and in that way is emerging a new era where Ethereum is considerably transforming the world and our online activities.</p>
+]]></content:encoded>
+					
+		
+		
+		<media:content url="https://www.cryptopolitan.com/wp-content/uploads/2024/04/DALL·E-2024-04-13-03.31.51-An-intricate-digital-artwork-representing-the-integration-of-six-new-services-by-EigenLayer-into-the-Ethereum-blockchain.-This-scene-is-designed-to-vi.webp" medium="image"  type="image/webp" /><media:thumbnail url="https://www.cryptopolitan.com/wp-content/uploads/2024/04/DALL·E-2024-04-13-03.31.51-An-intricate-digital-artwork-representing-the-integration-of-six-new-services-by-EigenLayer-into-the-Ethereum-blockchain.-This-scene-is-designed-to-vi.webp"/>	</item>
+		<item>
+		<title>China&#8217;s yuan is performing way better than US&#8217;s dollar right now</title>
+		<link>https://www.cryptopolitan.com/yuan-is-performing-way-better-than-dollar/</link>
+		
+		<dc:creator><![CDATA[Jai Hamid]]></dc:creator>
+		<pubDate>Fri, 12 Apr 2024 22:18:17 +0000</pubDate>
+				<category><![CDATA[Economy]]></category>
+		<category><![CDATA[News]]></category>
+		<category><![CDATA[Chinese Yuan]]></category>
+		<category><![CDATA[us dollar]]></category>
+		<guid isPermaLink="false">https://www.cryptopolitan.com/?p=510430</guid>
+
+					<description><![CDATA[The financial tables have turned with the Chinese yuan now leading over the US dollar in trading figures out of Russia, a significant shift in the global currency scene. This change comes hot on the heels of de-dollarization efforts by BRICS countries, and it highlights a growing rift from traditional economic dependences. The yuan now [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>The financial tables have turned with the Chinese yuan now leading over the US dollar in trading figures out of Russia, a significant shift in the global currency scene. This change comes hot on the heels of de-dollarization efforts by BRICS countries, and it highlights a growing rift from traditional economic dependences.</p>
+
+
+
+<p>The yuan now claims more than 42% of total currency exchanges in <a href="https://www.cryptopolitan.com/us-russia-is-using-tether-to-evade-sanctions/" data-type="post" data-id="509068">Russia</a>, overtaking the US dollar, which has fallen to a 39.5% share. The actual trading volume of the yuan has skyrocketed to an impressive $385 billion this year alone.</p>
+
+
+
+<h2 class="wp-block-heading">The Rise of Yuan in Global Trade</h2>
+
+
+
+<p>With the backdrop of the BRICS nations pushing forward their agenda to diversify economic interactions away from the US dollar, the impact is visibly significant. This economic shift affects how the global market views the US dollar&#8217;s longstanding dominance as the preferred reserve currency.</p>
+
+
+
+<p>The Moscow Exchange has recorded these shifting trends, with yuan transactions soaring to 34.15 trillion rubles (about $391.5 billion) in 2023, a dramatic increase from the previous year. On the contrary, the dollar&#8217;s presence in Moscow&#8217;s exchange dipped significantly, dropping from a 63% dominance in previous years to just below 40% this year.</p>
+
+
+
+<p>As Moscow leans more towards Beijing, amid escalating Western sanctions, this change has seen an increase in Sino-Russian trade, which touched a new peak at $240 billion in 2023, marking a 26.3% increase from the previous year. This surge comes as Russia boosts its import of Chinese goods, ranging from vehicles to smartphones, filling the gap left by departing European and American brands.</p>
+
+
+
+<h2 class="wp-block-heading">Yuan Stability Amid Global Fluctuations</h2>
+
+
+
+<p>Even as the dollar experiences fluctuations influenced by U.S. economic policies and global market reactions, China has <a href="https://www.bloomberg.com/news/articles/2024-04-11/china-sticks-to-yuan-support-after-dollar-s-post-cpi-surge" rel="nofollow noopener" target="_blank">maintained</a> a relatively stable yuan, an approach aimed at avoiding volatility in its financial markets which can adversely affect local stocks and bonds. </p>
+
+
+
+<p>The People&#8217;s Bank of China has consistently set the yuan&#8217;s daily reference rate at levels that prevent drastic fluctuations, recently fixing it at 7.0968 per dollar. This is part of a broader strategy to manage the yuan&#8217;s value carefully within a permissible trading range of 2%.</p>
+
+
+
+<p>The contrast in the two giant economies&#8217; currencies is evident not only in trade figures but also in the broader strategic maneuvers in currency management. While the yuan&#8217;s value is carefully curated by Chinese policymakers to foster stability and predictability, the US dollar&#8217;s value swings with market sentiments and economic indicators such as inflation rates and Federal Reserve policies.</p>
+
+
+
+<p>In recent times, the yuan&#8217;s stability has become a cornerstone for regional economic confidence, providing a bulwark against potential capital outflows that can destabilize the broader financial markets. This has been particularly critical as the yuan faced pressures that could have tipped it towards undesirable volatility.</p>
+]]></content:encoded>
+					
+		
+		
+		<media:content url="https://www.cryptopolitan.com/wp-content/uploads/2024/04/DALL·E-2024-04-12-19.22.38-Design-a-visually-striking-image-that-contrasts-the-current-performance-of-Chinas-yuan-against-the-U.S.-dollar.-Visualize-a-scene-where-the-yuan-symb.webp" medium="image"  type="image/webp" /><media:thumbnail url="https://www.cryptopolitan.com/wp-content/uploads/2024/04/DALL·E-2024-04-12-19.22.38-Design-a-visually-striking-image-that-contrasts-the-current-performance-of-Chinas-yuan-against-the-U.S.-dollar.-Visualize-a-scene-where-the-yuan-symb.webp"/>	</item>
+		<item>
+		<title>Tron Price Prediction 2024-2033: Is it a Good Time to buy TRX?</title>
+		<link>https://www.cryptopolitan.com/tron-price-prediction/</link>
+		
+		<dc:creator><![CDATA[Aamir Sheikh]]></dc:creator>
+		<pubDate>Fri, 12 Apr 2024 22:07:00 +0000</pubDate>
+				<category><![CDATA[Crypto Price Predictions]]></category>
+		<category><![CDATA[crypto trading]]></category>
+		<category><![CDATA[cryptocurrency]]></category>
+		<guid isPermaLink="false">https://www.cryptopolitan.com/?p=45257</guid>
+
+					<description><![CDATA[Tron Price Prediction 2024-2033 TRX, or rather Tronix, is the native&#160;crypto asset of the TRON Network. TRON is a Blockchain-based decentralized network targeting an unchained, worldwide digital content entertainment structure using distributed ledger technology and enabling straightforward and cheap data sharing. How is Tron Price Prediction making out in this turbulent crypto weather as major [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<h3 class="wp-block-heading">Tron Price Prediction 2024-2033</h3>
+
+
+
+<ul>
+<li><a href="#TRON-Price-Prediction-2024" data-type="internal" data-id="#TRON-Price-Prediction-2024">Tron Price Prediction 2024 &#8211; up to <strong>$0.22</strong></a></li>
+
+
+
+<li><a href="#TRON-Price-Prediction-2027" data-type="internal" data-id="#TRON-Price-Prediction-2027">Tron Price Prediction 2027 &#8211; up to <strong>$0.58</strong></a></li>
+
+
+
+<li><a href="#TRON-Price-Prediction-2029" data-type="internal" data-id="#TRON-Price-Prediction-2029">Tron Price Prediction 2</a><a href="#TRON-Price-Prediction-2030" data-type="internal" data-id="#TRON-Price-Prediction-2030">0</a><a href="#TRON-Price-Prediction-2030" data-type="internal" data-id="#TRON-Price-Prediction-2029">30 &#8211; up to <strong>$1.74</strong></a></li>
+
+
+
+<li><a href="#TRON-(TRX)-Price-Prediction-2033" data-type="internal" data-id="#TRON-(TRX)-Price-Prediction-2033">Tron Price Prediction 2033 &#8211; up to <strong>$4.97</strong></a></li>
+</ul>
+
+
+
+<p>TRX, or rather Tronix, is the native<strong>&nbsp;crypto asset of the TRON Network</strong>. TRON is a Blockchain-based decentralized network targeting an unchained, worldwide digital content entertainment structure using distributed ledger technology and enabling straightforward and cheap data sharing. How is Tron Price Prediction making out in this turbulent crypto weather as major crypto exchanges unravel?</p>
+
+
+
+<p>One of the several cryptocurrencies that experienced an all-time high during the late 2017 and early 2018 cryptocurrency craze is TRX. It may be realistic to wonder whether and when it can return there, if at all, given that it hasn&#8217;t even come close to the heights it attained back then. As with other cryptos, it is always advised to do your own research and seek investment advice whenever investing.</p>
+
+
+
+<p>Like many&nbsp;<a href="https://www.cryptopolitan.com/web-stories/top-5-proof-of-stake-coins-in-2022/" data-type="web-story" data-id="224303">cryptocurrencies</a>&nbsp;and&nbsp;<a href="https://www.cryptopolitan.com/tron-price-analysis-2022-06-03-2/" data-type="post" data-id="167115">blockchain</a>&nbsp;assets, Tron enjoys a great deal of interest not only in its immediate utility in empowering the next form of the internet – but also in its potential to bring profit to those holding it. Rest assured that a lot of development is taking place to improve the <a href="https://www.reddit.com/r/TronScript/comments/ybzhbi/tron_v1204_20221023_add_additional_win10/" rel="nofollow noopener" target="_blank">Tron ecosystem</a>. If you encounter any issue with the system, here is a good place to <a href="https://www.reddit.com/r/TronScript/wiki/index/#wiki_cq_.28common_questions.29" rel="nofollow noopener" target="_blank">look</a>.</p>
+
+
+
+<h4 class="wp-block-heading">How much is TRX worth?</h4>
+
+
+
+<p>Today’s TRON price is $0.1147 with a 24-hour trading volume of $518,622,737 USD. TRON is down 4.37% in the last 24 hours. The current CoinMarketCap ranking is #10, with a live market cap of $10,055,573,897 USD. It has a circulating supply of 87,651,379,632 TRX coins and the max. supply is not available.</p>
+
+
+
+<h2 class="wp-block-heading">Tron price analysis: TRX value declines below $0.1150 boundary</h2>
+
+
+
+<p>TL; DR Breakdown</p>
+
+
+
+<ul>
+<li>Tron price analysis confirms a downtrend.</li>
+
+
+
+<li>Coin value has dropped down to $0.1150.</li>
+
+
+
+<li>Support to be discovered below $0.1159.</li>
+</ul>
+
+
+
+<p>The latest one-day and four-hour Tron price analysis for 12 April 2024 confirms a downtrend for the day. Although the bulls remained successful in making a return yesterday, today a relatively bearish swing was observed. Because of the downturn in the past 24-hours, TRX/USD value has been reduced to $0.1150 low.</p>
+
+
+
+<h3 class="wp-block-heading">TRX price analysis 1-day chart: Bearish turn results in slump below $0.1150</h3>
+
+
+
+<p>The latest one-day Tron price analysis confirms signs of a bearish rally during the day. The bears took over the market during the last 24-hours as a result of the intense selling activity. As a consequence of the bearish drift during the day, the coin value has dropped down to $0.1150 low. Furthermore, the Moving Average (MA) value has stepped down to $0.1276 as a result of the recurrent bearish trial.</p>
+
+
+
+<figure class="wp-block-image size-full"><img decoding="async" width="1015" height="579" src="https://www.cryptopolitan.com/wp-content/uploads/2024/04/1-day-20.png" alt="" class="wp-image-510433" srcset="https://www.cryptopolitan.com/wp-content/uploads/2024/04/1-day-20.png 1015w, https://www.cryptopolitan.com/wp-content/uploads/2024/04/1-day-20-300x171.png 300w, https://www.cryptopolitan.com/wp-content/uploads/2024/04/1-day-20-768x438.png 768w" sizes="(max-width: 1015px) 100vw, 1015px" /><figcaption class="wp-element-caption">TRX/USD 1-day price chart. Source: <a href="https://www.tradingview.com/symbols/TRXUSD/" data-type="link" data-id="https://www.tradingview.com/symbols/TRXUSD/" target="_blank" rel="noopener">TradingView</a></figcaption></figure>
+
+
+
+<p>The volatility seems to be on the rise which is yet again another bearish hint for the future. Because of the rising volatility, the upper end of the Bollinger bands indicator has switched to $0.1240. Whereas, the lower end of the Bollinger bands indicator has moved to $0.1159 low. The Relative Strength Index (RSI) indicator confirms the bearish activity as its overall value has dropped down to 38.39.</p>
+
+
+
+<h3 class="wp-block-heading">TRX/USD 4-hour price chart: TRX finds recovery till $0.1151 after uptrend resumes</h3>
+
+
+
+<p>The latest four-hour Tron price analysis confirms signs of bullish recovery for now. The bulls have powered through in the past few hours which is an encouraging sign for the buyers. Because of the rapid upturn, the coin value has achieved a considerable recovery above $0.1151 hill. Side by side, the Moving Average value has deteriorated to $0.1202 after the previous descent.</p>
+
+
+
+<figure class="wp-block-image size-full is-resized"><img decoding="async" width="1015" height="579" src="https://www.cryptopolitan.com/wp-content/uploads/2024/04/4-hour-19.png" alt="" class="wp-image-510434" style="width:840px;height:auto" srcset="https://www.cryptopolitan.com/wp-content/uploads/2024/04/4-hour-19.png 1015w, https://www.cryptopolitan.com/wp-content/uploads/2024/04/4-hour-19-300x171.png 300w, https://www.cryptopolitan.com/wp-content/uploads/2024/04/4-hour-19-768x438.png 768w" sizes="(max-width: 1015px) 100vw, 1015px" /><figcaption class="wp-element-caption">TRX/USD 4-hour price chart. Source: <a href="https://www.tradingview.com/symbols/TRXUSD/" data-type="link" data-id="https://www.tradingview.com/symbols/TRXUSD/" target="_blank" rel="noopener">TradingView</a></figcaption></figure>
+
+
+
+<p>The volatility is expanding rapidly which is a negative signal for the next few hours. Because of the rising volatility, the upper and lower values of the Bollinger bands indicator have changed. Currently, the upper Bollinger band is present at $0.1244 whereby the lower Bollinger band is occupying $0.1156. The RSI indicator confirms the rapid upturn as its overall value has climbed above 33.32.</p>
+
+
+
+<h3 class="wp-block-heading">What to expect from TRX price analysis?</h3>
+
+
+
+<p>The latest one-day and four-hour Tron price analysis indicates a bearish wave for the day. The bulls have bounced back once again as in the past 24-hours the coin value has depreciated below $0.1150. On the opposite side, an upturn was recorded in the last four hours which is a winning sign for the cryptocurrency buyers.</p>
+
+
+
+<h2 class="wp-block-heading">is Tron a good investment?</h2>
+
+
+
+<p>Tron (TRX) presents an intriguing investment prospect with notable advantages despite facing criticisms and challenges. Its enduring presence in the cryptocurrency market, consistently maintaining a top 50 position, underscores its resilience. Tron&#8217;s bold ambition to decentralize the web, exemplified by strategic acquisitions like BitTorrent, has drawn attention. The integration of the USDD stablecoin has bolstered Tron&#8217;s liquidity, appealing to investors seeking stability amidst market volatility. The recent introduction of an algorithmic stablecoin has catalyzed TRX&#8217;s price surge, showcasing its innovative potential.</p>
+
+
+
+<p>However, detractors highlight concerns over founder Justin Sun&#8217;s controversial reputation, potential risks associated with the USDD stablecoin, and issues within Tron&#8217;s ecosystem, particularly concerning low-quality decentralized applications. Consequently, while some investors view Tron as a promising asset for portfolio diversification, others advise caution due to uncertainties surrounding its leadership and ecosystem. Ultimately, investing in Tron demands careful evaluation, thorough research, and an understanding of one&#8217;s risk tolerance to navigate its opportunities and challenges effectively. Our Tron price forecast section provides analysis on the profitability of the coin in the coming years.</p>
+
+
+
+<h2 class="wp-block-heading">Recent News on TRON</h2>
+
+
+
+<p><strong>Crypto Market Outlook: TRON, and Optimism Gain Momentum. </strong>The cryptocurrency market is witnessing notable upticks in TRON (TRX) and Optimism (OP) driven by various factors. TRON&#8217;s resilience amidst market volatility, and Optimism&#8217;s rebound fueled by ecosystem growth and partnerships. TRX is expected to surpass $0.130, while OP expected to exceed $3.50 to generate substantial returns, these coins represent promising opportunities amid ongoing market fluctuations.</p>
+
+
+
+<p><strong>Tron Founder Justin Sun Counters UN Report on USDT Misuse. </strong>Tron founder Justin Sun has disputed a United Nations (UN) report that raised concerns about the misuse of Tether&#8217;s USDT in illicit activities, particularly in Southeast Asia. The report highlighted potential issues with online gambling and money laundering. Sun refuted specific details related to USDT transactions on the TRC-20 protocol within the Tron network, emphasizing the network&#8217;s commitment to transparency and legal compliance. Tether, the company behind USDT, responded by emphasizing its role in developing economies, commitment to transparency, and proactive efforts against misuse. The UN report acknowledged successful law enforcement operations against money laundering networks using Tether. Justin Sun advocated for increased blockchain education and proposed collaborations between Tron, HTX DAO, and the United Nations to expand global understanding of blockchain technology and foster legitimate financial transactions.</p>
+
+
+
+<p><strong>Solana Overtakes Tron in Stablecoin Volume.</strong> Tron, once a leader in stablecoin volumes, has lost its top spot to Solana, raising concerns about its market position and user confidence. Solana recorded a stablecoin transfer volume of $24.58 billion in December, surpassing Tron and Ethereum. Tron faces additional challenges with legal issues, as the SEC charges founder Justin Sun and affiliated entities. The legal uncertainties could impact Tron&#8217;s credibility and market sentiment. Despite these challenges, Tron is exploring partnerships, such as the one with ChainGPT for an AI-powered chatbot, and has implemented Stake 2.0 to enhance its staking model. TRX&#8217;s current price stands at $0.109931, showing resilience despite the stablecoin volume setback.</p>
+
+
+
+<h2 class="wp-block-heading">Tron Price Predictions 2024-2033</h2>
+
+
+
+<h3 class="wp-block-heading">Price Predictions By Cryptopolitan&nbsp;</h3>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://lh7-us.googleusercontent.com/F9Ke41CGj2BDkmGzxAmsHPfJIO7WGF5awrZF64nMMpdT3XIDPcWSdjlYp_SEceF4rr-gafPS6oDsqfTpIlp0UVhJARPWHtcSkSRKhwFOSCjG5dBqjp4LJcfVwSYtS4Ixw7b45DDeOufH_vEbQSm92KU" alt="" /></figure>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><td>Year</td><td>Minimum ($)</td><td>Average ($)</td><td>Maximum ($)</td></tr><tr><td>2024</td><td>0.11</td><td>0.15</td><td>0.22</td></tr><tr><td>2025</td><td>0.22</td><td>0.23</td><td>0.27</td></tr><tr><td>2026</td><td>0.32</td><td>0.34</td><td>0.38</td></tr><tr><td>2027</td><td>0.48</td><td>0.50</td><td>0.58</td></tr><tr><td>2028</td><td>0.71</td><td>0.73</td><td>0.83</td></tr><tr><td>2029</td><td>1.01</td><td>1.04</td><td>1.24</td></tr><tr><td>2030</td><td>1.43</td><td>1.47</td><td>1.74</td></tr><tr><td>2031</td><td>2.00</td><td>2.07</td><td>2.47</td></tr><tr><td>2032</td><td>2.93</td><td>3.01</td><td>3.50</td></tr><tr><td>2033</td><td>4.05</td><td>4.17</td><td>4.97</td></tr></tbody></table><figcaption class="wp-element-caption">TRON Price Predictions 2024-2033</figcaption></figure>
+
+
+
+<h4 class="wp-block-heading">TRON Price Prediction 2024</h4>
+
+
+
+<p>Our deep technical analysis of past TRX price data suggests that in 2024, TRON&#8217;s price is expected to hit a minimum of $0.1578. The TRX price may peak at $0.1935, with an average trading price of $0.1624.</p>
+
+
+
+<h4 class="wp-block-heading">TRON Price Prediction 2025</h4>
+
+
+
+<p>Based on forecasted prices and technical analysis, TRON&#8217;s price in 2025 is anticipated to reach a minimum of $0.2233. The TRX price might rise to a maximum of $0.2727, averaging around $0.2314.</p>
+
+
+
+<h4 class="wp-block-heading">TRX Price Forecast for 2026</h4>
+
+
+
+<p>The forecast for 2026 indicates that TRON&#8217;s price could drop to as low as $0.3247. However, the TRX price might climb to a peak of $0.3797, with an expected average of $0.3362.</p>
+
+
+
+<h4 class="wp-block-heading">TRON (TRX) Price Prediction 2027</h4>
+
+
+
+<p>In 2027, TRON&#8217;s price is projected to reach a minimum of $0.4813. The price may surge to a maximum of $0.5844, maintaining an average of about $0.4981 throughout the year.</p>
+
+
+
+<h4 class="wp-block-heading">TRON Price Prediction 2028</h4>
+
+
+
+<p>The 2028 forecast suggests that TRON&#8217;s price could reach a minimum of $0.7059. The TRX price might escalate to a high of $0.8332, with an average trading value of $0.7308.</p>
+
+
+
+<h4 class="wp-block-heading">TRON Price Prediction 2029</h4>
+
+
+
+<p>Our in-depth technical analysis indicates that in 2029, TRON&#8217;s price is expected to hover around a minimum of $1.01. The maximum price value could be $1.24, with an average value of $1.04.</p>
+
+
+
+<h4 class="wp-block-heading">TRON (TRX) Price Prediction 2030</h4>
+
+
+
+<p>TRON&#8217;s price in 2030 is predicted to reach at least $1.43. The price may peak at $1.74, with an average value of $1.47 throughout the year.</p>
+
+
+
+<h4 class="wp-block-heading">TRON Price Forecast 2031</h4>
+
+
+
+<p>The 2031 forecast for TRON suggests a minimum price of $2.00. The TRX price might achieve a maximum of $2.47, averaging around $2.07.</p>
+
+
+
+<h4 class="wp-block-heading">TRON (TRX) Price Prediction 2032</h4>
+
+
+
+<p>For 2032, TRON&#8217;s price is predicted to reach a minimum of $2.93. The price might climb to a high of $3.50, with an average price of $3.01.</p>
+
+
+
+<h4 class="wp-block-heading">TRON Price Prediction 2033</h4>
+
+
+
+<p>In 2033, the price of 1 TRON is expected to reach at least $4.05. The TRX price may escalate to a maximum of $4.97, averaging around $4.17 throughout the year.</p>
+
+
+
+<h3 class="wp-block-heading">TRON Price Prediction By Coincodex&nbsp;</h3>
+
+
+
+<p>According to the current TRON price prediction provided by Coincodex, the value of TRON is anticipated to decline by -8.69%, reaching $0.127464 by March 10, 2024. Coincodex&#8217;s technical indicators suggest a Bullish current sentiment, with the Fear &amp; Greed Index indicating 90 (Extreme Greed). TRON has experienced 18/30 (60%) green days, with a price volatility of 5.97% over the past 30 days.</p>
+
+
+
+<p>The forecast from Coincodex suggests that it is now an opportune time to purchase TRON. Considering the historical price trends of TRON and the BTC halving cycles, the lowest predicted price for TRON in 2025 stands at $0.121087. Meanwhile, TRON&#8217;s price is expected to climb to a high of $0.431121 in the following year.</p>
+
+
+
+<h3 class="wp-block-heading">TRON Coin Price Prediction By DigitalCoinPrice</h3>
+
+
+
+<p>Digital Coin Price suggests that there is potential for TRON to surpass the $0.36 mark and sustain its market position by the end of 2025. The lowest price for TRON is projected to be between $0.30 and $0.36, with the most probable price expected to stabilize at around $0.34 by the conclusion of 2025.</p>
+
+
+
+<p>Despite the significant fluctuations in TRON&#8217;s value and the debates over its environmentally unfriendly energy consumption, billionaire venture capitalist Tim Draper remains firm in his forecast, anticipating that TRON will achieve $0.36 by the end of 2025 or early in the year.</p>
+
+
+
+<p>In 2033, TRON is expected to aim for a minimum value of $2.62. It is projected to strive for a maximum and subsequent top-tier price of $2.72, with an average forecast price pegged at $2.71. TRON may surpass its previous highs and advance to new levels. Should conditions evolve favorably, it is anticipated that TRON will ascend to its next stage. However, there is also the possibility of a decline in its value.</p>
+
+
+
+<h3 class="wp-block-heading">TRON Price Prediction By CryptoPredictions.com</h3>
+
+
+
+<p>According to Cryptopredictions.com, TRON&#8217;s price is expected to begin at $0.15 in April 2024 and conclude the month at $0.17. Throughout April, the highest projected TRX price is $0.217, with the lowest price forecasted to be $0.147.</p>
+
+
+
+<h2 class="wp-block-heading">TRON Overview</h2>
+
+
+
+<figure class="wp-block-image size-full"><img decoding="async" width="908" height="253" src="https://www.cryptopolitan.com/wp-content/uploads/2023/05/Screenshot_2945.png" alt="Screenshot 2945" class="wp-image-306774" srcset="https://www.cryptopolitan.com/wp-content/uploads/2023/05/Screenshot_2945.png 908w, https://www.cryptopolitan.com/wp-content/uploads/2023/05/Screenshot_2945-300x84.png 300w, https://www.cryptopolitan.com/wp-content/uploads/2023/05/Screenshot_2945-768x214.png 768w" sizes="(max-width: 908px) 100vw, 908px" /><figcaption class="wp-element-caption">Tron Market Statistics</figcaption></figure>
+
+
+
+<p></p>
+
+
+
+<h2 class="wp-block-heading">TRON Price History</h2>
+
+
+
+<p>As seen on the Tron chart, the price of Tron cryptocurrency has seen a good amount of volatility over the past years.</p>
+
+
+
+<p>After spending the second half of 2019 retracing from $0.04, TRX eventually found support around the exchange rate of $0.11.</p>
+
+
+
+<p>This resulted in a push higher at the beginning of 2020 as the price set a new higher high, indicating that a new bull cycle has potentially begun.</p>
+
+
+
+<p>However, after peaking at $0.026 in the middle of February 2020, the <a href="https://www.cryptopolitan.com/tron-trx-price-28-august-2019/">Tron price</a> got heavily rejected to the downside, destroying any bullish price prediction at the time. What followed for the price of crypto was another dump lower.</p>
+
+
+
+<p>The Tron price pushed through previous support and set a new several-year low at $0.07.</p>
+
+
+
+<p>The price started to slowly recover from there on, creating a bullish Tron (TRX) price action structure by the end of the year.</p>
+
+
+
+<p>In September, the Tron price moved and saw a very sharp spike to the upside, resulting in a brief breakout from the significant resistance of $0.04 as it hit a new several-year high of $0.05.</p>
+
+
+
+<p>During the following weeks, the crypto retraced toward the previous resistance of $0.22-$0.025 and retested it as support.</p>
+
+
+
+<p>As expected by analysis of several well-known traders at the time, Tron&#8217;s price reversed from thereon. After spending the end of 2020 in a consolidation, Tron pushed higher at the beginning of February in a solid bull run, resulting in a $0.065 level being reached, beating several predictions.</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://lh6.googleusercontent.com/6_IaP_KjuZ6FOWNI21AFB_zEz_Pp0ElLOYsoMu1zIqWDA_m8II1Wo64-z90iZK1v4KWCDWiOUlAnyJb1eq5ub6uU6yvynsdvmTj_K_KGCKXMevQOm60raYPuUcdZj2QXCrc9vhr9" alt="" /><figcaption class="wp-element-caption">Source: Tradingview</figcaption></figure>
+
+
+
+<p>It is in a bearish momentum and has an RSI index of 39. In the 4-hour chart, we can make a short-term Tron price prediction using the above technical analysis. With the reversal in the trend, the coin price has changed its bearish outlook as it is trading above the 50-day and 100-day MA, breaking out of the upper end of the Bollinger Band.</p>
+
+
+
+<h3 class="wp-block-heading">Developments affecting the TRX Price</h3>
+
+
+
+<p>The price took a sudden hit of 7% when,&nbsp;on&nbsp;December 17,&nbsp; Justin Sun&nbsp;announced&nbsp;that he had been appointed as&nbsp;Ambassador, Permanent Representative of Grenada to the World Trade Organization, and would be stepping back from TRON. As a result, the TRON Foundation has&nbsp;said&nbsp;it&nbsp;has <strong>&#8220;settled to dissolve itself on July 25, 2022&#8221;</strong>.</p>
+
+
+
+<p>Despite this, the<a href="https://www.cryptopolitan.com/tron-price-analysis-2022-01-11/" data-type="post" data-id="143851"> Tron (TRX) price</a> still keeps going up. Could it be that the strategic investment of an undisclosed amount in the DeFine social NFT platform is finally bearing fruits? The funding will be used to develop the first NFT marketplace in the TRON ecosystem and launch auctions soon.&nbsp;Or could it be that the network&#8217;s BTFS file storage system (was integrated with DeFine in September? Or TRON&#8217;s expansion into the NFT ecosystem with APENFT is operating successfully? Or was some other strategy hatched by Justin Sun?</p>
+
+
+
+<p>Now, let’s look at the long-term Tron price prediction for the upcoming years and remember that these Tron price predictions are not investment advice.</p>
+
+
+
+<h2 class="wp-block-heading">More on the Tron Network</h2>
+
+
+
+<h3 class="wp-block-heading">What Is Tron (TRX)?</h3>
+
+
+
+<p>Tron (TRX) was created by tech entrepreneur Justin Sun in 2017. The TRON project funds were raised through an&nbsp;Initial Coin Offering (ICO), with a subscription of funds reaching 70 million. This was one of the largest ICOs and increased cryptocurrency popularity even further.</p>
+
+
+
+<p>Today, Tron has grown into one of the largest cryptocurrencies with over $5.4 billion in capitalization, while the 24-hour trading volume exceeds $250 million.</p>
+
+
+
+<p>At first, TRX ran on Ethereum&#8217;s ERC-20 blockchain as it offered a quick and easy solution for running the peer-to-peer network. Later on, the developers of Tron switched the blockchain to their custom-made solution.</p>
+
+
+
+<p>The blockchain used proof of stake mining and validation consensus algorithm and was one of the first cryptocurrency projects to implement this solution.</p>
+
+
+
+<p>One of the primary use cases and benefits of the TRX platform is the support for content creators and artists by providing ownership over the content they create.</p>
+
+
+
+<p>This is done by storing and tracking the information about created content and its use on the blockchain.</p>
+
+
+
+<p>Therefore, content creators can directly track how their creations are used and their reward for producing them. The middleman is eliminated, and content creators get paid instantly.</p>
+
+
+
+<h3 class="wp-block-heading">TRON Ecosystem Applications</h3>
+
+
+
+<p>Some of the core applications that the TRON ecosystem aims to provide include:</p>
+
+
+
+<ul>
+<li><strong>Wallet-Cli:</strong> Wallet-Cli is the official&nbsp;<a href="https://help.coinbase.com/en/coinbase/getting-started/crypto-education/glossary/wallet" target="_blank" rel="noreferrer noopener nofollow"><u>wallet</u></a>&nbsp;client provided by the TRON foundation. Further, Wallet-Cli is a command-line version of the wallet that provides essential tools to communicate with the TRON public chain by RPC protocol.&nbsp;<a href="https://www.techopedia.com/definition/24022/remote-procedure-call-rpc" target="_blank" rel="noreferrer noopener nofollow"><u>RPC</u></a>&nbsp;protocol stands for remote procedure call, an inter-process communication technique used for point-to-point communication between software applications. Wallet-Cli supports all functions of the TRON public chain in real-time.</li>
+
+
+
+<li><strong>TronLink: </strong>TronLink is a TRON wallet that provides users with a convenient experience, complete functions, and secure funding options.</li>
+
+
+
+<li><strong>Blockchain Explorer: </strong>The first blockchain explorer based on TRON is tronscan.org, which offers essential functions like searching transactions, accounts,&nbsp;blocks,&nbsp;nodes, smart contracts, token creation, and more.</li>
+
+
+
+<li><strong>DApp: </strong>TRON public chain aims to attract a vast community of developers to join in the development, deployment, and running of DApps on the blockchain because of their high performance, low cost, and safety.&nbsp;</li>
+</ul>
+
+
+
+<h3 class="wp-block-heading">Tron Foundation</h3>
+
+
+
+<p>The Tron foundation is the governing body of the Tron blockchain. They aim to popularise and further develop the blockchain. Based in Singapore, they ensure that the TRX blockchain is regulated and complies with laws. Tron, Justin Sun, is still the Tron foundation leader and is listed in the Forbes list of 30 under 30 in Asia.</p>
+
+
+
+<p>In 2018, a popular peer-to-peer torrent-sharing network – BitTorrent, announced that the TRON Foundation had acquired them to use TRX tokens to incentivize and reward network users. This created massive interest for the token, and it soon exceeded a $1 billion cap.</p>
+
+
+
+<p>Several other projects and development phases have since been launched, with the most notable ones being the Odyssey, which created a system for incentivizing content creators. Further development phases – Great Voyage and Apollo-enable content creators to build their brands and issue personalized initial coin offerings to raise funds for their projects.</p>
+
+
+
+<p>Plans to develop the ecosystem align with Star-Trek and Eternity phases. Star-Trek is set to launch in mid-2023, and Eternity in late 2025.</p>
+
+
+
+<p>Therefore, we will probably see interest in Tron and blockchain itself grow even further in the upcoming years and increase the price.</p>
+
+
+
+<p>Let&#8217;s look at Tron&#8217;s previous price history to understand what the future price could look like. It is a good investment if you rapidly lose money in all others.</p>
+
+
+
+<p>Tron has been compared with Ethereum due to its lower fees and fast payment. When ETH was at its all-time high, a considerable amount of fees was applicable for transfer, and for this reason, people started shifting to TRON.</p>
+
+
+
+<h3 class="wp-block-heading">What other factors affect the TRX price?</h3>
+
+
+
+<p>Tron celebrated the most significant milestones in its existence, surpassing a million active user accounts. But since then, a lot has changed because the total number of active user accounts surpassed 4 million, and it is flourishing.</p>
+
+
+
+<p>Moving forward, in the first week of June 2021, there have been more than 10 million transactions recorded on the Tron blockchain. On June 14, it recorded a total of 1,049,206 transactions. That is almost triple the number of transactions recorded daily on the Bitcoin blockchain.</p>
+
+
+
+<p>Factors affecting Tron&#8217;s price are the same as any other cryptocurrency – mainly, the supply and demand on cryptocurrency exchanges. More significant deals are often done off the exchanges, creating a negligible impact on the Tron price.</p>
+
+
+
+<h4 class="wp-block-heading">Supply and Demand</h4>
+
+
+
+<p>The coin supply naturally comes from the number of tokens released into the market every day. In the case of Tron, you can earn a mining reward by staking the coin.</p>
+
+
+
+<p>As of now, staking TRX offers around a 7 percent annual yield. However, this yield will vary over time and based on market conditions.</p>
+
+
+
+<p>On the other hand, the demand for Tron comes from investors who want to buy it with the expectation that its long-term value will grow. Another motivation for purchasing Tron is the ability to stake your coins, giving you an annual yield.</p>
+
+
+
+<p>Staking TRX tokens also gives the power to vote on various issues that the network developers want to solve or features that they want to add. Therefore, by purchasing and staking TRX, you help ensure the TRX blockchain&#8217;s consensus mechanism.</p>
+
+
+
+<h4 class="wp-block-heading">Regulatory Compliance</h4>
+
+
+
+<p>Recently rumors of the United States and China investigating the TRON Foundation and the blockchain itself. In his Twitter account, the founder of Tron Network, Justin Sun, ensured no reasons to doubt the accusations of malpractice as the network is run as a decentralized network. Therefore, claims of centralized manipulation are of no sense since the TRON Foundation is only one of several thousands of participants.</p>
+
+
+
+<p>Overall, TRX is compliant with various global regulations as any other major blockchain. This ensures the demand for TRX continues growing. Therefore, over time, the crypto market price should continue to rise over the next five years.</p>
+
+
+
+<h4 class="wp-block-heading">The Rise of DApps</h4>
+
+
+
+<p>Over the last months, the TRX network experienced an increased interest in decentralized applications (DApps). As of now, more than 100 DApps are running on the blockchain, offering various categories of functionality ranging from exchanges to gaming and gambling.</p>
+
+
+
+<p>Websites such as DappRadar offer a quick overview of the most popular ones and how many users have each decentralized application attracted over time. User count ranges from several hundred to several thousand, and this number is expected to grow further over the next 5-year period.</p>
+
+
+
+<p>This raised interest in the TRX blockchain functionality, which created an additional appeal to invest in Tron. Therefore, creating extra trading volume and market growth for the cryptocurrency market.</p>
+
+
+
+<h3 class="wp-block-heading">Where to buy Tron?</h3>
+
+
+
+<p>Tron is available for trading on practically every major exchange, just like Bitcoin or Ethereum. It is one of the best-known cryptocurrencies, with a high average trading volume of more than $2 billion per day. As seen during previous bull markets of cryptocurrencies, this number is likely to grow over the next five years. Therefore purchasing crypto shouldn&#8217;t be an issue for anyone interested in trading or investing.</p>
+
+
+
+<h3 class="wp-block-heading">How to store Tron?</h3>
+
+
+
+<p>Tron offers several options for storing crypto. The basic one is the so-called TRON paper wallet, which involves a primary method of printing out your private keys and keeping them on a piece of paper in a place to which only you have access. This basic solution comes from earlier cryptocurrencies such as Ethereum.</p>
+
+
+
+<p>Other options include Tron Android wallet, Tron IOS wallet, Chrome wallet, Exodus desktop wallet, and the commonly used hardware wallets of<a href="https://www.ledger.com/" target="_blank" rel="noreferrer noopener nofollow">&nbsp;Ledger</a>&nbsp;Nano and<a href="https://trezor.io/" target="_blank" rel="noreferrer noopener nofollow">&nbsp;Trezor</a>. This means that the Tron coin can be stored in as many different wallet options as other well-established cryptos, such as Ethereum.</p>
+
+
+
+<p>TRON DAO introduced a development fund to support blockchain projects focused on AI. With AI technology gaining increased attention and experiencing growth, especially within the cryptocurrency sector, TRON DAO seeks to expedite this trend through its latest $100 million fund.</p>
+
+
+
+<p>It is anticipated that TRON will soon position itself at the top list of dominating the payment sector, significantly pushing TRX&#8217;s price to the North.</p>
+
+
+
+<p>Not long ago, TRON&#8217;s stablecoin USDD depegged from $1 and traded at $0.97, which built up a strong negative sentiment in the TRON community with an extended bearish consolidation ahead in the TRX price graph. However, the development team seems promising as it looks for several ways to revive the ecosystem with great enhancements to the network. It is advised to do your own research and conduct good investment advice before investing in the highly volatile market.&nbsp;</p>
+
+
+
+<p>TRON has evolved the blockchain space to a new era as it focuses on developing the foundation of a decentralized global ecosystem, which is a crucial sector of the crypto space. TRON coin is a <strong>highly-rated</strong> cryptocurrency with massive potential for widespread adoption in the future. Much of these expectations are due to the strategic partnerships continuously secured by the TRON ecosystem in a bid to promote awareness of the platform.</p>
+
+
+
+<p>An example of such partnerships is the recent collaboration with the Republic of Dominica, in which the TRON platform will be used to create fan tokens known as Dominica Coins (DMC), which serve to promote the country&#8217;s national and cultural heritage.</p>
+
+
+
+<p>The Tron ecosystem is rapidly growing with new users and dApps. This results from the robustness, scalability, and low cost of the blockchain. As we transition into WEB 3, we anticipate new industry players to <strong>plug into the Tron blockchain</strong>, like Samsung.</p>
+
+
+
+<p>Furthermore, the TRON network continues to attract numerous developers and users with its high throughput and low transaction fees. On the first of September, Tron&#8217;s founder, Justin Sun, <a href="https://twitter.com/justinsuntron/status/1565247306475024384?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1565247306475024384%7Ctwgr%5E54addde0e9823b5dd23a710d1ce8cf4ba8841018%7Ctwcon%5Es1_&amp;ref_url=https%3A%2F%2Fthecryptobasic.com%2F2022%2F09%2F01%2Ftron-surpasses-5-trillion-in-total-transfer-value%2F" rel="nofollow noopener" target="_blank">announced</a> the network had hit a new milestone, recording a total transfer value of over $5 trillion since its launch in 2018.</p>
+
+
+
+<p>Tron has weathered its investors from this year&#8217;s crypto winter, and due to its<strong> high utility</strong>, it will be highly profitable in the following market bull run. The shaky performance of Tron USDD stablecoin will adversely affect Tron’s performance in the case of a crash.</p>
+
+
+
+<p>Many Tron opponents and Ethereum proponents have long believed that Tron is not legitimate crypto. They have speculated on the legitimacy of Tron as a company in general after Tron openly admitted that it is going after Ethereum. ETH is the second-largest crypto by market capitalization.</p>
+
+
+
+<p>However, crypto enthusiasts think that the two projects cannot be compared. They are different since the ETH developers wrote their code from scratch, while Tron might have copied and improved the code. Nonetheless, Sun said that the Tron blockchain code was written from scratch and <strong>originally in Chinese</strong>, the main thing going for TRX.</p>
+
+
+
+<p>TRON may soon make a bullish reversal as the developing team is actively looking for valuable opportunities to bring to the TRX platform. If the demand for TRX stays stable or increases, and supply remains constant, TRON crypto may see a<strong> price increase</strong> in the future. With the Tron Foundation out of the way, TRX will be one of the most decentralized cryptos and can shoot up to a high of<strong> $3.05</strong> with an average forecast price of $2.56 by 2032. You have to trade and hold TRX for a long time before<strong> getting rich</strong> due to its volatility.</p>
+
+
+
+<p>Most TRON price predictions consider TRX a favorable asset for long-term investment, capable of delivering steady profits over the years. The future prices of TRON will majorly depend on the crypto <strong>market&#8217;s favorability</strong> to make it a good investment option. That said, these price predictions are not guaranteed, as various factors can influence cryptocurrency market prices. Thus, investors are advised to consult with financial market experts before <a href="https://www.cryptopolitan.com/is-cryptocurrency-a-good-investment/" target="_blank" rel="noreferrer noopener">making investment decisions</a>.</p>
+
+
+
+<p>By reading your favorite coins&#8217; <a href="https://www.cryptopolitan.com/tron-price-analysis-2022-01-11/" data-type="post" data-id="143851">price analysis</a> and <a href="https://www.cryptopolitan.com/bitcoin-ethereum-solana-tron-daily-price-analysis-15-december-roundup/" data-type="post" data-id="138120">daily roundups</a>, you may keep yourself updated and better able to make a decision.</p>
+]]></content:encoded>
+					
+		
+		
+		<media:content url="https://www.cryptopolitan.com/wp-content/uploads/2020/05/tron-price-prediction.jpg" medium="image"  type="image/jpeg" /><media:thumbnail url="https://www.cryptopolitan.com/wp-content/uploads/2020/05/tron-price-prediction.jpg"/>	</item>
+		<item>
+		<title>Is the UK stock market ready for a comeback? &#8211; Is it ever going to be?</title>
+		<link>https://www.cryptopolitan.com/is-the-uk-stock-market-ready-for-a-comeback/</link>
+		
+		<dc:creator><![CDATA[Jai Hamid]]></dc:creator>
+		<pubDate>Fri, 12 Apr 2024 22:03:59 +0000</pubDate>
+				<category><![CDATA[Economy]]></category>
+		<category><![CDATA[News]]></category>
+		<category><![CDATA[stock markets]]></category>
+		<category><![CDATA[united kingdom]]></category>
+		<guid isPermaLink="false">https://www.cryptopolitan.com/?p=510425</guid>
+
+					<description><![CDATA[The UK stock market, it seems, is a creature of contradiction. The more attention it garners, the more it appears to falter. Yet, despite the turmoil, significant voices in the finance sector argue that now might just be the perfect time to invest in UK stocks. This suggestion is timely, especially considering the performance metrics [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>The UK stock market, it seems, is a creature of contradiction. The more attention it garners, the more it appears to falter. Yet, despite the turmoil, significant voices in the finance sector argue that now might just be the perfect time to invest in UK stocks. This suggestion is timely, especially considering the performance metrics and economic dynamics currently at play.</p>
+
+
+
+<p>Barclays and Goldman Sachs, two giants of finance, have been vocal about the potential lurking in the undervalued corridors of the UK stock market. As economic indicators flicker between positive and ominous, these institutions see a silver lining ready for savvy investors to explore.</p>
+
+
+
+<h2 class="wp-block-heading">The Argument for Investment</h2>
+
+
+
+<p>Barclays points out that while the UK may not be a hotspot for tech giants, which has been a drawback, the broader market is gaining momentum. The UK market, rich in commodities and defensive stocks, might just prove resilient in the face of global economic fluctuations. </p>
+
+
+
+<p>Moreover, with the Bank of England taking a bold approach to interest rates, compared to a more cautious Federal Reserve, there&#8217;s potential for the pound to stabilize, adding more attractiveness to UK stocks.</p>
+
+
+
+<p>On the valuation front, the UK&#8217;s equities are trading at appealing multiples. The FTSE 100, a composite of the UK&#8217;s top 100 companies, is showing signs of underpricing compared to its historical performance. Goldman Sachs has gone so far as to declare this one of the best entry points for the UK market in recent history, especially relative to global counterparts.</p>
+
+
+
+<h2 class="wp-block-heading">Brexit and Beyond</h2>
+
+
+
+<p>Then there&#8217;s the Brexit angle. </p>
+
+
+
+<p>The departure from the EU has certainly left its mark on the UK&#8217;s economy, but recent political developments suggest a potential thawing in relations with the EU. With new government frameworks aiming to foster closer ties with the continent, the prolonged Brexit anxiety might start to diminish, providing a boost to investor confidence.</p>
+
+
+
+<p>The UK&#8217;s stock market also benefits from regulatory reforms and fiscal incentives aimed at making it more attractive for both domestic and international investors. Noteworthy is the introduction of savings reforms which might bolster the market by enhancing the domestic bid for UK equities.</p>
+
+
+
+<p>Yet, for all the optimistic projections, the UK market <a href="https://www.bloomberg.com/news/articles/2024-02-28/why-is-london-stock-exchange-in-trouble-low-trading-volume-and-an-ipo-drought#:~:text=Aside%20from%20those%20relatively%20low,Plc%20and%20Ithaca%20Energy%20Plc." rel="nofollow noopener" target="_blank">remains</a> haunted by its less appealing performance in sectors like IPOs. The London Stock Exchange saw a dismal year with only a minimal amount raised through public offerings. </p>
+
+
+
+<p>Major companies and exciting startups seem to prefer listing elsewhere, drawn by more favorable market conditions or regulatory environments. This exodus poses a serious question about the long-term attractiveness and competitiveness of the UK as a financial hub.</p>
+
+
+
+<p>Compounding this is the dwindling interest from the pension sector, historically a significant player in UK equities. As pension funds diversify their portfolios away from the <a href="https://www.cryptopolitan.com/us-and-uk-financial-markets-are-not-the-same/" data-type="post" data-id="510421">UK</a>, the domestic slice of the market shrinks, adding to the liquidity concerns and the broader negative perception regarding the UK&#8217;s financial markets.</p>
+
+
+
+<p>Despite these challenges, the UK stock market is not without its defenders who point to sectors and conditions ripe for investment. The current valuation levels, the potential for regulatory and fiscal enhancements, and a more stable geopolitical scene post-Brexit adjustments present a mixed bag of risks and opportunities.</p>
+]]></content:encoded>
+					
+		
+		
+		<media:content url="https://www.cryptopolitan.com/wp-content/uploads/2024/04/DALL·E-2024-04-12-19.22.35-Create-an-intriguing-and-slightly-ambiguous-image-that-explores-the-potential-comeback-of-the-UK-stock-market-questioning-its-future-prospects.-Visua.webp" medium="image"  type="image/webp" /><media:thumbnail url="https://www.cryptopolitan.com/wp-content/uploads/2024/04/DALL·E-2024-04-12-19.22.35-Create-an-intriguing-and-slightly-ambiguous-image-that-explores-the-potential-comeback-of-the-UK-stock-market-questioning-its-future-prospects.-Visua.webp"/>	</item>
+		<item>
+		<title>The U.S. and UK financial markets are not the same &#8211; they will never be the same</title>
+		<link>https://www.cryptopolitan.com/us-and-uk-financial-markets-are-not-the-same/</link>
+		
+		<dc:creator><![CDATA[Jai Hamid]]></dc:creator>
+		<pubDate>Fri, 12 Apr 2024 21:41:30 +0000</pubDate>
+				<category><![CDATA[Economy]]></category>
+		<category><![CDATA[News]]></category>
+		<category><![CDATA[financial markets]]></category>
+		<category><![CDATA[united kingdom]]></category>
+		<category><![CDATA[United States of America]]></category>
+		<guid isPermaLink="false">https://www.cryptopolitan.com/?p=510421</guid>
+
+					<description><![CDATA[When you lay out the economic landscape across the Atlantic, you’ll quickly notice the U.S. and the UK are playing entirely different games in the financial markets. Despite some superficial similarities in market trends, such as interest rates, the core dynamics diverge sharply. Differing Directions in Monetary Policy Recent shifts in financial forecasts have brought [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>When you lay out the economic landscape across the Atlantic, you’ll quickly notice the U.S. and the UK are playing entirely different games in the financial markets. Despite some superficial similarities in market trends, such as interest rates, the core dynamics diverge sharply.</p>
+
+
+
+<h2 class="wp-block-heading">Differing Directions in Monetary Policy</h2>
+
+
+
+<p>Recent shifts in financial forecasts have brought a surprising expectation: the Bank of England might lower rates sooner and by more than the <a href="https://www.cryptopolitan.com/fed-v-ecb-who-will-cut-interest-rates-first/" data-type="post" data-id="506567">Federal Reserve</a>. This twist comes after U.S. inflation rates in March hinted at more aggressive monetary cooling than anticipated. Yet, the persistence of inflation in the UK suggests that rate cuts might need to be postponed rather than accelerated.</p>
+
+
+
+<p>The UK faces unique challenges, with significant supply-side constraints that dampen its economic outlook. The Monetary Policy Committee pegs this year’s potential growth at a modest 1%, with a slight rise to 1.3% by 2026. Meanwhile, the U.S. Congressional Budget Office projects a potential growth of 2.2% during the same period, highlighting a strong capacity to handle economic demand without tipping into inflation.</p>
+
+
+
+<h2 class="wp-block-heading">The Investment and Labor Supply Gap</h2>
+
+
+
+<p>The disparity extends into crucial economic areas like labor supply and business investment. In the UK, labor market participation hasn’t bounced back to pre-pandemic levels, and business investment has been tepid since the Brexit vote in 2016. </p>
+
+
+
+<p>On the other side of the pond, the U.S. boasts a vigorous return in workforce participation and has seen a surge in business investments, outpacing other advanced economies since 2016. This includes significant investments in strategic sectors like green technology and semiconductors, propelled by recent legislative acts like the Inflation Reduction and CHIPS Acts.</p>
+
+
+
+<p>The stronger U.S. consumer market also fuels demand which, coupled with government spending, places the U.S. in a favorable position to manage inflationary pressures. In contrast, the UK struggles with weaker supply and demand, making it more susceptible to inflation, especially given the lingering effects of global challenges such as the pandemic and geopolitical tensions in Europe.</p>
+
+
+
+<p>The impact of the Ukrainian conflict on energy costs exemplifies these differences, with the UK feeling a sharper sting than its American counterpart. This divergence in economic shock absorption capacity has led to a UK market that’s more reactive to past inflation, potentially prolonging the inflationary environment as businesses and households adjust to elevated costs.</p>
+
+
+
+<p>The sticky wage growth in the UK, which is higher than in the U.S., further complicates the inflation outlook. While U.S. wage growth remains more aligned with inflation, the UK sees wage-driven cost pressures that continue to push service inflation beyond desirable levels.</p>
+
+
+
+<p>Sterling’s journey also tells a tale of its own. Despite a lengthy period of underperformance, there are signs of impending appreciation. The UK’s inflation is on a downtrend, and real interest rates are tilting towards the positive. This scenario, combined with a favorable global economic outlook, suggests potential strength for the pound, especially as the Bank of England gears up for a cautious rate-cutting cycle later this year.</p>
+
+
+
+<p>Moreover, the UK’s chronic current account deficit shows signs of narrowing, which could further support the currency. The upcoming general election, anticipated to tilt in favor of a pro-business Labour majority, might also bolster confidence in the pound.</p>
+
+
+
+<p><strong><em>This article first appeared <a href="https://www.ft.com/content/13579c61-5e1f-48b5-bb4d-2dc787444fb3" rel="nofollow noopener" target="_blank">in</a> the Financial Times ©</em></strong> <strong><em>2024</em></strong></p>
+]]></content:encoded>
+					
+		
+		
+		<media:content url="https://www.cryptopolitan.com/wp-content/uploads/2024/04/DALL·E-2024-04-12-19.22.33-Create-a-simplified-and-clear-image-that-emphasizes-the-fundamental-differences-between-the-U.S.-and-UK-financial-markets.-Visualize-a-minimalist-scen.webp" medium="image"  type="image/webp" /><media:thumbnail url="https://www.cryptopolitan.com/wp-content/uploads/2024/04/DALL·E-2024-04-12-19.22.33-Create-a-simplified-and-clear-image-that-emphasizes-the-fundamental-differences-between-the-U.S.-and-UK-financial-markets.-Visualize-a-minimalist-scen.webp"/>	</item>
+		<item>
+		<title>This might be the global economy&#8217;s worst decade yet &#8211; No, really</title>
+		<link>https://www.cryptopolitan.com/this-is-the-global-economy-worst-decade-yet/</link>
+		
+		<dc:creator><![CDATA[Jai Hamid]]></dc:creator>
+		<pubDate>Fri, 12 Apr 2024 21:23:06 +0000</pubDate>
+				<category><![CDATA[Economy]]></category>
+		<category><![CDATA[News]]></category>
+		<category><![CDATA[global economy]]></category>
+		<guid isPermaLink="false">https://www.cryptopolitan.com/?p=510373</guid>
+
+					<description><![CDATA[The managing director of the International Monetary Fund has sounded a stern warning about the trajectory of the global economy, predicting a scenario of subdued growth and rising public unrest over the next ten years. Despite narrowly sidestepping the dread of a full-blown recession, the forecast isn&#8217;t exactly rosy. We&#8217;re staring down the barrel of [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>The managing director of the International Monetary Fund has sounded a stern <a href="https://www.imf.org/en/Blogs/Articles/2024/04/10/world-must-prioritize-productivity-reforms-to-revive-medium-term-growth" rel="nofollow noopener" target="_blank">warning</a> about the trajectory of the global economy, predicting a scenario of subdued growth and rising public unrest over the next ten years. Despite narrowly sidestepping the dread of a full-blown recession, the forecast isn&#8217;t exactly rosy.</p>
+
+
+
+<p>We&#8217;re staring down the barrel of a decade where historical growth rates feel like distant memories.</p>
+
+
+
+<h2 class="wp-block-heading">A Persistent Struggle for Growth</h2>
+
+
+
+<p>Our <a href="https://www.cryptopolitan.com/so-how-is-japans-economy-faring-now/" data-type="post" data-id="507112">economy</a> has been anything but forgiving since the 2008-09 financial crash, with global growth consistently dragging its feet. The latest data projects an even sadder scenario. Growth limping to just above 3% by 2029.</p>
+
+
+
+<figure class="wp-block-image size-full is-resized"><img decoding="async" width="950" height="950" src="https://www.cryptopolitan.com/wp-content/uploads/2024/04/image-40.png" alt="" class="wp-image-510419" style="width:563px;height:auto" srcset="https://www.cryptopolitan.com/wp-content/uploads/2024/04/image-40.png 950w, https://www.cryptopolitan.com/wp-content/uploads/2024/04/image-40-300x300.png 300w, https://www.cryptopolitan.com/wp-content/uploads/2024/04/image-40-150x150.png 150w, https://www.cryptopolitan.com/wp-content/uploads/2024/04/image-40-768x768.png 768w" sizes="(max-width: 950px) 100vw, 950px" /></figure>
+
+
+
+<p>This is nearly a whole percentage point under what we saw before the pandemic wreaked havoc. The implications are grave, threatening to roll back the progress in living standards we&#8217;ve made, particularly hitting hard where the discrepancy between rich and poor countries continues to widen.</p>
+
+
+
+<p>The sluggish growth is tethered to persistently high interest rates, which may well jeopardize debt sustainability. This, in turn, shackles governments&#8217; ability to respond to economic downturns and fund social or environmental ventures. </p>
+
+
+
+<p>A chilling expectation of weak growth might also keep investors from putting money into crucial areas like technology and capital, potentially exacerbating the economic slowdown. And let’s not overlook the main problem. Geopolitical tensions and trade policies that could fragment the global market even further.</p>
+
+
+
+<p>Yet, there&#8217;s a silver lining, albeit a slim one. Implementing a variety of policies aimed at better distribution of labor and capital and addressing labor shortages due to aging populations in key economies could ignite some sparks of growth in the medium term. It’s about making labor and capital more productive, moving resources to where they can be used best.</p>
+
+
+
+<h2 class="wp-block-heading">Tackling Challenges Head-On</h2>
+
+
+
+<p>In our ongoing struggle, demographic shifts and weak business investment are also putting the brakes on growth. With the aging populations in key economies, there’s an imminent squeeze on labor growth, while capital formation continues to lag due to tepid investment levels.</p>
+
+
+
+<p>Addressing these issues might seem daunting, but the potential remedies could stimulate notable improvements. Enhanced labor supply and better resource distribution, while moderate in their individual impact, collectively offer a beacon of hope. </p>
+
+
+
+<p>By adopting policies that increase trade openness, improve labor market flexibility, and boost financial development, we might just see global growth lifted by about 1.2 percentage points by the end of this decade. The adoption and integration of artificial intelligence also hold a promising, though uncertain, potential to amplify labor productivity significantly.</p>
+
+
+
+<p>Remember, technological breakthroughs aren&#8217;t coming as easily as they once did. There&#8217;s a palpable stagnation in educational advancements, and the gap between developing and developed economies isn’t narrowing fast enough. Without some major technological and structural reforms, we&#8217;re potentially looking at a global economic growth of just 2.8% by 2030—well below the 3.8% historical average.</p>
+
+
+
+<p>Kristalina Georgieva described the upcoming decade as “tepid” at best, amidst a backdrop of economic challenges that include still-rampant inflation, depleted fiscal buffers, and soaring public debt. This sets a rather grim stage as we face a record number of elections and an era marked by unprecedented uncertainty and years of economic shocks.</p>
+
+
+
+<p>With her term ending soon, and a reelection seemingly on the cards, the next set of projections for the global economy, expected next week, could provide a crucial update to the narrative.</p>
+
+
+
+<p>There’s no room for complacency. The staggering estimated $3.3 trillion in lost output since the coronavirus pandemic began has dealt the harshest blows to the most vulnerable nations. It’s clear that if significant policy changes aren&#8217;t made, particularly around productivity and debt management, this decade could very well be one of the most challenging we have faced globally in modern times.</p>
+]]></content:encoded>
+					
+		
+		
+		<media:content url="https://www.cryptopolitan.com/wp-content/uploads/2024/04/DALL·E-2024-04-12-19.22.26-Design-a-dramatic-and-evocative-image-that-reflects-the-pessimistic-outlook-suggesting-this-might-be-the-global-economys-worst-decade-yet.-Visualize-.webp" medium="image"  type="image/webp" /><media:thumbnail url="https://www.cryptopolitan.com/wp-content/uploads/2024/04/DALL·E-2024-04-12-19.22.26-Design-a-dramatic-and-evocative-image-that-reflects-the-pessimistic-outlook-suggesting-this-might-be-the-global-economys-worst-decade-yet.-Visualize-.webp"/>	</item>
+		<item>
+		<title>The TON Foundation sustains an alliance with HashKey to Enhance Telegram wallet</title>
+		<link>https://www.cryptopolitan.com/ton-foundation-hashkey-telegram-wallet/</link>
+		
+		<dc:creator><![CDATA[Haseeb Shaheen]]></dc:creator>
+		<pubDate>Fri, 12 Apr 2024 21:06:42 +0000</pubDate>
+				<category><![CDATA[Industry News]]></category>
+		<category><![CDATA[TON Foundation]]></category>
+		<guid isPermaLink="false">https://www.cryptopolitan.com/?p=510405</guid>
+
+					<description><![CDATA[The TON Foundation, a leading organization developing The Open Network (TON) blockchain, has established a strategic partnership based on shared ambitions with HashKey Group, a financial services business with a heavy focus on digital assets. Teamwork seeks to dramatically improve the availability for customers to convert fiat currencies using the Telegram wallet. It is especially [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>The TON Foundation, a leading organization developing The Open Network (TON) blockchain, has established a strategic partnership based on shared ambitions with HashKey Group, a financial services business with a heavy focus on digital assets. Teamwork seeks to dramatically improve the availability for customers to convert fiat currencies using the Telegram wallet. It is especially applicable in the Asia Pacific. The project illustrates the intention to bind cryptocurrencies in a fashion that allows money transfer utilizing crypto-transactions, which, ultimately, will make them as natural and normal as traditional bank activities.</p>
+
+
+
+<figure class="wp-block-embed is-type-rich is-provider-twitter wp-block-embed-twitter"><div class="wp-block-embed__wrapper">
+<blockquote class="twitter-tweet" data-width="550" data-dnt="true"><p lang="en" dir="ltr">🤝 TON Foundation has formed a strategic partnership with <a href="https://twitter.com/HashKeyGroup?ref_src=twsrc%5Etfw" rel="nofollow noopener" target="_blank">@HashKeyGroup</a> to boost the <a href="https://twitter.com/hashtag/TON?src=hash&amp;ref_src=twsrc%5Etfw" rel="nofollow noopener" target="_blank">#TON</a> Ecosystem, aiming to put crypto and Web3 in every pocket!<br><br>What does it entail?<br><br>✅ Support for early-stage TON-based projects<br>✅ Enhanced fiat access for <a href="https://twitter.com/wallet_tg?ref_src=twsrc%5Etfw" rel="nofollow noopener" target="_blank">@wallet_tg</a> users in APAC<br>✅… <a href="https://t.co/khIiYMHXfC" rel="nofollow" target="_blank">pic.twitter.com/khIiYMHXfC</a></p>&mdash; TON 💎 (@ton_blockchain) <a href="https://twitter.com/ton_blockchain/status/1778714502881489123?ref_src=twsrc%5Etfw" rel="nofollow noopener" target="_blank">April 12, 2024</a></blockquote><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div></figure>
+
+
+
+<h2 class="wp-block-heading">Enhancing fiat connectivity</h2>
+
+
+
+<p>The TON Foundation and HashKey&#8217;s partnership is destined for a greater will to expand the option of off-ramps – the significant gateways through which fiat currency is exchanged for cryptocurrencies or vice versa. It is more often a catch for those who use the telegram wallet, which is easily integrated with a widely spread platform, which is messenger telegram. This cooperation provides a chance to make these digital assets purchasing and selling process easy but progressive which improves user experience and drives a wide range of crypto adoption.</p>
+
+
+
+<p>Livio Weng, COO of HashKey Group adds that “the goal of this initiative is quite specified which is to make cryptocurrency a part of everyday life, as a result of that, people feel it easier to adapt to the change of TON’s ecosystem,” we see both current users and investors that would like to try something new will be able to enjoy the challenge and make it a usual part of their lives</p>
+
+
+
+<h2 class="wp-block-heading">Funding early-stage entrepreneurship and growth </h2>
+
+
+
+<p>The TON Foundation goes beyond minting of fiat money by the HashKey Group and planning for any TON-based projects in an early stage. Such support is a key factor in advancement of products and services implemented on TON which can use the platform’s attributes and capacities. Through the provision of a supportive ground for the inception of new projects, the deal tends to fasten the technological development and popularization of blockchain.</p>
+
+
+
+<p>Furthermore, the joint venture anticipated the possible refinement of treasury management solutions by this side of the partnership which would enable ease of project execution on the TON blockchain, especially scalability. One of the latest activities of HashKey Group, including the launch of their global crypto exchange, HashKey Global, and the tuning up the Ethereum Layer-2 chain, shows their continuous efforts to increase their number of services and technological infrastructure in the region.</p>
+
+
+
+<h2 class="wp-block-heading">Broader Adoption and strategic action&nbsp;</h2>
+
+
+
+<p>Such a cooperative relationship between the TON Foundation and HashKey Group clearly is a smart step that will promote not only the wider application of Blockchain technology but also of cryptocurrencies. Through their endeavors of improving the accessibility, and granting easiness of using the crypto assets, they are preparing different classes of participants and stakeholders towards a more inclusive financial ecosystem. The fiat connectivity improvements are just a starting point in the continuum of progress since further steps will be taken to continue developing and enhancing the infrastructure to cope with the digital economy escalation.</p>
+
+
+
+<p>Along the way, this collaboration is projected to be a huge value addition to the Telegram wallet, also serving as a driving force for the thriving TON ecosystem in the long run. Through the TON Foundation and HashKey Group focus on user experience and advancement in technology, the duo certainly is poised to rule the roost in the new era of digital finance.</p>
+]]></content:encoded>
+					
+		
+		
+		<media:content url="https://www.cryptopolitan.com/wp-content/uploads/2024/04/DALL·E-2024-04-13-02.03.45-A-creative-digital-illustration-depicting-the-partnership-between-the-TON-Foundation-and-HashKey-Group-integrating-the-Telegram-theme.-The-scene-is-s.webp" medium="image"  type="image/webp" /><media:thumbnail url="https://www.cryptopolitan.com/wp-content/uploads/2024/04/DALL·E-2024-04-13-02.03.45-A-creative-digital-illustration-depicting-the-partnership-between-the-TON-Foundation-and-HashKey-Group-integrating-the-Telegram-theme.-The-scene-is-s.webp"/>	</item>
+	</channel>
+</rss>
