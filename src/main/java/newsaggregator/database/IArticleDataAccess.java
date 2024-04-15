@@ -1,11 +1,11 @@
 package newsaggregator.database;
 
-import newsaggregator.post.Post;
+import newsaggregator.article.Article;
 
 import java.util.List;
 
-public interface IPostDataAccess {
+public interface IArticleDataAccess {
     public void exportDataToJson(String filePath);
-    public void importToDatabase(List<Post> postList);
+    public void importToDatabase(List<Article> articleList);
     public void createSearchIndex();
 }

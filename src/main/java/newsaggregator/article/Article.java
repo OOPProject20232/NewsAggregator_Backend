@@ -1,4 +1,4 @@
-package newsaggregator.post;
+package newsaggregator.article;
 
 import java.util.List;
 
@@ -7,14 +7,14 @@ import java.util.List;
  * @since 1.0
  * @author Lý Hiển Long
  */
-public class Post {
+public class Article {
 
     // Attributes
 
     private String guid;
     private String articleLink;
     private String websiteSource;
-    private String articleType;
+    private String type;
     private String articleTitle;
     private String articleSummary;
     private String articleDetailedContent;
@@ -25,16 +25,16 @@ public class Post {
 
     // Constructors
 
-    public Post() {
+    public Article() {
     }
 
-    public Post(String guid, String articleLink, String websiteSource, String articleType, String articleTitle,
-            String articleSummary, String articleDetailedContent, String creationDate,
-                String author, String thumbnailImage, List<String> category) {
+    public Article(String guid, String articleLink, String websiteSource, String type, String articleTitle,
+                   String articleSummary, String articleDetailedContent, String creationDate,
+                   String author, String thumbnailImage, List<String> category) {
     this.guid = guid;
     this.articleLink = articleLink;
     this.websiteSource = websiteSource;
-    this.articleType = articleType;
+    this.type = type;
     this.articleTitle = articleTitle;
     this.articleSummary = articleSummary;
     this.articleDetailedContent = articleDetailedContent;
@@ -58,8 +58,8 @@ public class Post {
         this.websiteSource = websiteSource;
     }
 
-    public void setArticleType(String articleType) {
-        this.articleType = articleType;
+    public void setType(String type) {
+        this.type = type;
     }
 
     public void setArticleTitle(String articleTitle) {
@@ -103,8 +103,8 @@ public class Post {
         return websiteSource;
     }
 
-    public String getArticleType() {
-        return articleType;
+    public String getType() {
+        return type;
     }
 
     public String getArticleTitle() {
@@ -142,7 +142,7 @@ public class Post {
         System.out.println("GUID: " + guid);
         System.out.println("Article link: " + articleLink);
         System.out.println("Website source: " + websiteSource);
-        System.out.println("Article type: " + articleType);
+        System.out.println("Type: " + type);
         System.out.println("Article title: " + articleTitle);
         System.out.println("Article Summary: " + articleSummary);
         System.out.println();

@@ -1,4 +1,4 @@
-package newsaggregator.webcrawling.rssloader;
+package newsaggregator.webscraping.rssloader;
 
 import java.io.FileOutputStream;
 import java.io.InputStream;
