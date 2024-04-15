@@ -1,6 +1,6 @@
 package newsaggregator.util;
 
-import newsaggregator.post.Post;
+import newsaggregator.article.Article;
 import org.bson.Document;
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -10,7 +10,7 @@ import java.util.List;
 
 /**
  * Lớp này dùng để viết dữ liệu từ list các bài viết vào file JSON.
- * @see Post
+ * @see Article
  * @since 1.0
  * @author Lý Hiển Long
  */
@@ -20,25 +20,25 @@ public class JSONWriter {
 
     /**
      * Phương thức này dùng để viết dữ liệu từ list các bài viết vào file JSON.
-     * @param postList List các bài viết.
+     * @param articleList List các bài viết.
      * @param filePath Đường dẫn file JSON (dùng để lưu).
-     * @see Post
+     * @see Article
      */
-    public static void writePostToJson(List<Post> postList, String filePath) {
+    public static void writePostToJson(List<Article> articleList, String filePath) {
         JSONArray jArray = new JSONArray();
-        for (Post post : postList) {
+        for (Article article : articleList) {
             JSONObject currentPost = new JSONObject();
-            currentPost.put("guid", post.getGuid());
-            currentPost.put("article_link", post.getArticleLink());
-            currentPost.put("website_source", post.getWebsiteSource());
-            currentPost.put("article_type", post.getArticleType());
-            currentPost.put("article_title", post.getArticleTitle());
-            currentPost.put("author", post.getAuthor());
-            currentPost.put("creation_date", post.getCreationDate());
-            currentPost.put("thumbnail_image", post.getThumbnailImage());
-            currentPost.put("article_summary", post.getArticleSummary());
-            currentPost.put("article_detailed_content", post.getArticleDetailedContent());
-            currentPost.put("category", post.getCategory());
+            currentPost.put("guid", article.getGuid());
+            currentPost.put("article_link", article.getArticleLink());
+            currentPost.put("website_source", article.getWebsiteSource());
+            currentPost.put("article_type", article.getType());
+            currentPost.put("article_title", article.getArticleTitle());
+            currentPost.put("author", article.getAuthor());
+            currentPost.put("creation_date", article.getCreationDate());
+            currentPost.put("thumbnail_image", article.getThumbnailImage());
+            currentPost.put("article_summary", article.getArticleSummary());
+            currentPost.put("article_detailed_content", article.getArticleDetailedContent());
+            currentPost.put("category", article.getCategory());
 
             jArray.put(currentPost);
         }

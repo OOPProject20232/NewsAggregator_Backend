@@ -5,10 +5,9 @@ import com.burgstaller.okhttp.CachingAuthenticatorDecorator;
 import com.burgstaller.okhttp.digest.CachingAuthenticator;
 import com.burgstaller.okhttp.digest.Credentials;
 import com.burgstaller.okhttp.digest.DigestAuthenticator;
-import com.mongodb.MongoException;
 import com.mongodb.client.*;
 import io.github.cdimascio.dotenv.Dotenv;
-import newsaggregator.post.Post;
+import newsaggregator.article.Article;
 import newsaggregator.util.JSONWriter;
 import okhttp3.*;
 import org.bson.Document;
@@ -19,7 +18,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-public class MongoDB implements IPostDataAccess {
+public class MongoDB implements IArticleDataAccess {
 
     private final Dotenv dotenv = Dotenv.load();
 
@@ -50,44 +49,44 @@ public class MongoDB implements IPostDataAccess {
      * <br/><br/>
      * Ngoài ra, phương thức này cũng sẽ sort các bài viết vào các categories khác nhau và lưu vào collection `categories`.
      *
-     * @param postList List các bài viết lấy từ RSSReader.
+     * @param articleList List các bài viết lấy từ RSSReader.
      */
     @Override
-    public void importToDatabase(List<Post> postList) {
+    public void importToDatabase(List<Article> articleList) {
         try (MongoClient mongoClient = MongoClients.create(dotenv.get("MONGODB_CONNECTION_STRING"))) {
             MongoDatabase db = mongoClient.getDatabase(dotenv.get("MONGODB_DATABASE_NAME"));
             MongoCollection<Document> articlesCollection = db.getCollection("articles");
             MongoCollection<Document> categoriesCollection = db.getCollection("categories");
             int count = 0;
             List<Document> documents = new ArrayList<>();
-            for (Post post : postList) {
-                try (MongoCursor<Document> cursor = articlesCollection.find(new Document("guid", post.getGuid())).iterator()) {
+            for (Article article : articleList) {
+                try (MongoCursor<Document> cursor = articlesCollection.find(new Document("guid", article.getGuid())).iterator()) {
                     if (!cursor.hasNext()) {
                         Document doc = new Document()
-                                .append("guid", post.getGuid())
-                                .append("article_link", post.getArticleLink())
-                                .append("website_source", post.getWebsiteSource())
-                                .append("type", post.getArticleType())
-                                .append("article_title", post.getArticleTitle())
-                                .append("author", post.getAuthor())
-                                .append("creation_date", post.getCreationDate())
-                                .append("thumbnail_image", post.getThumbnailImage())
-                                .append("article_summary", post.getArticleSummary())
-                                .append("article_detailed_content", post.getArticleDetailedContent())
-                                .append("category", post.getCategory());
+                                .append("guid", article.getGuid())
+                                .append("article_link", article.getArticleLink())
+                                .append("website_source", article.getWebsiteSource())
+                                .append("type", article.getType())
+                                .append("article_title", article.getArticleTitle())
+                                .append("author", article.getAuthor())
+                                .append("creation_date", article.getCreationDate())
+                                .append("thumbnail_image", article.getThumbnailImage())
+                                .append("article_summary", article.getArticleSummary())
+                                .append("article_detailed_content", article.getArticleDetailedContent())
+                                .append("category", article.getCategory());
                         documents.add(doc);
 
-                        for (String category : post.getCategory()) {
+                        for (String category : article.getCategory()) {
                             try (MongoCursor<Document> categoriesCursor = categoriesCollection.find(new Document("category", category)).iterator()) {
                                 if (!categoriesCursor.hasNext()) {
                                     Document categoryDoc = new Document()
                                             .append("category", category)
-                                            .append("articles_guid", Arrays.asList(post.getGuid()));
+                                            .append("articles_guid", Arrays.asList(article.getGuid()));
                                     categoriesCollection.insertOne(categoryDoc);
                                 }
                                 else {
                                     categoriesCollection.updateOne(new Document("category", category),
-                                            new Document("$push", new Document("articles_guid", post.getGuid())));
+                                            new Document("$push", new Document("articles_guid", article.getGuid())));
                                 }
                             }
                         }

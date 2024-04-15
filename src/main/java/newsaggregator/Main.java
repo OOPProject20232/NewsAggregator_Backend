@@ -1,16 +1,16 @@
 package newsaggregator;
 
-import newsaggregator.database.IPostDataAccess;
+import newsaggregator.database.IArticleDataAccess;
 import newsaggregator.database.MongoDB;
-import newsaggregator.webcrawling.Crawler;
-import newsaggregator.webcrawling.rssloader.RSSReader;
+import newsaggregator.webscraping.Scraper;
+import newsaggregator.webscraping.rssloader.RSSReader;
 
 public class Main {
     public static void main(String[] args) {
-        Crawler rss = new RSSReader();
+        Scraper rss = new RSSReader();
         rss.crawl();
-        IPostDataAccess db = new MongoDB();
-        db.importToDatabase(rss.getPostList());
+        IArticleDataAccess db = new MongoDB();
+        db.importToDatabase(rss.getArticleList());
         db.createSearchIndex();
         db.exportDataToJson("src/main/resources/data.json");
     }

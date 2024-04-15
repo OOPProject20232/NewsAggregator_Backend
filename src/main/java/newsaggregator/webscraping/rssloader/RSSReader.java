@@ -1,7 +1,7 @@
-package newsaggregator.webcrawling.rssloader;
+package newsaggregator.webscraping.rssloader;
 
-import newsaggregator.post.Post;
-import newsaggregator.webcrawling.Crawler;
+import newsaggregator.article.Article;
+import newsaggregator.webscraping.Scraper;
 import org.jsoup.Jsoup;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -23,14 +23,14 @@ import java.util.Scanner;
  * và trả về một danh sách các bài báo được lưu trữ trong các file XML này
  * @author Trần Quang Hưng
  */
-public class RSSReader extends Crawler {
+public class RSSReader extends Scraper {
 
     //Methods
 
     @Override
     public void crawl() {
         System.out.println("Đang lấy dữ liệu từ các nguồn RSS...");
-        List<Post> postList = new ArrayList<>();
+        List<Article> articleList = new ArrayList<>();
         try {
             File newsList = new File("src/main/resources/rssdata/webSources.txt");
             Scanner newsListScanner = new Scanner(newsList);
@@ -39,18 +39,18 @@ public class RSSReader extends Crawler {
                 String domainString = URI.create(urlString).getHost();
                 RSSSync.getNewUpdate(urlString, "src/main/resources/rssdata/tmp-cache/%s.xml".formatted(domainString));
                 RSSReader rssReader = new RSSReader();
-                List<Post> currentPostList = rssReader.parseXML("src/main/resources/rssdata/tmp-cache/%s.xml".formatted(domainString), domainString);
-                postList.addAll(currentPostList);
+                List<Article> currentArticleList = rssReader.parseXML("src/main/resources/rssdata/tmp-cache/%s.xml".formatted(domainString), domainString);
+                articleList.addAll(currentArticleList);
             }
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
-        setPostList(postList);
+        setArticleList(articleList);
         System.out.println("Đã lấy dữ liệu từ các nguồn RSS...");
     }
 
-    private List<Post> parseXML(String URIString, String domainString) {
-        List<Post> currentPostList = new ArrayList<>();
+    private List<Article> parseXML(String URIString, String domainString) {
+        List<Article> currentArticleList = new ArrayList<>();
         try {
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
             DocumentBuilder builder = factory.newDocumentBuilder();
@@ -61,7 +61,7 @@ public class RSSReader extends Crawler {
                 if (item.getNodeType() == Node.ELEMENT_NODE) {
                     Element elem = (Element) item;
                         // Post
-                        Post currentPost = new Post(
+                        Article currentArticle = new Article(
                                 getGuid(elem),
                                 getLink(elem),
                                 getSource(domainString),
@@ -74,13 +74,13 @@ public class RSSReader extends Crawler {
                                 getThumbnail(elem),
                                 getCategories(elem)
                         );
-                        currentPostList.add(currentPost);
+                        currentArticleList.add(currentArticle);
                 }
             }
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
-        return currentPostList;
+        return currentArticleList;
     }
 
     private String getThumbnail(Element elem) {
