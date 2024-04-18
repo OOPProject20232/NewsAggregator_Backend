@@ -66,7 +66,7 @@ public class MongoDB implements IArticleDataAccess {
                                 .append("guid", article.getGuid())
                                 .append("article_link", article.getArticleLink())
                                 .append("website_source", article.getWebsiteSource())
-                                .append("type", article.getType())
+                                .append("_type", article.getType())
                                 .append("article_title", article.getArticleTitle())
                                 .append("author", article.getAuthor())
                                 .append("creation_date", article.getCreationDate())
