@@ -66,7 +66,7 @@ public class MongoDB implements IArticleDataAccess {
                                 .append("guid", article.getGuid())
                                 .append("article_link", article.getArticleLink())
                                 .append("website_source", article.getWebsiteSource())
-                                .append("_type", article.getType())
+                                .append("type_", article.getType())
                                 .append("article_title", article.getArticleTitle())
                                 .append("author", article.getAuthor())
                                 .append("creation_date", article.getCreationDate())
@@ -134,7 +134,7 @@ public class MongoDB implements IArticleDataAccess {
                         "{\"collectionName\": \"articles\", " +
                                 "\"database\": \"" + dotenv.get("MONGODB_DATABASE_NAME") + "\", " +
                                 "\"mappings\": {\"dynamic\": true}, " +
-                                "\"name\": \"searchArticles\"}",
+                                "\"name\": \""+ dotenv.get("MONGODB_SEARCH_INDEX_NAME") + "\"}",
                         MediaType.parse("application/json")))
                 .build();
         try (Response response = client.newCall(request).execute()) {

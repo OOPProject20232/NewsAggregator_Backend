@@ -127,7 +127,7 @@ public class RSSReader extends Scraper {
                 if (category.isBlank()) {
                     continue;
                 }
-                categories.add(category);
+                categories.add(category.toLowerCase());
             }
             return categories;
         } catch (Exception e) {

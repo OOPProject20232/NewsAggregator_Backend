@@ -31,7 +31,7 @@ public class JSONWriter {
             currentPost.put("guid", article.getGuid());
             currentPost.put("article_link", article.getArticleLink());
             currentPost.put("website_source", article.getWebsiteSource());
-            currentPost.put("article_type", article.getType());
+            currentPost.put("type_", article.getType());
             currentPost.put("article_title", article.getArticleTitle());
             currentPost.put("author", article.getAuthor());
             currentPost.put("creation_date", article.getCreationDate());
