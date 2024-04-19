@@ -12,7 +12,7 @@
 	<atom:link href="https://www.ledgerinsights.com/feed/" rel="self" type="application/rss+xml" />
 	<link>https://www.ledgerinsights.com/</link>
 	<description>Blockchain for business</description>
-	<lastBuildDate>Fri, 12 Apr 2024 12:16:17 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 18 Apr 2024 17:37:31 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -20,29 +20,30 @@
 	1	</sy:updateFrequency>
 	
 	<item>
-		<title>JP Morgan integrates JPM Coin with Kyriba&#8217;s treasury solution</title>
-		<link>https://www.ledgerinsights.com/jp-morgan-integrates-jpm-coin-with-kyribas-treasury-solution/</link>
+		<title>HSBC leads Series C funding of HQLAᵡ DLT collateral platform</title>
+		<link>https://www.ledgerinsights.com/hsbc-leads-series-c-funding-of-hqla%e1%b5%a1-dlt-collateral-platform/</link>
 		
 		<dc:creator><![CDATA[Ledger Insights]]></dc:creator>
-		<pubDate>Fri, 12 Apr 2024 12:16:16 +0000</pubDate>
-				<category><![CDATA[Blockchain for Banking]]></category>
+		<pubDate>Thu, 18 Apr 2024 17:37:29 +0000</pubDate>
+				<category><![CDATA[Capital markets]]></category>
 		<category><![CDATA[News]]></category>
 		<category><![CDATA[blockchain]]></category>
-		<category><![CDATA[cross border]]></category>
-		<category><![CDATA[cross border payments]]></category>
+		<category><![CDATA[BNP Paribas]]></category>
+		<category><![CDATA[BNY Mellon]]></category>
+		<category><![CDATA[Citi]]></category>
+		<category><![CDATA[collateral]]></category>
+		<category><![CDATA[Deutsche Börse]]></category>
 		<category><![CDATA[distributed ledger]]></category>
 		<category><![CDATA[DLT]]></category>
+		<category><![CDATA[Goldman Sachs]]></category>
+		<category><![CDATA[HQLAX]]></category>
+		<category><![CDATA[HSBC]]></category>
+		<category><![CDATA[intraday]]></category>
 		<category><![CDATA[jp morgan]]></category>
-		<category><![CDATA[jpm coin]]></category>
-		<category><![CDATA[Kyriba]]></category>
-		<category><![CDATA[Onyx]]></category>
-		<category><![CDATA[tokenized cash]]></category>
-		<category><![CDATA[tokenized deposits]]></category>
-		<category><![CDATA[treasurers]]></category>
-		<guid isPermaLink="false">https://ledgerinsights.com/?p=33402</guid>
+		<guid isPermaLink="false">https://ledgerinsights.com/?p=33497</guid>
 
-					<description><![CDATA[<p>Yesterday, Kyriba announced that it had integrated Onyx by JP Morgan with its cloud treasury solution. Specifically, its clients with JP Morgan bank accounts can manage their JPM Coin blockchain-based accounts to send 24/7 cross-border payments to other branches. Kyriba is a cloud based corporate treasury solution that aims to optimize liquidity. While it only has around 3,000 customers, they manage […]</p>
-<p>The article <a href="https://www.ledgerinsights.com/jp-morgan-integrates-jpm-coin-with-kyribas-treasury-solution/">JP Morgan integrates JPM Coin with Kyriba’s treasury solution</a> appeared first on <a href="https://www.ledgerinsights.com">Ledger Insights - blockchain for enterprise</a>.</p>
+					<description><![CDATA[<p>Today HQLAᵡ announced it closed its Series C funding round led by HSBC. The startup didn’t mention the amount or valuation. Many of HQLAᵡ’s existing shareholders participated in the round, including BNP Paribas, BNY Mellon, Citi, Deutsche Börse, Goldman Sachs and JP Morgan. HQLAᵡ provides a distributed ledger technology (DLT) platform for collateral mobility. When banks want to […]</p>
+<p>The post <a href="https://www.ledgerinsights.com/hsbc-leads-series-c-funding-of-hqla%e1%b5%a1-dlt-collateral-platform/">HSBC leads Series C funding of HQLAᵡ DLT collateral platform</a> appeared first on <a href="https://www.ledgerinsights.com">Ledger Insights - blockchain for enterprise</a>.</p>
 ]]></description>
 		
 		
