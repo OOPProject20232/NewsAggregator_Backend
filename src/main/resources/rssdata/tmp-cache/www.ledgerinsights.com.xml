@@ -12,7 +12,7 @@
 	<atom:link href="https://www.ledgerinsights.com/feed/" rel="self" type="application/rss+xml" />
 	<link>https://www.ledgerinsights.com/</link>
 	<description>Blockchain for business</description>
-	<lastBuildDate>Thu, 18 Apr 2024 17:37:31 +0000</lastBuildDate>
+	<lastBuildDate>Fri, 19 Apr 2024 14:22:07 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -20,30 +20,28 @@
 	1	</sy:updateFrequency>
 	
 	<item>
-		<title>HSBC leads Series C funding of HQLAᵡ DLT collateral platform</title>
-		<link>https://www.ledgerinsights.com/hsbc-leads-series-c-funding-of-hqla%e1%b5%a1-dlt-collateral-platform/</link>
+		<title>Thai retail CBDC pilot: CBDC fosters innovation, but no plans for one</title>
+		<link>https://www.ledgerinsights.com/thai-retail-cbdc-pilot-cbdc-fosters-innovation-but-no-plans-for-one/</link>
 		
 		<dc:creator><![CDATA[Ledger Insights]]></dc:creator>
-		<pubDate>Thu, 18 Apr 2024 17:37:29 +0000</pubDate>
-				<category><![CDATA[Capital markets]]></category>
+		<pubDate>Fri, 19 Apr 2024 14:22:05 +0000</pubDate>
+				<category><![CDATA[Blockchain for Banking]]></category>
 		<category><![CDATA[News]]></category>
-		<category><![CDATA[blockchain]]></category>
-		<category><![CDATA[BNP Paribas]]></category>
-		<category><![CDATA[BNY Mellon]]></category>
-		<category><![CDATA[Citi]]></category>
-		<category><![CDATA[collateral]]></category>
-		<category><![CDATA[Deutsche Börse]]></category>
-		<category><![CDATA[distributed ledger]]></category>
-		<category><![CDATA[DLT]]></category>
-		<category><![CDATA[Goldman Sachs]]></category>
-		<category><![CDATA[HQLAX]]></category>
-		<category><![CDATA[HSBC]]></category>
-		<category><![CDATA[intraday]]></category>
-		<category><![CDATA[jp morgan]]></category>
-		<guid isPermaLink="false">https://ledgerinsights.com/?p=33497</guid>
+		<category><![CDATA[Bank of Thailand]]></category>
+		<category><![CDATA[CBDC]]></category>
+		<category><![CDATA[Central Bank Digital Currency]]></category>
+		<category><![CDATA[digital baht]]></category>
+		<category><![CDATA[digital currency]]></category>
+		<category><![CDATA[G+D]]></category>
+		<category><![CDATA[Giesecke+Devrient]]></category>
+		<category><![CDATA[Krungsri]]></category>
+		<category><![CDATA[retail CBDC]]></category>
+		<category><![CDATA[Siam Commercial Bank]]></category>
+		<category><![CDATA[Thailand]]></category>
+		<guid isPermaLink="false">https://ledgerinsights.com/?p=33507</guid>
 
-					<description><![CDATA[<p>Today HQLAᵡ announced it closed its Series C funding round led by HSBC. The startup didn’t mention the amount or valuation. Many of HQLAᵡ’s existing shareholders participated in the round, including BNP Paribas, BNY Mellon, Citi, Deutsche Börse, Goldman Sachs and JP Morgan. HQLAᵡ provides a distributed ledger technology (DLT) platform for collateral mobility. When banks want to […]</p>
-<p>The post <a href="https://www.ledgerinsights.com/hsbc-leads-series-c-funding-of-hqla%e1%b5%a1-dlt-collateral-platform/">HSBC leads Series C funding of HQLAᵡ DLT collateral platform</a> appeared first on <a href="https://www.ledgerinsights.com">Ledger Insights - blockchain for enterprise</a>.</p>
+					<description><![CDATA[<p>Yesterday the Bank of Thailand released a report on its retail central bank digital currency (CBDC) pilot. It was generally happy with the results and believes a retail CBDC would promote innovation. However, it has no immediate plans to release a digital baht. Instead, it plans to open a sandbox for private programmable payments and tokenization. Thailand’s trials are worthy of […]</p>
+<p>The post <a href="https://www.ledgerinsights.com/thai-retail-cbdc-pilot-cbdc-fosters-innovation-but-no-plans-for-one/">Thai retail CBDC pilot: CBDC fosters innovation, but no plans for one</a> appeared first on <a href="https://www.ledgerinsights.com">Ledger Insights - blockchain for enterprise</a>.</p>
 ]]></description>
 		
 		

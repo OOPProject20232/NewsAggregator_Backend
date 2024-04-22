@@ -1,6 +1,6 @@
 package newsaggregator.database;
 
-import newsaggregator.article.Article;
+import newsaggregator.model.Article;
 
 import java.util.List;
 

@@ -1,6 +1,7 @@
 package newsaggregator.webscraping;
 
-import newsaggregator.article.Article;
+import newsaggregator.model.Article;
+import newsaggregator.model.Model;
 
 import java.util.List;
 
@@ -14,17 +15,17 @@ public abstract class Scraper {
 
     // Attributes
 
-    private List<Article> articleList;
+    private List<Article> contentList;
 
     // Methods
 
     public abstract void crawl();
 
-    public List<Article> getArticleList() {
-        return articleList;
+    public List<Article> getContentList() {
+        return contentList;
     }
 
-    public void setArticleList(List<Article> articleList) {
-        this.articleList = articleList;
+    public void setContentList(List<Article> contentList) {
+        this.contentList = contentList;
     }
 }

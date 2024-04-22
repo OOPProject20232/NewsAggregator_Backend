@@ -7,7 +7,7 @@ import com.burgstaller.okhttp.digest.Credentials;
 import com.burgstaller.okhttp.digest.DigestAuthenticator;
 import com.mongodb.client.*;
 import io.github.cdimascio.dotenv.Dotenv;
-import newsaggregator.article.Article;
+import newsaggregator.model.Article;
 import newsaggregator.util.JSONWriter;
 import okhttp3.*;
 import org.bson.Document;
@@ -64,15 +64,15 @@ public class MongoDB implements IArticleDataAccess {
                     if (!cursor.hasNext()) {
                         Document doc = new Document()
                                 .append("guid", article.getGuid())
-                                .append("article_link", article.getArticleLink())
-                                .append("website_source", article.getWebsiteSource())
+                                .append("article_link", article.getLink())
+                                .append("website_source", article.getSource())
                                 .append("type_", article.getType())
-                                .append("article_title", article.getArticleTitle())
+                                .append("article_title", article.getTitle())
                                 .append("author", article.getAuthor())
                                 .append("creation_date", article.getCreationDate())
                                 .append("thumbnail_image", article.getThumbnailImage())
-                                .append("article_summary", article.getArticleSummary())
-                                .append("article_detailed_content", article.getArticleDetailedContent())
+                                .append("article_summary", article.getSummary())
+                                .append("article_detailed_content", article.getDetailedContent())
                                 .append("category", article.getCategory());
                         documents.add(doc);
 
