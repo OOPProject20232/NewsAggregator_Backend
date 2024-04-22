@@ -15,17 +15,17 @@ public abstract class Scraper {
 
     // Attributes
 
-    private List<Article> contentList;
+    private List<? extends Model> contentList;
 
     // Methods
 
     public abstract void crawl();
 
-    public List<Article> getContentList() {
+    public List<? extends Model> getContentList() {
         return contentList;
     }
 
-    public void setContentList(List<Article> contentList) {
+    public void setContentList(List<? extends Model> contentList) {
         this.contentList = contentList;
     }
 }

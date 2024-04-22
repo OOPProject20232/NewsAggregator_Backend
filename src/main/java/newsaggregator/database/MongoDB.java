@@ -8,6 +8,8 @@ import com.burgstaller.okhttp.digest.DigestAuthenticator;
 import com.mongodb.client.*;
 import io.github.cdimascio.dotenv.Dotenv;
 import newsaggregator.model.Article;
+import newsaggregator.model.Model;
+import newsaggregator.model.Post;
 import newsaggregator.util.JSONWriter;
 import okhttp3.*;
 import org.bson.Document;
@@ -49,10 +51,24 @@ public class MongoDB implements IArticleDataAccess {
      * <br/><br/>
      * Ngoài ra, phương thức này cũng sẽ sort các bài viết vào các categories khác nhau và lưu vào collection `categories`.
      *
-     * @param articleList List các bài viết lấy từ RSSReader.
+     * @param contentList List các bài báo/bài viết.
      */
     @Override
-    public void importToDatabase(List<Article> articleList) {
+    public void importToDatabase(List<? extends Model> contentList) {
+        if (!contentList.isEmpty() && contentList.getFirst() instanceof Article) {
+            List<Article> articleList = (List<Article>) contentList;
+            importArticlesToDatabase(articleList);
+        }
+        else if (!contentList.isEmpty() && contentList.getFirst() instanceof Post) {
+            List<Post> postList = (List<Post>) contentList;
+            importPostsToDatabase(postList);
+        }
+        else {
+            System.out.println("Dữ liệu không hợp lệ...");
+        }
+    }
+
+    private void importArticlesToDatabase(List<Article> articleList) {
         try (MongoClient mongoClient = MongoClients.create(dotenv.get("MONGODB_CONNECTION_STRING"))) {
             MongoDatabase db = mongoClient.getDatabase(dotenv.get("MONGODB_DATABASE_NAME"));
             MongoCollection<Document> articlesCollection = db.getCollection("articles");
@@ -104,6 +120,8 @@ public class MongoDB implements IArticleDataAccess {
             System.out.println("Đã đẩy " + count + " bài báo lên database...");
         }
     }
+
+    private void importPostsToDatabase(List<Post> postList) {}
 
     /**
      * Phương thức này sẽ tạo index cho các bài báo trong database nhằm phục vụ cho full-text search.
