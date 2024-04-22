@@ -19,7 +19,7 @@ import java.util.List;
 import java.util.Scanner;
 
 /**
- * Lớp RSSReader thực hiện việc đọc file XML từ các nguồn RSS được lưu trữ trong file webSources.txt
+ * Lớp RSSReader thực hiện việc đọc file XML từ các nguồn RSS được lưu trữ trong file articleSources.txt
  * và trả về một danh sách các bài báo được lưu trữ trong các file XML này
  * @author Trần Quang Hưng
  */
@@ -32,7 +32,7 @@ public class RSSReader extends Scraper {
         System.out.println("Đang lấy dữ liệu từ các nguồn RSS...");
         List<Article> articleList = new ArrayList<>();
         try {
-            File newsList = new File("src/main/resources/rssdata/webSources.txt");
+            File newsList = new File("src/main/resources/rssdata/articleSources.txt");
             Scanner newsListScanner = new Scanner(newsList);
             while (newsListScanner.hasNextLine()) {
                 String urlString = newsListScanner.nextLine();
