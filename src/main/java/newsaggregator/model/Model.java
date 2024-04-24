@@ -14,14 +14,14 @@ public class Model {
     String detailedContent;
     String creationDate;
     String author;
-    List<String> category;
+    List<String> categories;
 
     // Constructors
 
     public Model() {
     }
 
-    public Model(String guid, String link, String source, String type, String title, String detailedContent, String creationDate, String author, List<String> category) {
+    public Model(String guid, String link, String source, String type, String title, String detailedContent, String creationDate, String author, List<String> categories) {
         this.guid = guid;
         this.link = link;
         this.source = source;
@@ -30,7 +30,7 @@ public class Model {
         this.detailedContent = detailedContent;
         this.creationDate = creationDate;
         this.author = author;
-        this.category = category;
+        this.categories = categories;
     }
 
     // Methods
@@ -99,11 +99,11 @@ public class Model {
         this.author = author;
     }
 
-    public List<String> getCategory() {
-        return category;
+    public List<String> getCategories() {
+        return categories;
     }
 
-    public void setCategory(List<String> category) {
-        this.category = category;
+    public void setCategories(List<String> categories) {
+        this.categories = categories;
     }
 }

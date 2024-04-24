@@ -12,7 +12,7 @@
 	<atom:link href="https://coinjournal.net/feed/" rel="self" type="application/rss+xml" />
 	<link>https://coinjournal.net/</link>
 	<description><![CDATA[Keep your finger on the pulse of the fast-moving cryptocurrency sector with all the latest crypto news, analysis and reviews from CoinJournal]]></description>
-	<lastBuildDate>Mon, 22 Apr 2024 10:21:20 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 24 Apr 2024 12:34:44 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,384 +28,375 @@
 	<height>32</height>
 </image> 
 	<item>
-		<title>Figure Markets CEO confirms FTX&#8217;s auction of remaining locked Solana (SOL)</title>
-		<link>https://coinjournal.net/news/figure-markets-ceo-confirms-ftxs-auction-of-remaining-locked-solana-sol/</link>
+		<title>Research Reveals Mobile Devices as Catalysts for Efficient Decentralized Infrastructure Networks (DePINs)</title>
+		<link>https://coinjournal.net/news/research-reveals-mobile-devices-as-catalysts-for-efficient-decentralized-infrastructure-networks-depins/</link>
+					<comments>https://coinjournal.net/news/research-reveals-mobile-devices-as-catalysts-for-efficient-decentralized-infrastructure-networks-depins/#respond</comments>
 		
-		<dc:creator><![CDATA[Charles Thuo]]></dc:creator>
-		<pubDate>Mon, 22 Apr 2024 10:21:20 +0000</pubDate>
-				<category><![CDATA[Markets]]></category>
-		<category><![CDATA[Cryptocurrency News]]></category>
-		<category><![CDATA[Solana News]]></category>
-		<guid isPermaLink="false">https://coinjournal.net/?p=199632</guid>
+		<dc:creator><![CDATA[Chainwire &#160;]]></dc:creator>
+		<pubDate>Wed, 24 Apr 2024 12:34:44 +0000</pubDate>
+				<category><![CDATA[Press Release]]></category>
+		<guid isPermaLink="false">https://coinjournal.net/?p=200129</guid>
 
-					<description><![CDATA[<p>FTX to auction the remaining locked Solana (SOL) tokens. The last SOL token sale by FTX attracted significant buyer interest. Figure Markets confirms it will participate in the auction. The embattled FTX cryptocurrency exchange is set to auction the remaining locked Solana (SOL) tokens from its estate. The decision follows the success of the previous [&#8230;]</p>
-<p>The post <a href="https://coinjournal.net/news/figure-markets-ceo-confirms-ftxs-auction-of-remaining-locked-solana-sol/">Figure Markets CEO confirms FTX&#8217;s auction of remaining locked Solana (SOL)</a> appeared first on <a href="https://coinjournal.net">CoinJournal</a>.</p>
+					<description><![CDATA[<p>Zug, Switzerland, April 24th, 2024, Chainwire Researchers from the University of Z&#252;rich&#8217;s Communication Systems Group, in collaboration with the Acurast Association building on Polkadot and other ecosystems, have unveiled groundbreaking results in their latest study, &#8220;Performance Analysis of Decentralized Physical Infrastructure Networks and Centralized Clouds.&#8221; This work demonstrates the viability of Decentralized Physical Infrastructure Networks [&#8230;]</p>
+<p>The post <a href="https://coinjournal.net/news/research-reveals-mobile-devices-as-catalysts-for-efficient-decentralized-infrastructure-networks-depins/">Research Reveals Mobile Devices as Catalysts for Efficient Decentralized Infrastructure Networks (DePINs)</a> appeared first on <a href="https://coinjournal.net">CoinJournal</a>.</p>
 ]]></description>
-										<content:encoded><![CDATA[<ul>
-<li>FTX to auction the remaining locked Solana (SOL) tokens.</li>
-<li>The last SOL token sale by FTX attracted significant buyer interest.</li>
-<li>Figure Markets confirms it will participate in the auction.</li>
+										<content:encoded><![CDATA[<p><strong>Zug, Switzerland, April 24th, 2024, Chainwire</strong></p>
+<p>Researchers from the University of Z&uuml;rich&rsquo;s Communication Systems Group, in collaboration with the Acurast Association building on Polkadot and other ecosystems, have unveiled groundbreaking results in their latest study, &ldquo;Performance Analysis of Decentralized Physical Infrastructure Networks and Centralized Clouds.&rdquo; This work demonstrates the viability of Decentralized Physical Infrastructure Networks (DePIN) as a robust alternative to traditional centralized cloud computing platforms.</p>
+<p>DePINs, leveraging blockchain technology and the Internet of Things (IoT), aim to enhance data sovereignty, reduce dependency on centralized models, and improve system resilience against potential failures. The research specifically highlights and evaluates <a href="https://acurast.com/" target="_blank" rel="nofollow noopener">Acurast</a>, a new decentralized serverless cloud network that capitalizes on underutilized resources of smartphones to perform complex computing tasks with enhanced security and efficiency.</p>
+<h2>Key Findings</h2>
+<ul>
+<li><strong>Enhanced Efficiency:</strong> Acurast has shown potential to perform computationally intensive tasks more efficiently than traditional cloud services like Google Cloud Platform and Amazon AWS.</li>
+<li><strong>Power Efficiency:</strong> Acurast significantly reduce power consumption, compared to existing centralized server infrastructure, making it an environmentally friendly alternative to existing solutions.</li>
+<li><strong>Empirical Evidence:</strong> The study provides empirical evidence supporting the theoretical benefits of DePINs, demonstrating Acurast&rsquo;s ability to handle computationally intensive applications with reliability and cost-effectiveness.</li>
 </ul>
-<p>The embattled FTX cryptocurrency exchange is set to auction the remaining locked Solana (SOL) tokens from its estate. The decision follows the success of the previous sale, which generated significant interest from buyers.</p>
-<p>The upcoming auction has been <a href="https://x.com/mcagney/status/1781804464028139848">confirmed by Mike Cagney</a>, the CEO of Figure Markets and board chair of Figure, who disclosed that the decentralized exchange will take part in the auction.</p>
-<h2>Figure Markets introduces SPV investment opportunity</h2>
-<p>To facilitate Figure Markets&rsquo; participation in the upcoming SOL auctions from the FTX estate, Figure Markets has unveiled a Special Purpose Vehicle (SPV) open to non-US investors (subject to KYC) and accredited US investors.</p>
-<p>The SPV will operate based on community consensus, where each dollar invested equals one vote in determining bid prices and subsequent management decisions.</p>
-<p>Investors interested in participating in the SPV can do so using USD, USDC, BTC, or ETH. Figure Markets will charge a 50 bps annual management fee to cover the costs of setting up the SPV and ongoing management. Additionally, while there&rsquo;s no confirmed timeline yet, Figure Markets intends to integrate the SPV into their exchange, allowing investors to use their investment as collateral for borrowing and margining.</p>
-<p>By offering this investment opportunity, Figure Markets aims to provide investors with a streamlined way to participate in the auction of locked Solana tokens from the FTX estate. With the SPV structure, investors can have a say in bid prices and subsequent management decisions, creating a community-driven approach to investment in the cryptocurrency space.</p>
-<h2>FTX&rsquo;s previous Solana (SOL) token sale</h2>
-<p>The success of FTX&rsquo;s previous SOL token sale to industry giants like Pantera and Galaxy Digital&nbsp;cannot be understated.</p>
-<p>With approximately $2.6 billion generated from selling two-thirds of its locked Solana tokens at around $60 per token, the FTX estate made significant gains from the sale.</p>
-<p>For the investors, considering <a href="https://coinjournal.net/solana/">Solana&rsquo;s current price</a> hovering around $153, the decision to buy in previous Solana sales appears to have been a prudent one.</p>
-<p>However, the volatile nature of cryptocurrencies calls for careful consideration and risk management especially seeing that the unlocking of huge amounts of tokens could create a surplus in supply and unless the demand goes through the roof, the token price could plummet.</p>
+<blockquote><p>&ldquo;The advent of decentralized technologies presents a unique opportunity to rethink how we manage and operate digital infrastructures,&rdquo; said Jan von der Assen, PhD student and Junior Researcher of the Communication Systems Group (CSG) at the University of Zurich (UZH) on the project. &ldquo;Acurast not only challenges the status quo but may also present a scalable, secure, and sustainable model for future computing needs.&rdquo;</p></blockquote>
+<p>This research marks a significant step toward understanding and harnessing the power of DePINs for computing. It opens up a real alternative to existing cloud providers for applications in all industries, especially where confidentiality is paramount.</p>
+<p>The full <a href="https://arxiv.org/abs/2404.08306" target="_blank" rel="nofollow noopener">research paper</a> is publicly available and has been accepted at the upcoming DePIN Workshop of the International Conference on Blockchain Technology (ICBC) 2024.</p>
+<h3>About University of Z&uuml;rich&rsquo;s Communication Systems Group</h3>
+<p>The <a href="https://www.csg.uzh.ch/csg/en/" target="_blank" rel="nofollow noopener">Communication Systems Group (CSG)</a> at the University of Zurich focuses on research and development in networked systems and communication mechanisms. The group is dedicated to advancing the state of the art in communication systems, network security, and infrastructure development.</p>
+<h3>About Acurast Association</h3>
+<p>The Acurast Association is dedicated to breaking up the cloud monopoly with <a href="https://acurast.com/" target="_blank" rel="nofollow noopener">Acurast</a> using mobile hardware, thereby democratizing and decentralizing the cloud. Allowing everyone to become a part of the cloud through their mobile devices. Providing developers with unrestricted, permissionless access to computing resources that are secure, cost-effective, and confidential.</p>
+<p>&nbsp;</p>
+<p><strong>Contact</strong></p>
+<p>Co-Founder<br>
+Pascal Brun<br>
+Acurast<br>
+hi@acurast.com</p>
 
-<p>The post <a href="https://coinjournal.net/news/figure-markets-ceo-confirms-ftxs-auction-of-remaining-locked-solana-sol/">Figure Markets CEO confirms FTX&#8217;s auction of remaining locked Solana (SOL)</a> appeared first on <a href="https://coinjournal.net">CoinJournal</a>.</p>
+<p>The post <a href="https://coinjournal.net/news/research-reveals-mobile-devices-as-catalysts-for-efficient-decentralized-infrastructure-networks-depins/">Research Reveals Mobile Devices as Catalysts for Efficient Decentralized Infrastructure Networks (DePINs)</a> appeared first on <a href="https://coinjournal.net">CoinJournal</a>.</p>
 ]]></content:encoded>
 					
+					<wfw:commentRss>https://coinjournal.net/news/research-reveals-mobile-devices-as-catalysts-for-efficient-decentralized-infrastructure-networks-depins/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
-		<title>Bitbot gains as Ape Terminal cancels ZKasino IDO</title>
-		<link>https://coinjournal.net/news/bitbot-gains-as-ape-terminal-cancels-zkasino-ido/</link>
+		<title>Worldcoin update: What’s going on with the WLD token?</title>
+		<link>https://coinjournal.net/news/worldcoin-update-whats-going-on-with-the-wld-token/</link>
 		
 		<dc:creator><![CDATA[Benson Toti]]></dc:creator>
-		<pubDate>Sun, 21 Apr 2024 12:07:16 +0000</pubDate>
+		<pubDate>Wed, 24 Apr 2024 12:32:23 +0000</pubDate>
 				<category><![CDATA[Markets]]></category>
 		<category><![CDATA[Crypto]]></category>
-		<guid isPermaLink="false">https://coinjournal.net/?p=199573</guid>
+		<guid isPermaLink="false">https://coinjournal.net/?p=200141</guid>
 
-					<description><![CDATA[<p>Ape Terminal, one of the top IDO platform&#8217;s in the market, has cancelled crypto betting platform ZKasino&#8217;s IDO. This unfolds as the broader crypto community is showing greater resilience amid Bitcoin&#8217;s halving. A few projects are however attracting as much attention as new crypto trading solution Bitbot. As Bitbot matches towards a highly successful presale, [&#8230;]</p>
-<p>The post <a href="https://coinjournal.net/news/bitbot-gains-as-ape-terminal-cancels-zkasino-ido/">Bitbot gains as Ape Terminal cancels ZKasino IDO</a> appeared first on <a href="https://coinjournal.net">CoinJournal</a>.</p>
+					<description><![CDATA[<p>Worldcoin subsidiary plans to sell up to 36 million WLD tokens over next six months WLD supply could increase by as much as 19%. Worldcoin price hovered around $5.48 on Wednesday, flat on the day after paring earlier gains. The scenario that the supply of Worldcoin increases by up to the above number of coins [&#8230;]</p>
+<p>The post <a href="https://coinjournal.net/news/worldcoin-update-whats-going-on-with-the-wld-token/">Worldcoin update: What’s going on with the WLD token?</a> appeared first on <a href="https://coinjournal.net">CoinJournal</a>.</p>
 ]]></description>
 										<content:encoded><![CDATA[<ul>
-<li><span style="font-weight: 400">Ape Terminal, one of the top IDO platform&rsquo;s in the market, has cancelled crypto betting platform ZKasino&rsquo;s IDO.</span></li>
-<li><span style="font-weight: 400">This unfolds as the broader crypto community is showing greater resilience amid Bitcoin&rsquo;s halving.</span></li>
-<li><span style="font-weight: 400">A few projects are however attracting as much attention as new crypto trading solution Bitbot.</span></li>
+<li><span style="font-weight: 400">Worldcoin subsidiary plans to sell up to 36 million WLD tokens over next six months</span></li>
+<li><span style="font-weight: 400">WLD supply could increase by as much as 19%.</span></li>
+<li><span style="font-weight: 400">Worldcoin price hovered around $5.48 on Wednesday, flat on the day after paring earlier gains.</span></li>
 </ul>
-<p><span style="font-weight: 400">As <a href="https://bitbot.tg/?utm_source=media&amp;utm_medium=artc&amp;utm_campaign=coinjournal&amp;utm_term=internal&amp;utm_content=current_news" target="_blank" rel="noopener">Bitbot</a> matches towards a highly successful presale, investors flocking to it are likely buoyed by what the project promises in the wake of events surrounding ZKasino, a decentralized betting network.</span></p>
-<p><span style="font-weight: 400">While the ZKasino team says the project will still launch as expected, it&rsquo;s likely to face challenges with regard to community trust after the rug pull allegations and <a href="https://coinjournal.net/news/tag/exchanges/">exchange</a> listing delays.&nbsp;</span></p>
-<h2><span style="font-weight: 400">Bitbot brings non-custodial trading and anti-rug pull features to crypto</span></h2>
-<p><span style="font-weight: 400">Bitbot is one of the few emerging crypto projects that are pushing for market dominance. In particular, <a href="https://coinjournal.net/news/game-changing-telegram-trading-bot-bitbot-reaches-2m-mark-in-presale/">Bitbot&rsquo;s eyes are on the Telegram bot space</a>, which analysts have predicted could explode as crypto prepares for the bull market proper.</span></p>
-<p><span style="font-weight: 400">What makes Bitbot stand out in the market is its pioneering non-custodial trading feature. </span></p>
-<p><span style="font-weight: 400">PAAL AI, Banana Gun, PaLM AI and Unibot have seen significant success since their launch. However, none of these solutions offer the industry-leading security that Bitbot pioneers with its non-custodial Telegram bot.</span></p>
-<p><span style="font-weight: 400">When the bot launches in coming months, users will not only have the peace of mind of retaining full control of their assets as they trade, but also tap into additional security layers provided by anti-rug pull and anti-MEV tools.</span></p>
-<p><span style="font-weight: 400">So it&rsquo;s not just Bitbot&rsquo;s non-custodial solution or its AI-powered trading tools, but also the protection users can get with the anti-rug pull feature. Bitbot team&rsquo;s transparency also adds to this positive outlook for the project, likely the reason the presale has raced to over $2.7 million.</span></p>
-<h2><span style="font-weight: 400">Ape Terminal cancels IDO for ZKasino (ZKAS)</span></h2>
-<p><span style="font-weight: 400">Following concerns around a potential rug pull, IDO platform Ape Terminal announced it had cancelled ZKasino&rsquo;s initial DEX offering.</span></p>
-<p><span style="font-weight: 400">Ape Terminal&rsquo;s <a href="https://twitter.com/apeterminal/status/1781836764958830658" target="_blank" rel="noopener">statement</a> comes after ZigZag, a decentralised P2P orderbook exchange, published concerns about ZKasino and a potential $32 million rug pull.</span></p>
-<p><span style="font-weight: 400">Meanwhile, ZKasino participants have reportedly been unable to withdraw their money as the platform&rsquo;s team has moved all 10,515 ETH from the deposit contract to Lido.</span></p>
-<p><span style="font-weight: 400">Amid these allegations, some exchanges have announced paused listing plans of the ZKasino token ZKAS. Crypto exchange MEXC <a href="https://twitter.com/MEXC_Official/status/1781685207286079515" target="_blank" rel="noopener">announced</a> it would cancel ZKAS listing on Saturday.</span></p>
-<blockquote class="twitter-tweet" data-width="500" data-dnt="true">
-<p lang="en" dir="ltr">A lot of FUD going around.</p>
-<p>The ZKasino network will still go live, it has been delayed due to exchange listings.</p>
-<p>&mdash; ZKasino (@ZKasino_io) <a href="https://twitter.com/ZKasino_io/status/1781670189118976450?ref_src=twsrc%5Etfw">April 20, 2024</a></p></blockquote>
-<p><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
-<p><span style="font-weight: 400">Ape Terminal said on April 21 that participants who opted into the crypto betting platform&rsquo;s DEX offering will receive a refund of their assets. Stablecoin claims are open, the platform posted on X.</span></p>
-<h2><span style="font-weight: 400">Bitbot presale could be key opportunity</span></h2>
-<p><span style="font-weight: 400">The Bitbot native token BITBOT will power the new trading bot, providing users with another investment opportunity. Top of this is the chance to earn a share of platform revenue. Other perks are outlined via the project&rsquo;s whitepaper.</span></p>
-<p><span style="font-weight: 400">Currently, BITBOT token is priced at just $0.0163 in stage 11. As highlighted in the project&rsquo;s whitepaper, the presale price is scheduled to rise to $0.020 in stage 15, the final presale stage.</span></p>
-<p><span style="font-weight: 400">Bitbot&rsquo;s launch will see it stand out as the only non-custodial Telegram trading bot in the market. Already, there&rsquo;s a strong community building around the project as its presale moves towards an end and the next few weeks could be an early opportunity for investors.</span></p>
-<p><span style="font-weight: 400">To learn more about Bitbot, go to the <a href="https://bitbot.tg/?utm_source=media&amp;utm_medium=artc&amp;utm_campaign=coinjournal&amp;utm_term=internal&amp;utm_content=current_news" target="_blank" rel="noopener">official website</a>.</span></p>
+<p><span style="font-weight: 400">The scenario that the supply of Worldcoin increases by up to the above number of coins stems from plans outlined in a <a href="https://worldcoin.org/blog/announcements/circulating-supply-update-sales-trading-firms" target="_blank" rel="noopener">blog post</a> published on April 23.</span></p>
+<p><span style="font-weight: 400">&ldquo;<em>To meet the increasing demand for orb-verified World IDs around the world and support the growth of the Worldcoin network, World Assets Ltd. (a subsidiary of the Worldcoin Foundation) expects to sell WLD tokens from the World Assets treasury in the coming months</em>,&rdquo; Worldcoin Foundation said in the announcement.</span></p>
+<p><span style="font-weight: 400">In particular, World Assets is looking to sell between 500,000 to 1.5 million WLD tokens every week for six months. The tokens will account for about 0.1% to 0.4% of Worldcoin&rsquo;s weekly trading volume.</span></p>
+<p><span style="font-weight: 400">According to the blog post, the tokens are from the World Assets treasury and will be sold via private sales to non-US institutional trading firms.</span></p>
+<p><span style="font-weight: 400">&ldquo;<em>These private placements of WLD will take place for up to 6 months and will include certain measures designed to prevent WLD sold outside the US from flowing back into the US</em>,&rdquo; Worldcoin Foundation team noted.</span></p>
+<h2><span style="font-weight: 400">Worldcoin (WLD) token price</span></h2>
+<p><span style="font-weight: 400">If World Assets sells the expected weekly total of up to 1.5 million WLD tokens (worth about $8.2 million) the total sales for the six months could reach 36 million tokens. The value of the new WLD supply hitting the market could be up to $197 million, given current WLD token price of $5.48.</span></p>
+<p><span style="font-weight: 400">Per CoinGecko data, Worldcoin&rsquo;s 24-hour trading volume stands at $216 million while circulating supply is just over 194 million.&nbsp;&nbsp;</span></p>
+<p><span style="font-weight: 400">Worldcoin (WLD) price today is up about 9.7% in the past week and down by about 36% in the past 30 days. </span></p>
+<p><span style="font-weight: 400"><a href="https://coinjournal.net/news/portugal-orders-worldcoin-to-halt-data-collection/">Regulatory headwinds</a> and slowdown in AI tokens is likely behind the decline this past month. However, WLD price is more than 456% up since its all-time low of $0.9731 reached in September last year.</span></p>
+<p><span style="font-weight: 400">The token launched in July 2023, co-founded by OpenAI CEO Sam Altman. In March, Worldcoin surged to its all-time high of $11.74, getting tailwinds from the broader AI narrative. Worldcoin&rsquo;s plans for <a href="https://coinjournal.net/news/worldcoin-to-launch-a-new-ethereum-l2-network-dubbed-world-chain/">a new Ethereum layer-2 called World Chain</a> also buoyed prices.</span></p>
 
-<p>The post <a href="https://coinjournal.net/news/bitbot-gains-as-ape-terminal-cancels-zkasino-ido/">Bitbot gains as Ape Terminal cancels ZKasino IDO</a> appeared first on <a href="https://coinjournal.net">CoinJournal</a>.</p>
+<p>The post <a href="https://coinjournal.net/news/worldcoin-update-whats-going-on-with-the-wld-token/">Worldcoin update: What’s going on with the WLD token?</a> appeared first on <a href="https://coinjournal.net">CoinJournal</a>.</p>
 ]]></content:encoded>
 					
 		
 		
 			</item>
 		<item>
-		<title>4 crypto underdogs that could be ready to shine in the bull run</title>
-		<link>https://coinjournal.net/news/4-crypto-underdogs-that-could-be-ready-to-shine-in-the-bull-run/</link>
+		<title>Crypto Poker Site CoinPoker Launches CSOP Tournament Series with $1M Pot and Removes Cashout Fees</title>
+		<link>https://coinjournal.net/news/crypto-poker-site-coinpoker-launches-csop-tournament-series-with-1m-pot-and-removes-cashout-fees/</link>
+					<comments>https://coinjournal.net/news/crypto-poker-site-coinpoker-launches-csop-tournament-series-with-1m-pot-and-removes-cashout-fees/#respond</comments>
 		
-		<dc:creator><![CDATA[News Team]]></dc:creator>
-		<pubDate>Sat, 20 Apr 2024 16:00:45 +0000</pubDate>
+		<dc:creator><![CDATA[Chainwire &#160;]]></dc:creator>
+		<pubDate>Wed, 24 Apr 2024 11:06:46 +0000</pubDate>
 				<category><![CDATA[Press Release]]></category>
-		<category><![CDATA[Crypto]]></category>
-		<guid isPermaLink="false">https://coinjournal.net/?p=199549</guid>
+		<guid isPermaLink="false">https://coinjournal.net/?p=200107</guid>
 
-					<description><![CDATA[<p>TLDR The Ethena (ENA) price is predicted to bounce back above $1.50. The Celestia (TIA) token is predicted to rise again and trade above $15. Experts predict that the SUI price will rise above $1.50. Rebel Satoshi ($RBLZ) surpasses 357 million $RECQ tokens sold during its skyrocketing presale. With the recent dip in the market, [&#8230;]</p>
-<p>The post <a href="https://coinjournal.net/news/4-crypto-underdogs-that-could-be-ready-to-shine-in-the-bull-run/">4 crypto underdogs that could be ready to shine in the bull run</a> appeared first on <a href="https://coinjournal.net">CoinJournal</a>.</p>
+					<description><![CDATA[<p>Willemstad, Curacao, April 24th, 2024, Chainwire CoinPoker, the world&#8217;s largest cryptocurrency poker platform, has launched its annual Crypto Series of Online Poker (CSOP) Spring tournament series while also removing all Cashout Fees as announced by the team on X: After kicking off on Friday April 19, the ongoing tournament series will end on April 28, [&#8230;]</p>
+<p>The post <a href="https://coinjournal.net/news/crypto-poker-site-coinpoker-launches-csop-tournament-series-with-1m-pot-and-removes-cashout-fees/">Crypto Poker Site CoinPoker Launches CSOP Tournament Series with $1M Pot and Removes Cashout Fees</a> appeared first on <a href="https://coinjournal.net">CoinJournal</a>.</p>
 ]]></description>
-										<content:encoded><![CDATA[<h2><span style="font-weight: 400">TLDR</span></h2>
-<ul>
-<li style="font-weight: 400">The Ethena (ENA) price is predicted to bounce back above $1.50.</li>
-<li style="font-weight: 400">The Celestia (TIA) token is predicted to rise again and trade above $15.</li>
-<li style="font-weight: 400">Experts predict that the SUI price will rise above $1.50.</li>
-<li style="font-weight: 400">Rebel Satoshi ($RBLZ) surpasses 357 million $RECQ tokens sold during its skyrocketing presale.</li>
-</ul>
-<p>With the <a href="https://coinjournal.net/">recent dip in the market</a>, investors are on the lookout for the best cryptos to buy right now, and many are reaching the conclusion that Ethena (ENA), Celestia (TIA), and SUI could be the top crypto coins that are ready to shine. Meanwhile, <a href="https://recq.rebelsatoshi.com/?utm_source=4844&amp;utm_medium=News&amp;utm_id=Fox" target="_blank" rel="noopener">Rebel Satoshi</a>&rsquo;s ($RBLZ) new token, $RECQ, has continued to draw investors in hordes to its presale. Let&rsquo;s understand what makes ENA, TIA, SUI, and $RECQ some of the best altcoins to buy, according to experts.</p>
-<h2>Ethena shows strength to bounce back from the dump</h2>
-<p>The Ethena (ENA) token has performed tremendously ever since its launch in April. The Ethena (ENA) token rose to an all-time high of $1.50 on April 11. However, as the market soon dumped due to global factors and conflicts, Ethena (ENA) also dumped. The Ethena (ENA) token was down by nearly 38% to $0.93 on April 14.</p>
-<p>Since then, the Ethena (ENA) price has recovered by nearly 14% to $1.06 on April 16. Amid the tumultuous price action, Ethena (ENA) announced <a href="https://coinjournal.net/news/binance-adds-ethena-ena-as-50th-launchpool-project/">integration with Web3 wallets like Binance</a>, Bybit, OKX, and Bitget on April 10.</p>
-<p>These developments have led to a bullish outlook on the Ethena (ENA) token. Some experts predict that the Ethena (ENA) token will rise above $1.50 in the coming months.</p>
-<h2>Celestia reclaims $10 support amid fresh surge</h2>
-<p>As the market dropped on April 12, the <a href="https://coinjournal.net/news/celestia-price-declines-as-okb-and-rebel-satoshi-arcade-soar/">Celestia (TIA) token</a> also witnessed a massive drop. The Celestia (TIA) token was trading at $11.19 on April 12 and dumped by 24.3% to $8.46 on April 14. As a result, the Celestia (TIA) token lost its $10 support for the first time in months as a result.</p>
-<p>Since then, the Celestia (TIA) token has risen by 20.4% to $10.19 on April 16. While the Celestia (TIA) price dropped, NodeKit announced its integration with Celestia on April 12. Celestia&rsquo;s (TIA) Infinite Space Bazaar hackathon surpassed 1000 entries on April 15.</p>
-<p>These developments have resulted in many experts having a bullish outlook on Celestia (TIA). They predict that the Celestia (TIA) token will rise above $15 going forward.</p>
-<h2>SUI rises above $1 again after a brief drop below</h2>
-<p>Just like the other tokens, the SUI price also turned bearish as the market dropped on April 12. The SUI token was trading at $1.51 on April 12 before facing a drop. The SUI token was down by 37.7% to $0.94 on April 14 before <a href="https://coinjournal.net/news/sui-spikes-11-as-btc-eth-slide-heres-why-sui-price-is-surging/">bouncing back again</a>. The SUI price has since risen by 23.4% to $1.16 on April 16.</p>
-<p>While its price suffered, SUI announced the first handheld gaming device, SuiPlayOX1, with native Web3 capabilities on April 10. On the same day, Blocktrade announced its groundbreaking partnership with the SUI Network.</p>
-<p>Due to the constant growth, the outlook for SUI is bullish, and some experts predict a surge above $1.50.</p>
-<p><a href="https://www.rebelsatoshi.com/?utm_source=MCAP&amp;utm_medium=Banner&amp;utm_id=Bird" target="_blank" rel="noopener"><img decoding="async" loading="lazy" class="size-full wp-image-199551 aligncenter" src="https://coinjournal.net/wp-content/uploads/2024/04/rebel-satoshi.png" alt="" width="728" height="90"></a></p>
-<h2>Rebel Satoshi soars past 360 million milestone in the $RECQ presale</h2>
-<p>The innovative and groundbreaking project, Rebel Satoshi, is built on the Ethereum network. Drawing inspiration from Guy Fawkes and Satoshi Nakamoto, Rebel Satoshi aims to bring a decentralized revolution to the market. The Rebel Satoshi rebellion is led by its Recusant community members as they rise against the elites to take back control.</p>
-<p>Rebel Satoshi has a vast ecosystem comprising an NFT vault, a gaming Arcade, exclusive merchandise, and staking pools. The Rebel Satoshi ecosystem is built around its dual-token system of the $RBLZ and the $RECQ tokens. Rebel Satoshi aims to grow to a market cap of $100 million and raised over $2.5 million with the $RBLZ presale.</p>
-<p><a href="https://recq.rebelsatoshi.com/?utm_source=4844&amp;utm_medium=News&amp;utm_id=Fox" target="_blank" rel="noopener">Rebel Satoshi</a> is conducting the presale of the $RECQ token in Stage 1 at $0.0037 right now. The $RECQ token has rallied by 85% already, and over 360 million tokens have been sold.</p>
-<p>The $RECQ token will rise to its launch price of $0.0125 by the end of the presale. The $RECQ token should generate 237.8% returns for current investors at that stage. As a result, some analysts are suggesting that the $RECQ token could be one of the best cryptos to invest in right now.</p>
-<p><b>For the latest updates and more information, be sure to visit the official </b><a href="https://www.rebelsatoshi.com/" target="_blank" rel="noopener"><b>Rebel Satoshi Website</b></a><b> or contact Rebel Red via</b> <a href="https://t.me/RBLZRED" target="_blank" rel="noopener"><b>Telegram</b></a></p>
+										<content:encoded><![CDATA[<p><strong>Willemstad, Curacao, April 24th, 2024, Chainwire</strong></p>
+<p class="ql-align-justify"><a href="https://coinpoker.com/" target="_blank" rel="nofollow noopener">CoinPoker</a>, the world&rsquo;s largest cryptocurrency poker platform, has launched its annual Crypto Series of Online Poker (CSOP) Spring tournament series while also removing all Cashout Fees as announced by the <a href="https://twitter.com/CoinPoker_OFF/status/1782807509528420829" target="_blank" rel="nofollow noopener">team on X</a>:</p>
+<p class="ql-align-center"><img decoding="async" src="https://coinjournal.net/wp-content/uploads/2024/04/xApln2jl5Uq-xzPv8Tck9VD-eHx8tlxC_iz2uJu3SoKoHRlVet_1713954692J3sTTM8Ebx.jpeg"></p>
+<p class="ql-align-justify">After kicking off on Friday April 19, the ongoing tournament series will end on April 28, featuring 41 events with a combined $1 million in guaranteed prize pools.</p>
+<h2>CSOP spring tournament spans 41 events over 10 days</h2>
+<p class="ql-align-justify">Drawing comparisons to the prestigious World Series of Poker (WSOP), the <a href="https://coinpoker.com/tournament/csop/" target="_blank" rel="nofollow noopener">CSOP</a> is one of the biggest online poker tournament series to use cryptocurrencies.</p>
+<p class="ql-align-justify">CoinPoker&rsquo;s flagship CSOP series has grown in stature each year, attracting players globally to compete for seven-figure prize pools paid out in crypto.</p>
+<p class="ql-align-justify">This year&rsquo;s CSOP Spring edition has also attracted high stakes cash game action, with 1000/2000 games running on Sunday and some <a href="https://www.rakeback.com/news/tony-g-wins-304575-usdt-pot-in-nosebleeds-coinpoker-action/" target="_blank" rel="nofollow noopener">poker pots over $300k</a>.</p>
+<p class="ql-align-justify"><img decoding="async" src="https://coinjournal.net/wp-content/uploads/2024/04/GL3WY12XwAAjjPLformatjpgnamemedium_1713955307vMPzegZw01.jpeg"></p>
+<p class="ql-align-justify">The ten days of the CSOP and 41 tournaments encompass a range of buy-in levels, from $20 openers to the $500 CSOP Grand Finale main event on April 28, all with freeroll qualifier events to satellite in at a discount.</p>
+<p class="ql-align-justify">Players can also expect a diverse slate of formats, including progressive knockout (PKO), Pot Limit Omaha (PLO), &ldquo;MonsterStack&rdquo; big blind events, and more mixed throughout the series.</p>
+<h2>CoinPoker&rsquo;s CHP Token offers Ethereum-based utility for platform rewards</h2>
+<p class="ql-align-justify">The CSOP Spring event is also shining the spotlight on CoinPoker&rsquo;s ecosystem.</p>
+<p class="ql-align-justify">CoinPoker is the original cryptocurrency poker site, launched in 2017 with a vision of bringing blockchain technology to the poker world.</p>
+<p class="ql-align-justify">The lifeblood of CoinPoker&rsquo;s ecosystem is <a href="https://coinmarketcap.com/currencies/coinpoker/" target="_blank" rel="nofollow noopener">CHP</a>, a utility token built on the Ethereum network.</p>
+<p class="ql-align-justify">Though poker games are played using the USDT stablecoin, CHP serves as a &ldquo;bonusing fuel&rdquo; that provides rewards and incentives for token holders.</p>
+<p class="ql-align-justify">Players can also earn CHP through the platform&rsquo;s various promotions, rake races, and referral programs.</p>
+<p class="ql-align-justify">The token is currently available to trade through the QuickSwap DEX on the Polygon network.</p>
+<p class="ql-align-justify">At the time of writing, CHP is valued at $0.059 and is up 5% in the past seven days.</p>
+<p class="ql-align-justify">CHP&rsquo;s market cap is just over $15 million, with over 98% of the 278,237,314 supply in circulation.</p>
+<h2>Poker pro Tony G serves as CoinPoker ambassador</h2>
+<p class="ql-align-justify">A key part of CoinPoker&rsquo;s credibility in the poker world comes from its association with renowned pro <a href="https://twitter.com/TonyGuoga" target="_blank" rel="nofollow noopener">Tony G</a> (Antanas Guoga).</p>
+<p class="ql-align-justify">The Lithuanian-Australian poker legend serves as an ambassador and representative for the platform.</p>
+<p class="ql-align-justify">Tony G has an illustrious poker resume, with 15 World Series of Poker money finishes and two final table appearances at the World Poker Tour.</p>
+<p class="ql-align-justify">Tony G took part in the largest ever online poker pot worth <a href="https://www.youtube.com/watch?v=4p5jXD28nk8" target="_blank" rel="nofollow noopener">over $7.7 million</a>, played on CoinPoker&rsquo;s platform. Tony&rsquo;s decades of experience have helped steer CoinPoker into becoming one of the most popular crypto poker rooms.</p>
+<h3 class="ql-align-justify">About CoinPoker</h3>
+<p class="ql-align-justify">CoinPoker is the world&rsquo;s premier online crypto poker room and has been operating since 2017.</p>
+<p class="ql-align-justify">Using blockchain technology and cryptocurrencies, CoinPoker provides a secure, transparent, and provably fair poker experience.</p>
+<p class="ql-align-justify">With high-profile ambassadors like Tony G representing the platform, CoinPoker hosts regular tournaments, attracting thousands of players globally to compete for crypto prizes.</p>
+<p class="ql-align-justify">Players can register a free anonymous <a href="https://coinpoker.com/register/" target="_blank" rel="nofollow noopener">CoinPoker account here</a> to get started playing in the CSOP &ndash; all that&rsquo;s needed is a crypto wallet, email and phone number.</p>
+<p class="ql-align-justify">CoinPoker is the source of this content. This Press Release is for informational purposes only. The information does not constitute investment advice or an offer to invest.</p>
+<p>&nbsp;</p>
+<p><strong>Contact</strong></p>
+<p>CoinPoker<br>
+contact@coinpoker.com</p>
 
-<p>The post <a href="https://coinjournal.net/news/4-crypto-underdogs-that-could-be-ready-to-shine-in-the-bull-run/">4 crypto underdogs that could be ready to shine in the bull run</a> appeared first on <a href="https://coinjournal.net">CoinJournal</a>.</p>
+<p>The post <a href="https://coinjournal.net/news/crypto-poker-site-coinpoker-launches-csop-tournament-series-with-1m-pot-and-removes-cashout-fees/">Crypto Poker Site CoinPoker Launches CSOP Tournament Series with $1M Pot and Removes Cashout Fees</a> appeared first on <a href="https://coinjournal.net">CoinJournal</a>.</p>
 ]]></content:encoded>
 					
+					<wfw:commentRss>https://coinjournal.net/news/crypto-poker-site-coinpoker-launches-csop-tournament-series-with-1m-pot-and-removes-cashout-fees/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
-		<title>Hedgey Protocol loses $44.7M in dual cyber attacks</title>
-		<link>https://coinjournal.net/news/hedgey-protocol-loses-44-7m-in-dual-cyber-attacks/</link>
-		
-		<dc:creator><![CDATA[Charles Thuo]]></dc:creator>
-		<pubDate>Fri, 19 Apr 2024 17:04:12 +0000</pubDate>
-				<category><![CDATA[Crime]]></category>
-		<category><![CDATA[Markets]]></category>
-		<category><![CDATA[Cryptocurrency News]]></category>
-		<guid isPermaLink="false">https://coinjournal.net/?p=199480</guid>
-
-					<description><![CDATA[<p>Hedgey Protocol suffers $44.7M loss in dual cyber attacks. The protocol was targeted on both Arbitrum and Ethereum chains. Hedgey advises users to cancel active claims, revoking approvals amid the ongoing investigation. Hedgey Protocol, a decentralized finance (DeFi) platform, finds itself in the throes of a cyber siege after suffering a devastating attack that resulted [&#8230;]</p>
-<p>The post <a href="https://coinjournal.net/news/hedgey-protocol-loses-44-7m-in-dual-cyber-attacks/">Hedgey Protocol loses $44.7M in dual cyber attacks</a> appeared first on <a href="https://coinjournal.net">CoinJournal</a>.</p>
-]]></description>
-										<content:encoded><![CDATA[<ul>
-<li>Hedgey Protocol suffers $44.7M loss in dual cyber attacks.</li>
-<li>The protocol was targeted on both Arbitrum and Ethereum chains.</li>
-<li>Hedgey advises users to cancel active claims, revoking approvals amid the ongoing investigation.</li>
-</ul>
-<p>Hedgey Protocol, a decentralized finance (DeFi) platform, finds itself in the throes of a cyber siege after suffering a devastating attack that resulted in a staggering loss of $44.7 million across the Arbitrum and <a href="https://coinjournal.net/ethereum/what-is-ethereum/">Ethereum</a> blockchains.</p>
-<p>Cyvers Alerts, a leading cybersecurity watchdog, uncovered the vulnerabilities exploited in the attack, raising urgent concerns about the security landscape within the DeFi ecosystem.</p>
-<h2>Hedgey Protocol hacked on Arbitrum and Ethereum chains</h2>
-<p>Cyvers Alerts revealed that the attack targeted Hedgey Protocol on both the Arbitrum and Ethereum chains, with $42.8 million and $1.9 million stolen, respectively.</p>
-<p><a href="https://x.com/CyversAlerts/status/1781271050073841735">According to Cyners Alerts</a>, the attackers swiftly converted the stolen funds into DAI, complicating recovery efforts. Furthermore, additional transactions on the Arbitrum chain signalled potential vulnerabilities within the ecosystem, necessitating prompt action.</p>
-<p>In response, <a href="https://x.com/hedgeyfinance/status/1781257581488418862">Hedgey Protocol acknowledged the attack</a> and they have said that they have launched a comprehensive investigation into the breach, working closely with security experts and auditors to understand the attack&rsquo;s root cause.</p>
-<p>As the investigation unfolds, Hedgey Protocol issued urgent advisories to its users, urging them to cancel active claims and revoke all approvals to mitigate the risk of further exploitation. They recommended an immediate review of approvals while the investigation progresses to ensure users&rsquo; security and prevent any potential loss of funds. Additionally, users were warned to remain vigilant against scammers attempting to capitalize on the situation, emphasizing the importance of cautious online behaviour.</p>
-<blockquote class="twitter-tweet" data-width="500" data-dnt="true">
-<p lang="en" dir="ltr">Security Alert: We're investigating an attack on the Hedgey Token Claim Contract. If you have created active claims, please cancel them using the "End Token Claim" button at <a href="https://t.co/Tt7Aq0n2dh">https://t.co/Tt7Aq0n2dh</a>. </p>
-<p>We are are actively working with our auditors and team to understand the attack&hellip;</p>
-<p>&mdash; Hedgey &#129428; (@hedgeyfinance) <a href="https://twitter.com/hedgeyfinance/status/1781257581488418862?ref_src=twsrc%5Etfw">April 19, 2024</a></p></blockquote>
-<p><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
-<p>The Hedgey Protocol cyber attack underscores the interconnectedness of DeFi platforms and the imperative for robust security protocols in the evolving landscape of decentralized finance.</p>
-<p>As stakeholders collaborate to address vulnerabilities and enhance security measures, the incident serves as a stark reminder of the ongoing challenges posed by cyber threats in the digital asset space.</p>
-
-<p>The post <a href="https://coinjournal.net/news/hedgey-protocol-loses-44-7m-in-dual-cyber-attacks/">Hedgey Protocol loses $44.7M in dual cyber attacks</a> appeared first on <a href="https://coinjournal.net">CoinJournal</a>.</p>
-]]></content:encoded>
-					
-		
-		
-			</item>
-		<item>
-		<title>Telegram to tokenize emojis and stickers as NFTs on TON blockchain</title>
-		<link>https://coinjournal.net/news/telegram-to-tokenize-emojis-and-stickers-as-nfts-on-ton-blockchain/</link>
+		<title>Arthur Hayes says macro setup favours Bitcoin bulls as KangaMoon attracts investors</title>
+		<link>https://coinjournal.net/news/arthur-hayes-says-macro-setup-favours-bitcoin-bulls-as-kangamoon-attracts-investors/</link>
 		
 		<dc:creator><![CDATA[Benson Toti]]></dc:creator>
-		<pubDate>Fri, 19 Apr 2024 16:17:31 +0000</pubDate>
+		<pubDate>Wed, 24 Apr 2024 07:17:33 +0000</pubDate>
 				<category><![CDATA[Markets]]></category>
+		<category><![CDATA[Bitcoin News]]></category>
 		<category><![CDATA[Crypto]]></category>
-		<guid isPermaLink="false">https://coinjournal.net/?p=199452</guid>
+		<guid isPermaLink="false">https://coinjournal.net/?p=200034</guid>
 
-					<description><![CDATA[<p>Telegram co-founder and CEO Pavel Durov announced the plans at Token2049 Dubai. The tokenization project will use the TON blockchain. Toncoin price rose as TON Foundation and Tether partnered to bring USDT to TON blockchain. Telegram is taking a major step in its blockchain technology adoption with a new effort announced today during Token2049 Dubai. [&#8230;]</p>
-<p>The post <a href="https://coinjournal.net/news/telegram-to-tokenize-emojis-and-stickers-as-nfts-on-ton-blockchain/">Telegram to tokenize emojis and stickers as NFTs on TON blockchain</a> appeared first on <a href="https://coinjournal.net">CoinJournal</a>.</p>
+					<description><![CDATA[<p>Arthur Hayes is bullish on crypto amid the macro setup that he says could present a golden opportnity He says altcoins as well as presale tokens may be worth a look at as crypto exits latest window of weakness KangaMoon (KANG) is one of the new projects attracting huge attention as its presale noves towards [&#8230;]</p>
+<p>The post <a href="https://coinjournal.net/news/arthur-hayes-says-macro-setup-favours-bitcoin-bulls-as-kangamoon-attracts-investors/">Arthur Hayes says macro setup favours Bitcoin bulls as KangaMoon attracts investors</a> appeared first on <a href="https://coinjournal.net">CoinJournal</a>.</p>
 ]]></description>
 										<content:encoded><![CDATA[<ul>
-<li><span style="font-weight: 400">Telegram co-founder and CEO Pavel Durov announced the plans at Token2049 Dubai.</span></li>
-<li><span style="font-weight: 400">The tokenization project will use the TON blockchain.</span></li>
-<li><span style="font-weight: 400">Toncoin price rose as TON Foundation and Tether partnered to bring USDT to TON blockchain.</span></li>
+<li><span style="font-weight: 400">Arthur Hayes is bullish on crypto amid the macro setup that he says could present a golden opportnity</span></li>
+<li><span style="font-weight: 400">He says altcoins as well as presale tokens may be worth a look at as crypto exits latest window of weakness</span></li>
+<li><span style="font-weight: 400">KangaMoon (KANG) is one of the new projects attracting huge attention as its presale noves towards a close</span></li>
 </ul>
-<p><span style="font-weight: 400">Telegram is taking a major step in its blockchain technology adoption with a new effort announced today during</span> <a href="https://youtu.be/gBEOJRvZ-wI" target="_blank" rel="noopener"><span style="font-weight: 400">Token2049 Dubai</span></a><span style="font-weight: 400">.</span></p>
-<p><span style="font-weight: 400">The popular messaging app&rsquo;s co-founder and CEO Pavel Durov revealed this next step on Friday. </span></p>
-<p><span style="font-weight: 400">According to Durov, the company&rsquo;s tokenization journey now includes plans to tokenize Telegram stickers and emojis as non-fungible tokens (NFTs).</span></p>
-<h2><span style="font-weight: 400">Telegram plans tokenized stickers</span></h2>
-<p><span style="font-weight: 400">Telegram&rsquo;s initiative follows the notable success of tokenized usernames and anonymous numbers. Already, users can earn up to 95% of revenue that comes from the sale of the unique usernames.</span></p>
-<p><span style="font-weight: 400">Tokenization is the next step in Telegram&rsquo;s growth, Durov said, highlighting the role blockchain technology is set to play in this. The project will &ldquo;exclusively&rdquo; leverage The Open Network (TON) blockchain, the Telegram CEO noted.</span></p>
-<p><span style="font-weight: 400">Commenting on the success recorded so far, Durov said:</span></p>
-<blockquote><p><span style="font-weight: 400">&ldquo;We don&rsquo;t want to stay there. We want to go further. You see, we believe in socially-relevant NFTs. We believe in NFTs that are deeply integrated into human culture, into human interaction, into our communication. NFTs that you can see tens of billions of times and have a lot of potential to spread virally. These are the right NFTs. That&rsquo;s why the next step that we are going to undertake is tokenizing Telegram stickers.&rdquo;</span></p></blockquote>
-<p><span style="font-weight: 400"><a href="https://coinjournal.net/toncoin/">Toncoin (TON)</a>, the native token of TON blockchain, soared in recent months after Telegram rolled out its &lsquo;Ad Network&rsquo;. Users can now pay for in-platform adverts, with the initiative offering a 50% share of ad-revenue to channel owners and creators.</span></p>
-<p><span style="font-weight: 400">Earlier today, TON price rose sharply to $7.20 amid the NFT news. The token&rsquo;s value also gained after news that stablecoin issuer Tether had <a href="https://twitter.com/ton_blockchain/status/1781294469901373931" target="_blank" rel="noopener">launched its USDT on the TON blockchain</a>.</span></p>
+<p><span style="font-weight: 400">Arthur Hayes believes the crypto market is set to continue on the upside, pointing to the macro setup and the sovereign debt bubble. The Maelstrom family office head, is also bullish on altcoins and new token launches that he says present a &ldquo;golden opportunity&rdquo; after the recent crypto weakness.</span></p>
+<p><span style="font-weight: 400">With the market likely to flip bullish in coming months, could this be the time to take advantage of the <a href="https://pr.kangamoon.com/1ditvb" target="_blank" rel="noopener">KangaMoon (KANG) presale</a>?</span></p>
+<h2><span style="font-weight: 400">Arthur Hays explains bull market setup and potential opportunities</span></h2>
+<p><span style="font-weight: 400">BitMEX exchange co-founder and former CEO Arthur Hayes is bullish on crypto rebounding after the recent dip, noting that prices could &ldquo;get sillier on the upside.&rdquo; This, he argued in his <a href="https://cryptohayes.medium.com/left-curve-ef2e1e187027" target="_blank" rel="noopener">&ldquo;Left Curve&rdquo; blog post</a>, could be a &lsquo;golden opportunity&rdquo; for investors to add to their positions.</span></p>
+<p><span style="font-weight: 400">In his opinion, the market is currently exiting &ldquo;the window of weakness&rdquo; that likely followed the April 15 US tax payments and the recent Bitcoin halving event.</span></p>
+<p><span style="font-weight: 400">While the factors that drove <a href="https://coinjournal.net/bitcoin/">Bitcoin price</a> from zero to $70k over the past decade may not be the same ones at play in the future, Hayes says the macro setup and the fiat liquidity surge that fueled BTC&rsquo;s staggering gains can only get more pronounced, particularly as &ldquo;the sovereign debt bubble begins to burst.&rdquo;</span></p>
+<p><span style="font-weight: 400">&ldquo;<em>As we enter the northern hemispheric summer and decision-makers enjoy a respite from reality, crypto volatility will decline. This is the perfect time to take advantage of the recent crypto dip to slowly add to positions</em>,&rdquo; the BitMEX co-founder noted.</span></p>
+<p><span style="font-weight: 400">Altcoins pounded during the latest dump, new token launches and presales are all likely to offer great entry points. These opportunities could materialise over the next few months.</span></p>
+<h2><span style="font-weight: 400">KangaMoon brings GameFi and SocialFi to meme world</span></h2>
+<p><span style="font-weight: 400">KangaMoon (KANG) is a new SocialFi and play-to-earn gaming project currently in presale.</span></p>
+<p><span style="font-weight: 400">The project, which also taps into meme culture to spice up the epic game battles, has a strong pull due to what the native $KANG token offers to holders. With KangaMoon, the opportunities to earn more $KANG and other exclusive rewards are available right from the presale stage.&nbsp;</span></p>
+<p><span style="font-weight: 400">Kangaverse is the GameFi platform&rsquo;s ecosystem for contests and tournaments. $KANG holders can access these chances to earn more tokens through weekly, monthly and quarterly competitions and game challenges.</span></p>
+<h2><span style="font-weight: 400">What makes KangaMoon a potentially great opportunity?</span></h2>
+<p><span style="font-weight: 400">What makes KangaMoon a potentially great investment opportunity is its current presale price. $KANG&rsquo;s value during the five stages of the token sale has increased from $0.005 to $0.0196, meaning early birds are looking at about 280% upside on the price.</span></p>
+<p><span style="font-weight: 400">However, the current price is also likely to be a great entry point given market predictions for Bitcoin and the altcoin sector. Analysts are also bullish on play-to-earn, while meme coins may see a new leg of interest.</span></p>
+<p><span style="font-weight: 400">A look at KangaMoon&rsquo;s performance as stage 5 of the presale nears a close shows a great deal of confidence in the project from early investors. KangaMoon has raised more than $5.2 million so far, with the final stage 48% sold out.</span></p>
+<p><span style="font-weight: 400">Investors can take advantage of the 20% bonus available on all purchases to load up on what could be the next top big thing in SocialFi and P2E.</span></p>
+<p><span style="font-weight: 400">To learn more or buy $KANG, visit the <a href="https://pr.kangamoon.com/1ditvb" target="_blank" rel="noopener">official KangaMoon website</a>.</span></p>
 
-<p>The post <a href="https://coinjournal.net/news/telegram-to-tokenize-emojis-and-stickers-as-nfts-on-ton-blockchain/">Telegram to tokenize emojis and stickers as NFTs on TON blockchain</a> appeared first on <a href="https://coinjournal.net">CoinJournal</a>.</p>
+<p>The post <a href="https://coinjournal.net/news/arthur-hayes-says-macro-setup-favours-bitcoin-bulls-as-kangamoon-attracts-investors/">Arthur Hayes says macro setup favours Bitcoin bulls as KangaMoon attracts investors</a> appeared first on <a href="https://coinjournal.net">CoinJournal</a>.</p>
 ]]></content:encoded>
 					
 		
 		
 			</item>
 		<item>
-		<title>Milei Moneda presale challenges existing meme coins FLOKI and BONK: Which one has room for higher price?</title>
-		<link>https://coinjournal.net/news/milei-moneda-presale-challenges-existing-meme-coins-floki-and-bonk-which-one-has-room-for-higher-price/</link>
+		<title>Crypto price predictions: BitBot, Pepe, Algorand (ALGO)</title>
+		<link>https://coinjournal.net/news/crypto-price-predictions-bitbot-pepe-algorand-algo/</link>
+					<comments>https://coinjournal.net/news/crypto-price-predictions-bitbot-pepe-algorand-algo/#respond</comments>
 		
-		<dc:creator><![CDATA[News Team]]></dc:creator>
-		<pubDate>Fri, 19 Apr 2024 16:00:51 +0000</pubDate>
-				<category><![CDATA[Press Release]]></category>
-		<category><![CDATA[Crypto]]></category>
-		<guid isPermaLink="false">https://coinjournal.net/?p=199410</guid>
+		<dc:creator><![CDATA[Crispus Nyaga]]></dc:creator>
+		<pubDate>Wed, 24 Apr 2024 07:15:40 +0000</pubDate>
+				<category><![CDATA[Analysis]]></category>
+		<category><![CDATA[Algorand News]]></category>
+		<guid isPermaLink="false">https://coinjournal.net/news/crypto-price-predictions-bitbot-pepe-algorand-algo/</guid>
 
-					<description><![CDATA[<p>TLDR Milei Moneda ($MEDA) investors are forecast to gain 60% ROI at launch. FLOKI dips as the threat of war looms. BONK remains resilient despite sell pressure. Milei Moneda&#8217;s ($MEDA) presale is attracting a growing number of investors thanks to its potential profit margins. Binance extends support for Floki (FLOKI) as the cryptocurrency gains popularity. [&#8230;]</p>
-<p>The post <a href="https://coinjournal.net/news/milei-moneda-presale-challenges-existing-meme-coins-floki-and-bonk-which-one-has-room-for-higher-price/">Milei Moneda presale challenges existing meme coins FLOKI and BONK: Which one has room for higher price?</a> appeared first on <a href="https://coinjournal.net">CoinJournal</a>.</p>
+					<description><![CDATA[<p>Cryptocurrency prices drifted upwards this week as investors reacted to the risk-on sentiment in the market. That view is supported by the performance of US equities like the Dow Jones, Nasdaq 100, and S&#38;P 500. The US dollar index (DXY) has also pulled back as geopolitical risks have faded. Bitcoin price has remained above $66,000 [&#8230;]</p>
+<p>The post <a href="https://coinjournal.net/news/crypto-price-predictions-bitbot-pepe-algorand-algo/">Crypto price predictions: BitBot, Pepe, Algorand (ALGO)</a> appeared first on <a href="https://coinjournal.net">CoinJournal</a>.</p>
 ]]></description>
-										<content:encoded><![CDATA[<p><strong>TLDR</strong></p>
-<ul>
-<li style="font-weight: 400"><span style="font-weight: 400">Milei Moneda ($MEDA) investors are forecast to gain 60% ROI at launch.</span></li>
-<li style="font-weight: 400"><span style="font-weight: 400">FLOKI dips as the threat of war looms.</span></li>
-<li style="font-weight: 400"><span style="font-weight: 400">BONK remains resilient despite sell pressure.</span></li>
-</ul>
-<p><span style="font-weight: 400">Milei Moneda&rsquo;s ($MEDA) presale is attracting a growing number of investors thanks to its potential profit margins. Binance extends support for Floki (FLOKI) as the cryptocurrency gains popularity. Meanwhile, a reputable fintech adopts Bonk (BONK).</span></p>
-<p><span style="font-weight: 400">How impressive is $MEDA&rsquo;s presale gain? And is it the best cryptocurrency to buy ahead of Floki and Bonk? Let&rsquo;s dig into the data.</span></p>
-<p><a href="https://mileimoneda.io/?utm_campaign=cjl&amp;utm_medium=pr&amp;utm_id=782" target="_blank" rel="noopener"><span style="font-weight: 400">Economize Like Milei: Invest in $MEDA</span></a></p>
-<h2><span style="font-weight: 400">Milei Moneda&rsquo;s presale offers 60% gains</span></h2>
-<p><span style="font-weight: 400">Milei Moneda is a new meme coin that combines humor, politics, and blockchain technology. The project has recently become popular due to its lucrative presale. The presale is currently in Stage 2, and the $MEDA token is sold for $0.0125.</span></p>
-<p><span style="font-weight: 400">Stage 1 investors have already earned a 25% profit. They&rsquo;re forecast to gain a total of 100% on their initial investment when the presale ends. Similarly, Stage 2 investors are forecast to earn a 60% profit when $MEDA becomes $0.020 at the end of the presale.&nbsp;</span></p>
-<p><span style="font-weight: 400">In addition, investors become a part of Milei Moneda&rsquo;s vibrant community on Reddit, Discord, and X. They can meet other members and participate in giveaways and Q&amp;A sessions. Also, Milei Moneda investors get voting rights and access to exclusive NFT collections. They also earn NFT staking rewards and discounts.&nbsp;</span></p>
-<p><span style="font-weight: 400">Furthermore, $MEDA is a deflationary token. Supply is fixed at 500 million, while five percent of this supply will be burned to maintain price stability.</span></p>
-<p><span style="font-weight: 400">Finally, Milei Moneda is protected through locked liquidity, smart contract audits, and zero team allocations. All these reveal why many analysts and investors are suggesting $MEDA could be the best crypto to invest in now.</span></p>
-<p><a href="https://mileimoneda.io/?utm_campaign=cjl&amp;utm_medium=pr&amp;utm_id=782" target="_blank" rel="noopener"><span style="font-weight: 400">Economize Like Milei: Invest in $MEDA</span></a></p>
-<h2><span style="font-weight: 400">Binance introduces new Floki pairs</span></h2>
-<p><span style="font-weight: 400">On March 26, 2024, Binance </span><a href="https://www.binance.com/en/support/announcement/notice-on-new-trading-pairs-trading-bots-services-on-binance-spot-2024-03-27-0f3ce0f5305e47659ca47d42d0c5cd91" target="_blank" rel="noopener"><span style="font-weight: 400">announced</span></a><span style="font-weight: 400"> that it would list new <a href="https://coinjournal.net/floki/">Floki</a> trading pairs. This move comes as meme coins take center stage, consequently increasing Floki&rsquo;s popularity. The new pair, FLOKI/USDC, will be added to Binance Spot on March 28. Bot services will also be available to users who want to trade the pair.</span></p>
-<p><span style="font-weight: 400">Furthermore, clients based in the USA and its territories, Canada, Japan, Iran, Cuba, North Korea, Syria, Netherlands, and any non-government-controlled areas of Ukraine won&rsquo;t be able to trade the new Floki pair.</span></p>
-<p><span style="font-weight: 400">Since the news broke, Floki has plummeted 42.7%, falling from $0.000241 to $0.000138. This significant slump has been attributed to investors seeking safety in more stable investments after tensions escalated between Iran and Israel.</span></p>
-<p><span style="font-weight: 400">Analysts predict that Floki will remain around $0.000153 as long as the political situation in the Middle East remains unstable.</span></p>
-<h2><span style="font-weight: 400">Bonk gets support from TradFi firm</span></h2>
-<p><span style="font-weight: 400">On February 16, popular fintech Revolut </span><a href="https://finance.yahoo.com/news/revolut-list-bonk-distribute-1-191655835.html?guccounter=1&amp;guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&amp;guce_referrer_sig=AQAAAGdyNd2GWVqwD9sPKpA3k9NjwK3vhjgariJ5hgIR_m3ojdR_A_j6K8zAL8v__tOH8yR7hr9KPdb-GvL3xZKrTWCdLNDPCucmWuH-7eehV6aXF9sruNzGY2JnCcjJcXXRTGxurxLzoLh4Ui0ps4EjIoz870tkUo3eaWx7X5AcyIpW" target="_blank" rel="noopener"><span style="font-weight: 400">announced</span></a><span style="font-weight: 400"> that it was listing Bonk on its platform. Bonk is one of the Solana meme coins driving the current meme coin frenzy and will be the first from Solana. The meme coin will become accessible to Revolut&rsquo;s 30 million customers, increasing adoption.&nbsp;</span></p>
-<p><span style="font-weight: 400"><a href="https://coinjournal.net/news/tag/revolut/">Revolut</a> will also institute an education program for Bonk. Plans are in place to distribute 93 billion Bonk to users during this education campaign. Analysts say this development signals Bonk&rsquo;s increasing mainstream acceptance.&nbsp;</span></p>
-<p><span style="font-weight: 400">This acceptance is evident in Bonk&rsquo;s increased price. The token gained 157% in less than one month after the announcement. It increased from $0.000014 to $0.000036 in. However, a market-wide sell-off triggered by the political tensions in the Middle East has ensured that Bonk is back to $0.000014.</span></p>
-<p><span style="font-weight: 400">However, analysts predict that Bonk could reach $0.000067 after the Bitcoin Halving. This makes the token one of the important altcoins this year.</span></p>
-<h2><span style="font-weight: 400">Conclusion</span></h2>
-<p><span style="font-weight: 400">Milei Moneda&rsquo;s successful presale, which has sold over 59 million tokens to date, is challenging existing meme coins FLOKI and BONK, with early investors already experiencing 25% ROI &amp; those that invest in its current presale stage 2 projected to gain a 60% ROI. The success of Milei Moneda is causing analysts to speculate that this coin could have major upside potential.&nbsp;</span></p>
-<p><strong>Got $MEDA curiosity? <a href="https://mileimoneda.io/?utm_campaign=cjl&amp;utm_medium=pr&amp;utm_id=782" target="_blank" rel="noopener">Visit us</a> or chat on <a href="https://t.me/mileimoneda" target="_blank" rel="noopener">Telegram</a> for the inside scoop. Fast, fun, and informative!</strong></p>
+										<content:encoded><![CDATA[<p dir="ltr">Cryptocurrency prices drifted upwards this week as investors reacted to the risk-on sentiment in the market. That view is supported by the performance of US equities like the Dow Jones, Nasdaq 100, and S&amp;P 500. The US dollar index (DXY) has also pulled back as geopolitical risks have faded.</p>
+<p dir="ltr">Bitcoin price has remained above $66,000 while altcoins like Pepe, Algorand, and&nbsp;<a href="https://coinjournal.net/hedera/"><u>Hedera Hashgraph</u></a> (HBAR) have continued rising.&nbsp;<a href="https://bitbot.tg/?utm_source=media&amp;utm_medium=artc&amp;utm_campaign=coinjournal&amp;utm_term=internal&amp;utm_content=price_prediction"><u>BitBot</u></a> ($BITBOT), on the other hand, has continued thriving as it raised over $2.8 million.</p>
+<h2 dir="ltr">Pepe price forecast</h2>
+<p dir="ltr">The price of Pepe token bottomed at $0.0000039 earlier this month and then bounced back to a high of $0.0000080, its highest point since April 1st. It has soared by more than 100% from its lowest point this month.</p>
+<p dir="ltr">The token has remained above the 50-day and 100-day Exponential Moving Averages (EMA). It has also risen in the past seven straight days, the longest winning streak in months. Pepe has also jumped above the strong pivot reverse point of the Murrey Math Lines.&nbsp;</p>
+<p dir="ltr">Meanwhile, the Relative Strength Index (RSI) and the Stochastic Oscillator have all pointed upwards, meaning that it has momentum. The Average Directional Index (ADX) has remained above 20. Therefore, the outlook for the token is bullish, with the next point to watch being at $0.00010, which is about 26% above the current level.</p>
+<p dir="ltr"><img decoding="async" loading="lazy" src="https://media.igms.io/2024/03/24/1713942909831-291f89bc-b204-408e-b93a-3f104d7a89ee.jpg" style="width: 706px;height: 369.473px" class="fr-fic fr-dib" width="706" height="369.473"></p>
+<h2 dir="ltr">Algorand price prediction</h2>
+<p dir="ltr">The&nbsp;<a href="http://coinjournal.net/algorand"><u>Algorand</u></a> price bottomed at $0.1490 this month and then bounced back as the crypto rally resumed. It has rebounded to $0.2616, its highest swing since April 1st of this year. The token has now pulled back and retreated to the key point at $0.2400. It has remained above the 50-day and 100-day moving averages and the Ichimoku cloud indicator.</p>
+<p dir="ltr">The Relative Strength Index (RSI) index has also pointed upwards. Therefore, the pair will likely now move to a consolidation phase in the coming days and then resume the bull run. If this happens, the token will likely rise to the key resistance point at $0.30, which is about 30% above the current level.</p>
+<p dir="ltr"><img decoding="async" loading="lazy" src="https://media.igms.io/2024/03/24/1713942810999-487cf737-de5b-4ac6-b8cb-7e25886eac66.png" style="width: 696px;height: 385.12px" class="fr-fic fr-dib" width="696" height="385.12"></p>
+<h2 dir="ltr">BitBot analysis</h2>
+<p dir="ltr">Meanwhile, BitBot, an upcoming cryptocurrency, is doing remarkably well as demand for the token rises ahead of the eventual token listing. The developers have raised over $2.8 million from investors in its current stage.</p>
+<p dir="ltr">For starters, BitBot is a project that is aiming to transform the financial trading industry by creating a decentralized trading bot. The bot will be distributed using Telegram, an application used by more than 900 million users around the world.</p>
+<p dir="ltr">The network will have features like revenue sharing, exclusive access to $BITBOT holders, and governance.</p>
+<p>Therefore, the BitBot token is doing well as investors cheer its potential growth in the artificial intelligence (AI) and the financial services industry. &nbsp;You can buy the BitBot token&nbsp;<a href="https://bitbot.tg/?utm_source=media&amp;utm_medium=artc&amp;utm_campaign=coinjournal&amp;utm_term=internal&amp;utm_content=price_prediction"><u>here</u></a>.</p>
 
-<p>The post <a href="https://coinjournal.net/news/milei-moneda-presale-challenges-existing-meme-coins-floki-and-bonk-which-one-has-room-for-higher-price/">Milei Moneda presale challenges existing meme coins FLOKI and BONK: Which one has room for higher price?</a> appeared first on <a href="https://coinjournal.net">CoinJournal</a>.</p>
+<p>The post <a href="https://coinjournal.net/news/crypto-price-predictions-bitbot-pepe-algorand-algo/">Crypto price predictions: BitBot, Pepe, Algorand (ALGO)</a> appeared first on <a href="https://coinjournal.net">CoinJournal</a>.</p>
 ]]></content:encoded>
 					
+					<wfw:commentRss>https://coinjournal.net/news/crypto-price-predictions-bitbot-pepe-algorand-algo/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
-		<title>Celestia price declines as OKB and Rebel Satoshi Arcade soar</title>
-		<link>https://coinjournal.net/news/celestia-price-declines-as-okb-and-rebel-satoshi-arcade-soar/</link>
+		<title>Me3 Launches Private Sale on Yield App: Revolutionising Fan Engagement and Digital Asset Ownership</title>
+		<link>https://coinjournal.net/news/me3-launches-private-sale-on-yield-app-revolutionising-fan-engagement-and-digital-asset-ownership/</link>
+					<comments>https://coinjournal.net/news/me3-launches-private-sale-on-yield-app-revolutionising-fan-engagement-and-digital-asset-ownership/#respond</comments>
 		
-		<dc:creator><![CDATA[News Team]]></dc:creator>
-		<pubDate>Fri, 19 Apr 2024 15:30:46 +0000</pubDate>
+		<dc:creator><![CDATA[Chainwire &#160;]]></dc:creator>
+		<pubDate>Wed, 24 Apr 2024 06:16:17 +0000</pubDate>
 				<category><![CDATA[Press Release]]></category>
-		<category><![CDATA[Crypto]]></category>
-		<guid isPermaLink="false">https://coinjournal.net/?p=199395</guid>
+		<guid isPermaLink="false">https://coinjournal.net/?p=200031</guid>
 
-					<description><![CDATA[<p>TLDR: Celestia&#8217;s price has dropped 12.7% in the past week. OKB&#8217;s price has increased 4.9% on the 14-day price chart. OKX&#8217;s launch of the X Layer network might be responsible for the recent gains.&#160; Rebel Satoshi Arcade is on the rise, with its crypto ICO selling over 355 million tokens in stage 1. The crypto [&#8230;]</p>
-<p>The post <a href="https://coinjournal.net/news/celestia-price-declines-as-okb-and-rebel-satoshi-arcade-soar/">Celestia price declines as OKB and Rebel Satoshi Arcade soar</a> appeared first on <a href="https://coinjournal.net">CoinJournal</a>.</p>
+					<description><![CDATA[<p>Dubai, United Arab Emirates, April 24th, 2024, Chainwire Me3, a prediction platform that integrates digital asset ownership with live events, Web 2.5 gaming &#38; eSports interaction, announces its private sale on the Yield App Angel Launchpad. Yield App, a well-known crypto platform&#160;that bridges the gap between traditional finance and the innovative world of Web3, making [&#8230;]</p>
+<p>The post <a href="https://coinjournal.net/news/me3-launches-private-sale-on-yield-app-revolutionising-fan-engagement-and-digital-asset-ownership/">Me3 Launches Private Sale on Yield App: Revolutionising Fan Engagement and Digital Asset Ownership</a> appeared first on <a href="https://coinjournal.net">CoinJournal</a>.</p>
 ]]></description>
-										<content:encoded><![CDATA[<p><b>TLDR:</b></p>
+										<content:encoded><![CDATA[<p><strong>Dubai, United Arab Emirates, April 24th, 2024, Chainwire</strong></p>
+<p>Me3, a prediction platform that integrates digital asset ownership with live events, Web 2.5 gaming &amp; eSports interaction, announces its private sale on the <a href="https://yield.app/" target="_blank" rel="nofollow noopener">Yield App</a> Angel Launchpad. Yield App, a well-known crypto platform&nbsp;that bridges the gap between traditional finance and the innovative world of Web3, making crypto accessible and rewarding for everyone, teams up with Me3 for an opportunity to revolutionise the way fans interact with their favourite events.</p>
+<h2>Key highlights</h2>
 <ul>
-<li style="font-weight: 400"><span style="font-weight: 400">Celestia&rsquo;s price has dropped 12.7% in the past week.</span></li>
-<li style="font-weight: 400"><span style="font-weight: 400">OKB&rsquo;s price has increased 4.9% on the 14-day price chart. OKX&rsquo;s launch of the X Layer network might be responsible for the recent gains.&nbsp;</span></li>
-<li style="font-weight: 400"><span style="font-weight: 400">Rebel Satoshi Arcade is on the rise, with its crypto ICO selling over 355 million tokens in stage 1.</span></li>
+<li><strong>Stake to Win Rewards:</strong> Unlock exclusive rewards and incentives with Me3&rsquo;s &lsquo;Stake to Win&rsquo; feature, incentivizing active participation and fostering a vibrant and rewarding ecosystem for all stakeholders.</li>
+<li><strong>Flexible Staking and Prediction Pools:</strong> Users can engage in prediction pools with flexible staking options, allowing them to amplify their participation and earn rewards for their insights into various events and outcomes.</li>
+<li><strong>Yield Battle Feature:</strong> Me3 introduces the innovative &lsquo;Yield Battle&rsquo; feature, enabling users to potentially earn yields while blending decentralized finance (DeFi) with the excitement of competitive gaming, further enhancing their earning potential and entertainment experience.</li>
+<li><strong>Staking Rewards and Fee Discounts:</strong> $ME3 token holders stand to benefit from staking rewards and fee discounts, aligning their interests with the long-term success of the platform.</li>
+<li><strong>Support from Established VCs and KOLs: </strong>With investments from renowned venture capital firms such as&nbsp;<a href="https://twitter.com/playkakaogames?lang=en" target="_blank" rel="nofollow noopener">Kakao Games</a> (BORA Ecosystem Fund), <a href="https://twitter.com/OVioHQ" target="_blank" rel="nofollow noopener">Outlier Ventures</a>, <a href="https://mvglobal.io/" target="_blank" rel="nofollow noopener">Master Ventures</a>, <a href="https://twitter.com/mavencapitalio?lang=en" target="_blank" rel="nofollow noopener">Maven Capital</a>, <a href="https://www.tokocrypto.com/" target="_blank" rel="nofollow noopener">Tokocrypto</a> (acquired by Binance), and more, with support from major KOLs like Jett Chang, Brian D Evans, Mario Nawful, and many others.</li>
+<li><strong>Successful Offering on Top Launchpads: </strong>Having previously completed successful offerings on top launchpads such as Trustswap &amp; Ferrum DAO, Me3 is primed for further growth and success in the digital asset space.</li>
 </ul>
-<p><span style="font-weight: 400">The <a href="https://coinjournal.net/news/">crypto market</a> witnessed a massive shift lately that left several top crypto coins gasping for air. The likes of Celestia were among the first to feel the heat, as it dropped 12.7% on the weekly price chart. Meanwhile, OKB and Rebel Satoshi Arcade are currently in the green, thanks to recent developments in their respective ecosystems.&nbsp;</span></p>
-<h2><span style="font-weight: 400">Rebel Satoshi Arcade ($RECQ) presale soars due to its decentralized gaming platform&nbsp;</span></h2>
-<p><span style="font-weight: 400">Rebel Satoshi Arcade ($RECQ) is a new DeFi project that has hit a remarkable milestone, selling 80% of the tokens for stage one of its crypto ICO in a short amount of time.&nbsp;</span></p>
-<p><a href="https://recq.rebelsatoshi.com/?utm_source=4832&amp;utm_medium=News&amp;utm_id=Fox" target="_blank" rel="noopener"><span style="font-weight: 400">Rebel Satoshi</span></a><span style="font-weight: 400"> is building a decentralized gaming ecosystem where members are at the top of the food chain. The gaming ecosystem does not have a centralized authority that makes the decision.&nbsp;</span></p>
-<p><span style="font-weight: 400">Instead, the members of the community make the decisions; they have a say in the platform&rsquo;s operations, the kind of crypto games that are released, and so many other rights. Apart from being a decentralized platform, Rebel Satoshi Arcade operates on a play-to-earn model &ndash; gamers are rewarded for playing games, giving them a source of passive income.</span></p>
-<p><span style="font-weight: 400">Finally, Rebel Satoshi Arcade has a marketplace where players can buy several assets like new gaming tools, upgrade their weapons, and even add the best NFTs to their collections. </span></p>
-<p><span style="font-weight: 400">The token used for these transactions is the $RECQ token. In addition to its use as a transaction token, the $RECQ token gives its holders access to top NFTs and new games that are yet to hit the market, you can join before that for only $0.0037 per RECQ token.</span></p>
-<h2><span style="font-weight: 400">Celestia (TIA) price continues to consolidate</span></h2>
-<p><span style="font-weight: 400">Since reaching an all-time high of $20.85 on February 10, 2024, Celestia (TIA) has been on a downtrend. The alt coin is now trading between $8.52 and $11.88 in April after falling 12.7% in the past week.&nbsp;</span></p>
-<p><span style="font-weight: 400">There has been a relentless battle between bulls and bears, with neither showing dominance. As a result, TIA continues to consolidate at the range of $8-11. Nonetheless, Celestia stayed in the top 50 cryptocurrencies, trading at $10.5 with a market cap of $1.88 billion.</span></p>
-<h2><span style="font-weight: 400">OKB (OKB) price surges as OKX launches its own L2 network&nbsp;</span></h2>
-<p><span style="font-weight: 400">The native token of the OKX crypto exchange, <a href="https://coinjournal.net/okb/">OKB (OKB)</a>, has been bullish, defying the bearish trend in the crypto market. The price of OKB recently recorded a new all-time high at $73.80 in mid-March but couldn&rsquo;t retain the bullish momentum above $70.&nbsp;</span></p>
-<p><span style="font-weight: 400">Retracing with the rest of the crypto market, OKB has dropped back to the $50.61 &ndash; $61.16 price zone. However, following the announcement from OKX about the release of the l<a href="https://coinjournal.net/news/okx-launches-public-mainnet-for-its-zk-powered-l2-network-x-layer/">ayer-2 (L2 network) called X layer</a>, OKB has regained bullish momentum. The altcoin is up by 9% since April 13, forcing a retest of the $60 resistance.</span></p>
-<h2><span style="font-weight: 400">In summary</span></h2>
-<p><span style="font-weight: 400">Celestia is still among the top 50 cryptocurrencies in the market despite its poor price movement. Meanwhile, OKB and </span><a href="https://recq.rebelsatoshi.com/?utm_source=4832&amp;utm_medium=News&amp;utm_id=Fox" target="_blank" rel="noopener"><span style="font-weight: 400">Rebel Satoshi</span></a><span style="font-weight: 400"> Arcade are two top altcoins that are in the green. While the recent development around OKX is responsible for OKB&rsquo;s latest surge, that of Rebel Satoshi Arcade is its gaming platform.&nbsp;</span></p>
-<p><b>For the latest updates and more information, be sure to visit the official </b><a href="http://www.rebelsatoshi.com/" target="_blank" rel="noopener"><b>Rebel Satoshi Website</b></a><b> or contact Rebel Red via </b><a href="https://t.me/rebelsatoshi_news" target="_blank" rel="noopener"><b>Telegram</b></a><b>, </b><a href="https://twitter.com/rebel_satoshi" target="_blank" rel="noopener"><b>Twitter</b></a><b>, or </b><a href="https://discord.gg/f8fNQnN9WH" target="_blank" rel="noopener"><b>Discord</b></a><b>.</b></p>
+<blockquote><p>&ldquo;At Me3, we are leading a revolution in the Web3 space by launching innovative products that reinvent the relationship between digital assets and esports. We increase user engagement by combining competitive predictions with the strategic depth of yield-based markets and fan-driven activities through unique features like Hype Pool, Yield Battle, and FANatic. Furthermore, we are growing our reach through strategic alliances with leading Web 2.5 platforms and Asean gaming communities.&rdquo; said Matthew Ainscow, Founder of Me3.</p></blockquote>
+<h2>Launch on Yield App</h2>
+<p>Me3 through Yield Apps launchpad is offering a private sale to it&rsquo;s users&nbsp;of up to $400,000 at a token sale price of @ 0.007 per ME3 token at a&nbsp;$7 million fully diluted valuation (FDV).</p>
+<h2>Tokenomics</h2>
+<p>$ME3 represents the wide range of features that it brings to the ecosystem. $ME3 token users can engage with Prediction Pools, enjoy safe and transparent transactions, enjoy staking incentives (with up to 50% of platform fees flowing back to them), enjoy fee discounts, and a lot more.</p>
+<h3>About Me3</h3>
+<p>Introducing Me3, a pioneering platform that integrates Live Events, Gaming, Sports, and Esports engagement with the dynamic world of digital asset owners.</p>
+<h3>About Yield.app</h3>
+<p>Introducing Yield.app, The next generation of personal finance. Built with the user in mind, Yield App offers all the tools needed to grow the user&rsquo;s crypto portfolio</p>
+<p>More details about Yield App&nbsp;can be found on Yield App&rsquo;s <a href="https://yield.app/launchpad" target="_blank" rel="nofollow noopener">website</a> and <a href="https://twitter.com/yieldapp" target="_blank" rel="nofollow noopener">Twitter</a>.</p>
+<p>For in-depth information can be found here on Yield App&rsquo;s <a href="https://yield.app/launchpad/me3" target="_blank" rel="nofollow noopener">launchpad sale</a>.</p>
+<p>&nbsp;</p>
+<p><strong>Contact</strong></p>
+<p>Chief Marketing Officer<br>
+Grigory Prelovskiy<br>
+grigory@yield.app</p>
 
-<p>The post <a href="https://coinjournal.net/news/celestia-price-declines-as-okb-and-rebel-satoshi-arcade-soar/">Celestia price declines as OKB and Rebel Satoshi Arcade soar</a> appeared first on <a href="https://coinjournal.net">CoinJournal</a>.</p>
+<p>The post <a href="https://coinjournal.net/news/me3-launches-private-sale-on-yield-app-revolutionising-fan-engagement-and-digital-asset-ownership/">Me3 Launches Private Sale on Yield App: Revolutionising Fan Engagement and Digital Asset Ownership</a> appeared first on <a href="https://coinjournal.net">CoinJournal</a>.</p>
 ]]></content:encoded>
 					
+					<wfw:commentRss>https://coinjournal.net/news/me3-launches-private-sale-on-yield-app-revolutionising-fan-engagement-and-digital-asset-ownership/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
-		<title>TRON investors considering TON and Bitbot amid SEC lawsuit against Justin Sun</title>
-		<link>https://coinjournal.net/news/tron-investors-considering-ton-and-bitbot-amid-sec-lawsuit-against-justin-sun/</link>
+		<title>K33 Research cautions Mt. Gox&#8217;s imminent $9B payout could impact Bitcoin (BTC)</title>
+		<link>https://coinjournal.net/news/k33-research-cautions-mt-goxs-imminent-9b-payout-could-impact-bitcoin-btc/</link>
 		
 		<dc:creator><![CDATA[Charles Thuo]]></dc:creator>
-		<pubDate>Fri, 19 Apr 2024 12:45:57 +0000</pubDate>
+		<pubDate>Tue, 23 Apr 2024 20:01:30 +0000</pubDate>
 				<category><![CDATA[Markets]]></category>
+		<category><![CDATA[Bitcoin Cash News]]></category>
+		<category><![CDATA[Bitcoin News]]></category>
 		<category><![CDATA[Cryptocurrency News]]></category>
-		<category><![CDATA[TRON News]]></category>
-		<guid isPermaLink="false">https://coinjournal.net/?p=199371</guid>
+		<guid isPermaLink="false">https://coinjournal.net/?p=200012</guid>
 
-					<description><![CDATA[<p>SEC lawsuit against Justin Sun casts doubt on TRON&#8217;s future. TON Network&#8217;s integration of USDT boosts Toncoin price by 12%. Bitbot&#8217;s AI-powered trading platform and $BITBOT token offer innovative solutions. As the cryptocurrency market navigates through turbulent waters, TRON investors are exploring alternative options amidst a legal battle involving Justin Sun, the founder of TRON [&#8230;]</p>
-<p>The post <a href="https://coinjournal.net/news/tron-investors-considering-ton-and-bitbot-amid-sec-lawsuit-against-justin-sun/">TRON investors considering TON and Bitbot amid SEC lawsuit against Justin Sun</a> appeared first on <a href="https://coinjournal.net">CoinJournal</a>.</p>
+					<description><![CDATA[<p>Gox to distribute 142,000 BTC and 143,000 BCH, valued at over $9 billion, to creditors. The payout process could commence as early as next month. All eyes are on the impact of the payout on Bitcoin and Bitcoin Cash price especially after the bitcoin halving event. Mt. Gox, once a major player in the cryptocurrency [&#8230;]</p>
+<p>The post <a href="https://coinjournal.net/news/k33-research-cautions-mt-goxs-imminent-9b-payout-could-impact-bitcoin-btc/">K33 Research cautions Mt. Gox&#8217;s imminent $9B payout could impact Bitcoin (BTC)</a> appeared first on <a href="https://coinjournal.net">CoinJournal</a>.</p>
 ]]></description>
 										<content:encoded><![CDATA[<ul>
-<li>SEC lawsuit against Justin Sun casts doubt on TRON&rsquo;s future.</li>
-<li>TON Network&rsquo;s integration of USDT boosts Toncoin price by 12%.</li>
-<li>Bitbot&rsquo;s AI-powered trading platform and $BITBOT token offer innovative solutions.</li>
+<li>Gox to distribute 142,000 BTC and 143,000 BCH, valued at over $9 billion, to creditors.</li>
+<li>The payout process could commence as early as next month.</li>
+<li>All eyes are on the impact of the payout on Bitcoin and Bitcoin Cash price especially after the bitcoin halving event.</li>
 </ul>
-<p>As the cryptocurrency market navigates through turbulent waters, TRON investors are exploring alternative options amidst a legal battle involving Justin Sun, the founder of TRON (TRX).</p>
-<p>The recent lawsuit filed by the U.S. Securities and Exchange Commission (SEC) against Sun has prompted investors to seek refuge in projects such as the TON Network and <a href="https://bitbot.tg/?utm_source=media&amp;utm_medium=artc&amp;utm_campaign=coinjournal&amp;utm_term=internal&amp;utm_content=investment_opportunity">Bitbot</a>.</p>
-<h2>SEC&rsquo;s lawsuit casts a shadow over TRON (TRX)</h2>
-<p>The SEC&rsquo;s legal action against Justin Sun has sent shockwaves through the <a href="https://coinjournal.net/tron/what-is-tron/">TRON</a> community.</p>
-<p>The accusations of selling unregistered securities through TRON&rsquo;s native token (TRX) and BitTorrent&rsquo;s token (BTT) have cast doubt on the future of these assets.</p>
-<p>Sun&rsquo;s alleged involvement in deceptive practices, including wash trading and undisclosed paid celebrity endorsements, has further exacerbated concerns among investors.</p>
-<p>As the legal battle unfolds, investors are grappling with the uncertainty surrounding TRON&rsquo;s regulatory status and the potential ramifications for its market value.</p>
-<p>The outcome of this lawsuit could redefine the regulatory landscape for TRON and other cryptocurrencies, potentially leading to increased scrutiny and tighter controls on their operations.</p>
-<h2>USDT support added to TON Network boosting Toncoin price</h2>
-<p>Amidst the regulatory turmoil facing TRON, the recent announcement of <a href="https://coinjournal.net/tether/what-is-tether/">Tether (USDT)</a> support on the TON Network has injected a sense of optimism into the cryptocurrency market.</p>
-<p>Tether&rsquo;s decision to integrate its stablecoin with TON expands its presence across the crypto sphere, providing users with a seamless experience for peer-to-peer payments and value transfers.</p>
-<p>In response to this development, Toncoin has experienced a surge in price, reaching $7.09 and marking a 12% daily increase. This bullish momentum reflects investors&rsquo; confidence in the potential of TON Network and the broader ecosystem it encompasses.</p>
-<p>The integration of USDT on TON not only enhances liquidity but also opens up new avenues for decentralized applications across various verticals.</p>
-<h2>Bitbot: revolutionizing cryptocurrency trading</h2>
-<p>Just like Toncoin, Bitbot, a sophisticated Telegram-based AI-powered trading bot designed to enhance the trading experience, is also attracting investors&rsquo; attention.</p>
-<p>Bitbot&rsquo;s platform provides users with real-time data, technical analysis, and seamless execution, levelling the playing field for both novice and experienced traders.</p>
-<p>At the heart of Bitbot&rsquo;s ecosystem is its native token, $BITBOT, which offers holders exclusive benefits such as revenue sharing and governance rights. The token is currently in its <a href="https://bitbot.tg/?utm_source=media&amp;utm_medium=artc&amp;utm_campaign=coinjournal&amp;utm_term=internal&amp;utm_content=investment_opportunity">presale stage</a> which has already raised $2,603,234 out of its $2,844,000 target, reflecting growing demand for Bitbot&rsquo;s innovative solutions.</p>
-<p>The current presale price is $0.0163 per token giving early investors an investment opportunity seeing that the price is set to increase to $0.0171 in the next presale stage.</p>
-<h2>Conclusion</h2>
-<p>As TRON investors navigate through uncertain waters, TON Network and new projects like Bitbot offer promising alternatives for those seeking stability and growth opportunities in the ever-evolving cryptocurrency market.</p>
-<p>Nevertheless, as with any cryptocurrency investment, investors should conduct thorough research before investing owing to the extremely volatile nature of cryptocurrencies.</p>
+<p>Mt. Gox, once a major player in the cryptocurrency exchange scene, faced a devastating hack in 2014, leading to its collapse. Now, nearly a decade later, the defunct exchange is preparing to distribute a significant sum of digital assets including approximately 142,000 <a href="https://coinjournal.net/bitcoin/what-is-bitcoin/">Bitcoin (BTC)</a> and 143,000 <a href="https://coinjournal.net/bitcoin-cash/what-is-bitcoin-cash/">Bitcoin Cash (BCH)</a>, amounting to over $9 billion in total, to creditors.</p>
+<p>This impending payout has prompted concerns among market observers, with K33 Research highlighting the possibility of a negative impact on the price of Bitcoin in a <a href="https://k33.com/research/articles/the-froth-is-over">report</a> released on Tuesday.</p>
+<p>According to the analysts, the influx of Mt. Gox coins into the market could create downward pressure on BTC valuation in the coming weeks.</p>
+<h2>Possible implications for Bitcoin (BTC) price</h2>
+<p>K33 Research analysts have highlighted concerns that the influx of Mt. Gox&rsquo;s digital assets into the market could exert downward pressure on Bitcoin&rsquo;s price in the coming weeks. While creditors may not immediately liquidate their assets, the anticipation surrounding the payout could instil caution among investors, potentially dampening market sentiment.</p>
+<p>Creditors recently received updates on their BTC and BCH claims, indicating that payments could commence sooner than initially anticipated. This development, coupled with the looming deadline set by Mt. Gox trustees for reimbursements, has intensified speculation within the crypto community.</p>
+<p>Market observers remain divided on the potential impact of Mt. Gox&rsquo;s payout on Bitcoin&rsquo;s price. While some believe that creditors may opt to hold onto their funds, others fear that the sheer volume of digital assets entering the market could trigger a sell-off, leading to a temporary downturn in prices.</p>
+<p>Despite the uncertainty surrounding Mt. Gox&rsquo;s payout, the crypto market continues to show resilience in the face of external pressures. However, investors are advised to exercise caution and closely monitor developments related to the distribution process to mitigate any adverse effects on their portfolios especially according to the K33 Research analysts warning.</p>
 
-<p>The post <a href="https://coinjournal.net/news/tron-investors-considering-ton-and-bitbot-amid-sec-lawsuit-against-justin-sun/">TRON investors considering TON and Bitbot amid SEC lawsuit against Justin Sun</a> appeared first on <a href="https://coinjournal.net">CoinJournal</a>.</p>
+<p>The post <a href="https://coinjournal.net/news/k33-research-cautions-mt-goxs-imminent-9b-payout-could-impact-bitcoin-btc/">K33 Research cautions Mt. Gox&#8217;s imminent $9B payout could impact Bitcoin (BTC)</a> appeared first on <a href="https://coinjournal.net">CoinJournal</a>.</p>
 ]]></content:encoded>
 					
 		
 		
 			</item>
 		<item>
-		<title>Blockchain Expo North America 2024 set to showcase latest developments in crypto innovation</title>
-		<link>https://coinjournal.net/news/blockchain-expo-north-america-2024-set-to-showcase-latest-developments-in-crypto-innovation/</link>
+		<title>Archax, Ownera and Hedera collaborate to tokenize BlackRock money market fund</title>
+		<link>https://coinjournal.net/news/archax-ownera-hedera-collaborate-tokenize-blackrock-mmf/</link>
 		
-		<dc:creator><![CDATA[Philip Hoey]]></dc:creator>
-		<pubDate>Fri, 19 Apr 2024 11:54:38 +0000</pubDate>
-				<category><![CDATA[Events]]></category>
-		<guid isPermaLink="false">https://coinjournal.net/?p=199366</guid>
+		<dc:creator><![CDATA[Benson Toti]]></dc:creator>
+		<pubDate>Tue, 23 Apr 2024 18:54:51 +0000</pubDate>
+				<category><![CDATA[Markets]]></category>
+		<category><![CDATA[Crypto]]></category>
+		<guid isPermaLink="false">https://coinjournal.net/?p=200002</guid>
 
-					<description><![CDATA[<p>Blockchain developers, influencers, leaders, investors, entrepreneurs, and business owners from around the world are gearing up for this year&#8217;s Blockchain Expo North America 2024, one of North America&#8217;s premier blockchain and cryptocurrency events, which will&#160;take place on 5th and 6th June 2024 at the Santa Clara Convention Center, in California. The event will generate opportunities [&#8230;]</p>
-<p>The post <a href="https://coinjournal.net/news/blockchain-expo-north-america-2024-set-to-showcase-latest-developments-in-crypto-innovation/">Blockchain Expo North America 2024 set to showcase latest developments in crypto innovation</a> appeared first on <a href="https://coinjournal.net">CoinJournal</a>.</p>
+					<description><![CDATA[<p>Archax, Ownera and The HBAR Foundation have enabled the first tokenization of BlackRock&#8217;s money market fund (MMF) on Hedera. This is a major development in the real-world assets (RWAs) industry and comes after abrdn plc tokenized its MMFs on Hedera last year. The crypto world has witnessed a historic moment in the real-world assets (RWAs) [&#8230;]</p>
+<p>The post <a href="https://coinjournal.net/news/archax-ownera-hedera-collaborate-tokenize-blackrock-mmf/">Archax, Ownera and Hedera collaborate to tokenize BlackRock money market fund</a> appeared first on <a href="https://coinjournal.net">CoinJournal</a>.</p>
 ]]></description>
-										<content:encoded><![CDATA[<p><span style="font-weight: 400;">Blockchain developers, influencers, leaders, investors, entrepreneurs, and business owners from around the world are gearing up for this year&rsquo;s <a href="https://blockchain-expo.com/northamerica/">Blockchain Expo North America 2024</a>, one of North America&rsquo;s premier blockchain and cryptocurrency events, which will</span><span style="font-weight: 400;">&nbsp;take place on 5</span><span style="font-weight: 400;">th</span><span style="font-weight: 400;"> and 6</span><span style="font-weight: 400;">th</span><span style="font-weight: 400;"> June 2024 at the Santa Clara Convention Center, in California. </span></p>
-<p><span style="font-weight: 400;">The event will generate opportunities for collaboration, networking and exploration, while keeping participants at the forefront of the rapidly evolving blockchain and crypto landscape.</span></p>
-<p>Announcing this year&rsquo;s Expo, Megan Davis, Director of Techforge, said:</p>
-<blockquote><p><span style="font-weight: 400;">&ldquo;The Blockchain Expo North America 2024 will serve as a hub for those wanting to learn about the latest</span><span style="font-weight: 400;"> tools, platforms, and technologies</span><span style="font-weight: 400;">. Our visitors will leave inspired &amp; equipped with the insights needed to shape the future of their blockchain projects.&rdquo;</span></p></blockquote>
-<p><span style="font-weight: 400;">Attendees can expect a dynamic environment with opportunities for networking and knowledge-sharing. Engage with local and global developers, connect with potential clients, talent, and partners, and learn the latest blockchain technology updates. Meet CEOs of international companies to forge new partnerships and explore trends for the next bull run.</span></p>
-<p><span style="font-weight: 400;">Delve into the industry&rsquo;s most promising projects, discovering those with the highest ROI potential in 2024. Meet valuable startups, potentially identifying the next unicorn to invest in, and gain access to startup pitch decks. This event is a platform for industry professionals to collaborate, innovate, and share knowledge.</span></p>
-<p><span style="font-weight: 400;">Over the two days, attendees can expect intensive knowledge-sharing sessions, technical workshops, fire-side chats, and insightful panel discussions, all aimed at keeping participants up to date on the latest trends and advancements in blockchain technology.</span></p>
-<p><span style="font-weight: 400;">Industry leaders who have confirmed their participation, include:&nbsp;</span></p>
-<blockquote><p><span style="font-weight: 400;">Bob Ejodame, VP Capital Markets, at&nbsp;</span><b>INX</b><span style="font-weight: 400;">&nbsp;</span></p>
-<p><span style="font-weight: 400;">Autumn Moss Penaloza, Head of Global Community at&nbsp;</span><b>Algorand Foundation</b></p>
-<p><span style="font-weight: 400;">Miguel Guillen, Director Of Data Architecture at&nbsp;</span><b>PepsiCo</b></p>
-<p><span style="font-weight: 400;">Cody Carbone, Chief Policy Officer at </span><b>The Digital Chamber</b></p>
-<p><span style="font-weight: 400;">Ettore Rossetti, Head Advisor, Technology/Marketing and Innovation Partnerships at </span><b>Save the Children</b><span style="font-weight: 400;">..and more!&nbsp;</span></p></blockquote>
-<p><span style="font-weight: 400;">In addition to keynote presentations and panel discussions, attendees will have the chance to engage with leading </span><span style="font-weight: 400;">exchanges, coins, trading platforms and big brand names who will showcase their latest blockchain technology</span></p>
-<p><span style="font-weight: 400;">From blockchain-powered applications to decentralized finance platforms, the exhibition promises a glimpse into the future of technology.</span></p>
-<p><span style="font-weight: 400;">&nbsp;</span><span style="font-weight: 400;">Whether you&rsquo;re a seasoned blockchain expert or a newcomer to the industry, the Blockchain Expo North America 2024 offers something for everyone. Don&rsquo;t miss this opportunity to meet with crypto leaders, learn the latest industry trends and explore potential partnership or investment opportunities.&nbsp;</span></p>
-<p><a href="https://blockchain-expo.com/northamerica/"><img decoding="async" loading="lazy" class="alignnone wp-image-199369 size-full" src="https://coinjournal.net/wp-content/uploads/2024/04/expo.jpg" alt="" width="1800" height="900"></a></p>
-<p><span style="font-weight: 400;">For more information and to secure your spot, visit </span><a href="https://www.blockchain-expo.com/northamerica/"><span style="font-weight: 400;">https://www.blockchain-expo.com/northamerica/</span></a><span style="font-weight: 400;">&nbsp;</span></p>
+										<content:encoded><![CDATA[<ul>
+<li><span style="font-weight: 400;">Archax, Ownera and The HBAR Foundation have enabled the first tokenization of BlackRock&rsquo;s money market fund (MMF) on Hedera.</span></li>
+<li><span style="font-weight: 400;">This is a major development in the real-world assets (RWAs) industry and comes after abrdn plc tokenized its MMFs on Hedera last year.</span></li>
+</ul>
+<p><span style="font-weight: 400;">The crypto world has witnessed a historic moment in the real-world assets (RWAs) industry after Archax, a London-based digital asset exchange, broker and custodian, tokenized the BlackRock ICS US Treasury money market fund (MMF) on the <a href="https://coinjournal.net/hedera/">Hedera (HBAR) blockchain</a>.</span></p>
+<p><span style="font-weight: 400;">Archax collaborated with the HBAR Foundation and the institutional-grade digital assets platform Ownera to bring the MMF to Hedera. </span></p>
+<p><span style="font-weight: 400;">According to details in an <a href="https://blog.archax.com/resources/archax-increases-tokenised-money-market-fund-offerings" target="_blank" rel="noopener">announcement</a>, the milestone follows Hedera Council member abrdn&rsquo;s successful tokenization of its MMFs on Hedera last year.</span></p>
+<p><span style="font-weight: 400;">abrdn is the largest active wealth manager in the UK and its flagship tokenized funds marked a major milestone in the asset management industry.</span></p>
+<blockquote class="twitter-tweet" data-width="500" data-dnt="true">
+<p lang="en" dir="ltr">Today we witness <a href="https://twitter.com/hashtag/RWA?src=hash&amp;ref_src=twsrc%5Etfw">#RWA</a> history as <a href="https://twitter.com/BlackRock?ref_src=twsrc%5Etfw">@BlackRock</a>&rsquo;s ICS US Treasury money market fund (MMF) is tokenized on <a href="https://twitter.com/hedera?ref_src=twsrc%5Etfw">@Hedera</a> with <a href="https://twitter.com/ArchaxEx?ref_src=twsrc%5Etfw">@ArchaxEx</a> and <a href="https://twitter.com/OwneraIO?ref_src=twsrc%5Etfw">@OwneraIO</a>, marking a major milestone in asset management by bringing the world&rsquo;s largest asset manager on-chain &#127974; <a href="https://t.co/1Kye8cjAJx">pic.twitter.com/1Kye8cjAJx</a></p>
+<p>&mdash; HBAR Foundation (@HBAR_foundation) <a href="https://twitter.com/HBAR_foundation/status/1782759384742813951?ref_src=twsrc%5Etfw">April 23, 2024</a></p></blockquote>
+<p><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+<h2><span style="font-weight: 400;">Hedera&rsquo;s growing RWA adoption</span></h2>
+<p><span style="font-weight: 400;">The RWAs sector is getting a big boost from MMFs, which offer suitable investment vehicles for investors with institutional stability and yield.</span></p>
+<p><span style="font-weight: 400;">With tokenised MMFs allows for the trading of their shares on exchanges such as Archax and provide extra benefits that include instantaneous transfer and deployment as collateral rather than just being used for traditional subscriptions and redemptions.</span></p>
+<blockquote><p><span style="font-weight: 400;">&ldquo;The addition of MMF shares tokenized on Hedera, enabled by Archax, is a huge vote of confidence. Hedera&rsquo;s unmatched speed, security, and low-cost infrastructure is ideally suited for the institutional-grade tokenization of real-world assets made possible by Archax,&rdquo; Shayne Higdon, CEO of The HBAR Foundation, said in a statement.</span></p></blockquote>
+<h2><span style="font-weight: 400;">HBAR price soars to 4-week high</span></h2>
+<p><span style="font-weight: 400;">HBAR price surged after the news, rising more than 46% to reach highs of $0.1314 on Tuesday. </span></p>
+<p><span style="font-weight: 400;">The token changed hands at around $0.087 before the news and is currently sitting at its highest level since March 27. Data from CoinGecko shows HBAR&rsquo;s 24-hour trading volume has spiked more than 600% to over $346 million.</span></p>
 
-<p>The post <a href="https://coinjournal.net/news/blockchain-expo-north-america-2024-set-to-showcase-latest-developments-in-crypto-innovation/">Blockchain Expo North America 2024 set to showcase latest developments in crypto innovation</a> appeared first on <a href="https://coinjournal.net">CoinJournal</a>.</p>
+<p>The post <a href="https://coinjournal.net/news/archax-ownera-hedera-collaborate-tokenize-blackrock-mmf/">Archax, Ownera and Hedera collaborate to tokenize BlackRock money market fund</a> appeared first on <a href="https://coinjournal.net">CoinJournal</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>BlackCard Redefines Crypto Payments With Token Launch And Key Listings</title>
+		<link>https://coinjournal.net/news/blackcard-redefines-crypto-payments-with-token-launch-and-key-listings/</link>
+		
+		<dc:creator><![CDATA[News Team]]></dc:creator>
+		<pubDate>Tue, 23 Apr 2024 18:48:37 +0000</pubDate>
+				<category><![CDATA[Press Release]]></category>
+		<category><![CDATA[ico]]></category>
+		<guid isPermaLink="false">https://coinjournal.net/?p=200001</guid>
+
+					<description><![CDATA[<p>By introducing a plethora of useful features for crypto users, including the launch of the $BcCoin token (which will be featured on prominent crypto exchanges soon), BlackCard aims to be at the forefront of revolutionizing global cryptocurrency payment operations. By utilizing AI technology, the BlackCard Crypto Credit Card empowers users to easily integrate their digital [&#8230;]</p>
+<p>The post <a href="https://coinjournal.net/news/blackcard-redefines-crypto-payments-with-token-launch-and-key-listings/">BlackCard Redefines Crypto Payments With Token Launch And Key Listings</a> appeared first on <a href="https://coinjournal.net">CoinJournal</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p><span style="font-weight: 400;">By introducing a plethora of useful features for crypto users, including the launch of the $BcCoin token (which will be featured on prominent crypto exchanges soon), BlackCard aims to be at the forefront of revolutionizing global cryptocurrency payment operations. By utilizing AI technology, the BlackCard Crypto Credit Card empowers users to easily integrate their digital assets into their respective everyday transactions, thereby removing the limitations commonly associated with traditional banking systems.</span></p>
+<h2><span style="font-weight: 400;">What Does BlackCard Provide?</span></h2>
+<p><span style="font-weight: 400;">With BlackCard, users can now effortlessly convert their cryptocurrency assets into local currency at any point of sale, thereby guaranteeing optimal exchange rates and unparalleled convenience. This solution simplifies transactions, providing users the freedom to utilize their digital assets for a variety of purposes, such as everyday purchases, online shopping, ATM withdrawals, and much more.</span></p>
+<p><span style="font-weight: 400;">Moreover, the BlackCard team has introduced the aforementioned </span><a href="https://coinmarketcap.com/community/profile/BlackCardCoin/"><span style="font-weight: 400;">$BcCoin</span></a><span style="font-weight: 400;"> token. This represents a significant advancement within the digital asset sector, as not only has the token witnessed a remarkable surge in value when it skyrocketed by an impressive 900% from its initial price of 30 cents to an impressive $2.70, but the growth has also garnered widespread attention from enthusiasts and investors around the world.</span></p>
+<p><span style="font-weight: 400;">This highlights the intrinsic value of the token along with its disruptive potential within the global cryptocurrency market. In addition, with a target price firmly established at 100 USD, the token presents an investment opportunity for discerning investors who seek exponential growth potential.&nbsp;</span></p>
+<h2><span style="font-weight: 400;">Looking Toward The Future</span></h2>
+<p><span style="font-weight: 400;">As interest in Bitcoin and other cryptocurrencies continues to soar, the $BcCoin token looks to be a beacon of opportunity, one that offers investors continued access to the burgeoning digital economy. The BlackCard team also managed to secure several key listings on prominent cryptocurrency exchanges. On April 24th, the $BcCoin token shall be listed on MEXC, BingX, and XT, thereby expanding its reach and accessibility to a global audience of investors.</span></p>
+<p><span style="font-weight: 400;">Furthermore, the BlackCard team looks to take advantage of the ever-growing interest in cryptocurrencies, which will also undoubtedly include several additional advancements within the industry going forward. In doing so, the platform is able to enhance its position as a revolutionary platform within this space.</span></p>
+<h2><span style="font-weight: 400;">About BlackCard</span></h2>
+<p><a href="https://blackcardcoin.com/"><span style="font-weight: 400;">BlackCard</span></a><span style="font-weight: 400;"> is a provider of high-quality crypto solutions, providing a useful range of services and products that are fully customized for each user to enhance their digital financial well-being. The team is poised to capitalize on a vast market opportunity with an estimated 500 million crypto wallet owners worldwide. With a keen focus on security, convenience, and sophistication, BlackCard remains committed to shaping the future of finance through meticulous transactional excellence.</span></p>
+<p><span style="font-weight: 400;">BlackCard&rsquo;s other notable aspects include instant card activation, unlimited global spending, 13% instant starter cashback, the ability to earn instant 10% on all referrals, simple KYC procedures, zero fees for the credit card, and much more. In the near future, BlackCard plans to further develop its ecosystem by adding cross-chain interoperability, sharding, and a slew of strategic partnerships, according to its </span><a href="https://download.blackcardcoin.com/BCCoin_BlackCardCoin_Roadmap_v2.pdf?_gl=1*1dj61gc*_ga*OTMzNjExNzQ4LjE3MTM4NjYxMDA.*_ga_TWMNZ2FJVB*MTcxMzg2NjA5OS4xLjEuMTcxMzg2NzM1MC4wLjAuMA.."><span style="font-weight: 400;">roadmap</span></a><span style="font-weight: 400;">.</span></p>
+<p><span style="font-weight: 400;">Be sure to check out BlackCard&rsquo;s </span><a href="https://blackcardcoin.com/"><span style="font-weight: 400;">official website</span></a><span style="font-weight: 400;"> for additional information, as well as its </span><a href="https://www.facebook.com/BCcoin.official"><span style="font-weight: 400;">Facebook</span></a><span style="font-weight: 400;">, </span><a href="https://twitter.com/BlackCardCoin"><span style="font-weight: 400;">X</span></a><span style="font-weight: 400;">, </span><a href="https://www.instagram.com/bccoin.official/"><span style="font-weight: 400;">Instagram</span></a><span style="font-weight: 400;">, </span><a href="https://www.youtube.com/@bccoin.official"><span style="font-weight: 400;">YouTube</span></a><span style="font-weight: 400;">, and </span><a href="https://t.me/official_BCcoin"><span style="font-weight: 400;">Telegram</span></a><span style="font-weight: 400;"> channels for regular updates.</span></p>
+
+<p>The post <a href="https://coinjournal.net/news/blackcard-redefines-crypto-payments-with-token-launch-and-key-listings/">BlackCard Redefines Crypto Payments With Token Launch And Key Listings</a> appeared first on <a href="https://coinjournal.net">CoinJournal</a>.</p>
 ]]></content:encoded>
 					
 		

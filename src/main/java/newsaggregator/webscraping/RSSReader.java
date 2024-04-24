@@ -1,7 +1,6 @@
-package newsaggregator.webscraping.article;
+package newsaggregator.webscraping;
 
 import newsaggregator.model.Article;
-import newsaggregator.webscraping.Scraper;
 import org.jsoup.Jsoup;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -19,7 +18,7 @@ import java.util.List;
 import java.util.Scanner;
 
 /**
- * Lớp RSSReader thực hiện việc đọc file XML từ các nguồn RSS được lưu trữ trong file articleSources.txt
+ * Lớp RSSReader thực hiện việc đọc file XML từ các nguồn RSS được lưu trữ trong file webSources.txt
  * và trả về một danh sách các bài báo được lưu trữ trong các file XML này
  * @author Trần Quang Hưng
  */
@@ -45,7 +44,7 @@ public class RSSReader extends Scraper {
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
-        setContentList(articleList);
+        setArticleList(articleList);
         System.out.println("Đã lấy dữ liệu từ các nguồn RSS...");
     }
 

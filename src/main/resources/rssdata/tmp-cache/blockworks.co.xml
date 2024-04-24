@@ -17,20 +17,20 @@
     </subtitle>
     <logo>https://blockworks.co/images/meta-logo.png</logo>
     <rights>2024, Blockworks</rights>
-    <category term="Markets"/>
-    <category term="Finance"/>
-    <category term="Policy"/>
-    <category term="DeFi"/>
-    <category term="Business"/>
-    <category term="Web3"/>
-    <category term="Op-Ed"/>
-    <category term="People"/>
-    <category term="Podcast"/>
-    <category term="Sponsored"/>
-    <category term="Education"/>
-    <category term="Analysis"/>
-    <category term="Announcements"/>
-    <category term="Uncategorized"/>
+    <categories term="Markets"/>
+    <categories term="Finance"/>
+    <categories term="Policy"/>
+    <categories term="DeFi"/>
+    <categories term="Business"/>
+    <categories term="Web3"/>
+    <categories term="Op-Ed"/>
+    <categories term="People"/>
+    <categories term="Podcast"/>
+    <categories term="Sponsored"/>
+    <categories term="Education"/>
+    <categories term="Analysis"/>
+    <categories term="Announcements"/>
+    <categories term="Uncategorized"/>
     <entry>
         <title type="html"><![CDATA[US prosecutors seek decades in prison for Sam Bankman-Fried]]></title>
         <id>https://blockworks.co/news/prosecutors-want-50-yrs-sam-bankman-fried</id>
@@ -97,7 +97,7 @@
             <name>Katherine Ross</name>
             <uri>https://blockworks.co/katherine-ross</uri>
         </author>
-        <category label="People" term="People"/>
+        <categories label="People" term="People"/>
         <published>2024-03-15T18:35:57.000Z</published>
         <rights>2024, Blockworks</rights>
     </entry>
@@ -121,11 +121,11 @@
 
 
 
-<p>Way back in 2014, the community around the original memecoin, dogecoin, <a href="https://www.theguardian.com/technology/2014/jan/20/jamaican-bobsled-team-raises-dogecoin-winter-olympics">gathered</a> over $25,000 to send the Jamaican bobsleigh team to the Olympics. I’d argue that this type of random crypto fundraising falls into the category of gimmicky, but with a good message.&nbsp;</p>
+<p>Way back in 2014, the community around the original memecoin, dogecoin, <a href="https://www.theguardian.com/technology/2014/jan/20/jamaican-bobsled-team-raises-dogecoin-winter-olympics">gathered</a> over $25,000 to send the Jamaican bobsleigh team to the Olympics. I’d argue that this type of random crypto fundraising falls into the categories of gimmicky, but with a good message.&nbsp;</p>
 
 
 
-<p>Dogwifhat’s fundraise, on the other hand, lands more firmly in the second category of crypto crowdsourcing: gimmicky, with a bad taste left in your mouth.</p>
+<p>Dogwifhat’s fundraise, on the other hand, lands more firmly in the second categories of crypto crowdsourcing: gimmicky, with a bad taste left in your mouth.</p>
 
 
 
@@ -219,7 +219,7 @@
             <name>Molly Jane Zuckerman</name>
             <uri>https://blockworks.co/molly-jane-zuckerman</uri>
         </author>
-        <category label="Op-Ed" term="Op-Ed"/>
+        <categories label="Op-Ed" term="Op-Ed"/>
         <published>2024-03-15T18:06:50.000Z</published>
         <rights>2024, Blockworks</rights>
     </entry>
@@ -313,7 +313,7 @@
             <name>Bessie Liu</name>
             <uri>https://blockworks.co/bessieliu</uri>
         </author>
-        <category label="DeFi" term="DeFi"/>
+        <categories label="DeFi" term="DeFi"/>
         <published>2024-03-15T17:13:22.000Z</published>
         <rights>2024, Blockworks</rights>
     </entry>
@@ -375,7 +375,7 @@
             <name>Katherine Ross</name>
             <uri>https://blockworks.co/katherine-ross</uri>
         </author>
-        <category label="Policy" term="Policy"/>
+        <categories label="Policy" term="Policy"/>
         <published>2024-03-15T16:44:28.000Z</published>
         <rights>2024, Blockworks</rights>
     </entry>
@@ -445,7 +445,7 @@
             <name>Casey Wagner</name>
             <uri>https://blockworks.co/casey-wagner</uri>
         </author>
-        <category label="Markets" term="Markets"/>
+        <categories label="Markets" term="Markets"/>
         <published>2024-03-15T14:19:28.000Z</published>
         <rights>2024, Blockworks</rights>
     </entry>
@@ -528,7 +528,7 @@
             <name>Ben Strack</name>
             <uri>https://blockworks.co/benstrack</uri>
         </author>
-        <category label="Business" term="Business"/>
+        <categories label="Business" term="Business"/>
         <published>2024-03-15T13:58:41.000Z</published>
         <rights>2024, Blockworks</rights>
     </entry>
@@ -708,7 +708,7 @@
             <name>David Canellis</name>
             <uri>https://blockworks.co/david-canellis</uri>
         </author>
-        <category label="Web3" term="Web3"/>
+        <categories label="Web3" term="Web3"/>
         <published>2024-03-15T12:40:50.000Z</published>
         <rights>2024, Blockworks</rights>
     </entry>
@@ -760,7 +760,7 @@
 
 
 
-<p>The 10 US spot bitcoin ETFs have tallied nearly $12 billion of net inflows in their first nine weeks of trading, according to BitMEX Research <a href="https://twitter.com/BitMEXResearch/status/1768556378858103064">data</a>. Despite its roughly $11.7 billion of net outflows, the Grayscale Bitcoin Trust ETF (GBTC) leads the category with more than $26 billion in assets. IBIT and FBTC are next, with about $15.9 billion and $9.2 billion, respectively.&nbsp;&nbsp;</p>
+<p>The 10 US spot bitcoin ETFs have tallied nearly $12 billion of net inflows in their first nine weeks of trading, according to BitMEX Research <a href="https://twitter.com/BitMEXResearch/status/1768556378858103064">data</a>. Despite its roughly $11.7 billion of net outflows, the Grayscale Bitcoin Trust ETF (GBTC) leads the categories with more than $26 billion in assets. IBIT and FBTC are next, with about $15.9 billion and $9.2 billion, respectively.&nbsp;&nbsp;</p>
 
 
 
@@ -802,7 +802,7 @@
             <name>Ben Strack</name>
             <uri>https://blockworks.co/benstrack</uri>
         </author>
-        <category label="Finance" term="Finance"/>
+        <categories label="Finance" term="Finance"/>
         <published>2024-03-15T11:51:16.000Z</published>
         <rights>2024, Blockworks</rights>
     </entry>
@@ -912,7 +912,7 @@
             <name>Ben Strack</name>
             <uri>https://blockworks.co/benstrack</uri>
         </author>
-        <category label="Policy" term="Policy"/>
+        <categories label="Policy" term="Policy"/>
         <published>2024-03-15T11:02:32.000Z</published>
         <rights>2024, Blockworks</rights>
     </entry>
@@ -986,7 +986,7 @@
             <name>Casey Wagner</name>
             <uri>https://blockworks.co/casey-wagner</uri>
         </author>
-        <category label="Policy" term="Policy"/>
+        <categories label="Policy" term="Policy"/>
         <published>2024-03-14T20:03:44.000Z</published>
         <rights>2024, Blockworks</rights>
     </entry>
@@ -1100,7 +1100,7 @@
             <name>Macauley Peterson</name>
             <uri>https://blockworks.co/macauleypeterson</uri>
         </author>
-        <category label="DeFi" term="DeFi"/>
+        <categories label="DeFi" term="DeFi"/>
         <published>2024-03-14T17:38:36.000Z</published>
         <rights>2024, Blockworks</rights>
     </entry>
@@ -1197,7 +1197,7 @@
             <name>Katherine Ross</name>
             <uri>https://blockworks.co/katherine-ross</uri>
         </author>
-        <category label="Policy" term="Policy"/>
+        <categories label="Policy" term="Policy"/>
         <published>2024-03-14T16:47:09.000Z</published>
         <rights>2024, Blockworks</rights>
     </entry>
@@ -1276,7 +1276,7 @@
             <name>Jack Kubinec</name>
             <uri>https://blockworks.co/jack-kubinec</uri>
         </author>
-        <category label="Business" term="Business"/>
+        <categories label="Business" term="Business"/>
         <published>2024-03-14T16:30:00.000Z</published>
         <rights>2024, Blockworks</rights>
     </entry>
@@ -1316,7 +1316,7 @@
 
 
 
-<p>“I’m going through not just every single facility, every single category of miners and every single business line, but also every single cost center,” he said. “I’m building bottom-up analyses where are we spending money, how are we spending money and what’s the return on that investment spend?”</p>
+<p>“I’m going through not just every single facility, every single categories of miners and every single business line, but also every single cost center,” he said. “I’m building bottom-up analyses where are we spending money, how are we spending money and what’s the return on that investment spend?”</p>
 
 
 
@@ -1328,7 +1328,7 @@
 
 
 
-<p>Genoot has been candid in noting the reasoning behind Hut 8’s merge with US Bitcoin Corp. While Hut 8 had a strong balance sheet, he has said, it was weak on operations — a category US Bitcoin Corp was equipped to help fix.<br><br>“So [Hut 8’s] biggest weakness is overcoming that public sentiment and building that trust back with our shareholder base and with the market,” he said. “It’s making a lot of these tough decisions in Q1 and then showing the fruits of that labor in Q2, and the execution of that.”</p>
+<p>Genoot has been candid in noting the reasoning behind Hut 8’s merge with US Bitcoin Corp. While Hut 8 had a strong balance sheet, he has said, it was weak on operations — a categories US Bitcoin Corp was equipped to help fix.<br><br>“So [Hut 8’s] biggest weakness is overcoming that public sentiment and building that trust back with our shareholder base and with the market,” he said. “It’s making a lot of these tough decisions in Q1 and then showing the fruits of that labor in Q2, and the execution of that.”</p>
 
 
 
@@ -1402,7 +1402,7 @@
             <name>Ben Strack</name>
             <uri>https://blockworks.co/benstrack</uri>
         </author>
-        <category label="Business" term="Business"/>
+        <categories label="Business" term="Business"/>
         <published>2024-03-14T15:37:50.000Z</published>
         <rights>2024, Blockworks</rights>
     </entry>
@@ -1471,7 +1471,7 @@
             <name>Katherine Ross</name>
             <uri>https://blockworks.co/katherine-ross</uri>
         </author>
-        <category label="Policy" term="Policy"/>
+        <categories label="Policy" term="Policy"/>
         <published>2024-03-14T15:07:45.000Z</published>
         <rights>2024, Blockworks</rights>
     </entry>
@@ -1549,7 +1549,7 @@
             <name>Ben Strack</name>
             <uri>https://blockworks.co/benstrack</uri>
         </author>
-        <category label="Business" term="Business"/>
+        <categories label="Business" term="Business"/>
         <published>2024-03-14T14:51:36.000Z</published>
         <rights>2024, Blockworks</rights>
     </entry>
@@ -1823,7 +1823,7 @@
             <name>Katherine Ross</name>
             <uri>https://blockworks.co/katherine-ross</uri>
         </author>
-        <category label="Web3" term="Web3"/>
+        <categories label="Web3" term="Web3"/>
         <published>2024-03-14T13:31:37.000Z</published>
         <rights>2024, Blockworks</rights>
     </entry>
@@ -1888,7 +1888,7 @@
             <name>Bessie Liu</name>
             <uri>https://blockworks.co/bessieliu</uri>
         </author>
-        <category label="DeFi" term="DeFi"/>
+        <categories label="DeFi" term="DeFi"/>
         <published>2024-03-14T13:00:00.000Z</published>
         <rights>2024, Blockworks</rights>
     </entry>
@@ -2008,7 +2008,7 @@
             <name>Eitan Katz</name>
             <uri>https://blockworks.co/eitan-katz</uri>
         </author>
-        <category label="Op-Ed" term="Op-Ed"/>
+        <categories label="Op-Ed" term="Op-Ed"/>
         <published>2024-03-14T12:40:45.000Z</published>
         <rights>2024, Blockworks</rights>
     </entry>
@@ -2094,7 +2094,7 @@
             <name>Katherine Ross</name>
             <uri>https://blockworks.co/katherine-ross</uri>
         </author>
-        <category label="Business" term="Business"/>
+        <categories label="Business" term="Business"/>
         <published>2024-03-13T21:17:56.000Z</published>
         <rights>2024, Blockworks</rights>
     </entry>
@@ -2173,7 +2173,7 @@
             <name>Katherine Ross</name>
             <uri>https://blockworks.co/katherine-ross</uri>
         </author>
-        <category label="Policy" term="Policy"/>
+        <categories label="Policy" term="Policy"/>
         <published>2024-03-13T21:03:53.000Z</published>
         <rights>2024, Blockworks</rights>
     </entry>
@@ -2236,7 +2236,7 @@
             <name>Casey Wagner</name>
             <uri>https://blockworks.co/casey-wagner</uri>
         </author>
-        <category label="Policy" term="Policy"/>
+        <categories label="Policy" term="Policy"/>
         <published>2024-03-13T19:14:56.000Z</published>
         <rights>2024, Blockworks</rights>
     </entry>
@@ -2386,7 +2386,7 @@
             <name>Ben Strack</name>
             <uri>https://blockworks.co/benstrack</uri>
         </author>
-        <category label="Finance" term="Finance"/>
+        <categories label="Finance" term="Finance"/>
         <published>2024-03-13T18:04:42.000Z</published>
         <rights>2024, Blockworks</rights>
     </entry>
@@ -2464,7 +2464,7 @@
             <name>Bessie Liu</name>
             <uri>https://blockworks.co/bessieliu</uri>
         </author>
-        <category label="DeFi" term="DeFi"/>
+        <categories label="DeFi" term="DeFi"/>
         <published>2024-03-13T15:51:37.000Z</published>
         <rights>2024, Blockworks</rights>
     </entry>
@@ -2541,7 +2541,7 @@
             <name>Jack Kubinec</name>
             <uri>https://blockworks.co/jack-kubinec</uri>
         </author>
-        <category label="DeFi" term="DeFi"/>
+        <categories label="DeFi" term="DeFi"/>
         <published>2024-03-13T15:35:42.000Z</published>
         <rights>2024, Blockworks</rights>
     </entry>
@@ -2631,7 +2631,7 @@
             <name>Jack Kubinec</name>
             <uri>https://blockworks.co/jack-kubinec</uri>
         </author>
-        <category label="DeFi" term="DeFi"/>
+        <categories label="DeFi" term="DeFi"/>
         <published>2024-03-13T14:34:21.000Z</published>
         <rights>2024, Blockworks</rights>
     </entry>
@@ -2733,7 +2733,7 @@
             <name>Macauley Peterson</name>
             <uri>https://blockworks.co/macauleypeterson</uri>
         </author>
-        <category label="DeFi" term="DeFi"/>
+        <categories label="DeFi" term="DeFi"/>
         <published>2024-03-13T14:15:48.000Z</published>
         <rights>2024, Blockworks</rights>
     </entry>
@@ -2800,7 +2800,7 @@
             <name>Katherine Ross</name>
             <uri>https://blockworks.co/katherine-ross</uri>
         </author>
-        <category label="Policy" term="Policy"/>
+        <categories label="Policy" term="Policy"/>
         <published>2024-03-13T14:02:39.000Z</published>
         <rights>2024, Blockworks</rights>
     </entry>
@@ -2884,7 +2884,7 @@
 
 <p><strong>Don’t miss the next big story – join our&nbsp;<a rel="noreferrer noopener" href="https://blockworks.co/newsletter?source=end">free daily newsletter</a>.</strong></p>
 ]]></content>
-        <category label="Sponsored" term="Sponsored"/>
+        <categories label="Sponsored" term="Sponsored"/>
         <published>2024-03-13T13:34:52.000Z</published>
         <rights>2024, Blockworks</rights>
     </entry>
@@ -3046,7 +3046,7 @@ In recent years, Chris founded Humble, a decentralized exchange on Algorand, and
             <name>Chris Swenor</name>
             <uri>https://blockworks.co/chris-swenor</uri>
         </author>
-        <category label="Op-Ed" term="Op-Ed"/>
+        <categories label="Op-Ed" term="Op-Ed"/>
         <published>2024-03-13T13:19:17.000Z</published>
         <rights>2024, Blockworks</rights>
     </entry>
@@ -3238,7 +3238,7 @@ In recent years, Chris founded Humble, a decentralized exchange on Algorand, and
             <name>David Canellis</name>
             <uri>https://blockworks.co/david-canellis</uri>
         </author>
-        <category label="Web3" term="Web3"/>
+        <categories label="Web3" term="Web3"/>
         <published>2024-03-13T12:19:23.000Z</published>
         <rights>2024, Blockworks</rights>
     </entry>
@@ -3254,7 +3254,7 @@ In recent years, Chris founded Humble, a decentralized exchange on Algorand, and
 
 
 
-<p>BlackRock’s iShares Bitcoin Trust (IBIT) was again <a href="https://blockworks.co/news/blackrock-bitcoin-etf-battle">the category standout</a>, notching an all-time high daily inflow total of $849 million, according to BitMEX Research data.&nbsp;</p>
+<p>BlackRock’s iShares Bitcoin Trust (IBIT) was again <a href="https://blockworks.co/news/blackrock-bitcoin-etf-battle">the categories standout</a>, notching an all-time high daily inflow total of $849 million, according to BitMEX Research data.&nbsp;</p>
 
 
 
@@ -3318,7 +3318,7 @@ In recent years, Chris founded Humble, a decentralized exchange on Algorand, and
             <name>Ben Strack</name>
             <uri>https://blockworks.co/benstrack</uri>
         </author>
-        <category label="Markets" term="Markets"/>
+        <categories label="Markets" term="Markets"/>
         <published>2024-03-13T11:36:24.000Z</published>
         <rights>2024, Blockworks</rights>
     </entry>
@@ -3384,7 +3384,7 @@ In recent years, Chris founded Humble, a decentralized exchange on Algorand, and
             <name>Katherine Ross</name>
             <uri>https://blockworks.co/katherine-ross</uri>
         </author>
-        <category label="Business" term="Business"/>
+        <categories label="Business" term="Business"/>
         <published>2024-03-12T21:47:17.000Z</published>
         <rights>2024, Blockworks</rights>
     </entry>
@@ -3518,7 +3518,7 @@ In recent years, Chris founded Humble, a decentralized exchange on Algorand, and
             <name>Bessie Liu</name>
             <uri>https://blockworks.co/bessieliu</uri>
         </author>
-        <category label="DeFi" term="DeFi"/>
+        <categories label="DeFi" term="DeFi"/>
         <published>2024-03-12T20:43:26.000Z</published>
         <rights>2024, Blockworks</rights>
     </entry>
@@ -3591,7 +3591,7 @@ In recent years, Chris founded Humble, a decentralized exchange on Algorand, and
             <name>Katherine Ross</name>
             <uri>https://blockworks.co/katherine-ross</uri>
         </author>
-        <category label="Policy" term="Policy"/>
+        <categories label="Policy" term="Policy"/>
         <published>2024-03-12T20:25:13.000Z</published>
         <rights>2024, Blockworks</rights>
     </entry>
@@ -3675,7 +3675,7 @@ In recent years, Chris founded Humble, a decentralized exchange on Algorand, and
 
 
 
-<p>The FCA is likely waiting to get a clearer picture of how the <a href="https://blockworks.co/tag/sec">SEC</a>’s approval of bitcoin ETFs plays out, the 21.co executive added. So far, the 10-fund segment has seen more than $10 billion of net <a href="https://twitter.com/BitMEXResearch/status/1767451778054807797">inflows</a> — even with the largest fund in the category, the Grayscale Bitcoin Trust ETF (GBTC), enduring net outflows of about $11 billion.&nbsp;&nbsp;&nbsp;</p>
+<p>The FCA is likely waiting to get a clearer picture of how the <a href="https://blockworks.co/tag/sec">SEC</a>’s approval of bitcoin ETFs plays out, the 21.co executive added. So far, the 10-fund segment has seen more than $10 billion of net <a href="https://twitter.com/BitMEXResearch/status/1767451778054807797">inflows</a> — even with the largest fund in the categories, the Grayscale Bitcoin Trust ETF (GBTC), enduring net outflows of about $11 billion.&nbsp;&nbsp;&nbsp;</p>
 
 
 
@@ -3697,7 +3697,7 @@ In recent years, Chris founded Humble, a decentralized exchange on Algorand, and
             <name>Ben Strack</name>
             <uri>https://blockworks.co/benstrack</uri>
         </author>
-        <category label="Policy" term="Policy"/>
+        <categories label="Policy" term="Policy"/>
         <published>2024-03-12T20:06:32.000Z</published>
         <rights>2024, Blockworks</rights>
     </entry>
@@ -3755,7 +3755,7 @@ In recent years, Chris founded Humble, a decentralized exchange on Algorand, and
             <name>Casey Wagner</name>
             <uri>https://blockworks.co/casey-wagner</uri>
         </author>
-        <category label="Markets" term="Markets"/>
+        <categories label="Markets" term="Markets"/>
         <published>2024-03-12T16:39:55.000Z</published>
         <rights>2024, Blockworks</rights>
     </entry>
@@ -3854,7 +3854,7 @@ In recent years, Chris founded Humble, a decentralized exchange on Algorand, and
             <name>Katherine Ross</name>
             <uri>https://blockworks.co/katherine-ross</uri>
         </author>
-        <category label="Business" term="Business"/>
+        <categories label="Business" term="Business"/>
         <published>2024-03-12T14:25:40.000Z</published>
         <rights>2024, Blockworks</rights>
     </entry>
@@ -3961,7 +3961,7 @@ In recent years, Chris founded Humble, a decentralized exchange on Algorand, and
             <name>Jack Kubinec</name>
             <uri>https://blockworks.co/jack-kubinec</uri>
         </author>
-        <category label="DeFi" term="DeFi"/>
+        <categories label="DeFi" term="DeFi"/>
         <published>2024-03-12T14:10:32.000Z</published>
         <rights>2024, Blockworks</rights>
     </entry>
@@ -3997,7 +3997,7 @@ In recent years, Chris founded Humble, a decentralized exchange on Algorand, and
 
 
 
-<p>These million coins or so make up most of what are often referred to as “zombie coins,” or coins that have not moved since Bitcoin’s first official exchange traded price. Totaling <a href="https://studio.glassnode.com/metrics?a=BTC&amp;category=&amp;m=supply.ProbablyLost">1.457 million</a>, <a href="https://20368641.fs1.hubspotusercontent-na1.net/hubfs/20368641/Cointime%20Economics%20%5BDIGITAL%20SINGLE%5D.pdf">heuristic analysis</a> of UTXO’s hint that it’s safe to consider these coins as gone forever.&nbsp;</p>
+<p>These million coins or so make up most of what are often referred to as “zombie coins,” or coins that have not moved since Bitcoin’s first official exchange traded price. Totaling <a href="https://studio.glassnode.com/metrics?a=BTC&amp;categories=&amp;m=supply.ProbablyLost">1.457 million</a>, <a href="https://20368641.fs1.hubspotusercontent-na1.net/hubfs/20368641/Cointime%20Economics%20%5BDIGITAL%20SINGLE%5D.pdf">heuristic analysis</a> of UTXO’s hint that it’s safe to consider these coins as gone forever.&nbsp;</p>
 
 
 
@@ -4073,7 +4073,7 @@ In recent years, Chris founded Humble, a decentralized exchange on Algorand, and
             <name>RJ Fulton</name>
             <uri>https://blockworks.co/rj-fulton</uri>
         </author>
-        <category label="Op-Ed" term="Op-Ed"/>
+        <categories label="Op-Ed" term="Op-Ed"/>
         <published>2024-03-12T13:30:03.000Z</published>
         <rights>2024, Blockworks</rights>
     </entry>
@@ -4147,7 +4147,7 @@ In recent years, Chris founded Humble, a decentralized exchange on Algorand, and
             <name>Ben Strack</name>
             <uri>https://blockworks.co/benstrack</uri>
         </author>
-        <category label="Business" term="Business"/>
+        <categories label="Business" term="Business"/>
         <published>2024-03-12T13:15:02.000Z</published>
         <rights>2024, Blockworks</rights>
     </entry>
@@ -4311,7 +4311,7 @@ In recent years, Chris founded Humble, a decentralized exchange on Algorand, and
             <name>David Canellis</name>
             <uri>https://blockworks.co/david-canellis</uri>
         </author>
-        <category label="Web3" term="Web3"/>
+        <categories label="Web3" term="Web3"/>
         <published>2024-03-12T12:56:06.000Z</published>
         <rights>2024, Blockworks</rights>
     </entry>
@@ -4381,7 +4381,7 @@ In recent years, Chris founded Humble, a decentralized exchange on Algorand, and
             <name>Casey Wagner</name>
             <uri>https://blockworks.co/casey-wagner</uri>
         </author>
-        <category label="Policy" term="Policy"/>
+        <categories label="Policy" term="Policy"/>
         <published>2024-03-11T21:28:06.000Z</published>
         <rights>2024, Blockworks</rights>
     </entry>
@@ -4451,7 +4451,7 @@ In recent years, Chris founded Humble, a decentralized exchange on Algorand, and
             <name>Casey Wagner</name>
             <uri>https://blockworks.co/casey-wagner</uri>
         </author>
-        <category label="Markets" term="Markets"/>
+        <categories label="Markets" term="Markets"/>
         <published>2024-03-11T20:16:59.000Z</published>
         <rights>2024, Blockworks</rights>
     </entry>
@@ -4540,7 +4540,7 @@ In recent years, Chris founded Humble, a decentralized exchange on Algorand, and
 
 
 
-<p>IBIT’s assets under management stood at about $13.6 billion on Friday — roughly half of the assets within the Grayscale Bitcoin Trust ETF (<a href="https://blockworks.co/tag/gbtc">GBTC</a>). The latter fund ported over $28 billion when converting to an ETF in January and remains the biggest fund in the category.&nbsp;&nbsp;</p>
+<p>IBIT’s assets under management stood at about $13.6 billion on Friday — roughly half of the assets within the Grayscale Bitcoin Trust ETF (<a href="https://blockworks.co/tag/gbtc">GBTC</a>). The latter fund ported over $28 billion when converting to an ETF in January and remains the biggest fund in the categories.&nbsp;&nbsp;</p>
 
 
 
@@ -4562,7 +4562,7 @@ In recent years, Chris founded Humble, a decentralized exchange on Algorand, and
             <name>Ben Strack</name>
             <uri>https://blockworks.co/benstrack</uri>
         </author>
-        <category label="Business" term="Business"/>
+        <categories label="Business" term="Business"/>
         <published>2024-03-11T19:56:03.000Z</published>
         <rights>2024, Blockworks</rights>
     </entry>
@@ -4652,7 +4652,7 @@ In recent years, Chris founded Humble, a decentralized exchange on Algorand, and
             <name>Macauley Peterson</name>
             <uri>https://blockworks.co/macauleypeterson</uri>
         </author>
-        <category label="DeFi" term="DeFi"/>
+        <categories label="DeFi" term="DeFi"/>
         <published>2024-03-11T19:15:34.000Z</published>
         <rights>2024, Blockworks</rights>
     </entry>
@@ -4736,7 +4736,7 @@ In recent years, Chris founded Humble, a decentralized exchange on Algorand, and
             <name>Bessie Liu</name>
             <uri>https://blockworks.co/bessieliu</uri>
         </author>
-        <category label="DeFi" term="DeFi"/>
+        <categories label="DeFi" term="DeFi"/>
         <published>2024-03-11T18:21:56.000Z</published>
         <rights>2024, Blockworks</rights>
     </entry>
@@ -4810,7 +4810,7 @@ In recent years, Chris founded Humble, a decentralized exchange on Algorand, and
             <name>Casey Wagner</name>
             <uri>https://blockworks.co/casey-wagner</uri>
         </author>
-        <category label="Policy" term="Policy"/>
+        <categories label="Policy" term="Policy"/>
         <published>2024-03-11T18:00:39.000Z</published>
         <rights>2024, Blockworks</rights>
     </entry>
@@ -4930,7 +4930,7 @@ In recent years, Chris founded Humble, a decentralized exchange on Algorand, and
             <name>Casey Wagner</name>
             <uri>https://blockworks.co/casey-wagner</uri>
         </author>
-        <category label="People" term="People"/>
+        <categories label="People" term="People"/>
         <published>2024-03-11T17:31:09.000Z</published>
         <rights>2024, Blockworks</rights>
     </entry>
@@ -5016,7 +5016,7 @@ In recent years, Chris founded Humble, a decentralized exchange on Algorand, and
             <name>Ben Strack</name>
             <uri>https://blockworks.co/benstrack</uri>
         </author>
-        <category label="Finance" term="Finance"/>
+        <categories label="Finance" term="Finance"/>
         <published>2024-03-11T15:16:24.000Z</published>
         <rights>2024, Blockworks</rights>
     </entry>

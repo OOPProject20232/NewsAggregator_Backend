@@ -1,4 +1,4 @@
-package newsaggregator.database;
+package newsaggregator.database.MongoDB;
 
 import com.burgstaller.okhttp.AuthenticationCacheInterceptor;
 import com.burgstaller.okhttp.CachingAuthenticatorDecorator;
@@ -15,14 +15,37 @@ import okhttp3.*;
 import org.bson.Document;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-public class MongoDB implements IArticleDataAccess {
+public class MongoDBController implements MongoDBClient{
 
     private final Dotenv dotenv = Dotenv.load();
+
+    @Override
+    public <D extends Model> Document serialize(D item) {
+        if (item instanceof Article) {
+            return new Document()
+                    .append("guid", item.getGuid())
+                    .append("article_link", item.getLink())
+                    .append("website_source", item.getSource())
+                    .append("type_", item.getType())
+                    .append("article_title", item.getTitle())
+                    .append("author", item.getAuthor())
+                    .append("creation_date", item.getCreationDate())
+                    .append("thumbnail_image", ((Article) item).getThumbnailImage())
+                    .append("article_summary", ((Article) item).getSummary())
+                    .append("article_detailed_content", item.getDetailedContent())
+                    .append("categories", item.getCategories());
+        }
+        else if (item instanceof Post) {
+            return null;
+        }
+        else {
+            throw new IllegalArgumentException("Dữ liệu không hợp lệ!");
+        }
+    }
 
     /**
      * Phương thức này sẽ kết nối tới database của MongoDB và lấy dữ liệu từ collection `articles`.
@@ -32,11 +55,11 @@ public class MongoDB implements IArticleDataAccess {
      * @param filePath Địa chỉ lưu file JSON.
      */
     @Override
-    public void exportDataToJson(String filePath) {
+    public void get(String collectionName,String filePath) {
         try (MongoClient mongoClient = MongoClients.create(dotenv.get("MONGODB_CONNECTION_STRING"))) {
             MongoDatabase db = mongoClient.getDatabase(dotenv.get("MONGODB_DATABASE_NAME"));
-            MongoCollection<Document> articlesCollection = db.getCollection("articles");
-            FindIterable<Document> documents = articlesCollection.find();
+            MongoCollection<Document> collection = db.getCollection(collectionName);
+            FindIterable<Document> documents = collection.find();
             List<Document> converted_documents = documents.into(new ArrayList<>());
             JSONWriter.writeDocumentToJson(converted_documents, filePath);
         } catch (Exception e) {
@@ -54,58 +77,16 @@ public class MongoDB implements IArticleDataAccess {
      * @param contentList List các bài báo/bài viết.
      */
     @Override
-    public void importToDatabase(List<? extends Model> contentList) {
-        if (!contentList.isEmpty() && contentList.getFirst() instanceof Article) {
-            List<Article> articleList = (List<Article>) contentList;
-            importArticlesToDatabase(articleList);
-        }
-        else if (!contentList.isEmpty() && contentList.getFirst() instanceof Post) {
-            List<Post> postList = (List<Post>) contentList;
-            importPostsToDatabase(postList);
-        }
-        else {
-            System.out.println("Dữ liệu không hợp lệ...");
-        }
-    }
-
-    private void importArticlesToDatabase(List<Article> articleList) {
+    public void add(String collectionName, List<? extends Model> contentList) {
         try (MongoClient mongoClient = MongoClients.create(dotenv.get("MONGODB_CONNECTION_STRING"))) {
             MongoDatabase db = mongoClient.getDatabase(dotenv.get("MONGODB_DATABASE_NAME"));
-            MongoCollection<Document> articlesCollection = db.getCollection("articles");
-            MongoCollection<Document> categoriesCollection = db.getCollection("categories");
+            MongoCollection<Document> collection = db.getCollection(collectionName);
             int count = 0;
             List<Document> documents = new ArrayList<>();
-            for (Article article : articleList) {
-                try (MongoCursor<Document> cursor = articlesCollection.find(new Document("guid", article.getGuid())).iterator()) {
+            for (Model item : contentList) {
+                try (MongoCursor<Document> cursor = collection.find(new Document("guid", item.getGuid())).iterator()) {
                     if (!cursor.hasNext()) {
-                        Document doc = new Document()
-                                .append("guid", article.getGuid())
-                                .append("article_link", article.getLink())
-                                .append("website_source", article.getSource())
-                                .append("type_", article.getType())
-                                .append("article_title", article.getTitle())
-                                .append("author", article.getAuthor())
-                                .append("creation_date", article.getCreationDate())
-                                .append("thumbnail_image", article.getThumbnailImage())
-                                .append("article_summary", article.getSummary())
-                                .append("article_detailed_content", article.getDetailedContent())
-                                .append("category", article.getCategory());
-                        documents.add(doc);
-
-                        for (String category : article.getCategory()) {
-                            try (MongoCursor<Document> categoriesCursor = categoriesCollection.find(new Document("category", category)).iterator()) {
-                                if (!categoriesCursor.hasNext()) {
-                                    Document categoryDoc = new Document()
-                                            .append("category", category)
-                                            .append("articles_guid", Arrays.asList(article.getGuid()));
-                                    categoriesCollection.insertOne(categoryDoc);
-                                }
-                                else {
-                                    categoriesCollection.updateOne(new Document("category", category),
-                                            new Document("$push", new Document("articles_guid", article.getGuid())));
-                                }
-                            }
-                        }
+                        documents.add(serialize(item));
                         count++;
                     }
                 } catch (Exception e) {
@@ -113,15 +94,13 @@ public class MongoDB implements IArticleDataAccess {
                 }
             }
             try {
-                articlesCollection.insertMany(documents);
+                collection.insertMany(documents);
             } catch (Exception e) {
                 System.out.println(e.getMessage());
             }
-            System.out.println("Đã đẩy " + count + " bài báo lên database...");
+            System.out.println("Đã đẩy " + count + " bài viết lên database...");
         }
     }
-
-    private void importPostsToDatabase(List<Post> postList) {}
 
     /**
      * Phương thức này sẽ tạo index cho các bài báo trong database nhằm phục vụ cho full-text search.
@@ -135,7 +114,7 @@ public class MongoDB implements IArticleDataAccess {
      * <br/>- Nếu response code là 403, đã có index với tên tương tự trong collection => bad request (không đáng lo ngại).
      */
     @Override
-    public void createSearchIndex() {
+    public void createSearchIndex(String collectionName, String indexName) {
         final DigestAuthenticator authenticator =
                 new DigestAuthenticator(
                         new Credentials(dotenv.get("MONGODB_PUBLIC_API_KEY"), dotenv.get("MONGODB_PRIVATE_API_KEY")));
@@ -149,10 +128,10 @@ public class MongoDB implements IArticleDataAccess {
                 .url("https://cloud.mongodb.com/api/atlas/v1.0/groups/" + dotenv.get("MONGO_DB_GROUP_ID") + "/clusters/"
                         + dotenv.get("MONGODB_CLUSTER_NAME") + "/fts/indexes?pretty=true")
                 .post(RequestBody.create(
-                        "{\"collectionName\": \"articles\", " +
+                        "{\"collectionName\": \"" + collectionName + "\", " +
                                 "\"database\": \"" + dotenv.get("MONGODB_DATABASE_NAME") + "\", " +
                                 "\"mappings\": {\"dynamic\": true}, " +
-                                "\"name\": \""+ dotenv.get("MONGODB_SEARCH_INDEX_NAME") + "\"}",
+                                "\"name\": \""+ indexName + "\"}",
                         MediaType.parse("application/json")))
                 .build();
         try (Response response = client.newCall(request).execute()) {

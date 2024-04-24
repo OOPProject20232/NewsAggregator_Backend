@@ -8,9 +8,9 @@
             fintech.
         </description>
         <link>https://Blockchain.News/rss?key=</link>
-        <category domain="https://Blockchain.News/">Blockchain/Bitcoin/Ethereum/Crypto/Blockchain
+        <categories domain="https://Blockchain.News/">Blockchain/Bitcoin/Ethereum/Crypto/Blockchain
             News/Technology/Financial Freedom
-        </category>
+        </categories>
         <copyright>Copyright 2024 Blockchain.News .</copyright>
         <language>en-US</language>
         <managingEditor>content@blockchain.news (Blockchain.News Content)</managingEditor>
@@ -42,12 +42,12 @@
             <guid isPermaLink="false">
                 https://Blockchain.News/news/blackrocks-ishares-bitcoin-trust-soarsceo-fink-bullish-on-btc-future
             </guid>
-            <category domain="https://Blockchain.News/">News</category>
-            <category>BLACKROCK</category>
-            <category>LARRY FINK</category>
-            <category>BITCOIN</category>
-            <category>ISHARES BITCOIN TRUST</category>
-            <category>IBIT</category>
+            <categories domain="https://Blockchain.News/">News</categories>
+            <categories>BLACKROCK</categories>
+            <categories>LARRY FINK</categories>
+            <categories>BITCOIN</categories>
+            <categories>ISHARES BITCOIN TRUST</categories>
+            <categories>IBIT</categories>
             <media:thumbnail
                     url="https://image.blockchain.news:443/features/AC1DBD0C72CDFD8674A73088210BE5B6FF7148BDED77EF95C449BB1BE70C7B29.jpg"/>
             <media:content medium="image"
@@ -64,14 +64,14 @@
             <guid isPermaLink="false">
                 https://Blockchain.News/news/judge-dismisses-antitrust-suit-against-apple-over-apple-cash
             </guid>
-            <category domain="https://Blockchain.News/">News</category>
-            <category>APPLE</category>
-            <category>ANTITRUST LAWSUIT</category>
-            <category>APPLE CASH</category>
-            <category>VENMO</category>
-            <category>CASH APP</category>
-            <category>CRYPTOCURRENCY</category>
-            <category>BLOCKCHAIN</category>
+            <categories domain="https://Blockchain.News/">News</categories>
+            <categories>APPLE</categories>
+            <categories>ANTITRUST LAWSUIT</categories>
+            <categories>APPLE CASH</categories>
+            <categories>VENMO</categories>
+            <categories>CASH APP</categories>
+            <categories>CRYPTOCURRENCY</categories>
+            <categories>BLOCKCHAIN</categories>
             <media:thumbnail
                     url="https://image.blockchain.news:443/features/96CF1AF594C565EDB60DE2C3040362615010B44A3651210C11A32B3E808A717B.jpg"/>
             <media:content medium="image"
@@ -90,12 +90,12 @@
             <guid isPermaLink="false">
                 https://Blockchain.News/news/ethereum-milestone-validator-count-hits-1-million-with-114-billion-staked
             </guid>
-            <category domain="https://Blockchain.News/">News</category>
-            <category>ETHEREUM</category>
-            <category>NETWORK</category>
-            <category>VALIDATORS</category>
-            <category>STAKED</category>
-            <category>ETH</category>
+            <categories domain="https://Blockchain.News/">News</categories>
+            <categories>ETHEREUM</categories>
+            <categories>NETWORK</categories>
+            <categories>VALIDATORS</categories>
+            <categories>STAKED</categories>
+            <categories>ETH</categories>
             <media:thumbnail
                     url="https://image.blockchain.news:443/features/38FEDC056BD6B2C1638C78D7AF7AD6EAC0816F9F95C587AC9D4B2C4A7B7A2491.jpg"/>
             <media:content medium="image"
@@ -113,10 +113,10 @@
             <guid isPermaLink="false">
                 https://Blockchain.News/news/nilam-resources-announces-letter-of-intent-to-acquire-24-800-bitcoin
             </guid>
-            <category domain="https://Blockchain.News/">News</category>
-            <category>NILAM RESOURCES</category>
-            <category>ACQUISITION</category>
-            <category>BITCOIN</category>
+            <categories domain="https://Blockchain.News/">News</categories>
+            <categories>NILAM RESOURCES</categories>
+            <categories>ACQUISITION</categories>
+            <categories>BITCOIN</categories>
             <media:thumbnail
                     url="https://blockchainstock.blob.core.windows.net:443/features/F88E3C730A90099625D57EA154464F96C29A298A0DD55AD50184BBC3A2BBF42F.jpg"/>
             <media:content medium="image"
@@ -135,12 +135,12 @@
             <guid isPermaLink="false">
                 https://Blockchain.News/news/fantom-ftm-foundation-ceo-reveals-exciting-plans-for-sonics-launch-and-future-development
             </guid>
-            <category domain="https://Blockchain.News/">News</category>
-            <category>FANTOM</category>
-            <category>SONIC</category>
-            <category>BLOCKCHAIN</category>
-            <category>SCALABILITY</category>
-            <category>SECURITY</category>
+            <categories domain="https://Blockchain.News/">News</categories>
+            <categories>FANTOM</categories>
+            <categories>SONIC</categories>
+            <categories>BLOCKCHAIN</categories>
+            <categories>SCALABILITY</categories>
+            <categories>SECURITY</categories>
             <media:thumbnail
                     url="https://image.blockchain.news:443/features/4689F106509CAE65974E02C7B7AD251A48C8C2B1DECA2EEDD3FBBB442C485FCA.jpg"/>
             <media:content medium="image"
@@ -159,12 +159,12 @@
             <guid isPermaLink="false">
                 https://Blockchain.News/news/vitalik-buterin-supporting-decentralized-staking-through-anti-correlation-incentives
             </guid>
-            <category domain="https://Blockchain.News/">News</category>
-            <category>ETHEREUM</category>
-            <category>DECENTRALIZED STAKING</category>
-            <category>ANTI-CORRELATION INCENTIVES</category>
-            <category>PROTOCOL DECENTRALIZATION</category>
-            <category>BLOCKCHAIN RESEARCH</category>
+            <categories domain="https://Blockchain.News/">News</categories>
+            <categories>ETHEREUM</categories>
+            <categories>DECENTRALIZED STAKING</categories>
+            <categories>ANTI-CORRELATION INCENTIVES</categories>
+            <categories>PROTOCOL DECENTRALIZATION</categories>
+            <categories>BLOCKCHAIN RESEARCH</categories>
             <media:thumbnail
                     url="https://blockchainstock.blob.core.windows.net:443/features/9239618D9FA002F271AA5C4F3BDB3F40C40D4EAC6D37377CDEDAD7904D7436A8.jpg"/>
             <media:content medium="image"
@@ -183,13 +183,13 @@
             <guid isPermaLink="false">
                 https://Blockchain.News/news/kucoin-and-founders-charged-with-bank-secrecy-act-and-money-transmission-offenses
             </guid>
-            <category domain="https://Blockchain.News/">News</category>
-            <category>KUCOIN</category>
-            <category>CRYPTOCURRENCY EXCHANGE</category>
-            <category>BANK SECRECY ACT</category>
-            <category>MONEY TRANSMISSION</category>
-            <category>ANTI-MONEY LAUNDERING</category>
-            <category>CRIMINAL CHARGES</category>
+            <categories domain="https://Blockchain.News/">News</categories>
+            <categories>KUCOIN</categories>
+            <categories>CRYPTOCURRENCY EXCHANGE</categories>
+            <categories>BANK SECRECY ACT</categories>
+            <categories>MONEY TRANSMISSION</categories>
+            <categories>ANTI-MONEY LAUNDERING</categories>
+            <categories>CRIMINAL CHARGES</categories>
             <media:thumbnail
                     url="https://blockchainstock.azureedge.net:443/features/E60D13379DC22C0C75BE1375297A910A00BB8BF5CCDDA257A7E86346137ED3A3.jpg"/>
             <media:content medium="image"
@@ -208,12 +208,12 @@
             <guid isPermaLink="false">
                 https://Blockchain.News/news/bakkts-strategic-expansion-leads-to-significant-revenue-growth-amid-crypto-market-recovery
             </guid>
-            <category domain="https://Blockchain.News/">News</category>
-            <category>BAKKT</category>
-            <category>FINANCIAL RESULTS</category>
-            <category>CRYPTO MARKET</category>
-            <category>INSTITUTIONAL TRADING</category>
-            <category>COLLABORATIVE CUSTODY</category>
+            <categories domain="https://Blockchain.News/">News</categories>
+            <categories>BAKKT</categories>
+            <categories>FINANCIAL RESULTS</categories>
+            <categories>CRYPTO MARKET</categories>
+            <categories>INSTITUTIONAL TRADING</categories>
+            <categories>COLLABORATIVE CUSTODY</categories>
             <media:thumbnail
                     url="https://image.blockchain.news:443/features/C4726FF03121B1455F63F1F340AE5B01BCE0A0ED3070ECED52B94A78EB28447A.jpg"/>
             <media:content medium="image"
@@ -231,9 +231,9 @@
             <guid isPermaLink="false">
                 https://Blockchain.News/news/sec-brands-terraform-labs-a-house-of-cards-as-civil-trial-commences
             </guid>
-            <category domain="https://Blockchain.News/">News</category>
-            <category>SEC</category>
-            <category>TERRAFORM</category>
+            <categories domain="https://Blockchain.News/">News</categories>
+            <categories>SEC</categories>
+            <categories>TERRAFORM</categories>
             <media:thumbnail
                     url="https://image.blockchain.news:443/features/0C41EC25BC46ADB1AF418448FDDA7DA8CC0F2F29BC123FBD40E6C36E059CEF9A.jpg"/>
             <media:content medium="image"
@@ -251,12 +251,12 @@
             <guid isPermaLink="false">
                 https://Blockchain.News/news/binance-rewards-crypto-literacy-with-bitcoin-nfts-knowledge-contest
             </guid>
-            <category domain="https://Blockchain.News/">News</category>
-            <category>BINANCE</category>
-            <category>BITCOIN HALVING</category>
-            <category>NFT</category>
-            <category>CRYPTOCURRENCY EDUCATION</category>
-            <category>CRYPTO REWARDS</category>
+            <categories domain="https://Blockchain.News/">News</categories>
+            <categories>BINANCE</categories>
+            <categories>BITCOIN HALVING</categories>
+            <categories>NFT</categories>
+            <categories>CRYPTOCURRENCY EDUCATION</categories>
+            <categories>CRYPTO REWARDS</categories>
             <media:thumbnail
                     url="https://blockchainstock.blob.core.windows.net:443/features/2A6F05A5263EE9BA6037DCDB29D32666CB189A55CF6C59DBB3191FDDE83E5166.jpg"/>
             <media:content medium="image"

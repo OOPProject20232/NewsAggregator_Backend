@@ -1,5 +1,7 @@
 package newsaggregator.model;
 
+import org.bson.Document;
+
 import java.util.List;
 
 /**
@@ -62,9 +64,25 @@ public class Article extends Model {
         System.out.println("Creation date: " + creationDate);
         System.out.println("Author's name: " + author);
         System.out.println("Thumbnail image: " + thumbnailImage);
-        System.out.println("Categories: " + category);
+        System.out.println("Categories: " + categories);
         System.out.println();
         System.out.println("========================================================================================================================");
         System.out.println();
+    }
+
+
+    public Document toMongoDocument() {
+        return new Document()
+                .append("guid", guid)
+                .append("article_link", link)
+                .append("website_source", source)
+                .append("type_", type)
+                .append("article_title", title)
+                .append("author", author)
+                .append("creation_date", creationDate)
+                .append("thumbnail_image", thumbnailImage)
+                .append("article_summary", categories)
+                .append("article_detailed_content", detailedContent)
+                .append("categories", categories);
     }
 }

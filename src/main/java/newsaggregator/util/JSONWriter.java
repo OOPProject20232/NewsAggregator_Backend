@@ -38,7 +38,7 @@ public class JSONWriter {
             currentPost.put("thumbnail_image", article.getThumbnailImage());
             currentPost.put("article_summary", article.getSummary());
             currentPost.put("article_detailed_content", article.getDetailedContent());
-            currentPost.put("category", article.getCategory());
+            currentPost.put("category", article.getCategories());
 
             jArray.put(currentPost);
         }
