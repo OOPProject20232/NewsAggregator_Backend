@@ -8,6 +8,7 @@ public class Post extends Model {
 
     private int upvotes;
     private int downvotes;
+    private int views;
     private List<String> comments;
 
     // Constructors
@@ -38,6 +39,14 @@ public class Post extends Model {
 
     public void setDownvotes(int downvotes) {
         this.downvotes = downvotes;
+    }
+
+    public int getViews() {
+        return views;
+    }
+
+    public void setViews(int views) {
+        this.views = views;
     }
 
     public List<String> getComments() {

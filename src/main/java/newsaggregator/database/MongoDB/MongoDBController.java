@@ -15,6 +15,7 @@ import okhttp3.*;
 import org.bson.Document;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -77,16 +78,31 @@ public class MongoDBController implements MongoDBClient{
      * @param contentList List các bài báo/bài viết.
      */
     @Override
-    public void add(String collectionName, List<? extends Model> contentList) {
+    public <D extends Model> void add(String collectionName, List<D> contentList) {
         try (MongoClient mongoClient = MongoClients.create(dotenv.get("MONGODB_CONNECTION_STRING"))) {
             MongoDatabase db = mongoClient.getDatabase(dotenv.get("MONGODB_DATABASE_NAME"));
-            MongoCollection<Document> collection = db.getCollection(collectionName);
+            MongoCollection<Document> contentCollection = db.getCollection(collectionName);
+            MongoCollection<Document> categoriesCollection = db.getCollection(collectionName + ".categories");
             int count = 0;
             List<Document> documents = new ArrayList<>();
             for (Model item : contentList) {
-                try (MongoCursor<Document> cursor = collection.find(new Document("guid", item.getGuid())).iterator()) {
+                try (MongoCursor<Document> cursor = contentCollection.find(new Document("guid", item.getGuid())).iterator()) {
                     if (!cursor.hasNext()) {
                         documents.add(serialize(item));
+                        for (String category : item.getCategories()) {
+                            try (MongoCursor<Document> categoryCursor = categoriesCollection.find(new Document("category", category)).iterator()) {
+                                if (!categoryCursor.hasNext()) {
+                                    Document categoryDocument = new Document()
+                                            .append("category", category)
+                                            .append(collectionName + "_guid", Arrays.asList(item.getGuid()));
+                                    categoriesCollection.insertOne(categoryDocument);
+                                }
+                                else {
+                                    categoriesCollection.updateOne(new Document("category", category),
+                                            new Document("$push", new Document(collectionName + "_guid", item.getGuid())));
+                                }
+                            }
+                        }
                         count++;
                     }
                 } catch (Exception e) {
@@ -94,7 +110,7 @@ public class MongoDBController implements MongoDBClient{
                 }
             }
             try {
-                collection.insertMany(documents);
+                contentCollection.insertMany(documents);
             } catch (Exception e) {
                 System.out.println(e.getMessage());
             }

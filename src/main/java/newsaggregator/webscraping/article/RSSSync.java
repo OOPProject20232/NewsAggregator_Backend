@@ -1,4 +1,4 @@
-package newsaggregator.webscraping;
+package newsaggregator.webscraping.article;
 
 import java.io.FileOutputStream;
 import java.io.InputStream;

@@ -12,6 +12,7 @@ target/
 *.iml
 *.ipr
 src/main/resources/.env
+src/main/resources/rss/cache/
 
 ### Eclipse ###
 .apt_generated

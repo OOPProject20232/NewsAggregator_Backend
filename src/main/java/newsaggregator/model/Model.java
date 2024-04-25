@@ -106,4 +106,19 @@ public class Model {
     public void setCategories(List<String> categories) {
         this.categories = categories;
     }
+
+    public void display() {
+        System.out.println("Guid: " + guid);
+        System.out.println("Link: " + link);
+        System.out.println("Source: " + source);
+        System.out.println("Type: " + type);
+        System.out.println("Title: " + title);
+        System.out.println("Detailed Content: " + detailedContent);
+        System.out.println("Creation Date: " + creationDate);
+        System.out.println("Author: " + author);
+        System.out.println("Categories: ");
+        for (String category : categories) {
+            System.out.println(category);
+        }
+    }
 }

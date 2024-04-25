@@ -1,6 +1,7 @@
-package newsaggregator.webscraping;
+package newsaggregator.webscraping.article;
 
 import newsaggregator.model.Article;
+import newsaggregator.webscraping.Scraper;
 import org.jsoup.Jsoup;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -22,7 +23,7 @@ import java.util.Scanner;
  * và trả về một danh sách các bài báo được lưu trữ trong các file XML này
  * @author Trần Quang Hưng
  */
-public class RSSReader extends Scraper {
+public class RSSArticleReader extends Scraper<Article> {
 
     //Methods
 
@@ -31,20 +32,20 @@ public class RSSReader extends Scraper {
         System.out.println("Đang lấy dữ liệu từ các nguồn RSS...");
         List<Article> articleList = new ArrayList<>();
         try {
-            File newsList = new File("src/main/resources/rssdata/articleSources.txt");
+            File newsList = new File("src/main/resources/rss/articleSources.txt");
             Scanner newsListScanner = new Scanner(newsList);
             while (newsListScanner.hasNextLine()) {
                 String urlString = newsListScanner.nextLine();
                 String domainString = URI.create(urlString).getHost();
-                RSSSync.getNewUpdate(urlString, "src/main/resources/rssdata/tmp-cache/%s.xml".formatted(domainString));
-                RSSReader rssReader = new RSSReader();
-                List<Article> currentArticleList = rssReader.parseXML("src/main/resources/rssdata/tmp-cache/%s.xml".formatted(domainString), domainString);
+                RSSSync.getNewUpdate(urlString, "src/main/resources/rss/cache/%s.xml".formatted(domainString));
+                RSSArticleReader rssArticleReader = new RSSArticleReader();
+                List<Article> currentArticleList = rssArticleReader.parseXML("src/main/resources/rss/cache/%s.xml".formatted(domainString), domainString);
                 articleList.addAll(currentArticleList);
             }
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
-        setArticleList(articleList);
+        setContentList(articleList);
         System.out.println("Đã lấy dữ liệu từ các nguồn RSS...");
     }
 
