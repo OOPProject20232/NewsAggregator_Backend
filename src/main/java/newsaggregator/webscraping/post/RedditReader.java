@@ -24,11 +24,8 @@ public class RedditReader extends Scraper<Post> {
             while(postListScanner.hasNextLine()) {
                 String urlString = postListScanner.nextLine();
                 String after = "";
-                for (int i = 0; i < 10; i++) {
-                    if (i != 0) {
-                        urlString += "?after=" + after;
-                    }
-                    String response = fetchPost(urlString);
+                while (after != null) {
+                    String response = fetchPost(urlString + "?after=" + after);
                     ObjectMapper mapper = new ObjectMapper();
                     after = mapper.readTree(response).get("data").get("after").textValue();
                     JsonNode arrayNode = mapper.readTree(response).get("data").get("children");

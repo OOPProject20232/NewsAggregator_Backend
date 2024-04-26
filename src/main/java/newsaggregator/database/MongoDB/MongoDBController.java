@@ -14,10 +14,7 @@ import newsaggregator.util.JSONWriter;
 import okhttp3.*;
 import org.bson.Document;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class MongoDBController implements MongoDBClient{
@@ -41,7 +38,18 @@ public class MongoDBController implements MongoDBClient{
                     .append("categories", item.getCategories());
         }
         else if (item instanceof Post) {
-            return null;
+            return new Document()
+                    .append("guid", item.getGuid())
+                    .append("post_link", item.getLink())
+                    .append("website_source", item.getSource())
+                    .append("type_", item.getType())
+                    .append("post_title", item.getTitle())
+                    .append("author", item.getAuthor())
+                    .append("creation_date", item.getCreationDate())
+                    .append("post_content", item.getDetailedContent())
+                    .append("categories", item.getCategories())
+                    .append("up_votes", ((Post) item).getUpvotes())
+                    .append("down_votes", ((Post) item).getDownvotes());
         }
         else {
             throw new IllegalArgumentException("Dữ liệu không hợp lệ!");
@@ -85,28 +93,29 @@ public class MongoDBController implements MongoDBClient{
             MongoCollection<Document> categoriesCollection = db.getCollection(collectionName + ".categories");
             int count = 0;
             List<Document> documents = new ArrayList<>();
+            Set<String> existingGuids = contentCollection.distinct("guid", String.class).into(new HashSet<>());
             for (Model item : contentList) {
-                try (MongoCursor<Document> cursor = contentCollection.find(new Document("guid", item.getGuid())).iterator()) {
-                    if (!cursor.hasNext()) {
-                        documents.add(serialize(item));
-                        for (String category : item.getCategories()) {
-                            try (MongoCursor<Document> categoryCursor = categoriesCollection.find(new Document("category", category)).iterator()) {
-                                if (!categoryCursor.hasNext()) {
-                                    Document categoryDocument = new Document()
-                                            .append("category", category)
-                                            .append(collectionName + "_guid", Arrays.asList(item.getGuid()));
-                                    categoriesCollection.insertOne(categoryDocument);
-                                }
-                                else {
-                                    categoriesCollection.updateOne(new Document("category", category),
-                                            new Document("$push", new Document(collectionName + "_guid", item.getGuid())));
-                                }
+                if (!existingGuids.contains(item.getGuid())) {
+                    documents.add(serialize(item));
+                    existingGuids.add(item.getGuid());
+                    for (String category : item.getCategories()) {
+                        if (category == null) {
+                            continue;
+                        }
+                        try (MongoCursor<Document> categoryCursor = categoriesCollection.find(new Document("category", category)).iterator()) {
+                            if (!categoryCursor.hasNext()) {
+                                Document categoryDocument = new Document()
+                                        .append("category", category)
+                                        .append(collectionName + "_guid", Arrays.asList(item.getGuid()));
+                                categoriesCollection.insertOne(categoryDocument);
+                            }
+                            else {
+                                categoriesCollection.updateOne(new Document("category", category),
+                                        new Document("$push", new Document(collectionName + "_guid", item.getGuid())));
                             }
                         }
-                        count++;
                     }
-                } catch (Exception e) {
-                    System.out.println(e.getMessage());
+                    count++;
                 }
             }
             try {
