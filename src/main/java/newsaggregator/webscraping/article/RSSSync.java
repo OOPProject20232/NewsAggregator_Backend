@@ -20,9 +20,6 @@ public class RSSSync {
         try {
             URL url = URI.create(urlString).toURL();
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-
-            DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-            DocumentBuilder builder = factory.newDocumentBuilder();
             Path file = Path.of(cacheURIString);
             if (file.toFile().exists()) {
                 BasicFileAttributes attr = Files.readAttributes(file, BasicFileAttributes.class);
@@ -37,6 +34,7 @@ public class RSSSync {
                 }
             }
             else {
+
                 connection.setRequestMethod("GET");
                 connection.connect();
             }
