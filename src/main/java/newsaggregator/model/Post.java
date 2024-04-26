@@ -8,19 +8,16 @@ public class Post extends Model {
 
     private int upvotes;
     private int downvotes;
-    private int views;
-    private List<String> comments;
 
     // Constructors
 
     public Post() {
     }
 
-    public Post(String guid, String link, String source, String type, String title, String detailedContent, String creationDate, String author, List<String> category, int upvotes, int downvotes, List<String> comments) {
+    public Post(String guid, String link, String source, String type, String title, String detailedContent, String creationDate, String author, List<String> category, int upvotes, int downvotes) {
         super(guid, link, source, type, title, detailedContent, creationDate, author, category);
         this.upvotes = upvotes;
         this.downvotes = downvotes;
-        this.comments = comments;
     }
 
     // Methods
@@ -41,19 +38,12 @@ public class Post extends Model {
         this.downvotes = downvotes;
     }
 
-    public int getViews() {
-        return views;
-    }
-
-    public void setViews(int views) {
-        this.views = views;
-    }
-
-    public List<String> getComments() {
-        return comments;
-    }
-
-    public void setComments(List<String> comments) {
-        this.comments = comments;
+    @Override
+    public void display() {
+        System.out.println("==================================================================");
+        super.display();
+        System.out.println("Upvotes: " + upvotes);
+        System.out.println("Downvotes: " + downvotes);
+        System.out.println("==================================================================");
     }
 }

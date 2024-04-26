@@ -1,0 +1,7 @@
+https://www.reddit.com/r/CryptoTechnology.json
+https://www.reddit.com/r/CryptoCurrency.json
+https://www.reddit.com/r/blockchaindeveloper.json
+https://www.reddit.com/r/ethereum.json
+https://www.reddit.com/r/Bitcoin.json
+https://www.reddit.com/r/Buttcoin.json
+https://www.reddit.com/r/dogecoin.json

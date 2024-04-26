@@ -48,25 +48,12 @@ public class Article extends Model {
         return thumbnailImage;
     }
 
+    @Override
     public void display() {
-        System.out.println();
-        System.out.println("========================================================================================================================");
-        System.out.println();
-        System.out.println("GUID: " + guid);
-        System.out.println("Article link: " + link);
-        System.out.println("Website source: " + source);
-        System.out.println("Type: " + type);
-        System.out.println("Article title: " + title);
-        System.out.println("Article Summary: " + summary);
-        System.out.println();
-        System.out.println("Detailed article content: " + detailedContent);
-        System.out.println();
-        System.out.println("Creation date: " + creationDate);
-        System.out.println("Author's name: " + author);
+        System.out.println("==================================================================");
+        super.display();
+        System.out.println("Summary: " + summary);
         System.out.println("Thumbnail image: " + thumbnailImage);
-        System.out.println("Categories: " + categories);
-        System.out.println();
-        System.out.println("========================================================================================================================");
-        System.out.println();
+        System.out.println("==================================================================");
     }
 }
