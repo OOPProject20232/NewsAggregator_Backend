@@ -3,8 +3,8 @@ package newsaggregator;
 import newsaggregator.database.DataAccess;
 
 import newsaggregator.database.MongoDB.MongoDBController;
-import newsaggregator.model.Article;
-import newsaggregator.model.Post;
+import newsaggregator.model.content.Article;
+import newsaggregator.model.content.Post;
 import newsaggregator.webscraping.article.RSSArticleReader;
 import newsaggregator.webscraping.Scraper;
 import newsaggregator.webscraping.post.RedditReader;

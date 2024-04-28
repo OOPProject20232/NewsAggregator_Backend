@@ -1,8 +1,5 @@
 package newsaggregator.webscraping;
 
-import newsaggregator.model.Article;
-import newsaggregator.model.Model;
-
 import java.util.List;
 
 /**

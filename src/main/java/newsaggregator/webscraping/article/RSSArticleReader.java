@@ -1,6 +1,6 @@
 package newsaggregator.webscraping.article;
 
-import newsaggregator.model.Article;
+import newsaggregator.model.content.Article;
 import newsaggregator.webscraping.Scraper;
 import org.jsoup.Jsoup;
 import org.w3c.dom.Document;

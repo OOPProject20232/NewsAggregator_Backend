@@ -2,7 +2,7 @@ package newsaggregator.webscraping.post;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import newsaggregator.model.Post;
+import newsaggregator.model.content.Post;
 import newsaggregator.webscraping.Scraper;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
@@ -68,7 +68,7 @@ public class RedditReader extends Scraper<Post> {
     }
 
     private String getGuid(JsonNode node) {
-        return node.get("data").get("id").textValue();
+        return "reddit_" + node.get("data").get("id").textValue();
     }
 
     private String getLink(JsonNode node) {

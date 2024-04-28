@@ -7,9 +7,11 @@ import com.burgstaller.okhttp.digest.Credentials;
 import com.burgstaller.okhttp.digest.DigestAuthenticator;
 import com.mongodb.client.*;
 import io.github.cdimascio.dotenv.Dotenv;
-import newsaggregator.model.Article;
-import newsaggregator.model.Model;
-import newsaggregator.model.Post;
+import newsaggregator.model.BaseModel;
+import newsaggregator.model.content.Article;
+import newsaggregator.model.content.Content;
+import newsaggregator.model.content.Post;
+import newsaggregator.model.currency.Coin;
 import newsaggregator.util.JSONWriter;
 import okhttp3.*;
 import org.bson.Document;
@@ -22,34 +24,37 @@ public class MongoDBController implements MongoDBClient{
     private final Dotenv dotenv = Dotenv.load();
 
     @Override
-    public <D extends Model> Document serialize(D item) {
+    public <D extends BaseModel> Document serialize(D item) {
         if (item instanceof Article) {
             return new Document()
                     .append("guid", item.getGuid())
-                    .append("article_link", item.getLink())
-                    .append("website_source", item.getSource())
-                    .append("type_", item.getType())
-                    .append("article_title", item.getTitle())
-                    .append("author", item.getAuthor())
-                    .append("creation_date", item.getCreationDate())
+                    .append("article_link", ((Content) item).getLink())
+                    .append("website_source", ((Content) item).getSource())
+                    .append("type_", ((Content) item).getType())
+                    .append("article_title", ((Content) item).getTitle())
+                    .append("author", ((Content) item).getAuthor())
+                    .append("creation_date", ((Content) item).getCreationDate())
                     .append("thumbnail_image", ((Article) item).getThumbnailImage())
                     .append("article_summary", ((Article) item).getSummary())
-                    .append("article_detailed_content", item.getDetailedContent())
-                    .append("categories", item.getCategories());
+                    .append("article_detailed_content", ((Content) item).getDetailedContent())
+                    .append("categories", ((Content) item).getCategories());
         }
         else if (item instanceof Post) {
             return new Document()
                     .append("guid", item.getGuid())
-                    .append("post_link", item.getLink())
-                    .append("website_source", item.getSource())
-                    .append("type_", item.getType())
-                    .append("post_title", item.getTitle())
-                    .append("author", item.getAuthor())
-                    .append("creation_date", item.getCreationDate())
-                    .append("post_content", item.getDetailedContent())
-                    .append("categories", item.getCategories())
+                    .append("post_link", ((Content) item).getLink())
+                    .append("website_source", ((Content) item).getSource())
+                    .append("type_", ((Content) item).getType())
+                    .append("post_title", ((Content) item).getTitle())
+                    .append("author", ((Content) item).getAuthor())
+                    .append("creation_date", ((Content) item).getCreationDate())
+                    .append("post_content", ((Content) item).getDetailedContent())
+                    .append("categories", ((Content) item).getCategories())
                     .append("up_votes", ((Post) item).getUpvotes())
                     .append("down_votes", ((Post) item).getDownvotes());
+        }
+        else if (item instanceof Coin) {
+            return null;
         }
         else {
             throw new IllegalArgumentException("Dữ liệu không hợp lệ!");
@@ -86,7 +91,7 @@ public class MongoDBController implements MongoDBClient{
      * @param contentList List các bài báo/bài viết.
      */
     @Override
-    public <D extends Model> void add(String collectionName, List<D> contentList) {
+    public <D extends BaseModel> void add(String collectionName, List<D> contentList) {
         try (MongoClient mongoClient = MongoClients.create(dotenv.get("MONGODB_CONNECTION_STRING"))) {
             MongoDatabase db = mongoClient.getDatabase(dotenv.get("MONGODB_DATABASE_NAME"));
             MongoCollection<Document> contentCollection = db.getCollection(collectionName);
@@ -94,24 +99,25 @@ public class MongoDBController implements MongoDBClient{
             int count = 0;
             List<Document> documents = new ArrayList<>();
             Set<String> existingGuids = contentCollection.distinct("guid", String.class).into(new HashSet<>());
-            for (Model item : contentList) {
+            for (BaseModel item : contentList) {
                 if (!existingGuids.contains(item.getGuid())) {
                     documents.add(serialize(item));
                     existingGuids.add(item.getGuid());
-                    for (String category : item.getCategories()) {
-                        if (category == null) {
-                            continue;
-                        }
-                        try (MongoCursor<Document> categoryCursor = categoriesCollection.find(new Document("category", category)).iterator()) {
-                            if (!categoryCursor.hasNext()) {
-                                Document categoryDocument = new Document()
-                                        .append("category", category)
-                                        .append(collectionName + "_guid", Arrays.asList(item.getGuid()));
-                                categoriesCollection.insertOne(categoryDocument);
+                    if (item instanceof  Content) {
+                        for (String category : ((Content) item).getCategories()) {
+                            if (category == null) {
+                                continue;
                             }
-                            else {
-                                categoriesCollection.updateOne(new Document("category", category),
-                                        new Document("$push", new Document(collectionName + "_guid", item.getGuid())));
+                            try (MongoCursor<Document> categoryCursor = categoriesCollection.find(new Document("category", category)).iterator()) {
+                                if (!categoryCursor.hasNext()) {
+                                    Document categoryDocument = new Document()
+                                            .append("category", category)
+                                            .append(collectionName + "_guid", Arrays.asList(item.getGuid()));
+                                    categoriesCollection.insertOne(categoryDocument);
+                                } else {
+                                    categoriesCollection.updateOne(new Document("category", category),
+                                            new Document("$push", new Document(collectionName + "_guid", item.getGuid())));
+                                }
                             }
                         }
                     }
