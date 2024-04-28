@@ -1,30 +1,29 @@
 package newsaggregator;
 
 import newsaggregator.database.DataAccess;
-
 import newsaggregator.database.MongoDB.MongoDBController;
-import newsaggregator.model.Article;
-import newsaggregator.model.Post;
-import newsaggregator.webscraping.article.RSSArticleReader;
+import newsaggregator.model.currency.Coin;
 import newsaggregator.webscraping.Scraper;
-import newsaggregator.webscraping.post.RedditReader;
+import newsaggregator.webscraping.coin.CoinReader;
 import org.bson.Document;
 
 
 public class Main {
     public static void main(String[] args) {
+        DataAccess<Document> db = new MongoDBController();
+//        // Articles
 //        Scraper<Article> rss = new RSSArticleReader();
 //        rss.crawl();
-//        DataAccess<Document> db = new MongoDBController();
-//        db.add("articles", rss.getContentList());
-//        db.createSearchIndex("articles", "articlesFTS");
-//        db.get("articles", "src/main/resources/data.json");
+//        db.add("articles", rss.getDataList());
+//        db.get("articles", "src/main/resources/rss/data.json");
+//        // Posts
+//        Scraper<Post> redditReader = new RedditReader();
+//        redditReader.crawl();
+//        db.add("posts", redditReader.getDataList());
+//        db.get("posts", "src/main/resources/reddit/data.json");
 
-        Scraper<Post> redditReader = new RedditReader();
-        redditReader.crawl();
-        for (Post post : redditReader.getContentList()) {
-            post.display();
-        }
-        System.out.println(redditReader.getContentList().size());
+        Scraper<Coin> coinReader = new CoinReader();
+        coinReader.crawl();
+        db.add("coins", coinReader.getDataList());
     }
 }

@@ -2,7 +2,7 @@ package newsaggregator.webscraping.post;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import newsaggregator.model.Post;
+import newsaggregator.model.content.Post;
 import newsaggregator.webscraping.Scraper;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
@@ -24,13 +24,11 @@ public class RedditReader extends Scraper<Post> {
             while(postListScanner.hasNextLine()) {
                 String urlString = postListScanner.nextLine();
                 String after = "";
-                for (int i = 0; i < 10; i++) {
-                    if (i != 0) {
-                        urlString += "?after=" + after;
-                    }
-                    String response = fetchPost(urlString);
+                while (after != null) {
+                    String response = fetchPost(urlString + "?after=" + after);
                     ObjectMapper mapper = new ObjectMapper();
                     after = mapper.readTree(response).get("data").get("after").textValue();
+                    System.out.println(after);
                     JsonNode arrayNode = mapper.readTree(response).get("data").get("children");
                     if (arrayNode.isArray()) {
                         for (JsonNode node : arrayNode) {
@@ -55,7 +53,7 @@ public class RedditReader extends Scraper<Post> {
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
-        setContentList(postList);
+        setDataList(postList);
         System.out.println("Đã lấy dữ liệu từ các Subreddit...");
     }
 
@@ -70,7 +68,7 @@ public class RedditReader extends Scraper<Post> {
     }
 
     private String getGuid(JsonNode node) {
-        return node.get("data").get("id").textValue();
+        return "reddit_" + node.get("data").get("id").textValue();
     }
 
     private String getLink(JsonNode node) {

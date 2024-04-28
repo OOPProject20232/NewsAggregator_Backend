@@ -5,3 +5,6 @@ https://www.reddit.com/r/ethereum.json
 https://www.reddit.com/r/Bitcoin.json
 https://www.reddit.com/r/Buttcoin.json
 https://www.reddit.com/r/dogecoin.json
+https://www.reddit.com/r/ethtrader.json
+https://www.reddit.com/r/btc.json
+https://www.reddit.com/r/CryptoMarkets.json

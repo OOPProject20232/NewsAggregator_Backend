@@ -1,6 +1,6 @@
 package newsaggregator.util;
 
-import newsaggregator.model.Article;
+import newsaggregator.model.content.Article;
 import org.bson.Document;
 import org.json.JSONArray;
 import org.json.JSONObject;

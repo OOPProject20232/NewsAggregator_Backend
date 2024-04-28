@@ -1,6 +1,6 @@
 package newsaggregator.webscraping.article;
 
-import newsaggregator.model.Article;
+import newsaggregator.model.content.Article;
 import newsaggregator.webscraping.Scraper;
 import org.jsoup.Jsoup;
 import org.w3c.dom.Document;
@@ -45,7 +45,7 @@ public class RSSArticleReader extends Scraper<Article> {
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
-        setContentList(articleList);
+        setDataList(articleList);
         System.out.println("Đã lấy dữ liệu từ các nguồn RSS...");
     }
 
