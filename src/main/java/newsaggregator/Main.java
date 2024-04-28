@@ -1,17 +1,29 @@
 package newsaggregator;
 
-import newsaggregator.database.IArticleDataAccess;
-import newsaggregator.database.MongoDB;
+import newsaggregator.database.DataAccess;
+
+import newsaggregator.database.MongoDB.MongoDBController;
+import newsaggregator.model.Article;
+import newsaggregator.model.Post;
+import newsaggregator.webscraping.article.RSSArticleReader;
 import newsaggregator.webscraping.Scraper;
-import newsaggregator.webscraping.rssloader.RSSReader;
+import newsaggregator.webscraping.post.RedditReader;
+import org.bson.Document;
+
 
 public class Main {
     public static void main(String[] args) {
-        Scraper rss = new RSSReader();
+        DataAccess<Document> db = new MongoDBController();
+        // Articles
+        Scraper<Article> rss = new RSSArticleReader();
         rss.crawl();
-        IArticleDataAccess db = new MongoDB();
-        db.importToDatabase(rss.getArticleList());
-        db.createSearchIndex();
-        db.exportDataToJson("src/main/resources/data.json");
+        db.add("articles", rss.getContentList());
+        db.get("articles", "src/main/resources/rss/data.json");
+        // Posts
+        Scraper<Post> redditReader = new RedditReader();
+        redditReader.crawl();
+        db.add("posts", redditReader.getContentList());
+        db.get("posts", "src/main/resources/reddit/data.json");
+
     }
 }

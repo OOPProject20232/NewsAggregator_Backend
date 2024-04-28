@@ -1,0 +1,124 @@
+package newsaggregator.model;
+
+import java.util.List;
+
+public class Model {
+
+    // Attributes
+
+    String guid;
+    String link;
+    String source;
+    String type;
+    String title;
+    String detailedContent;
+    String creationDate;
+    String author;
+    List<String> categories;
+
+    // Constructors
+
+    public Model() {
+    }
+
+    public Model(String guid, String link, String source, String type, String title, String detailedContent, String creationDate, String author, List<String> categories) {
+        this.guid = guid;
+        this.link = link;
+        this.source = source;
+        this.type = type;
+        this.title = title;
+        this.detailedContent = detailedContent;
+        this.creationDate = creationDate;
+        this.author = author;
+        this.categories = categories;
+    }
+
+    // Methods
+
+    public String getGuid() {
+        return guid;
+    }
+
+    public void setGuid(String guid) {
+        this.guid = guid;
+    }
+
+    public String getLink() {
+        return link;
+    }
+
+    public void setLink(String link) {
+        this.link = link;
+    }
+
+    public String getSource() {
+        return source;
+    }
+
+    public void setSource(String source) {
+        this.source = source;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getDetailedContent() {
+        return detailedContent;
+    }
+
+    public void setDetailedContent(String detailedContent) {
+        this.detailedContent = detailedContent;
+    }
+
+    public String getCreationDate() {
+        return creationDate;
+    }
+
+    public void setCreationDate(String creationDate) {
+        this.creationDate = creationDate;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public List<String> getCategories() {
+        return categories;
+    }
+
+    public void setCategories(List<String> categories) {
+        this.categories = categories;
+    }
+
+    public void display() {
+        System.out.println("Guid: " + guid);
+        System.out.println("Link: " + link);
+        System.out.println("Source: " + source);
+        System.out.println("Type: " + type);
+        System.out.println("Title: " + title);
+        System.out.println("Detailed Content: " + detailedContent);
+        System.out.println("Creation Date: " + creationDate);
+        System.out.println("Author: " + author);
+        System.out.println("Categories: ");
+        for (String category : categories) {
+            System.out.println(category);
+        }
+    }
+}

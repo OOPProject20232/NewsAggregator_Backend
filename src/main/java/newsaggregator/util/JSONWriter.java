@@ -1,6 +1,6 @@
 package newsaggregator.util;
 
-import newsaggregator.article.Article;
+import newsaggregator.model.Article;
 import org.bson.Document;
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -29,16 +29,16 @@ public class JSONWriter {
         for (Article article : articleList) {
             JSONObject currentPost = new JSONObject();
             currentPost.put("guid", article.getGuid());
-            currentPost.put("article_link", article.getArticleLink());
-            currentPost.put("website_source", article.getWebsiteSource());
+            currentPost.put("article_link", article.getLink());
+            currentPost.put("website_source", article.getSource());
             currentPost.put("type_", article.getType());
-            currentPost.put("article_title", article.getArticleTitle());
+            currentPost.put("article_title", article.getTitle());
             currentPost.put("author", article.getAuthor());
             currentPost.put("creation_date", article.getCreationDate());
             currentPost.put("thumbnail_image", article.getThumbnailImage());
-            currentPost.put("article_summary", article.getArticleSummary());
-            currentPost.put("article_detailed_content", article.getArticleDetailedContent());
-            currentPost.put("category", article.getCategory());
+            currentPost.put("article_summary", article.getSummary());
+            currentPost.put("article_detailed_content", article.getDetailedContent());
+            currentPost.put("category", article.getCategories());
 
             jArray.put(currentPost);
         }
@@ -55,14 +55,14 @@ public class JSONWriter {
 
     /**
      * Phương thức này dùng để viết dữ liệu từ list các BSON Document vào file JSON.
-     * @param articles List các BSON Document.
+     * @param items List các BSON Document.
      * @param filePath Đường dẫn file JSON (dùng để lưu).
      * @see org.bson.Document
      */
-    public static void writeDocumentToJson(List<Document> articles, String filePath) {
+    public static void writeDocumentToJson(List<Document> items, String filePath) {
         JSONArray jArray = new JSONArray();
-        for (Document article : articles) {
-            jArray.put(article);
+        for (Document item : items) {
+            jArray.put(item);
         }
         try {
             FileWriter writer = new FileWriter(filePath);
