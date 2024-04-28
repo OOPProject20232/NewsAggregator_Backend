@@ -53,7 +53,7 @@ public class RedditReader extends Scraper<Post> {
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
-        setContentList(postList);
+        setDataList(postList);
         System.out.println("Đã lấy dữ liệu từ các Subreddit...");
     }
 

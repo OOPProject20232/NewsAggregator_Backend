@@ -54,7 +54,20 @@ public class MongoDBController implements MongoDBClient{
                     .append("down_votes", ((Post) item).getDownvotes());
         }
         else if (item instanceof Coin) {
-            return null;
+            Document doc = new Document()
+                    .append("guid", item.getGuid())
+                    .append("type_", item.getType())
+                    .append("symbol", ((Coin) item).getSymbol())
+                    .append("name", ((Coin) item).getName())
+                    .append("market_cap", ((Coin) item).getMarketCap())
+                    .append("rank", ((Coin) item).getRank())
+                    .append("btc_price", ((Coin) item).getBtcPrice());
+            Document priceDocument = new Document();
+            for (AbstractMap.SimpleEntry<String, String> entry : ((Coin) item).getPrices()) {
+                priceDocument.append(entry.getKey(), entry.getValue());
+            }
+            doc.append("prices", priceDocument);
+            return doc;
         }
         else {
             throw new IllegalArgumentException("Dữ liệu không hợp lệ!");
@@ -94,16 +107,19 @@ public class MongoDBController implements MongoDBClient{
     public <D extends BaseModel> void add(String collectionName, List<D> contentList) {
         try (MongoClient mongoClient = MongoClients.create(dotenv.get("MONGODB_CONNECTION_STRING"))) {
             MongoDatabase db = mongoClient.getDatabase(dotenv.get("MONGODB_DATABASE_NAME"));
-            MongoCollection<Document> contentCollection = db.getCollection(collectionName);
-            MongoCollection<Document> categoriesCollection = db.getCollection(collectionName + ".categories");
+            MongoCollection<Document> collection = db.getCollection(collectionName);
+            if (collectionName.equals("coins")) {
+                collection.drop();
+            }
             int count = 0;
             List<Document> documents = new ArrayList<>();
-            Set<String> existingGuids = contentCollection.distinct("guid", String.class).into(new HashSet<>());
+            Set<String> existingGuids = collection.distinct("guid", String.class).into(new HashSet<>());
             for (BaseModel item : contentList) {
                 if (!existingGuids.contains(item.getGuid())) {
                     documents.add(serialize(item));
                     existingGuids.add(item.getGuid());
                     if (item instanceof  Content) {
+                        MongoCollection<Document> categoriesCollection = db.getCollection(collectionName + ".categories");
                         for (String category : ((Content) item).getCategories()) {
                             if (category == null) {
                                 continue;
@@ -125,7 +141,7 @@ public class MongoDBController implements MongoDBClient{
                 }
             }
             try {
-                contentCollection.insertMany(documents);
+                collection.insertMany(documents);
             } catch (Exception e) {
                 System.out.println(e.getMessage());
             }

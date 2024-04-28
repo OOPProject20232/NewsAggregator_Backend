@@ -45,7 +45,7 @@ public class RSSArticleReader extends Scraper<Article> {
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
-        setContentList(articleList);
+        setDataList(articleList);
         System.out.println("Đã lấy dữ liệu từ các nguồn RSS...");
     }
 

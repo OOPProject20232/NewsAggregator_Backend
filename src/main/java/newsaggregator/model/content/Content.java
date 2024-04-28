@@ -23,10 +23,9 @@ public class Content extends BaseModel {
     }
 
     public Content(String guid, String link, String source, String type, String title, String detailedContent, String creationDate, String author, List<String> categories) {
-        super(guid);
+        super(guid, type);
         this.link = link;
         this.source = source;
-        this.type = type;
         this.title = title;
         this.detailedContent = detailedContent;
         this.creationDate = creationDate;
@@ -42,10 +41,6 @@ public class Content extends BaseModel {
 
     public String getSource() {
         return source;
-    }
-
-    public String getType() {
-        return type;
     }
 
     public String getTitle() {
@@ -73,7 +68,6 @@ public class Content extends BaseModel {
         super.display();
         System.out.println("Link: " + link);
         System.out.println("Source: " + source);
-        System.out.println("Type: " + type);
         System.out.println("Title: " + title);
         System.out.println("Detailed Content: " + detailedContent);
         System.out.println("Creation Date: " + creationDate);

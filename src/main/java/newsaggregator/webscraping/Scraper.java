@@ -12,17 +12,17 @@ public abstract class Scraper<T> {
 
     // Attributes
 
-    private List<T> contentList;
+    private List<T> dataList;
 
     // Methods
 
     public abstract void crawl();
 
-    public List<T> getContentList() {
-        return contentList;
+    public List<T> getDataList() {
+        return dataList;
     }
 
-    public void setContentList(List<T> contentList) {
-        this.contentList = contentList;
+    public void setDataList(List<T> dataList) {
+        this.dataList = dataList;
     }
 }
