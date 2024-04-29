@@ -1,6 +1,6 @@
 package newsaggregator.webscraping.article;
 
-import newsaggregator.model.Article;
+import newsaggregator.model.content.Article;
 import newsaggregator.webscraping.Scraper;
 import org.jsoup.Jsoup;
 import org.w3c.dom.Document;
@@ -29,7 +29,7 @@ public class RSSArticleReader extends Scraper<Article> {
 
     @Override
     public void crawl() {
-        System.out.println("Đang lấy dữ liệu từ các nguồn RSS...");
+        System.out.println("\u001B[32m" + "Đang lấy dữ liệu từ các nguồn RSS..." + "\u001B[0m");
         List<Article> articleList = new ArrayList<>();
         try {
             File newsList = new File("src/main/resources/rss/articleSources.txt");
@@ -43,10 +43,10 @@ public class RSSArticleReader extends Scraper<Article> {
                 articleList.addAll(currentArticleList);
             }
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
         }
-        setContentList(articleList);
-        System.out.println("Đã lấy dữ liệu từ các nguồn RSS...");
+        setDataList(articleList);
+        System.out.println("\u001B[32m" + "Đã lấy dữ liệu từ các nguồn RSS..." + "\u001B[0m");
     }
 
     private List<Article> parseXML(String URIString, String domainString) {
@@ -78,7 +78,7 @@ public class RSSArticleReader extends Scraper<Article> {
                 }
             }
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
         }
         return currentArticleList;
     }
@@ -102,7 +102,7 @@ public class RSSArticleReader extends Scraper<Article> {
                 }
             }
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
         }
         return null;
     }
@@ -114,7 +114,7 @@ public class RSSArticleReader extends Scraper<Article> {
                 return Jsoup.parse(elem.getElementsByTagName("content:encoded").item(0).getTextContent()).text();
             }
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
         }
         return Jsoup.parse(elem.getElementsByTagName("description").item(0).getTextContent()).text();
     }
@@ -131,7 +131,7 @@ public class RSSArticleReader extends Scraper<Article> {
             }
             return categories;
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
         }
         return null;
     }
@@ -142,7 +142,7 @@ public class RSSArticleReader extends Scraper<Article> {
                 return elem.getElementsByTagName("dc:creator").item(0).getTextContent();
             }
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
         }
         return getSource(domainString);
     }
@@ -153,7 +153,7 @@ public class RSSArticleReader extends Scraper<Article> {
         try {
             return outputFormat.format(inputFormat.parse(elem.getElementsByTagName("pubDate").item(0).getTextContent()));
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
         }
         return null;
     }
@@ -162,7 +162,7 @@ public class RSSArticleReader extends Scraper<Article> {
         try {
             return Jsoup.parse(elem.getElementsByTagName("description").item(0).getTextContent()).text();
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
         }
         return null;
     }
@@ -171,7 +171,7 @@ public class RSSArticleReader extends Scraper<Article> {
         try {
             return elem.getElementsByTagName("link").item(0).getTextContent().trim();
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
         }
         return null;
     }
@@ -180,7 +180,7 @@ public class RSSArticleReader extends Scraper<Article> {
         try {
             return elem.getElementsByTagName("title").item(0).getTextContent();
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
         }
         return null;
     }
@@ -189,7 +189,7 @@ public class RSSArticleReader extends Scraper<Article> {
         try {
             return elem.getElementsByTagName("guid").item(0).getTextContent();
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
         }
         return null;
     }

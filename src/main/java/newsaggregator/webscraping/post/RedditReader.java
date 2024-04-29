@@ -2,7 +2,7 @@ package newsaggregator.webscraping.post;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import newsaggregator.model.Post;
+import newsaggregator.model.content.Post;
 import newsaggregator.webscraping.Scraper;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
@@ -16,7 +16,7 @@ import java.util.*;
 public class RedditReader extends Scraper<Post> {
     @Override
     public void crawl() {
-        System.out.println("Đang lấy dữ liệu từ các Subreddit...");
+        System.out.println("\u001B[32m" + "Đang lấy dữ liệu từ các Subreddit..." + "\u001B[0m");
         List<Post> postList = new ArrayList<>();
         try {
             File newsList = new File("src/main/resources/reddit/postSources.txt");
@@ -53,8 +53,8 @@ public class RedditReader extends Scraper<Post> {
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
-        setContentList(postList);
-        System.out.println("Đã lấy dữ liệu từ các Subreddit...");
+        setDataList(postList);
+        System.out.println("\u001B[32m" + "Đã lấy dữ liệu từ các Subreddit..." + "\u001B[0m");
     }
 
     private String fetchPost(String url) throws IOException {
@@ -68,7 +68,7 @@ public class RedditReader extends Scraper<Post> {
     }
 
     private String getGuid(JsonNode node) {
-        return node.get("data").get("id").textValue();
+        return "reddit_" + node.get("data").get("id").textValue();
     }
 
     private String getLink(JsonNode node) {
@@ -92,7 +92,7 @@ public class RedditReader extends Scraper<Post> {
         try {
             return outputFormat.format(new Date(node.get("data").get("created").asLong() * 1000L));
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
         }
         return null;
     }
