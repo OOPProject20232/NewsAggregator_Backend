@@ -74,7 +74,8 @@ public class Content extends BaseModel {
         System.out.println("Author: " + author);
         System.out.println("Categories: ");
         for (String category : categories) {
-            System.out.println(category);
+            System.out.print(category + " ");
         }
+        System.out.println();
     }
 }
