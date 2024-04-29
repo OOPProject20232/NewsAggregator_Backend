@@ -16,7 +16,7 @@ import java.util.*;
 public class RedditReader extends Scraper<Post> {
     @Override
     public void crawl() {
-        System.out.println("Đang lấy dữ liệu từ các Subreddit...");
+        System.out.println("\u001B[32m" + "Đang lấy dữ liệu từ các Subreddit..." + "\u001B[0m");
         List<Post> postList = new ArrayList<>();
         try {
             File newsList = new File("src/main/resources/reddit/postSources.txt");
@@ -54,7 +54,7 @@ public class RedditReader extends Scraper<Post> {
             System.out.println(e.getMessage());
         }
         setDataList(postList);
-        System.out.println("Đã lấy dữ liệu từ các Subreddit...");
+        System.out.println("\u001B[32m" + "Đã lấy dữ liệu từ các Subreddit..." + "\u001B[0m");
     }
 
     private String fetchPost(String url) throws IOException {
@@ -92,7 +92,7 @@ public class RedditReader extends Scraper<Post> {
         try {
             return outputFormat.format(new Date(node.get("data").get("created").asLong() * 1000L));
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
         }
         return null;
     }

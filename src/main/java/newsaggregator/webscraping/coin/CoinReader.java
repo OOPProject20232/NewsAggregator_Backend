@@ -21,7 +21,7 @@ public class CoinReader extends Scraper<Coin> {
 
     @Override
     public void crawl() {
-        System.out.println("Đang lấy dữ liệu từ CoinRanking API...");
+        System.out.println("\u001B[32m" + "Đang lấy dữ liệu từ CoinRanking API..." + "\u001B[0m");
         ObjectMapper mapper = new ObjectMapper();
         try {
             JsonNode arrayNode = mapper.readTree(fetchCoins()).get("data").get("coins");
@@ -65,9 +65,9 @@ public class CoinReader extends Scraper<Coin> {
                 setDataList(coinList);
             }
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
         }
-        System.out.println("Lấy dữ liệu từ CoinRanking API thành công!");
+        System.out.println("\u001B[32m" + "Lấy dữ liệu từ CoinRanking API thành công!" + "\u001B[0m");
     }
 
     public String fetchCoins() {
@@ -82,7 +82,7 @@ public class CoinReader extends Scraper<Coin> {
         try (Response response = client.newCall(request).execute()) {
             return response.body().string();
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
         }
         return null;
     }
@@ -98,7 +98,7 @@ public class CoinReader extends Scraper<Coin> {
         try (Response response = client.newCall(request).execute()) {
             return response.body().string();
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
         }
         return null;
     }
@@ -108,7 +108,7 @@ public class CoinReader extends Scraper<Coin> {
         try {
             return outputFormat.format(new Date(date * 1000L));
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
         }
         return null;
     }

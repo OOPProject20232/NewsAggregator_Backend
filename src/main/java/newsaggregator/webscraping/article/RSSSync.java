@@ -37,14 +37,15 @@ public class RSSSync {
                 }
             }
             else {
+                file.toFile().getParentFile().mkdirs();
+                file.toFile().createNewFile();
                 connection.setRequestMethod("GET");
                 connection.connect();
             }
             int responseCode = connection.getResponseCode();
             if (responseCode == 200) {
-                InputStream inputStream = connection.getInputStream();
-                try {
-                    FileOutputStream fileOutputStream = new FileOutputStream(cacheURIString);
+                try (InputStream inputStream = connection.getInputStream();
+                     FileOutputStream fileOutputStream = new FileOutputStream(cacheURIString)) {
                     InputStream iStream = url.openStream();
                     byte buffer[] = new byte[1024];
                     int length;
@@ -53,12 +54,12 @@ public class RSSSync {
                     }
                     fileOutputStream.close();
                 } catch (Exception e) {
-                    System.out.println(e.getMessage());
+                    System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
                 }
             }
         }
         catch (Exception e){
-            System.out.println(e.getMessage());
+            System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
         }
     }
 }

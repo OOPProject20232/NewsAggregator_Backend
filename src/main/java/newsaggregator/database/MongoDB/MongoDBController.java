@@ -70,7 +70,7 @@ public class MongoDBController implements MongoDBClient{
             return doc;
         }
         else {
-            throw new IllegalArgumentException("Dữ liệu không hợp lệ!");
+            throw new IllegalArgumentException("\u001B[31m" + "Dữ liệu không hợp lệ!" + "\u001B[0m");
         }
     }
 
@@ -90,7 +90,7 @@ public class MongoDBController implements MongoDBClient{
             List<Document> converted_documents = documents.into(new ArrayList<>());
             JSONWriter.writeDocumentToJson(converted_documents, filePath);
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
         }
     }
 
@@ -143,9 +143,9 @@ public class MongoDBController implements MongoDBClient{
             try {
                 collection.insertMany(documents);
             } catch (Exception e) {
-                System.out.println(e.getMessage());
+                System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
             }
-            System.out.println("Đã đẩy " + count + " bài viết lên database...");
+            System.out.println("\u001B[32m" + "Đã đẩy " + count + " bài viết lên database..." + "\u001B[0m");
         }
     }
 
@@ -185,7 +185,7 @@ public class MongoDBController implements MongoDBClient{
             System.out.println("Status code: " + response.code());
             System.out.println("Response body: " + response.body().string());
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
         }
     }
 }
