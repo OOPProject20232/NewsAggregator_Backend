@@ -43,7 +43,8 @@ public class RedditReader extends Scraper<Post> {
                                     getAuthor(node),
                                     getCategories(node),
                                     getUpvotes(node),
-                                    getDownvotes(node)
+                                    getDownvotes(node),
+                                    getMediaURL(node)
                             );
                             postList.add(currentPost);
                         }
@@ -114,5 +115,12 @@ public class RedditReader extends Scraper<Post> {
 
     private int getDownvotes(JsonNode node) {
         return node.get("data").get("downs").intValue();
+    }
+
+    private String getMediaURL(JsonNode node) {
+        if (node.get("data").get("url").textValue().contains("i.redd.it") || node.get("data").get("url").textValue().contains("v.redd.it")) {
+            return node.get("data").get("url").textValue();
+        }
+        return null;
     }
 }
