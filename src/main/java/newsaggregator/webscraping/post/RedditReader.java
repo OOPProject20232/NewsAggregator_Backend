@@ -102,7 +102,10 @@ public class RedditReader extends Scraper<Post> {
     }
 
     private List<String> getCategories(JsonNode node) {
-        return Arrays.asList(node.get("data").get("link_flair_text").textValue());
+        if (node.get("data").get("link_flair_text").isNull() || node.get("data").get("link_flair_text").textValue().isEmpty()) {
+            return Arrays.asList("general");
+        }
+        return Arrays.asList(node.get("data").get("link_flair_text").textValue().toLowerCase());
     }
 
     private int getUpvotes(JsonNode node) {
