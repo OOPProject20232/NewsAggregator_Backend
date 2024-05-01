@@ -56,6 +56,9 @@ public class RSSArticleReader extends Scraper<Article> {
             DocumentBuilder builder = factory.newDocumentBuilder();
             Document doc = builder.parse(URIString);
             NodeList items = doc.getElementsByTagName("item");
+            if (items.getLength() == 0) {
+                items = doc.getElementsByTagName("entry");
+            }
             for (int i = 0; i < items.getLength(); i++) {
                 Node item = items.item(i);
                 if (item.getNodeType() == Node.ELEMENT_NODE) {
@@ -85,21 +88,17 @@ public class RSSArticleReader extends Scraper<Article> {
 
     private String getThumbnail(Element elem) {
         try {
-            List<String> thumbnailTagList = new ArrayList<>(Arrays.asList("media:thumbnail", "media:content", "enclosure", "image"));
+            List<String> thumbnailTagList = new ArrayList<>(Arrays.asList("media:thumbnail", "media:content", "enclosure"));
             for (String thumbnailTag : thumbnailTagList) {
                 if  (elem.getElementsByTagName(thumbnailTag).item(0) != null) {
-                    if (thumbnailTag.equals("image")) {
-                        NodeList nodeList = elem.getElementsByTagName("image").item(0).getChildNodes();
-                        for (int i = 0; i < nodeList.getLength(); i++) {
-                            Node node = nodeList.item(i);
-                            if (node.getNodeType() == Node.ELEMENT_NODE) {
-                                Element element = (Element) node;
-                                return element.getElementsByTagName("url").item(0).getTextContent();
-                            }
-                        }
-                    }
                     return elem.getElementsByTagName(thumbnailTag).item(0).getAttributes().getNamedItem("url").getTextContent();
                 }
+            }
+            if (elem.getElementsByTagName("content:encoded").item(0) != null) {
+                return Jsoup.parse(elem.getElementsByTagName("content:encoded").item(0).getTextContent()).select("img").attr("src");
+            }
+            else if (elem.getElementsByTagName("content").item(0) != null) {
+                return Jsoup.parse(elem.getElementsByTagName("content").item(0).getTextContent()).select("img").attr("src");
             }
         } catch (Exception e) {
             System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
@@ -108,25 +107,36 @@ public class RSSArticleReader extends Scraper<Article> {
     }
 
     private String getDetailedContent(Element elem) {
-        try {
-            if (elem.getElementsByTagName("content:encoded").item(0) != null &&
-                    !(elem.getElementsByTagName("content:encoded").item(0).getTextContent().isEmpty())) {
-                return Jsoup.parse(elem.getElementsByTagName("content:encoded").item(0).getTextContent()).text();
+        List<String> contentList = new ArrayList<>(Arrays.asList("content:encoded", "description", "content", "summary"));
+        for (String content : contentList) {
+            try {
+                Node detailed_contentNode = elem.getElementsByTagName(content).item(0);
+                if (detailed_contentNode != null) {
+                    if (!detailed_contentNode.getTextContent().isEmpty()) {
+                        return Jsoup.parse(detailed_contentNode.getTextContent()).text();
+                    }
+                }
+            } catch (Exception e) {
+                System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
             }
-        } catch (Exception e) {
-            System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
         }
-        return Jsoup.parse(elem.getElementsByTagName("description").item(0).getTextContent()).text();
+        return null;
     }
 
     private List<String> getCategories(Element elem) {
         ArrayList<String> categories = new ArrayList<>();
         try {
-            for (int j = 0; j < elem.getElementsByTagName("category").getLength(); j++) {
-                String category = elem.getElementsByTagName("category").item(j).getTextContent();
-                if (category.isBlank()) {
-                    continue;
+            if (elem.getElementsByTagName("category").getLength() != 0) {
+                for (int j = 0; j < elem.getElementsByTagName("category").getLength(); j++) {
+                    String category = elem.getElementsByTagName("category").item(j).getTextContent();
+                    if (category.isBlank()) {
+                        continue;
+                    }
+                    categories.add(category.toLowerCase());
                 }
+            }
+            else if (elem.getElementsByTagName("categories").getLength() != 0) {
+                String category = elem.getElementsByTagName("categories").item(0).getAttributes().getNamedItem("label").getTextContent();
                 categories.add(category.toLowerCase());
             }
             return categories;
@@ -141,6 +151,9 @@ public class RSSArticleReader extends Scraper<Article> {
             if (elem.getElementsByTagName("dc:creator").item(0) != null) {
                 return elem.getElementsByTagName("dc:creator").item(0).getTextContent();
             }
+            else if (elem.getElementsByTagName("author").item(0).getTextContent() != null) {
+                return elem.getElementsByTagName("author").item(0).getTextContent();
+            }
         } catch (Exception e) {
             System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
         }
@@ -148,10 +161,16 @@ public class RSSArticleReader extends Scraper<Article> {
     }
 
     private String getDate(Element elem) {
-        SimpleDateFormat inputFormat = new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss Z");
         SimpleDateFormat outputFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'");
         try {
-            return outputFormat.format(inputFormat.parse(elem.getElementsByTagName("pubDate").item(0).getTextContent()));
+            Node dateNode = elem.getElementsByTagName("pubDate").item(0);
+            if (dateNode == null) {
+                dateNode = elem.getElementsByTagName("published").item(0);
+                SimpleDateFormat inputFormat2 = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'");
+                return outputFormat.format(inputFormat2.parse(dateNode.getTextContent()));
+            }
+            SimpleDateFormat inputFormat1 = new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss Z");
+            return outputFormat.format(inputFormat1.parse(dateNode.getTextContent()));
         } catch (Exception e) {
             System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
         }
@@ -160,7 +179,11 @@ public class RSSArticleReader extends Scraper<Article> {
 
     private String getSummary(Element elem) {
         try {
-            return Jsoup.parse(elem.getElementsByTagName("description").item(0).getTextContent()).text();
+            Node summary = elem.getElementsByTagName("description").item(0);
+            if (summary == null) {
+                summary = elem.getElementsByTagName("summary").item(0);
+            }
+            return Jsoup.parse(summary.getTextContent()).text();
         } catch (Exception e) {
             System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
         }
@@ -178,7 +201,7 @@ public class RSSArticleReader extends Scraper<Article> {
 
     private String getTitle(Element elem) {
         try {
-            return elem.getElementsByTagName("title").item(0).getTextContent();
+            return elem.getElementsByTagName("title").item(0).getTextContent().trim();
         } catch (Exception e) {
             System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
         }
@@ -187,7 +210,11 @@ public class RSSArticleReader extends Scraper<Article> {
 
     private String getGuid(Element elem) {
         try {
-            return elem.getElementsByTagName("guid").item(0).getTextContent();
+            Node guid = elem.getElementsByTagName("guid").item(0);
+            if (guid == null) {
+                guid = elem.getElementsByTagName("id").item(0);
+            }
+            return guid.getTextContent().trim();
         } catch (Exception e) {
             System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
         }

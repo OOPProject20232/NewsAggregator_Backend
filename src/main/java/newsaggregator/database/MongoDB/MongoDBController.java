@@ -51,7 +51,8 @@ public class MongoDBController implements MongoDBClient{
                     .append("post_content", ((Content) item).getDetailedContent())
                     .append("categories", ((Content) item).getCategories())
                     .append("up_votes", ((Post) item).getUpvotes())
-                    .append("down_votes", ((Post) item).getDownvotes());
+                    .append("down_votes", ((Post) item).getDownvotes())
+                    .append("media_url", ((Post) item).getMediaURL());
         }
         else if (item instanceof Coin) {
             Document doc = new Document()
