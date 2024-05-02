@@ -3,7 +3,7 @@ package newsaggregator.webscraping.coin;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.github.cdimascio.dotenv.Dotenv;
-import newsaggregator.model.currency.Coin;
+import newsaggregator.model.crypto.Coin;
 import newsaggregator.webscraping.Scraper;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
