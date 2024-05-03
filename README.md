@@ -86,13 +86,13 @@ cd NewsAggregator_Backend
 
 
    ```bash
-   docker run -d newsaggregator_backend
+   docker runArticles -d newsaggregator_backend
    ```
        
       or
       
    ```bash
-   docker run -d -p 5000:8000 newsaggregator_backend
+   docker runArticles -d -p 5000:8000 newsaggregator_backend
    ```
        
       This will run docker image on port 5000 for your host machine and port 8000 for the container.
@@ -121,5 +121,5 @@ cd NewsAggregator_Backend
     The batch file should contain the following command:
    
    ```bash
-       docker run -d newsaggregator_backend
+       docker runArticles -d newsaggregator_backend
    ```

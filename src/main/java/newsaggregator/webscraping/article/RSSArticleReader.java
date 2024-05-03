@@ -17,6 +17,8 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
 import java.io.InputStream;
 import java.net.URI;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
@@ -153,24 +155,36 @@ public class RSSArticleReader extends Scraper<Article> {
             try {
                 SimpleTokenizer tokenizer = SimpleTokenizer.INSTANCE;
                 String[] tokens = tokenizer.tokenize(content);
-                List<String> models = Arrays.asList("en-ner-person.bin", "en-ner-money.bin", "en-ner-organization.bin");
+                List<String> models = Arrays.asList("en-ner-person.bin", "en-ner-organization.bin");
                 for (String model : models) {
-                    InputStream inputStreamNameFinder = getClass()
-                            .getResourceAsStream("/mlmodels/%s".formatted(model));
+                    // NER
+                    InputStream inputStreamNameFinder = getClass().getResourceAsStream("/mlmodels/%s".formatted(model));
                     assert inputStreamNameFinder != null;
-                    TokenNameFinderModel model2 = new TokenNameFinderModel(
+                    TokenNameFinderModel NERmodel = new TokenNameFinderModel(
                             inputStreamNameFinder);
-                    NameFinderME nameFinderME = new NameFinderME(model2);
+                    NameFinderME nameFinderME = new NameFinderME(NERmodel);
                     List<Span> spans = Arrays.asList(nameFinderME.find(tokens));
-                    if (spans != null && !spans.isEmpty()) {
+                    if (!spans.isEmpty()) {
                         for (Span span : spans) {
-                            categories.addAll(Arrays.stream(Arrays
-                                    .copyOfRange(tokens, span.getStart(), span.getEnd()))
-                                    .toList());
+                            categories.addAll(Arrays.stream(Arrays.copyOfRange(tokens, span.getStart(), span.getEnd())).map(String::toLowerCase).toList());
                         }
                     }
                 }
-                return new ArrayList<>(categories);
+                var stopWords = Files.readAllLines(Paths.get("src/main/resources/mlmodels/stopwords.txt"));
+                List<String> categoriesList = new ArrayList<>(categories.stream()
+                        .filter(category -> !category.equals("&"))
+                        .filter(category -> !category.equals("-"))
+                        .filter(category -> !category.equals("/"))
+                        .filter(category -> !category.equals("\""))
+                        .filter(category -> !category.equals("."))
+                        .filter(category -> !category.equals(","))
+                        .filter(category -> !stopWords.contains(category))
+                        .filter(category -> !(category.length() <= 1))
+                        .toList());
+                if (categoriesList.isEmpty()) {
+                    categoriesList.add("general");
+                }
+                return categoriesList;
             } catch (Exception e) {
                 System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
             }
