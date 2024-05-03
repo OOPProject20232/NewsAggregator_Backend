@@ -9,5 +9,5 @@ WORKDIR /app
 COPY --from=builder /app/target/newsaggregator_backend-jar-with-dependencies.jar .
 COPY --from=builder /app/target/classes/ ./src/main/resources/
 RUN rm -rf ./src/main/resources/newsaggregator
-EXPOSE 8080
+EXPOSE 8000
 CMD ["java", "-jar", "newsaggregator_backend-jar-with-dependencies.jar"]
