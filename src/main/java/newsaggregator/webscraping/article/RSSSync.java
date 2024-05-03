@@ -20,9 +20,6 @@ public class RSSSync {
         try {
             URL url = URI.create(urlString).toURL();
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-
-            DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-            DocumentBuilder builder = factory.newDocumentBuilder();
             Path file = Path.of(cacheURIString);
             if (file.toFile().exists()) {
                 BasicFileAttributes attr = Files.readAttributes(file, BasicFileAttributes.class);
@@ -44,15 +41,13 @@ public class RSSSync {
             }
             int responseCode = connection.getResponseCode();
             if (responseCode == 200) {
-                try (InputStream inputStream = connection.getInputStream();
+                try (InputStream iStream = url.openStream();
                      FileOutputStream fileOutputStream = new FileOutputStream(cacheURIString)) {
-                    InputStream iStream = url.openStream();
-                    byte buffer[] = new byte[1024];
+                    byte[] buffer = new byte[1024];
                     int length;
                     while ((length = iStream.read(buffer)) != -1) {
                         fileOutputStream.write(buffer, 0, length);
                     }
-                    fileOutputStream.close();
                 } catch (Exception e) {
                     System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
                 }
