@@ -2,6 +2,10 @@ package newsaggregator.webscraping.article;
 
 import newsaggregator.model.content.Article;
 import newsaggregator.webscraping.Scraper;
+import opennlp.tools.namefind.NameFinderME;
+import opennlp.tools.namefind.TokenNameFinderModel;
+import opennlp.tools.tokenize.SimpleTokenizer;
+import opennlp.tools.util.Span;
 import org.jsoup.Jsoup;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -11,12 +15,12 @@ import org.w3c.dom.NodeList;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
+import java.io.InputStream;
 import java.net.URI;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 /**
  * Lớp RSSReader thực hiện việc đọc file XML từ các nguồn RSS được lưu trữ trong file webSources.txt
@@ -63,21 +67,21 @@ public class RSSArticleReader extends Scraper<Article> {
                 Node item = items.item(i);
                 if (item.getNodeType() == Node.ELEMENT_NODE) {
                     Element elem = (Element) item;
-                        // Post
-                        Article currentArticle = new Article(
-                                getGuid(elem),
-                                getLink(elem),
-                                getSource(domainString),
-                                "article",
-                                getTitle(elem),
-                                getSummary(elem),
-                                getDetailedContent(elem),
-                                getDate(elem),
-                                getAuthor(domainString, elem),
-                                getThumbnail(elem),
-                                getCategories(elem)
-                        );
-                        currentArticleList.add(currentArticle);
+                    // Post
+                    Article currentArticle = new Article(
+                            getGuid(elem),
+                            getLink(elem),
+                            getSource(domainString),
+                            "article",
+                            getTitle(elem),
+                            getSummary(elem),
+                            getDetailedContent(elem),
+                            getDate(elem),
+                            getAuthor(domainString, elem),
+                            getThumbnail(elem),
+                            getCategories2(elem)
+                    );
+                    currentArticleList.add(currentArticle);
                 }
             }
         } catch (Exception e) {
@@ -90,14 +94,13 @@ public class RSSArticleReader extends Scraper<Article> {
         try {
             List<String> thumbnailTagList = new ArrayList<>(Arrays.asList("media:thumbnail", "media:content", "enclosure"));
             for (String thumbnailTag : thumbnailTagList) {
-                if  (elem.getElementsByTagName(thumbnailTag).item(0) != null) {
+                if (elem.getElementsByTagName(thumbnailTag).item(0) != null) {
                     return elem.getElementsByTagName(thumbnailTag).item(0).getAttributes().getNamedItem("url").getTextContent();
                 }
             }
             if (elem.getElementsByTagName("content:encoded").item(0) != null) {
                 return Jsoup.parse(elem.getElementsByTagName("content:encoded").item(0).getTextContent()).select("img").attr("src");
-            }
-            else if (elem.getElementsByTagName("content").item(0) != null) {
+            } else if (elem.getElementsByTagName("content").item(0) != null) {
                 return Jsoup.parse(elem.getElementsByTagName("content").item(0).getTextContent()).select("img").attr("src");
             }
         } catch (Exception e) {
@@ -134,14 +137,57 @@ public class RSSArticleReader extends Scraper<Article> {
                     }
                     categories.add(category.toLowerCase());
                 }
-            }
-            else if (elem.getElementsByTagName("categories").getLength() != 0) {
+            } else if (elem.getElementsByTagName("categories").getLength() != 0) {
                 String category = elem.getElementsByTagName("categories").item(0).getAttributes().getNamedItem("label").getTextContent();
                 categories.add(category.toLowerCase());
             }
             return categories;
         } catch (Exception e) {
             System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
+        }
+        return null;
+    }
+
+    private List<String> getCategories2(Element elem) {
+        Set<String> categories = new HashSet<>();
+        String content = getDetailedContent(elem);
+        if (content != null) {
+            try {
+                SimpleTokenizer tokenizer = SimpleTokenizer.INSTANCE;
+                String[] tokens = tokenizer.tokenize(content);
+                List<String> models = Arrays.asList("en-ner-person.bin", "en-ner-organization.bin");
+                for (String model : models) {
+                    // NER
+                    InputStream inputStreamNameFinder = getClass().getResourceAsStream("/mlmodels/%s".formatted(model));
+                    assert inputStreamNameFinder != null;
+                    TokenNameFinderModel NERmodel = new TokenNameFinderModel(
+                            inputStreamNameFinder);
+                    NameFinderME nameFinderME = new NameFinderME(NERmodel);
+                    List<Span> spans = Arrays.asList(nameFinderME.find(tokens));
+                    if (!spans.isEmpty()) {
+                        for (Span span : spans) {
+                            categories.addAll(Arrays.stream(Arrays.copyOfRange(tokens, span.getStart(), span.getEnd())).map(String::toLowerCase).toList());
+                        }
+                    }
+                }
+                var stopWords = Files.readAllLines(Paths.get("src/main/resources/mlmodels/stopwords.txt"));
+                List<String> categoriesList = new ArrayList<>(categories.stream()
+                        .filter(category -> !category.equals("&"))
+                        .filter(category -> !category.equals("-"))
+                        .filter(category -> !category.equals("/"))
+                        .filter(category -> !category.equals("\""))
+                        .filter(category -> !category.equals("."))
+                        .filter(category -> !category.equals(","))
+                        .filter(category -> !stopWords.contains(category))
+                        .filter(category -> !(category.length() <= 1))
+                        .toList());
+                if (categoriesList.isEmpty()) {
+                    categoriesList.add("general");
+                }
+                return categoriesList;
+            } catch (Exception e) {
+                System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
+            }
         }
         return null;
     }

@@ -4,7 +4,7 @@ import newsaggregator.database.DataAccess;
 import newsaggregator.database.MongoDB.MongoDBController;
 import newsaggregator.model.content.Article;
 import newsaggregator.model.content.Post;
-import newsaggregator.model.currency.Coin;
+import newsaggregator.model.crypto.Coin;
 import newsaggregator.webscraping.Scraper;
 import newsaggregator.webscraping.article.RSSArticleReader;
 import newsaggregator.webscraping.coin.CoinReader;
@@ -19,11 +19,13 @@ public class Main {
         Scraper<Article> rss = new RSSArticleReader();
         rss.crawl();
         db.add("articles", rss.getDataList());
+        db.createSearchIndex("articles", "articlesFTS");
         db.get("articles", "src/main/resources/rss/data.json");
         // Posts
         Scraper<Post> redditReader = new RedditReader();
         redditReader.crawl();
         db.add("posts", redditReader.getDataList());
+        db.createSearchIndex("posts", "postsFTS");
         db.get("posts", "src/main/resources/reddit/data.json");
         // Coins
         Scraper<Coin> coinReader = new CoinReader();
