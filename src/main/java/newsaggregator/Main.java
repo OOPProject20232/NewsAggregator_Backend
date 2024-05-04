@@ -9,10 +9,9 @@ import java.net.InetSocketAddress;
 import java.util.concurrent.*;
 
 public class Main {
-    public final static int PORT = 8000;
 
     public static void main(String[] args) throws IOException {
-        HttpServer server = HttpServer.create(new InetSocketAddress(PORT), 0);
+        HttpServer server = HttpServer.create(new InetSocketAddress(8000), 0);
         ExecutorService executor = Executors.newFixedThreadPool(3);
 
         server.createContext("/v1/articles", (exchange -> {
