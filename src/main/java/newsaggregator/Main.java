@@ -9,8 +9,10 @@ import java.net.InetSocketAddress;
 import java.util.concurrent.*;
 
 public class Main {
+    public final static int PORT = 8000;
+
     public static void main(String[] args) throws IOException {
-        HttpServer server = HttpServer.create(new InetSocketAddress(8000), 0);
+        HttpServer server = HttpServer.create(new InetSocketAddress(PORT), 0);
         ExecutorService executor = Executors.newFixedThreadPool(3);
 
         server.createContext("/v1/articles", (exchange -> {
@@ -21,7 +23,7 @@ public class Main {
                     try {
                         String response = future.get();
                         byte[] responseBytes = response.getBytes();
-                        exchange.getResponseHeaders().set("Content-Type", "text/plain; charset=UTF-8");
+                        exchange.getResponseHeaders().set("Content-Type", "application/json; charset=UTF-8");
                         exchange.sendResponseHeaders(200, responseBytes.length);
                         OutputStream os = exchange.getResponseBody();
                         os.write(responseBytes);
@@ -44,7 +46,7 @@ public class Main {
                     try {
                         String response = future.get();
                         byte[] responseBytes = response.getBytes();
-                        exchange.getResponseHeaders().set("Content-Type", "text/plain; charset=UTF-8");
+                        exchange.getResponseHeaders().set("Content-Type", "application/json; charset=UTF-8");
                         exchange.sendResponseHeaders(200, responseBytes.length);
                         OutputStream os = exchange.getResponseBody();
                         os.write(responseBytes);
@@ -67,7 +69,7 @@ public class Main {
                     try {
                         String response = future.get();
                         byte[] responseBytes = response.getBytes();
-                        exchange.getResponseHeaders().set("Content-Type", "text/plain; charset=UTF-8");
+                        exchange.getResponseHeaders().set("Content-Type", "application/json; charset=UTF-8");
                         exchange.sendResponseHeaders(200, responseBytes.length);
                         OutputStream os = exchange.getResponseBody();
                         os.write(responseBytes);

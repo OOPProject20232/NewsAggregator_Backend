@@ -10,6 +10,7 @@ import newsaggregator.webscraping.article.RSSArticleReader;
 import newsaggregator.webscraping.coin.CoinReader;
 import newsaggregator.webscraping.post.RedditReader;
 import org.bson.Document;
+import org.json.JSONObject;
 
 public class App {
     public static final DataAccess<Document> db = new MongoDBController();
@@ -20,7 +21,7 @@ public class App {
         articles.crawl();
         db.add("articles", articles.getDataList());
         db.createSearchIndex("articles", "articlesFTS");
-        return "Articles added to database.";
+        return new JSONObject().put("status", "success").put("message", "Articles added to database.").toString();
     }
 
     public static String runPosts() {
@@ -29,7 +30,7 @@ public class App {
         posts.crawl();
         db.add("posts", posts.getDataList());
         db.createSearchIndex("posts", "postsFTS");
-        return "Posts added to database.";
+        return new JSONObject().put("status", "success").put("message", "Posts added to database.").toString();
     }
 
     public static String runCoins() {
@@ -37,6 +38,6 @@ public class App {
         Scraper<Coin> coins = new CoinReader();
         coins.crawl();
         db.add("coins", coins.getDataList());
-        return "Coins added to database.";
+        return new JSONObject().put("status", "success").put("message", "Coins added to database.").toString();
     }
 }
