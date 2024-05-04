@@ -12,8 +12,9 @@ import newsaggregator.webscraping.post.RedditReader;
 import org.bson.Document;
 
 public class App {
+    public static final DataAccess<Document> db = new MongoDBController();
+
     public static String runArticles() {
-        DataAccess<Document> db = new MongoDBController();
         // Articles
         Scraper<Article> articles = new RSSArticleReader();
         articles.crawl();
@@ -23,7 +24,6 @@ public class App {
     }
 
     public static String runPosts() {
-        DataAccess<Document> db = new MongoDBController();
         // Posts
         Scraper<Post> posts = new RedditReader();
         posts.crawl();
@@ -33,7 +33,6 @@ public class App {
     }
 
     public static String runCoins() {
-        DataAccess<Document> db = new MongoDBController();
         // Coins
         Scraper<Coin> coins = new CoinReader();
         coins.crawl();
