@@ -10,6 +10,7 @@ import newsaggregator.webscraping.article.RSSArticleReader;
 import newsaggregator.webscraping.coin.CoinReader;
 import newsaggregator.webscraping.post.RedditReader;
 import org.bson.Document;
+import org.json.JSONArray;
 import org.json.JSONObject;
 
 public class App {
@@ -21,7 +22,11 @@ public class App {
         articles.crawl();
         db.add("articles", articles.getDataList());
         db.createSearchIndex("articles", "articlesFTS");
-        return new JSONObject().put("status", "success").put("message", "Articles added to database.").toString();
+        JSONArray jsonArray = new JSONArray();
+        for (Article article : articles.getDataList()) {
+            jsonArray.put(new JSONObject(article));
+        }
+        return new JSONObject().put("status", "success").put("content", jsonArray.toString()).toString();
     }
 
     public static String runPosts() {
@@ -30,7 +35,11 @@ public class App {
         posts.crawl();
         db.add("posts", posts.getDataList());
         db.createSearchIndex("posts", "postsFTS");
-        return new JSONObject().put("status", "success").put("message", "Posts added to database.").toString();
+        JSONArray jsonArray = new JSONArray();
+        for (Post post : posts.getDataList()) {
+            jsonArray.put(new JSONObject(post));
+        }
+        return new JSONObject().put("status", "success").put("content", jsonArray.toString()).toString();
     }
 
     public static String runCoins() {
@@ -38,6 +47,10 @@ public class App {
         Scraper<Coin> coins = new CoinReader();
         coins.crawl();
         db.add("coins", coins.getDataList());
-        return new JSONObject().put("status", "success").put("message", "Coins added to database.").toString();
+        JSONArray jsonArray = new JSONArray();
+        for (Coin coin : coins.getDataList()) {
+            jsonArray.put(new JSONObject(coin));
+        }
+        return new JSONObject().put("status", "success").put("content", jsonArray.toString()).toString();
     }
 }
