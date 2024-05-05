@@ -22,7 +22,7 @@ public class App {
         articles.crawl();
         db.add("articles", articles.getDataList());
         db.categorize("articles", articles.getDataList());
-        db.createSearchIndex("articles", "articlesFTS");
+//        db.createSearchIndex("articles", "articlesFTS");
         return new JSONObject().put("status", "success").put("message", "Articles added to database.").toString();
     }
 
@@ -32,7 +32,7 @@ public class App {
         posts.crawl();
         db.add("posts", posts.getDataList());
         db.categorize("posts", posts.getDataList());
-        db.createSearchIndex("posts", "postsFTS");
+//        db.createSearchIndex("posts", "postsFTS");
         return new JSONObject().put("status", "success").put("message", "Posts added to database.").toString();
     }
 

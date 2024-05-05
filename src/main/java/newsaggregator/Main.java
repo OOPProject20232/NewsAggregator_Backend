@@ -83,6 +83,7 @@ public class Main {
             exchange.close();
         }));
 
+        System.out.println("Starting server...");
         server.start();
     }
 }

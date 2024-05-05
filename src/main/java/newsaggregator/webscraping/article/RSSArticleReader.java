@@ -192,6 +192,7 @@ public class RSSArticleReader extends Scraper<Article> {
             throw new IllegalStateException("Contents must not be empty!!!");
         }
         List<String> categories = new ArrayList<>();
+        content = content.toLowerCase();
         try {
             var specialCategories = Files.readAllLines(Paths.get("src/main/resources/mlmodels/special-categories.txt"))
                     .stream()
