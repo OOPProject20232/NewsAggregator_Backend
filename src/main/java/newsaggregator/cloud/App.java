@@ -22,11 +22,7 @@ public class App {
         articles.crawl();
         db.add("articles", articles.getDataList());
         db.createSearchIndex("articles", "articlesFTS");
-        JSONArray jsonArray = new JSONArray();
-        for (Article article : articles.getDataList()) {
-            jsonArray.put(new JSONObject(article));
-        }
-        return new JSONObject().put("status", "success").put("content", jsonArray.toString()).toString();
+        return new JSONObject().put("status", "success").put("message", "Articles added to database.").toString();
     }
 
     public static String runPosts() {
@@ -35,11 +31,7 @@ public class App {
         posts.crawl();
         db.add("posts", posts.getDataList());
         db.createSearchIndex("posts", "postsFTS");
-        JSONArray jsonArray = new JSONArray();
-        for (Post post : posts.getDataList()) {
-            jsonArray.put(new JSONObject(post));
-        }
-        return new JSONObject().put("status", "success").put("content", jsonArray.toString()).toString();
+        return new JSONObject().put("status", "success").put("message", "Posts added to database.").toString();
     }
 
     public static String runCoins() {
@@ -47,10 +39,6 @@ public class App {
         Scraper<Coin> coins = new CoinReader();
         coins.crawl();
         db.add("coins", coins.getDataList());
-        JSONArray jsonArray = new JSONArray();
-        for (Coin coin : coins.getDataList()) {
-            jsonArray.put(new JSONObject(coin));
-        }
-        return new JSONObject().put("status", "success").put("content", jsonArray.toString()).toString();
+        return new JSONObject().put("status", "success").put("message", "Coins added to database.").toString();
     }
 }
