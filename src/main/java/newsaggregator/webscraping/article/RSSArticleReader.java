@@ -151,45 +151,42 @@ public class RSSArticleReader extends Scraper<Article> {
     private List<String> getCategories2(Element elem) {
         Set<String> categories = new HashSet<>();
         String content = getDetailedContent(elem);
-        if (content != null) {
-            try {
-                SimpleTokenizer tokenizer = SimpleTokenizer.INSTANCE;
-                String[] tokens = tokenizer.tokenize(content);
-                List<String> models = Arrays.asList("en-ner-person.bin", "en-ner-organization.bin");
-                for (String model : models) {
-                    // NER
-                    InputStream inputStreamNameFinder = getClass().getResourceAsStream("/mlmodels/%s".formatted(model));
-                    assert inputStreamNameFinder != null;
-                    TokenNameFinderModel NERmodel = new TokenNameFinderModel(
-                            inputStreamNameFinder);
-                    NameFinderME nameFinderME = new NameFinderME(NERmodel);
-                    List<Span> spans = Arrays.asList(nameFinderME.find(tokens));
-                    if (!spans.isEmpty()) {
-                        for (Span span : spans) {
-                            categories.addAll(Arrays.stream(Arrays.copyOfRange(tokens, span.getStart(), span.getEnd())).map(String::toLowerCase).toList());
-                        }
+        if (content == null) {
+            return List.of("general");
+        }
+        try {
+            SimpleTokenizer tokenizer = SimpleTokenizer.INSTANCE;
+            String[] tokens = tokenizer.tokenize(content);
+            List<String> models = Arrays.asList("en-ner-person.bin", "en-ner-organization.bin");
+            for (String model : models) {
+                // NER
+                InputStream inputStreamNameFinder = getClass().getResourceAsStream("/mlmodels/%s".formatted(model));
+                assert inputStreamNameFinder != null;
+                TokenNameFinderModel NERmodel = new TokenNameFinderModel(
+                        inputStreamNameFinder);
+                NameFinderME nameFinderME = new NameFinderME(NERmodel);
+                List<Span> spans = Arrays.asList(nameFinderME.find(tokens));
+                var stopWords = Files.readAllLines(Paths.get("src/main/resources/mlmodels/stopwords.txt"));
+                for (int i = 0; i < tokens.length; i++) {
+                    String token = tokens[i];
+                    if (!stopWords.contains(token.toLowerCase()) && token.length() > 1 && !isCommonPunctuation(token)) {
+                        categories.add(token.toLowerCase());
+                    }
+                    int finalI = i;
+                    if (!spans.isEmpty() && spans.stream().anyMatch(span -> span.contains(finalI))) {
+                        categories.add(token.toLowerCase());
                     }
                 }
-                var stopWords = Files.readAllLines(Paths.get("src/main/resources/mlmodels/stopwords.txt"));
-                List<String> categoriesList = new ArrayList<>(categories.stream()
-                        .filter(category -> !category.equals("&"))
-                        .filter(category -> !category.equals("-"))
-                        .filter(category -> !category.equals("/"))
-                        .filter(category -> !category.equals("\""))
-                        .filter(category -> !category.equals("."))
-                        .filter(category -> !category.equals(","))
-                        .filter(category -> !stopWords.contains(category))
-                        .filter(category -> !(category.length() <= 1))
-                        .toList());
-                if (categoriesList.isEmpty()) {
-                    categoriesList.add("general");
-                }
-                return categoriesList;
-            } catch (Exception e) {
-                System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
             }
+        } catch (Exception e) {
+            System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
         }
-        return null;
+        return categories.isEmpty()? List.of("general"): new ArrayList<>(categories);
+    }
+
+    private boolean isCommonPunctuation(String token) {
+        return token.equals("&") || token.equals("-") || token.equals("/") || token.equals("\"")
+                || token.equals(".") || token.equals(",") || token.equals(" ");
     }
 
     private String getAuthor(String domainString, Element elem) {
