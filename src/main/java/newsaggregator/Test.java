@@ -16,17 +16,20 @@ public class Test {
 
     public static void main(String[] args) {
         // Articles
-        Scraper<Article> articles = new RSSArticleReader();
-        articles.crawl();
-        for (Article article : articles.getDataList()) {
-            System.out.println(article.getCategories());
-        }
+//        Scraper<Article> articles = new RSSArticleReader();
+//        articles.crawl();
+//        for (Article article : articles.getDataList()) {
+//            System.out.println(article.getCategories());
+//        }
 //        db.add("articles", articles.getDataList());
 //        db.categorize("articles", articles.getDataList());
 //        db.createSearchIndex("articles", "articlesFTS");
 //        // Posts
-//        Scraper<Post> posts = new RedditReader();
-//        posts.crawl();
+        Scraper<Post> posts = new RedditReader();
+        posts.crawl();
+        for (Post post : posts.getDataList()) {
+            post.display();
+        }
 //        db.add("posts", posts.getDataList());
 //        db.categorize("posts", posts.getDataList());
 //        db.createSearchIndex("posts", "postsFTS");

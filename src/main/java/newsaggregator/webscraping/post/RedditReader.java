@@ -61,6 +61,7 @@ public class RedditReader extends Scraper<Post> {
     private String fetchPost(String url) throws IOException {
         OkHttpClient client = new OkHttpClient();
         Request request = new Request.Builder()
+                .addHeader("Accept", "application/json")
                 .url(url)
                 .build();
         try (Response response = client.newCall(request).execute()) {
