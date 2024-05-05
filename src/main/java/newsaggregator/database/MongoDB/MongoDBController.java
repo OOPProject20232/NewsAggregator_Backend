@@ -115,27 +115,19 @@ public class MongoDBController implements MongoDBClient{
             int count = 0;
             List<Document> documents = new ArrayList<>();
             Set<String> existingGuids = collection.distinct("guid", String.class).into(new HashSet<>());
+            Map<String, List<String>> categoriesUpdates = new HashMap<>();
             for (BaseModel item : contentList) {
                 if (!existingGuids.contains(item.getGuid())) {
                     documents.add(serialize(item));
                     existingGuids.add(item.getGuid());
                     if (item instanceof  Content) {
-                        MongoCollection<Document> categoriesCollection = db.getCollection(collectionName + ".categories");
                         for (String category : ((Content) item).getCategories()) {
                             if (category == null) {
                                 continue;
                             }
-                            try (MongoCursor<Document> categoryCursor = categoriesCollection.find(new Document("category", category)).iterator()) {
-                                if (!categoryCursor.hasNext()) {
-                                    Document categoryDocument = new Document()
-                                            .append("category", category)
-                                            .append(collectionName + "_guid", Arrays.asList(item.getGuid()));
-                                    categoriesCollection.insertOne(categoryDocument);
-                                } else {
-                                    categoriesCollection.updateOne(new Document("category", category),
-                                            new Document("$push", new Document(collectionName + "_guid", item.getGuid())));
-                                }
-                            }
+                            List<String> guids = categoriesUpdates.getOrDefault(category, new ArrayList<>());
+                            guids.add(item.getGuid());
+                            categoriesUpdates.put(category, guids);
                         }
                     }
                     count++;
@@ -143,12 +135,38 @@ public class MongoDBController implements MongoDBClient{
             }
             try {
                 collection.insertMany(documents);
+                MongoCollection<Document> categoriesCollection = db.getCollection(collectionName + ".categories");
+                for (Map.Entry<String, List<String>> entry : categoriesUpdates.entrySet()) {
+                    try (MongoCursor<Document> categoryCursor = categoriesCollection.find(new Document("category", entry.getKey())).iterator()) {
+                        if (!categoryCursor.hasNext()) {
+                            Document categoryDocument = new Document()
+                                    .append("category", entry.getKey())
+                                    .append(collectionName + "_guid", entry.getValue());
+                            categoriesCollection.insertOne(categoryDocument);
+                        } else {
+                            categoriesCollection.updateOne(new Document("category", entry.getKey()),
+                                    new Document("$push", new Document(collectionName + "_guid", new Document("$each", entry.getValue()))));
+                        }
+                    }
+                }
             } catch (Exception e) {
                 System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
             }
             System.out.println("\u001B[32m" + "Đã đẩy " + count + " bài viết lên database..." + "\u001B[0m");
         }
     }
+
+//    try (MongoCursor<Document> categoryCursor = categoriesCollection.find(new Document("category", category)).iterator()) {
+//        if (!categoryCursor.hasNext()) {
+//            Document categoryDocument = new Document()
+//                    .append("category", category)
+//                    .append(collectionName + "_guid", Arrays.asList(item.getGuid()));
+//            categoriesCollection.insertOne(categoryDocument);
+//        } else {
+//            categoriesCollection.updateOne(new Document("category", category),
+//                    new Document("$push", new Document(collectionName + "_guid", item.getGuid())));
+//        }
+//    }
 
     /**
      * Phương thức này sẽ tạo index cho các bài báo trong database nhằm phục vụ cho full-text search.

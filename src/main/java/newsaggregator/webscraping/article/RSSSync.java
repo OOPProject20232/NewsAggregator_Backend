@@ -10,13 +10,11 @@ import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
 import java.net.*;
 
-import javax.xml.parsers.*;
-
 public class RSSSync {
 
     //Methods
 
-    public static void getNewUpdate(String urlString, String cacheURIString){
+    public static int getNewUpdate(String urlString, String cacheURIString){
         try {
             URL url = URI.create(urlString).toURL();
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
@@ -30,7 +28,7 @@ public class RSSSync {
                 int responseCode = connection.getResponseCode();
                 System.out.println(responseCode);
                 if (responseCode == 304) {
-                    return;
+                    return responseCode;
                 }
             }
             else {
@@ -51,10 +49,12 @@ public class RSSSync {
                 } catch (Exception e) {
                     System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
                 }
+                return responseCode;
             }
         }
         catch (Exception e){
             System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
         }
+        return 418; // I'm a teapot
     }
 }

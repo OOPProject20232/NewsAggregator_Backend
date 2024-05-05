@@ -21,7 +21,7 @@ public class Test {
         for (Article article : articles.getDataList()) {
             article.display();
         }
-//        db.add("articles", articles.getDataList());
+        db.add("articles", articles.getDataList());
 //        db.createSearchIndex("articles", "articlesFTS");
         // Posts
 //        Scraper<Post> posts = new RedditReader();

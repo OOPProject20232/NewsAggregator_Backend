@@ -41,10 +41,11 @@ public class RSSArticleReader extends Scraper<Article> {
             while (newsListScanner.hasNextLine()) {
                 String urlString = newsListScanner.nextLine();
                 String domainString = URI.create(urlString).getHost();
-                RSSSync.getNewUpdate(urlString, "src/main/resources/rss/cache/%s.xml".formatted(domainString));
-                RSSArticleReader rssArticleReader = new RSSArticleReader();
-                List<Article> currentArticleList = rssArticleReader.parseXML("src/main/resources/rss/cache/%s.xml".formatted(domainString), domainString);
-                articleList.addAll(currentArticleList);
+                int responseCode = RSSSync.getNewUpdate(urlString, "src/main/resources/rss/cache/%s.xml".formatted(domainString));
+                if (responseCode == 200) {
+                    List<Article> currentArticleList = parseXML("src/main/resources/rss/cache/%s.xml".formatted(domainString), domainString);
+                    articleList.addAll(currentArticleList);
+                }
             }
         } catch (Exception e) {
             System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
@@ -168,13 +169,13 @@ public class RSSArticleReader extends Scraper<Article> {
                 List<Span> spans = Arrays.asList(nameFinderME.find(tokens));
                 var stopWords = Files.readAllLines(Paths.get("src/main/resources/mlmodels/stopwords.txt"));
                 for (int i = 0; i < tokens.length; i++) {
-                    String token = tokens[i];
-                    if (!stopWords.contains(token.toLowerCase()) && token.length() > 1 && !isCommonPunctuation(token)) {
-                        categories.add(token.toLowerCase());
+                    String token = tokens[i].toLowerCase();
+                    if (!stopWords.contains(token) && token.length() > 1 && !isCommonPunctuation(token)) {
+                        categories.add(token);
                     }
                     int finalI = i;
                     if (!spans.isEmpty() && spans.stream().anyMatch(span -> span.contains(finalI))) {
-                        categories.add(token.toLowerCase());
+                        categories.add(token);
                     }
                 }
             }
@@ -186,7 +187,7 @@ public class RSSArticleReader extends Scraper<Article> {
 
     private boolean isCommonPunctuation(String token) {
         return token.equals("&") || token.equals("-") || token.equals("/") || token.equals("\"")
-                || token.equals(".") || token.equals(",") || token.equals(" ");
+                || token.equals(".") || token.equals(",") || token.equals(" ") || token.equals("_");
     }
 
     private String getAuthor(String domainString, Element elem) {
