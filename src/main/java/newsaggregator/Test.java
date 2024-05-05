@@ -19,7 +19,7 @@ public class Test {
         Scraper<Article> articles = new RSSArticleReader();
         articles.crawl();
         for (Article article : articles.getDataList()) {
-            article.display();
+            System.out.println(article.getCategories());
         }
 //        db.add("articles", articles.getDataList());
 //        db.categorize("articles", articles.getDataList());

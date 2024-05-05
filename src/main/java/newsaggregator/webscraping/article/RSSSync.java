@@ -45,6 +45,7 @@ public class RSSSync {
                     while ((length = iStream.read(buffer)) != -1) {
                         fileOutputStream.write(buffer, 0, length);
                     }
+                    fileOutputStream.flush();
                 } catch (Exception e) {
                     System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
                 }

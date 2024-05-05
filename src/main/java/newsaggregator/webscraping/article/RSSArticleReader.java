@@ -15,12 +15,14 @@ import org.w3c.dom.NodeList;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
+import java.io.IOException;
 import java.io.InputStream;
 import java.net.URI;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
 import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * Lớp RSSReader thực hiện việc đọc file XML từ các nguồn RSS được lưu trữ trong file webSources.txt
@@ -80,7 +82,7 @@ public class RSSArticleReader extends Scraper<Article> {
                             getDate(elem),
                             getAuthor(domainString, elem),
                             getThumbnail(elem),
-                            getCategories(elem)
+                            getSpecialCategories(elem)
                     );
                     currentArticleList.add(currentArticle);
                 }
@@ -116,7 +118,7 @@ public class RSSArticleReader extends Scraper<Article> {
             try {
                 Node detailed_contentNode = elem.getElementsByTagName(content).item(0);
                 if (detailed_contentNode != null) {
-                    if (!detailed_contentNode.getTextContent().isEmpty()) {
+                    if (!detailed_contentNode.getTextContent().isBlank()) {
                         return Jsoup.parse(detailed_contentNode.getTextContent()).text();
                     }
                 }
@@ -127,7 +129,7 @@ public class RSSArticleReader extends Scraper<Article> {
         return null;
     }
 
-    private List<String> getCategories(Element elem) {
+    private List<String> getDefaultCategories(Element elem) {
         ArrayList<String> categories = new ArrayList<>();
         try {
             if (elem.getElementsByTagName("category").getLength() != 0) {
@@ -150,12 +152,12 @@ public class RSSArticleReader extends Scraper<Article> {
     }
 
     @Deprecated
-    private List<String> getCategories2(Element elem) {
-        Set<String> categories = new HashSet<>();
+    private List<String> getMLCategories(Element elem) {
         String content = getDetailedContent(elem);
         if (content == null) {
-            return List.of("general");
+            throw new IllegalStateException("Contents must not be empty!!!");
         }
+        Set<String> categories = new HashSet<>();
         try {
             SimpleTokenizer tokenizer = SimpleTokenizer.INSTANCE;
             String[] tokens = tokenizer.tokenize(content);
@@ -182,6 +184,30 @@ public class RSSArticleReader extends Scraper<Article> {
             System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
         }
         return categories.isEmpty()? List.of("general"): new ArrayList<>(categories);
+    }
+
+    private List<String> getSpecialCategories(Element elem) {
+        String content = getDetailedContent(elem);
+        if (content == null) {
+            throw new IllegalStateException("Contents must not be empty!!!");
+        }
+        List<String> categories = new ArrayList<>();
+        try {
+            var specialCategories = Files.readAllLines(Paths.get("src/main/resources/mlmodels/special-categories.txt"))
+                    .stream()
+                    .map(String::toLowerCase)
+                    .map(String::trim).toList();
+            String[] contentWords = content.split(" ");
+            for (int i = 0; i < contentWords.length; i++) {
+                contentWords[i] = contentWords[i].replaceAll("\\p{Punct}", "");
+                if (specialCategories.contains(contentWords[i]) && !categories.contains(contentWords[i])) {
+                    categories.add(contentWords[i]);
+                }
+            }
+        } catch (Exception e) {
+            System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
+        }
+        return categories.isEmpty()? List.of("general") : categories;
     }
 
     private boolean isCommonPunctuation(String token) {
