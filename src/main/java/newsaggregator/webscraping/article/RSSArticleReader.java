@@ -168,14 +168,12 @@ public class RSSArticleReader extends Scraper<Article> {
                 NameFinderME nameFinderME = new NameFinderME(NERmodel);
                 List<Span> spans = Arrays.asList(nameFinderME.find(tokens));
                 var stopWords = Files.readAllLines(Paths.get("src/main/resources/mlmodels/stopwords.txt"));
-                for (int i = 0; i < tokens.length; i++) {
-                    String token = tokens[i].toLowerCase();
-                    if (!stopWords.contains(token) && token.length() > 1 && !isCommonPunctuation(token)) {
-                        categories.add(token);
-                    }
-                    int finalI = i;
-                    if (!spans.isEmpty() && spans.stream().anyMatch(span -> span.contains(finalI))) {
-                        categories.add(token);
+                if (!spans.isEmpty()) {
+                    for (Span span : spans) {
+                        String token = tokens[span.getStart()].toLowerCase();
+                        if (!stopWords.contains(token) && !isCommonPunctuation(token) && token.length() > 1) {
+                            categories.add(token);
+                        }
                     }
                 }
             }

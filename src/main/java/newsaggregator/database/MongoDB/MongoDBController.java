@@ -30,7 +30,7 @@ public class MongoDBController implements MongoDBClient{
                     .append("guid", item.getGuid())
                     .append("article_link", ((Content) item).getLink())
                     .append("website_source", ((Content) item).getSource())
-                    .append("type_", ((Content) item).getType())
+                    .append("type_", item.getType())
                     .append("article_title", ((Content) item).getTitle())
                     .append("author", ((Content) item).getAuthor())
                     .append("creation_date", ((Content) item).getCreationDate())
@@ -44,7 +44,7 @@ public class MongoDBController implements MongoDBClient{
                     .append("guid", item.getGuid())
                     .append("post_link", ((Content) item).getLink())
                     .append("website_source", ((Content) item).getSource())
-                    .append("type_", ((Content) item).getType())
+                    .append("type_", item.getType())
                     .append("post_title", ((Content) item).getTitle())
                     .append("author", ((Content) item).getAuthor())
                     .append("creation_date", ((Content) item).getCreationDate())
@@ -120,35 +120,11 @@ public class MongoDBController implements MongoDBClient{
                 if (!existingGuids.contains(item.getGuid())) {
                     documents.add(serialize(item));
                     existingGuids.add(item.getGuid());
-                    if (item instanceof  Content) {
-                        for (String category : ((Content) item).getCategories()) {
-                            if (category == null) {
-                                continue;
-                            }
-                            List<String> guids = categoriesUpdates.getOrDefault(category, new ArrayList<>());
-                            guids.add(item.getGuid());
-                            categoriesUpdates.put(category, guids);
-                        }
-                    }
                     count++;
                 }
             }
             try {
                 collection.insertMany(documents);
-                MongoCollection<Document> categoriesCollection = db.getCollection(collectionName + ".categories");
-                for (Map.Entry<String, List<String>> entry : categoriesUpdates.entrySet()) {
-                    try (MongoCursor<Document> categoryCursor = categoriesCollection.find(new Document("category", entry.getKey())).iterator()) {
-                        if (!categoryCursor.hasNext()) {
-                            Document categoryDocument = new Document()
-                                    .append("category", entry.getKey())
-                                    .append(collectionName + "_guid", entry.getValue());
-                            categoriesCollection.insertOne(categoryDocument);
-                        } else {
-                            categoriesCollection.updateOne(new Document("category", entry.getKey()),
-                                    new Document("$push", new Document(collectionName + "_guid", new Document("$each", entry.getValue()))));
-                        }
-                    }
-                }
             } catch (Exception e) {
                 System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
             }
@@ -156,17 +132,42 @@ public class MongoDBController implements MongoDBClient{
         }
     }
 
-//    try (MongoCursor<Document> categoryCursor = categoriesCollection.find(new Document("category", category)).iterator()) {
-//        if (!categoryCursor.hasNext()) {
-//            Document categoryDocument = new Document()
-//                    .append("category", category)
-//                    .append(collectionName + "_guid", Arrays.asList(item.getGuid()));
-//            categoriesCollection.insertOne(categoryDocument);
-//        } else {
-//            categoriesCollection.updateOne(new Document("category", category),
-//                    new Document("$push", new Document(collectionName + "_guid", item.getGuid())));
-//        }
-//    }
+    @Override
+    public <D extends BaseModel> void categorize(String collectionName, List<D> list) {
+        try (MongoClient mongoClient = MongoClients.create(dotenv.get("MONGODB_CONNECTION_STRING"))) {
+            MongoDatabase db = mongoClient.getDatabase(dotenv.get("MONGODB_DATABASE_NAME"));
+            MongoCollection<Document> categoriesCollection = db.getCollection(collectionName + ".categories");
+            Map<String, List<String>> categoriesUpdates = new HashMap<>();
+            for (BaseModel item : list) {
+                if (item instanceof  Content) {
+                    for (String category : ((Content) item).getCategories()) {
+                        if (category == null) {
+                            continue;
+                        }
+                        List<String> guids = categoriesUpdates.getOrDefault(category, new ArrayList<>());
+                        guids.add(item.getGuid());
+                        categoriesUpdates.put(category, guids);
+                    }
+                }
+            }
+            for (Map.Entry<String, List<String>> entry : categoriesUpdates.entrySet()) {
+                try (MongoCursor<Document> categoryCursor = categoriesCollection.find(new Document("category", entry.getKey())).iterator()) {
+                    if (!categoryCursor.hasNext()) {
+                        Document categoryDocument = new Document()
+                                .append("category", entry.getKey())
+                                .append(collectionName + "_guid", entry.getValue());
+                        categoriesCollection.insertOne(categoryDocument);
+                    } else {
+                        categoriesCollection.updateOne(new Document("category", entry.getKey()),
+                                new Document("$addToSet", new Document(collectionName + "_guid", new Document("$each", entry.getValue()))));
+                    }
+                }
+            }
+        } catch (Exception e) {
+            System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
+        }
+        System.out.println("\u001B[32m" + "Đã phân loại bài viết vào các categories..." + "\u001B[0m");
+    }
 
     /**
      * Phương thức này sẽ tạo index cho các bài báo trong database nhằm phục vụ cho full-text search.
