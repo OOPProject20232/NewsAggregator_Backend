@@ -18,18 +18,21 @@ public class Test {
         // Articles
         Scraper<Article> articles = new RSSArticleReader();
         articles.crawl();
-        db.add("articles", articles.getDataList());
-        db.categorize("articles", articles.getDataList());
-        db.createSearchIndex("articles", "articlesFTS");
-        // Posts
-        Scraper<Post> posts = new RedditReader();
-        posts.crawl();
-        db.add("posts", posts.getDataList());
-        db.categorize("posts", posts.getDataList());
-        db.createSearchIndex("posts", "postsFTS");
-        // Coins
-        Scraper<Coin> coins = new CoinReader();
-        coins.crawl();
-        db.add("coins", coins.getDataList());
+        for (Article article : articles.getDataList()) {
+            article.display();
+        }
+//        db.add("articles", articles.getDataList());
+//        db.categorize("articles", articles.getDataList());
+//        db.createSearchIndex("articles", "articlesFTS");
+//        // Posts
+//        Scraper<Post> posts = new RedditReader();
+//        posts.crawl();
+//        db.add("posts", posts.getDataList());
+//        db.categorize("posts", posts.getDataList());
+//        db.createSearchIndex("posts", "postsFTS");
+//        // Coins
+//        Scraper<Coin> coins = new CoinReader();
+//        coins.crawl();
+//        db.add("coins", coins.getDataList());
     }
 }

@@ -80,7 +80,7 @@ public class RSSArticleReader extends Scraper<Article> {
                             getDate(elem),
                             getAuthor(domainString, elem),
                             getThumbnail(elem),
-                            getCategories2(elem)
+                            getCategories(elem)
                     );
                     currentArticleList.add(currentArticle);
                 }
@@ -149,6 +149,7 @@ public class RSSArticleReader extends Scraper<Article> {
         return null;
     }
 
+    @Deprecated
     private List<String> getCategories2(Element elem) {
         Set<String> categories = new HashSet<>();
         String content = getDetailedContent(elem);

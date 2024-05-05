@@ -115,7 +115,6 @@ public class MongoDBController implements MongoDBClient{
             int count = 0;
             List<Document> documents = new ArrayList<>();
             Set<String> existingGuids = collection.distinct("guid", String.class).into(new HashSet<>());
-            Map<String, List<String>> categoriesUpdates = new HashMap<>();
             for (BaseModel item : contentList) {
                 if (!existingGuids.contains(item.getGuid())) {
                     documents.add(serialize(item));

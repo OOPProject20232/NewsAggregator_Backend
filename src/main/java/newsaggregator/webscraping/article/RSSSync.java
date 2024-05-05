@@ -25,11 +25,6 @@ public class RSSSync {
                 connection.setRequestMethod("HEAD");
                 connection.setRequestProperty("If-Modified-Since", lastModified.format(DateTimeFormatter.RFC_1123_DATE_TIME));
                 connection.connect();
-                int responseCode = connection.getResponseCode();
-                System.out.println(responseCode);
-                if (responseCode == 304) {
-                    return responseCode;
-                }
             }
             else {
                 file.toFile().getParentFile().mkdirs();
@@ -38,7 +33,11 @@ public class RSSSync {
                 connection.connect();
             }
             int responseCode = connection.getResponseCode();
-            if (responseCode == 200) {
+            System.out.println(responseCode);
+            if (responseCode == 304) {
+                return responseCode;
+            }
+            else if (responseCode == 200) {
                 try (InputStream iStream = url.openStream();
                      FileOutputStream fileOutputStream = new FileOutputStream(cacheURIString)) {
                     byte[] buffer = new byte[1024];
