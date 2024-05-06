@@ -60,6 +60,7 @@ public class MongoDBController implements MongoDBClient{
                     .append("type_", item.getType())
                     .append("symbol", ((Coin) item).getSymbol())
                     .append("name", ((Coin) item).getName())
+                    .append("thumbnail_image", ((Coin) item).getThumbnailImage())
                     .append("market_cap", ((Coin) item).getMarketCap())
                     .append("rank", ((Coin) item).getRank())
                     .append("btc_price", ((Coin) item).getBtcPrice());

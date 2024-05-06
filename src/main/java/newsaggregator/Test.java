@@ -25,17 +25,20 @@ public class Test {
 //        db.categorize("articles", articles.getDataList());
 //        db.createSearchIndex("articles", "articlesFTS");
 //        // Posts
-        Scraper<Post> posts = new RedditReader();
-        posts.crawl();
-        for (Post post : posts.getDataList()) {
-            post.display();
-        }
+//        Scraper<Post> posts = new RedditReader();
+//        posts.crawl();
+//        for (Post post : posts.getDataList()) {
+//            post.display();
+//        }
 //        db.add("posts", posts.getDataList());
 //        db.categorize("posts", posts.getDataList());
 //        db.createSearchIndex("posts", "postsFTS");
 //        // Coins
-//        Scraper<Coin> coins = new CoinReader();
-//        coins.crawl();
-//        db.add("coins", coins.getDataList());
+        Scraper<Coin> coins = new CoinReader();
+        coins.crawl();
+        for (Coin coin : coins.getDataList()) {
+            coin.display();
+        }
+        db.add("coins", coins.getDataList());
     }
 }

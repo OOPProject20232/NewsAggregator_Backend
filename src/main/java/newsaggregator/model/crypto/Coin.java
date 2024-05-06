@@ -64,11 +64,11 @@ public class Coin extends BaseModel {
         this.btcPrice = btcPrice;
     }
 
-    public String getThumbnail_image() {
+    public String getThumbnailImage() {
         return thumbnail_image;
     }
 
-    public void setThumbnail_image(String thumbnail_image) {
+    public void setThumbnailImage(String thumbnail_image) {
         this.thumbnail_image = thumbnail_image;
     }
 
