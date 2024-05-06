@@ -62,7 +62,7 @@ public class RedditReader extends Scraper<Post> {
         OkHttpClient client = new OkHttpClient();
         Request request = new Request.Builder()
                 .addHeader("Accept", "application/json")
-                .addHeader("Via", "1.1 varnish")
+                .addHeader("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64)")
                 .url(url)
                 .build();
         try (Response response = client.newCall(request).execute()) {
