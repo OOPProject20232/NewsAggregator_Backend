@@ -62,6 +62,7 @@ public class RedditReader extends Scraper<Post> {
         OkHttpClient client = new OkHttpClient();
         Request request = new Request.Builder()
                 .addHeader("Accept", "application/json")
+                .addHeader("Via", "1.1 varnish")
                 .url(url)
                 .build();
         try (Response response = client.newCall(request).execute()) {
@@ -82,11 +83,11 @@ public class RedditReader extends Scraper<Post> {
     }
 
     private String getTitle(JsonNode node) {
-        return node.get("data").get("title").textValue();
+        return node.get("data").get("title").textValue().trim();
     }
 
     private String getDetailedContent(JsonNode node) {
-        return node.get("data").get("selftext").textValue();
+        return node.get("data").get("selftext").textValue().trim();
     }
 
     private String getDate(JsonNode node) {

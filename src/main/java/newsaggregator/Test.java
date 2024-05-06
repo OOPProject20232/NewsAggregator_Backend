@@ -16,11 +16,11 @@ public class Test {
 
     public static void main(String[] args) {
         // Articles
-//        Scraper<Article> articles = new RSSArticleReader();
-//        articles.crawl();
-//        for (Article article : articles.getDataList()) {
-//            System.out.println(article.getCategories());
-//        }
+        Scraper<Article> articles = new RSSArticleReader();
+        articles.crawl();
+        for (Article article : articles.getDataList()) {
+            System.out.println(article.getCategories());
+        }
 //        db.add("articles", articles.getDataList());
 //        db.categorize("articles", articles.getDataList());
 //        db.createSearchIndex("articles", "articlesFTS");
@@ -34,11 +34,8 @@ public class Test {
 //        db.categorize("posts", posts.getDataList());
 //        db.createSearchIndex("posts", "postsFTS");
 //        // Coins
-        Scraper<Coin> coins = new CoinReader();
-        coins.crawl();
-        for (Coin coin : coins.getDataList()) {
-            coin.display();
-        }
-        db.add("coins", coins.getDataList());
+//        Scraper<Coin> coins = new CoinReader();
+//        coins.crawl();
+//        db.add("coins", coins.getDataList());
     }
 }

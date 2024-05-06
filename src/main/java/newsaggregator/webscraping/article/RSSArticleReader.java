@@ -15,14 +15,12 @@ import org.w3c.dom.NodeList;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
-import java.io.IOException;
 import java.io.InputStream;
 import java.net.URI;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
 import java.util.*;
-import java.util.stream.Collectors;
 
 /**
  * Lớp RSSReader thực hiện việc đọc file XML từ các nguồn RSS được lưu trữ trong file webSources.txt
@@ -187,10 +185,7 @@ public class RSSArticleReader extends Scraper<Article> {
     }
 
     private List<String> getSpecialCategories(Element elem) {
-        String content = getDetailedContent(elem);
-        if (content == null) {
-            throw new IllegalStateException("Contents must not be empty!!!");
-        }
+        String content = getTitle(elem) + " " + getDetailedContent(elem);
         List<String> categories = new ArrayList<>();
         content = content.toLowerCase();
         try {
