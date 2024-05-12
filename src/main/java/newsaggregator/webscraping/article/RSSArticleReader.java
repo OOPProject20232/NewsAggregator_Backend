@@ -103,7 +103,10 @@ public class RSSArticleReader extends Scraper<Article> {
                 return Jsoup.parse(elem.getElementsByTagName("content:encoded").item(0).getTextContent()).select("img").attr("src");
             } else if (elem.getElementsByTagName("content").item(0) != null) {
                 return Jsoup.parse(elem.getElementsByTagName("content").item(0).getTextContent()).select("img").attr("src");
+            } else if (elem.getElementsByTagName("description").item(0) != null) {
+                return Jsoup.parse(elem.getElementsByTagName("description").item(0).getTextContent()).select("img").attr("src");
             }
+
         } catch (Exception e) {
             System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
         }

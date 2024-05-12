@@ -68,7 +68,7 @@ Wormhole
 Quant
 Beam
 Pendle
-BitTorrent (New)
+BitTorrent
 Flare
 Neo
 Ethena
@@ -198,3 +198,12 @@ ORDI
 GNO
 AXL
 PYTH
+blockchain
+AI
+NFT
+cryptocurrency
+crypto
+DeFi
+metaverse
+web3
+token
