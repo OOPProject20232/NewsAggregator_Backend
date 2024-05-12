@@ -61,6 +61,8 @@ public class RedditReader extends Scraper<Post> {
     private String fetchPost(String url) throws IOException {
         OkHttpClient client = new OkHttpClient();
         Request request = new Request.Builder()
+                .addHeader("Accept", "application/json")
+                .addHeader("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64)")
                 .url(url)
                 .build();
         try (Response response = client.newCall(request).execute()) {
@@ -81,11 +83,11 @@ public class RedditReader extends Scraper<Post> {
     }
 
     private String getTitle(JsonNode node) {
-        return node.get("data").get("title").textValue();
+        return node.get("data").get("title").textValue().trim();
     }
 
     private String getDetailedContent(JsonNode node) {
-        return node.get("data").get("selftext").textValue();
+        return node.get("data").get("selftext").textValue().trim();
     }
 
     private String getDate(JsonNode node) {

@@ -1,36 +1,89 @@
 package newsaggregator;
 
-import newsaggregator.database.DataAccess;
-import newsaggregator.database.MongoDB.MongoDBController;
-import newsaggregator.model.content.Article;
-import newsaggregator.model.content.Post;
-import newsaggregator.model.crypto.Coin;
-import newsaggregator.webscraping.Scraper;
-import newsaggregator.webscraping.article.RSSArticleReader;
-import newsaggregator.webscraping.coin.CoinReader;
-import newsaggregator.webscraping.post.RedditReader;
-import org.bson.Document;
+import com.sun.net.httpserver.HttpServer;
+import newsaggregator.cloud.App;
 
+import java.io.IOException;
+import java.io.OutputStream;
+import java.net.InetSocketAddress;
+import java.util.concurrent.*;
 
 public class Main {
-    public static void main(String[] args) {
-        DataAccess<Document> db = new MongoDBController();
-        // Articles
-        Scraper<Article> rss = new RSSArticleReader();
-        rss.crawl();
-        db.add("articles", rss.getDataList());
-        db.createSearchIndex("articles", "articlesFTS");
-        db.get("articles", "src/main/resources/rss/data.json");
-        // Posts
-        Scraper<Post> redditReader = new RedditReader();
-        redditReader.crawl();
-        db.add("posts", redditReader.getDataList());
-        db.createSearchIndex("posts", "postsFTS");
-        db.get("posts", "src/main/resources/reddit/data.json");
-        // Coins
-        Scraper<Coin> coinReader = new CoinReader();
-        coinReader.crawl();
-        db.add("coins", coinReader.getDataList());
-        db.get("coins", "src/main/resources/crypto/data.json");
+
+    public static void main(String[] args) throws IOException {
+        HttpServer server = HttpServer.create(new InetSocketAddress(8000), 0);
+        ExecutorService executor = Executors.newFixedThreadPool(3);
+
+        server.createContext("/v1/articles", (exchange -> {
+            if ("GET".equals(exchange.getRequestMethod())) {
+                exchange.sendResponseHeaders(202, 0);
+                Future<String> future = executor.submit(App::runArticles);
+                if (future.isDone()) {
+                    try {
+                        String response = future.get();
+                        byte[] responseBytes = response.getBytes();
+                        exchange.getResponseHeaders().set("Content-Type", "application/json; charset=UTF-8");
+                        exchange.sendResponseHeaders(200, responseBytes.length);
+                        OutputStream os = exchange.getResponseBody();
+                        os.write(responseBytes);
+                        os.close();
+                    } catch (InterruptedException | ExecutionException e) {
+                        exchange.sendResponseHeaders(500, 0);
+                    }
+                }
+            } else {
+                exchange.sendResponseHeaders(405, 0);
+            }
+            exchange.close();
+        }));
+
+        server.createContext("/v1/posts", (exchange -> {
+            if ("GET".equals(exchange.getRequestMethod())) {
+                exchange.sendResponseHeaders(202, 0);
+                Future<String> future = executor.submit(App::runPosts);
+                if (future.isDone()) {
+                    try {
+                        String response = future.get();
+                        byte[] responseBytes = response.getBytes();
+                        exchange.getResponseHeaders().set("Content-Type", "application/json; charset=UTF-8");
+                        exchange.sendResponseHeaders(200, responseBytes.length);
+                        OutputStream os = exchange.getResponseBody();
+                        os.write(responseBytes);
+                        os.close();
+                    } catch (InterruptedException | ExecutionException e) {
+                        exchange.sendResponseHeaders(500, 0);
+                    }
+                }
+            } else {
+                exchange.sendResponseHeaders(405, 0);
+            }
+            exchange.close();
+        }));
+
+        server.createContext("/v1/coins", (exchange -> {
+            if ("GET".equals(exchange.getRequestMethod())) {
+                exchange.sendResponseHeaders(202, 0);
+                Future<String> future = executor.submit(App::runCoins);
+                if (future.isDone()) {
+                    try {
+                        String response = future.get();
+                        byte[] responseBytes = response.getBytes();
+                        exchange.getResponseHeaders().set("Content-Type", "application/json; charset=UTF-8");
+                        exchange.sendResponseHeaders(200, responseBytes.length);
+                        OutputStream os = exchange.getResponseBody();
+                        os.write(responseBytes);
+                        os.close();
+                    } catch (InterruptedException | ExecutionException e) {
+                        exchange.sendResponseHeaders(500, 0);
+                    }
+                }
+            } else {
+                exchange.sendResponseHeaders(405, 0);
+            }
+            exchange.close();
+        }));
+
+        System.out.println("Starting server...");
+        server.start();
     }
 }

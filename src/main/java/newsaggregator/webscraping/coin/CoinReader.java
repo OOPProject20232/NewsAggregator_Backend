@@ -46,7 +46,8 @@ public class CoinReader extends Scraper<Coin> {
                     // set btc price
                     currentCoin.setBtcPrice(Double.parseDouble(coinNode.get("btcPrice").textValue()) * 100);
                     // set thumbnail image
-                    currentCoin.setThumbnail_image(coinNode.get("iconUrl").textValue());
+                    currentCoin.setThumbnailImage("https://assets.coincap.io/assets/icons/" +
+                            coinNode.get("symbol").textValue().toLowerCase() + "@2x.png");
                     // get prices
                     JsonNode priceHistoryNode = mapper.readTree(fetchPriceHistory(guid));
                     JsonNode priceHistoryArrayNode = priceHistoryNode.get("data").get("history");

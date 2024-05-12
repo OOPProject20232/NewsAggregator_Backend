@@ -15,3 +15,13 @@ https://crypto.news/feed/
 https://www.financemagnates.com/feed
 https://www.coindesk.com/arc/outboundfeeds/rss/
 https://cryptodaily.co.uk/feed
+https://en.coinotag.com/feed/
+https://www.ft.com/blockchain?format=rss
+https://u.today/rss
+https://thebittimes.com/feed
+https://www.cryptotimes.io/feed/
+https://www.cryptointelligence.co.uk/feed/
+https://coingape.com/feed/
+https://ambcrypto.com/feed/
+https://news.bitcoin.com/feed/
+https://insidebitcoins.com/feed

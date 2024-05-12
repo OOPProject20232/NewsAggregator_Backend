@@ -41,10 +41,11 @@ public class RSSArticleReader extends Scraper<Article> {
             while (newsListScanner.hasNextLine()) {
                 String urlString = newsListScanner.nextLine();
                 String domainString = URI.create(urlString).getHost();
-                RSSSync.getNewUpdate(urlString, "src/main/resources/rss/cache/%s.xml".formatted(domainString));
-                RSSArticleReader rssArticleReader = new RSSArticleReader();
-                List<Article> currentArticleList = rssArticleReader.parseXML("src/main/resources/rss/cache/%s.xml".formatted(domainString), domainString);
-                articleList.addAll(currentArticleList);
+                int responseCode = RSSSync.getNewUpdate(urlString, "src/main/resources/rss/cache/%s.xml".formatted(domainString));
+                if (responseCode == 200) {
+                    List<Article> currentArticleList = parseXML("src/main/resources/rss/cache/%s.xml".formatted(domainString), domainString);
+                    articleList.addAll(currentArticleList);
+                }
             }
         } catch (Exception e) {
             System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
@@ -79,7 +80,7 @@ public class RSSArticleReader extends Scraper<Article> {
                             getDate(elem),
                             getAuthor(domainString, elem),
                             getThumbnail(elem),
-                            getCategories2(elem)
+                            getSpecialCategories(elem)
                     );
                     currentArticleList.add(currentArticle);
                 }
@@ -102,7 +103,10 @@ public class RSSArticleReader extends Scraper<Article> {
                 return Jsoup.parse(elem.getElementsByTagName("content:encoded").item(0).getTextContent()).select("img").attr("src");
             } else if (elem.getElementsByTagName("content").item(0) != null) {
                 return Jsoup.parse(elem.getElementsByTagName("content").item(0).getTextContent()).select("img").attr("src");
+            } else if (elem.getElementsByTagName("description").item(0) != null) {
+                return Jsoup.parse(elem.getElementsByTagName("description").item(0).getTextContent()).select("img").attr("src");
             }
+
         } catch (Exception e) {
             System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
         }
@@ -115,7 +119,7 @@ public class RSSArticleReader extends Scraper<Article> {
             try {
                 Node detailed_contentNode = elem.getElementsByTagName(content).item(0);
                 if (detailed_contentNode != null) {
-                    if (!detailed_contentNode.getTextContent().isEmpty()) {
+                    if (!detailed_contentNode.getTextContent().isBlank()) {
                         return Jsoup.parse(detailed_contentNode.getTextContent()).text();
                     }
                 }
@@ -126,7 +130,7 @@ public class RSSArticleReader extends Scraper<Article> {
         return null;
     }
 
-    private List<String> getCategories(Element elem) {
+    private List<String> getDefaultCategories(Element elem) {
         ArrayList<String> categories = new ArrayList<>();
         try {
             if (elem.getElementsByTagName("category").getLength() != 0) {
@@ -148,48 +152,66 @@ public class RSSArticleReader extends Scraper<Article> {
         return null;
     }
 
-    private List<String> getCategories2(Element elem) {
-        Set<String> categories = new HashSet<>();
+    @Deprecated
+    private List<String> getMLCategories(Element elem) {
         String content = getDetailedContent(elem);
-        if (content != null) {
-            try {
-                SimpleTokenizer tokenizer = SimpleTokenizer.INSTANCE;
-                String[] tokens = tokenizer.tokenize(content);
-                List<String> models = Arrays.asList("en-ner-person.bin", "en-ner-organization.bin");
-                for (String model : models) {
-                    // NER
-                    InputStream inputStreamNameFinder = getClass().getResourceAsStream("/mlmodels/%s".formatted(model));
-                    assert inputStreamNameFinder != null;
-                    TokenNameFinderModel NERmodel = new TokenNameFinderModel(
-                            inputStreamNameFinder);
-                    NameFinderME nameFinderME = new NameFinderME(NERmodel);
-                    List<Span> spans = Arrays.asList(nameFinderME.find(tokens));
-                    if (!spans.isEmpty()) {
-                        for (Span span : spans) {
-                            categories.addAll(Arrays.stream(Arrays.copyOfRange(tokens, span.getStart(), span.getEnd())).map(String::toLowerCase).toList());
+        if (content == null) {
+            throw new IllegalStateException("Contents must not be empty!!!");
+        }
+        Set<String> categories = new HashSet<>();
+        try {
+            SimpleTokenizer tokenizer = SimpleTokenizer.INSTANCE;
+            String[] tokens = tokenizer.tokenize(content);
+            List<String> models = Arrays.asList("en-ner-person.bin", "en-ner-organization.bin");
+            for (String model : models) {
+                // NER
+                InputStream inputStreamNameFinder = getClass().getResourceAsStream("/mlmodels/%s".formatted(model));
+                assert inputStreamNameFinder != null;
+                TokenNameFinderModel NERmodel = new TokenNameFinderModel(
+                        inputStreamNameFinder);
+                NameFinderME nameFinderME = new NameFinderME(NERmodel);
+                List<Span> spans = Arrays.asList(nameFinderME.find(tokens));
+                var stopWords = Files.readAllLines(Paths.get("src/main/resources/mlmodels/stopwords.txt"));
+                if (!spans.isEmpty()) {
+                    for (Span span : spans) {
+                        String token = tokens[span.getStart()].toLowerCase();
+                        if (!stopWords.contains(token) && !isCommonPunctuation(token) && token.length() > 1) {
+                            categories.add(token);
                         }
                     }
                 }
-                var stopWords = Files.readAllLines(Paths.get("src/main/resources/mlmodels/stopwords.txt"));
-                List<String> categoriesList = new ArrayList<>(categories.stream()
-                        .filter(category -> !category.equals("&"))
-                        .filter(category -> !category.equals("-"))
-                        .filter(category -> !category.equals("/"))
-                        .filter(category -> !category.equals("\""))
-                        .filter(category -> !category.equals("."))
-                        .filter(category -> !category.equals(","))
-                        .filter(category -> !stopWords.contains(category))
-                        .filter(category -> !(category.length() <= 1))
-                        .toList());
-                if (categoriesList.isEmpty()) {
-                    categoriesList.add("general");
-                }
-                return categoriesList;
-            } catch (Exception e) {
-                System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
             }
+        } catch (Exception e) {
+            System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
         }
-        return null;
+        return categories.isEmpty()? List.of("general"): new ArrayList<>(categories);
+    }
+
+    private List<String> getSpecialCategories(Element elem) {
+        String content = getTitle(elem) + " " + getDetailedContent(elem);
+        List<String> categories = new ArrayList<>();
+        content = content.toLowerCase();
+        try {
+            var specialCategories = Files.readAllLines(Paths.get("src/main/resources/mlmodels/special-categories.txt"))
+                    .stream()
+                    .map(String::toLowerCase)
+                    .map(String::trim).toList();
+            String[] contentWords = content.split(" ");
+            for (int i = 0; i < contentWords.length; i++) {
+                contentWords[i] = contentWords[i].replaceAll("\\p{Punct}", "");
+                if (specialCategories.contains(contentWords[i]) && !categories.contains(contentWords[i])) {
+                    categories.add(contentWords[i]);
+                }
+            }
+        } catch (Exception e) {
+            System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
+        }
+        return categories.isEmpty()? List.of("general") : categories;
+    }
+
+    private boolean isCommonPunctuation(String token) {
+        return token.equals("&") || token.equals("-") || token.equals("/") || token.equals("\"")
+                || token.equals(".") || token.equals(",") || token.equals(" ") || token.equals("_");
     }
 
     private String getAuthor(String domainString, Element elem) {
