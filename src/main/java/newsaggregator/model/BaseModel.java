@@ -5,7 +5,7 @@ public class BaseModel {
     // Attributes
 
     private String guid;
-    public String type;
+    private String type;
 
     // Constructors
 
