@@ -20,6 +20,15 @@ public class App {
         // Articles
         Scraper<Article> articles = new RSSArticleReader();
         articles.crawl();
+        for (Article article : articles.getDataList()) {
+            try {
+                ImageProcessor.init(article.getThumbnailImage());
+                System.out.println("Cached image for article: " + article.getTitle());
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
+//                System.out.println("Failed to cache image for article: " + article.getTitle());
+            }
+        }
         db.add("articles", articles.getDataList());
         db.categorize("articles", articles.getDataList());
 //        db.createSearchIndex("articles", "articlesFTS");
