@@ -20,3 +20,8 @@ https://www.ft.com/blockchain?format=rss
 https://u.today/rss
 https://thebittimes.com/feed
 https://www.cryptotimes.io/feed/
+https://www.cryptointelligence.co.uk/feed/
+https://coingape.com/feed/
+https://ambcrypto.com/feed/
+https://news.bitcoin.com/feed/
+https://insidebitcoins.com/feed
