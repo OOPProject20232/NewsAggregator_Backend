@@ -74,7 +74,7 @@ public class CoinReader extends Scraper<Coin> {
     public String fetchCoins() {
         OkHttpClient client = new OkHttpClient();
         Request request = new Request.Builder()
-                .url("https://coinranking1.p.rapidapi.com/coins?referenceCurrencyUuid=yhjMzLPhuIDl&timePeriod=24h&tiers%5B0%5D=1&orderBy=marketCap&orderDirection=desc&limit=20&offset=0")
+                .url("https://coinranking1.p.rapidapi.com/coins?referenceCurrencyUuid=yhjMzLPhuIDl&timePeriod=24h&tiers%5B0%5D=1&orderBy=marketCap&orderDirection=desc&limit=100&offset=0")
                 .get()
                 .addHeader("X-RapidAPI-Key", dotenv.get("RAPID_API_KEY"))
                 .addHeader("X-RapidAPI-Host", "coinranking1.p.rapidapi.com")
