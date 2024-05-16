@@ -25,3 +25,10 @@ https://coingape.com/feed/
 https://ambcrypto.com/feed/
 https://news.bitcoin.com/feed/
 https://insidebitcoins.com/feed
+https://cryptobriefing.com/feed/
+https://www.blockhead.co/latest/rss/
+https://ultramining.com/en/rss/
+https://www.benzinga.com/markets/cryptocurrency/feed
+https://en.coin-turk.com/feed/
+https://cryptopotato.com/feed/
+https://www.cointribune.com/en/feed/
