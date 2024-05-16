@@ -12,17 +12,37 @@ import newsaggregator.model.content.Article;
 import newsaggregator.model.content.Content;
 import newsaggregator.model.content.Post;
 import newsaggregator.model.crypto.Coin;
-import newsaggregator.util.JSONWriter;
+import newsaggregator.jsonwriter.JSONWriter;
 import okhttp3.*;
 import org.bson.Document;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
+/**
+ * Lớp này thực hiện các thao tác với MongoDB, có vòng đời (life cycle) như sau:
+ * <br>- serialize (biến dữ liệu vừa tìm được về dạng giúp MongoDB hiểu được).
+ * <br>- add (đẩy dữ liệu lên MongoDB).
+ * <br>- categorize (phân loại dữ liệu vào các categories).
+ * <br>- get (tùy chọn; lấy dữ liệu từ MongoDB và lưu vào file JSON).
+ * <br>Trong đó:
+ * <br>- serialize, add, categorize sẽ được gọi từ lớp App.
+ * <br>- get chỉ có tác dụng nếu lập trình viên clone repo và call tới phương thức này.
+ * @see newsaggregator.cloud.App
+ */
 public class MongoDBController implements MongoDBClient{
 
     private final Dotenv dotenv = Dotenv.load();
 
+    /**
+     * Phương thức này dùng để chuyển đổi một đối tượng kế thừa từ lớp BaseModel thành định dạng org.bson.Document để lưu vào MongoDB.
+     * @see BaseModel
+     * @see Document
+     *
+     * @param item Đối tượng cần chuyển đổi.
+     * @param <D> Kiểu dữ liệu của đối tượng. Ví dụ: Article, Post, Coin.
+     * @return item dưới dạng org.bson.Document.
+     */
     @Override
     public <D extends BaseModel> Document serialize(D item) {
         if (item instanceof Article) {
@@ -77,11 +97,11 @@ public class MongoDBController implements MongoDBClient{
     }
 
     /**
-     * Phương thức này sẽ kết nối tới database của MongoDB và lấy dữ liệu từ collection `articles`.
-     * <br/><br/>
-     * Dữ liệu sẽ có định dạng JSON và lưu vào file được chỉ định.
-     *
+     * Phương thức này lấy hết dữ liệu từ MongoDB và lưu vào một file JSON <br>(LƯU Ý: DỮ LIỆU ĐƯỢC LƯU Ở DẠNG JSON ARRAY).
+     * @param collectionName Tên collection trong MongoDB.
      * @param filePath Địa chỉ lưu file JSON.
+     *
+     * @see JSONWriter
      */
     @Override
     public void get(String collectionName,String filePath) {
@@ -97,13 +117,12 @@ public class MongoDBController implements MongoDBClient{
     }
 
     /**
-     * Phương thức này sẽ kết nối tới database của MongoDB và đẩy dữ liệu từ file JSON lên database thông qua thư viện MongoDB-driver-sync.
-     * <br/><br/>
-     * Bài viết sẽ được đẩy lên database `WebData`, collection `articles`. Nếu bài viết đã tồn tại trong database, nó sẽ không đẩy lên nữa.
-     * <br/><br/>
-     * Ngoài ra, phương thức này cũng sẽ sort các bài viết vào các categories khác nhau và lưu vào collection `categories`.
+     * Phương thức này push dữ liệu tìm được lên MongoDB.
+     * <br> Nếu dữ liệu là Coin, sẽ xóa hết dữ liệu cũ trong collection trước khi đẩy dữ liệu mới lên.
+     * <br> Nếu dữ liệu là Article hoặc Post, sẽ bỏ qua các bài viết đã tồn tại trong collection => tránh trùng lặp.
      *
-     * @param contentList List các bài báo/bài viết.
+     * @param collectionName Tên collection trong MongoDB.
+     * @param contentList List các bài báo/bài viết/coin.
      */
     @Override
     public <D extends BaseModel> void add(String collectionName, List<D> contentList) {
@@ -132,22 +151,28 @@ public class MongoDBController implements MongoDBClient{
         }
     }
 
+
+    /**
+     * Phương thức này sẽ phân loại các lớp kế thừa từ lớp Content vào các categories.
+     * <br> Ví dụ: Một bài viết có categories là ["Bitcoin", "Ethereum"], sẽ được phân vào 2 categories "Bitcoin" và "Ethereum".
+     * @param collectionName Tên collection trong MongoDB.
+     * @param list List các bài báo/bài viết.
+     * @param <D> Kiểu dữ liệu của đối tượng. Ví dụ: Article, Post.
+     */
     @Override
-    public <D extends BaseModel> void categorize(String collectionName, List<D> list) {
+    public <D extends Content> void categorize(String collectionName, List<D> list) {
         try (MongoClient mongoClient = MongoClients.create(dotenv.get("MONGODB_CONNECTION_STRING"))) {
             MongoDatabase db = mongoClient.getDatabase(dotenv.get("MONGODB_DATABASE_NAME"));
             MongoCollection<Document> categoriesCollection = db.getCollection(collectionName + ".categories");
             Map<String, List<String>> categoriesUpdates = new HashMap<>();
-            for (BaseModel item : list) {
-                if (item instanceof  Content) {
-                    for (String category : ((Content) item).getCategories()) {
-                        if (category == null) {
-                            continue;
-                        }
-                        List<String> guids = categoriesUpdates.getOrDefault(category, new ArrayList<>());
-                        guids.add(item.getGuid());
-                        categoriesUpdates.put(category, guids);
+            for (Content item : list) {
+                for (String category : item.getCategories()) {
+                    if (category == null) {
+                        continue;
                     }
+                    List<String> guids = categoriesUpdates.getOrDefault(category, new ArrayList<>());
+                    guids.add(item.getGuid());
+                    categoriesUpdates.put(category, guids);
                 }
             }
             for (Map.Entry<String, List<String>> entry : categoriesUpdates.entrySet()) {
@@ -171,9 +196,9 @@ public class MongoDBController implements MongoDBClient{
 
     /**
      * Phương thức này sẽ tạo index cho các bài báo trong database nhằm phục vụ cho full-text search.
-     * <br/><br/>
+     * <br/>
      * Index sẽ được tạo ra cho mọi trường thuộc bài báo trong collection `articles`.
-     * <br/><br/>
+     * <br/>
      * Phương pháp tạo index:
      * <br/>- Tạo kết nối HTTP đến MongoDB Atlas với API key được mã hóa bằng phương thức Digest.
      * <br/>- Tạo một request POST với body là thông tin về index cần tạo (tên database, collection, tên index, lựa chọn full-text search).
