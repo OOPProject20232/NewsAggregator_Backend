@@ -28,7 +28,7 @@ import org.json.JSONObject;
  * @see Scraper
  */
 public class App {
-    public static final Database<Document> db = new MongoDBController();
+    private static final Database<Document> db = new MongoDBController();
 
     public static String runArticles() {
         // Articles
