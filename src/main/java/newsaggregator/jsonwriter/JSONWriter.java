@@ -1,9 +1,8 @@
-package newsaggregator.util;
+package newsaggregator.jsonwriter;
 
 import newsaggregator.model.content.Article;
 import org.bson.Document;
 import org.json.JSONArray;
-import org.json.JSONObject;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -20,8 +19,8 @@ public class JSONWriter {
     // Methods
 
     /**
-     * Phương thức này dùng để viết dữ liệu từ list các BSON Document vào file JSON.
-     * @param items List các BSON Document.
+     * Phương thức này dùng để viết dữ liệu từ list các org.bson.Document vào file JSON.
+     * @param items List các org.bson.Document.
      * @param filePath Đường dẫn file JSON (dùng để lưu).
      * @see org.bson.Document
      */

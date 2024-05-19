@@ -8,6 +8,22 @@ import java.io.OutputStream;
 import java.net.InetSocketAddress;
 import java.util.concurrent.*;
 
+/**
+ * Lớp này dùng để khởi tạo server và xử lý request từ client
+ * <br> gồm 3 endpoints:
+ * <br> - /v1/articles
+ * <br> - /v1/posts
+ * <br> - /v1/coins
+ * <br> Khi người dùng chạy, chương trình sẽ ở port 8000
+ * <br> => nếu người dùng muốn crawl dữ liệu bài báo (article) thì sẽ gửi request GET tới <a href="http://localhost:8000/v1/articles">http://localhost:8000/v1/articles</a>
+ * (mở browser và nhập link)
+ * <br> Server trả về response 202 (Accepted) và thực hiện crawl dữ liệu bài báo, sau khi crawl xong sẽ trả về response 200 (OK) và trả về dữ liệu đã crawl được
+ * Khi crawl thành công, dữ liệu sẽ được đẩy lên MongoDB
+ * <br> Ngược lại, trả về 500 (Internal Server Error) nếu có lỗi xảy ra
+ *
+ * @see App
+ * @see HttpServer
+ */
 public class Main {
 
     public static void main(String[] args) throws IOException {

@@ -23,9 +23,8 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 /**
- * Lớp RSSReader thực hiện việc đọc file XML từ các nguồn RSS được lưu trữ trong file webSources.txt
+ * Lớp RSSArticleReader thực hiện việc đọc file XML từ các nguồn RSS được lưu trữ trong file articleSources.txt
  * và trả về một danh sách các bài báo được lưu trữ trong các file XML này
- * @author Trần Quang Hưng
  */
 public class RSSArticleReader extends Scraper<Article> {
 

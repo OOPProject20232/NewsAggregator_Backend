@@ -13,6 +13,7 @@ target/
 *.ipr
 src/main/resources/.env
 src/main/resources/rss/cache/
+src/main/java/newsaggregator/RefactorData.java
 
 ### Eclipse ###
 .apt_generated
