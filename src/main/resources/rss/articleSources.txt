@@ -32,3 +32,9 @@ https://www.benzinga.com/markets/cryptocurrency/feed
 https://en.coin-turk.com/feed/
 https://cryptopotato.com/feed/
 https://www.cointribune.com/en/feed/
+https://cryptoheadlines.com/feed/
+https://www.altcoinbuzz.io/feed/
+https://coincu.com/feed/
+https://www.coingabbar.com/currencyRssFeed
+https://coinedition.com/feed/
+https://fortune.com/feed/fortune-feeds/?id=3689511
