@@ -5,7 +5,7 @@ import newsaggregator.model.content.Content;
 
 import java.util.List;
 
-public interface DataAccess<T> {
+public interface Database<T> {
     public <D extends BaseModel> T serialize(D item);
     public void get(String collectionName, String filePath);
     public <D extends BaseModel> void add(String collectionName, List<D> list);
