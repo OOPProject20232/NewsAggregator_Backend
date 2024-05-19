@@ -7,6 +7,7 @@ import com.burgstaller.okhttp.digest.Credentials;
 import com.burgstaller.okhttp.digest.DigestAuthenticator;
 import com.mongodb.client.*;
 import io.github.cdimascio.dotenv.Dotenv;
+import newsaggregator.database.Database;
 import newsaggregator.model.BaseModel;
 import newsaggregator.model.content.Article;
 import newsaggregator.model.content.Content;
@@ -256,7 +257,7 @@ public class MongoDBController implements MongoDBClient{
      * Phương thức này sẽ tạo thông tin của các nguồn tin như: tên, logo url, tên tham chiếu để phụ vụ tham chiếu giữa các collection trong MongoDB.
      * <br> Lưu ý: Chỉ cần chạy 1 lần để tạo thông tin của các nhà xuất bản, tạo 2 lần sẽ gây ra lỗi. Nếu gặp phải lỗi, hãy drop collection.
      * <br> Do MongoDB là NoSQL database nên cần phải dùng phương thức này để tham chiếu, với SQL database, không cần phương thức này nên không có trong DataAccess interface.
-     * @see newsaggregator.database.DataAccess
+     * @see Database
      */
     public void generatePublisherInfo() {
         try {

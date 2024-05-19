@@ -1,6 +1,6 @@
 package newsaggregator.cloud;
 
-import newsaggregator.database.DataAccess;
+import newsaggregator.database.Database;
 import newsaggregator.database.MongoDB.MongoDBController;
 import newsaggregator.model.content.Article;
 import newsaggregator.model.content.Post;
@@ -10,7 +10,6 @@ import newsaggregator.webscraping.article.RSSArticleReader;
 import newsaggregator.webscraping.coin.CoinReader;
 import newsaggregator.webscraping.post.RedditReader;
 import org.bson.Document;
-import org.json.JSONArray;
 import org.json.JSONObject;
 
 /**
@@ -29,7 +28,7 @@ import org.json.JSONObject;
  * @see Scraper
  */
 public class App {
-    public static final DataAccess<Document> db = new MongoDBController();
+    public static final Database<Document> db = new MongoDBController();
 
     public static String runArticles() {
         // Articles
