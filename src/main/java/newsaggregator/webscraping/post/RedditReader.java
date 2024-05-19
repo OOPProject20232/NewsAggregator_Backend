@@ -13,6 +13,18 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
+
+/**
+ * Lớp này dùng để lấy các bài viết từ các subreddit đề cập ở file postSources.txt.
+ * <br> postSources.txt chứa các api gọi tới dữ liệu của các subreddit.
+ * <br> Ví du: <a href="https://www.reddit.com/r/btc">https://www.reddit.com/r/btc</a> sẽ dẫn tới subreddit btc.
+ * <br> Nhưng <a href="https://www.reddit.com/r/btc.json">https://www.reddit.com/r/btc.json</a> sẽ trả về dữ liệu dưới dạng json của subreddit btc.
+ *
+ * @see Post
+ * @see Scraper
+ * @see ObjectMapper
+ * @see OkHttpClient
+ */
 public class RedditReader extends Scraper<Post> {
     @Override
     public void crawl() {

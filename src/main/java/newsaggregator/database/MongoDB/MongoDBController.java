@@ -15,7 +15,21 @@ import newsaggregator.model.crypto.Coin;
 import newsaggregator.jsonwriter.JSONWriter;
 import okhttp3.*;
 import org.bson.Document;
+import org.w3c.dom.Element;
+import org.xml.sax.SAXException;
 
+import javax.net.ssl.SSLHandshakeException;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.ConnectException;
+import java.net.HttpURLConnection;
+import java.net.URI;
+import java.net.URL;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -97,7 +111,8 @@ public class MongoDBController implements MongoDBClient{
     }
 
     /**
-     * Phương thức này lấy hết dữ liệu từ MongoDB và lưu vào một file JSON <br>(LƯU Ý: DỮ LIỆU ĐƯỢC LƯU Ở DẠNG JSON ARRAY).
+     * Phương thức này lấy hết dữ liệu từ MongoDB và lưu vào một file JSON
+     * <br>(LƯU Ý: DỮ LIỆU ĐƯỢC LƯU Ở DẠNG JSON ARRAY).
      * @param collectionName Tên collection trong MongoDB.
      * @param filePath Địa chỉ lưu file JSON.
      *
@@ -197,13 +212,16 @@ public class MongoDBController implements MongoDBClient{
     /**
      * Phương thức này sẽ tạo index cho các bài báo trong database nhằm phục vụ cho full-text search.
      * <br/>
-     * Index sẽ được tạo ra cho mọi trường thuộc bài báo trong collection `articles`.
+     * Index sẽ được tạo ra cho mọi trường thuộc document trong collection mà người dùng chọn (Nên là Article hay Post).
      * <br/>
      * Phương pháp tạo index:
      * <br/>- Tạo kết nối HTTP đến MongoDB Atlas với API key được mã hóa bằng phương thức Digest.
      * <br/>- Tạo một request POST với body là thông tin về index cần tạo (tên database, collection, tên index, lựa chọn full-text search).
      * <br/>- Nếu response code là 200, index đã được tạo thành công.
      * <br/>- Nếu response code là 403, đã có index với tên tương tự trong collection => bad request (không đáng lo ngại).
+     *
+     * @param collectionName Tên collection trong MongoDB.
+     * @param indexName Tên index cần tạo.
      */
     @Override
     public void createSearchIndex(String collectionName, String indexName) {
@@ -231,6 +249,67 @@ public class MongoDBController implements MongoDBClient{
             System.out.println("Response body: " + response.body().string());
         } catch (Exception e) {
             System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
+        }
+    }
+
+    /**
+     * Phương thức này sẽ tạo thông tin của các nguồn tin như: tên, logo url, tên tham chiếu để phụ vụ tham chiếu giữa các collection trong MongoDB.
+     * <br> Lưu ý: Chỉ cần chạy 1 lần để tạo thông tin của các nhà xuất bản, tạo 2 lần sẽ gây ra lỗi. Nếu gặp phải lỗi, hãy drop collection.
+     * <br> Do MongoDB là NoSQL database nên cần phải dùng phương thức này để tham chiếu, với SQL database, không cần phương thức này nên không có trong DataAccess interface.
+     * @see newsaggregator.database.DataAccess
+     */
+    public void generatePublisherInfo() {
+        try {
+            File articleSource = new File("src/main/resources/rss/articleSources.txt");
+            List<org.bson.Document> publisherList = new ArrayList<>();
+            try {
+                Scanner scanner = new Scanner(articleSource);
+                while (scanner.hasNextLine()){
+                    try {
+                        String rssLink = scanner.nextLine();
+                        URL rssURL = URI.create(rssLink).toURL();
+                        System.out.println(rssURL);
+                        String refName = rssURL.getHost().replace("www.", "").replace(".com", "");
+                        HttpURLConnection httpURLConnection = (HttpURLConnection) rssURL.openConnection();
+                        httpURLConnection.setRequestMethod("GET");
+                        httpURLConnection.connect();
+                        int responseCode = httpURLConnection.getResponseCode();
+                        System.out.println(responseCode);
+                        InputStream inputStream = httpURLConnection.getInputStream();
+                        DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
+                        DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
+                        org.w3c.dom.Document document = documentBuilder.parse(inputStream);
+                        Element channel = (Element) document.getElementsByTagName("channel").item(0);
+                        String name = channel.getElementsByTagName("title").item(0).getTextContent();
+                        System.out.println("=========");
+                        System.out.println(name);
+                        System.out.println(refName);
+                        System.out.println("https://logo.clearbit.com/" + rssURL.getHost());
+                        System.out.println("=========");
+                        org.bson.Document doc = new org.bson.Document("name", name)
+                                .append("ref_name", refName)
+                                .append("logo", "https://logo.clearbit.com/" + rssURL.getHost());
+                        publisherList.add(doc);
+                    } catch (SSLHandshakeException | ConnectException e) {
+                        System.out.println(e.getMessage());
+                    }
+                }
+                scanner.close();
+                try (MongoClient mongoClient = MongoClients.create(dotenv.get("MONGODB_CONNECTION_STRING"))) {
+                    MongoDatabase db = mongoClient.getDatabase(dotenv.get("MONGODB_DATABASE_NAME"));
+                    MongoCollection<org.bson.Document> collection = db.getCollection("articles.publishers");
+                    collection.insertMany(publisherList);
+                } catch (Exception e) {
+                    System.out.println(e.getMessage());
+                }
+            } catch (FileNotFoundException e) {
+                throw new FileNotFoundException("Không tìm thấy file articlesSources.txt");
+            } catch (IOException | ParserConfigurationException | SAXException e) {
+                throw new RuntimeException(e);
+            }
+            get("articles.publishers", "src/main/resources/rss/publishers.json");
+        } catch (FileNotFoundException | RuntimeException e) {
+            System.out.println(e.getMessage());
         }
     }
 }
