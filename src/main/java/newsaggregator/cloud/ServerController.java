@@ -27,7 +27,7 @@ import org.json.JSONObject;
  * @see newsaggregator.Main
  * @see Scraper
  */
-public class App {
+public class ServerController {
     private static final Database<Document> db = new MongoDBController();
 
     public static String runArticles() {

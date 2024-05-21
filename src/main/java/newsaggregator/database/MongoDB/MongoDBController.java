@@ -7,6 +7,7 @@ import com.burgstaller.okhttp.digest.Credentials;
 import com.burgstaller.okhttp.digest.DigestAuthenticator;
 import com.mongodb.client.*;
 import io.github.cdimascio.dotenv.Dotenv;
+import newsaggregator.cloud.ServerController;
 import newsaggregator.database.Database;
 import newsaggregator.model.BaseModel;
 import newsaggregator.model.content.Article;
@@ -43,7 +44,7 @@ import java.util.concurrent.ConcurrentHashMap;
  * <br>Trong đó:
  * <br>- serialize, add, categorize sẽ được gọi từ lớp App.
  * <br>- get chỉ có tác dụng nếu lập trình viên clone repo và call tới phương thức này.
- * @see newsaggregator.cloud.App
+ * @see ServerController
  */
 public class MongoDBController implements MongoDBClient{
 
