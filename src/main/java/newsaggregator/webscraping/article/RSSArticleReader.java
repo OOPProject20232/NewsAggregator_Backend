@@ -31,7 +31,7 @@ public class RSSArticleReader extends Scraper<Article> {
     //Methods
 
     @Override
-    public void crawl() {
+    public void scrape() {
         System.out.println("\u001B[32m" + "Đang lấy dữ liệu từ các nguồn RSS..." + "\u001B[0m");
         List<Article> articleList = new ArrayList<>();
         try {

@@ -20,7 +20,7 @@ public class CoinReader extends Scraper<Coin> {
     private final Dotenv dotenv = Dotenv.load();
 
     @Override
-    public void crawl() {
+    public void scrape() {
         System.out.println("\u001B[32m" + "Đang lấy dữ liệu từ CoinRanking API..." + "\u001B[0m");
         ObjectMapper mapper = new ObjectMapper();
         try {

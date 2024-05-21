@@ -33,7 +33,7 @@ public class ServerController {
     public static String runArticles() {
         // Articles
         Scraper<Article> articles = new RSSArticleReader();
-        articles.crawl();
+        articles.scrape();
         db.add("articles", articles.getDataList());
         db.categorize("articles", articles.getDataList());
 //        db.createSearchIndex("articles", "articlesFTS");
@@ -43,7 +43,7 @@ public class ServerController {
     public static String runPosts() {
         // Posts
         Scraper<Post> posts = new RedditReader();
-        posts.crawl();
+        posts.scrape();
         db.add("posts", posts.getDataList());
         db.categorize("posts", posts.getDataList());
 //        db.createSearchIndex("posts", "postsFTS");
@@ -53,7 +53,7 @@ public class ServerController {
     public static String runCoins() {
         // Coins
         Scraper<Coin> coins = new CoinReader();
-        coins.crawl();
+        coins.scrape();
         db.add("coins", coins.getDataList());
         return new JSONObject().put("status", "success").put("message", "Coins added to database.").toString();
     }

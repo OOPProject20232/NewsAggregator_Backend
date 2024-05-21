@@ -15,7 +15,7 @@ public abstract class Scraper<T> {
 
     // Methods
 
-    public abstract void crawl();
+    public abstract void scrape();
 
     public List<T> getDataList() {
         return dataList;
