@@ -1,7 +1,7 @@
 package newsaggregator;
 
 import com.sun.net.httpserver.HttpServer;
-import newsaggregator.cloud.App;
+import newsaggregator.cloud.ServerController;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -21,7 +21,7 @@ import java.util.concurrent.*;
  * Khi crawl thành công, dữ liệu sẽ được đẩy lên MongoDB
  * <br> Ngược lại, trả về 500 (Internal Server Error) nếu có lỗi xảy ra
  *
- * @see App
+ * @see ServerController
  * @see HttpServer
  */
 public class Main {
@@ -33,7 +33,7 @@ public class Main {
         server.createContext("/v1/articles", (exchange -> {
             if ("GET".equals(exchange.getRequestMethod())) {
                 exchange.sendResponseHeaders(202, 0);
-                Future<String> future = executor.submit(App::runArticles);
+                Future<String> future = executor.submit(ServerController::runArticles);
                 if (future.isDone()) {
                     try {
                         String response = future.get();
@@ -56,7 +56,7 @@ public class Main {
         server.createContext("/v1/posts", (exchange -> {
             if ("GET".equals(exchange.getRequestMethod())) {
                 exchange.sendResponseHeaders(202, 0);
-                Future<String> future = executor.submit(App::runPosts);
+                Future<String> future = executor.submit(ServerController::runPosts);
                 if (future.isDone()) {
                     try {
                         String response = future.get();
@@ -79,7 +79,7 @@ public class Main {
         server.createContext("/v1/coins", (exchange -> {
             if ("GET".equals(exchange.getRequestMethod())) {
                 exchange.sendResponseHeaders(202, 0);
-                Future<String> future = executor.submit(App::runCoins);
+                Future<String> future = executor.submit(ServerController::runCoins);
                 if (future.isDone()) {
                     try {
                         String response = future.get();
