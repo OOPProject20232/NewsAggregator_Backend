@@ -27,7 +27,7 @@ import java.util.*;
  */
 public class RedditReader extends Scraper<Post> {
     @Override
-    public void crawl() {
+    public void scrape() {
         System.out.println("\u001B[32m" + "Đang lấy dữ liệu từ các Subreddit..." + "\u001B[0m");
         List<Post> postList = new ArrayList<>();
         try {
