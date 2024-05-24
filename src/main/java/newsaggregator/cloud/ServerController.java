@@ -1,6 +1,6 @@
 package newsaggregator.cloud;
 
-import newsaggregator.database.Database;
+import newsaggregator.database.IDatabase;
 import newsaggregator.database.MongoDB.MongoDBController;
 import newsaggregator.model.content.Article;
 import newsaggregator.model.content.Post;
@@ -28,7 +28,7 @@ import org.json.JSONObject;
  * @see Scraper
  */
 public class ServerController {
-    private static final Database<Document> db = new MongoDBController();
+    private static final IDatabase<Document> db = new MongoDBController();
 
     public static String runArticles() {
         // Articles
