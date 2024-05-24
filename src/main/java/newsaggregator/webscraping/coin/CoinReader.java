@@ -40,7 +40,7 @@ public class CoinReader extends Scraper<Coin> {
                     // set name
                     currentCoin.setName(coinNode.get("name").textValue());
                     // set market cap
-                    currentCoin.setMarketCap(coinNode.get("marketCap").textValue());
+                    currentCoin.setMarketCap(coinNode.get("marketCap").longValue());
                     // set rank
                     currentCoin.setRank(coinNode.get("rank").intValue());
                     // set btc price
