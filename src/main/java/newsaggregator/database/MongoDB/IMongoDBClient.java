@@ -1,12 +1,14 @@
-package newsaggregator.database;
+package newsaggregator.database.MongoDB;
 
+import newsaggregator.database.IDatabase;
 import newsaggregator.model.BaseModel;
 import newsaggregator.model.content.Content;
+import org.bson.Document;
 
 import java.util.List;
 
-public interface Database<T> {
-    public <D extends BaseModel> T serialize(D item);
+public interface IMongoDBClient extends IDatabase<Document> {
+    public <D extends BaseModel> Document serialize(D item);
     public void get(String collectionName, String filePath);
     public <D extends BaseModel> void add(String collectionName, List<D> list);
     public void createSearchIndex(String collectionName, String indexName);
