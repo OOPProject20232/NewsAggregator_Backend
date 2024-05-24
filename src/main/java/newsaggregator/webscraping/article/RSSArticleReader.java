@@ -135,15 +135,15 @@ public class RSSArticleReader extends Scraper<Article> {
         try {
             if (elem.getElementsByTagName("category").getLength() != 0) {
                 for (int j = 0; j < elem.getElementsByTagName("category").getLength(); j++) {
-                    String category = elem.getElementsByTagName("category").item(j).getTextContent();
-                    if (category.isBlank()) {
+                    Node category = elem.getElementsByTagName("category").item(j);
+                    if (category.getTextContent().isBlank()) {
                         continue;
                     }
-                    categories.add(category.toLowerCase());
+                    categories.add(category.getTextContent().toLowerCase());
                 }
             } else if (elem.getElementsByTagName("categories").getLength() != 0) {
-                String category = elem.getElementsByTagName("categories").item(0).getAttributes().getNamedItem("label").getTextContent();
-                categories.add(category.toLowerCase());
+                Node category = elem.getElementsByTagName("categories").item(0).getAttributes().getNamedItem("label");
+                categories.add(category.getTextContent().toLowerCase());
             }
             return categories;
         } catch (Exception e) {
@@ -219,7 +219,7 @@ public class RSSArticleReader extends Scraper<Article> {
             if (elem.getElementsByTagName("dc:creator").item(0) != null) {
                 return elem.getElementsByTagName("dc:creator").item(0).getTextContent();
             }
-            else if (elem.getElementsByTagName("author").item(0).getTextContent() != null) {
+            else if (elem.getElementsByTagName("author").item(0) != null) {
                 return elem.getElementsByTagName("author").item(0).getTextContent();
             }
         } catch (Exception e) {
