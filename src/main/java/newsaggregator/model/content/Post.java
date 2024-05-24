@@ -24,11 +24,11 @@ public class Post extends Content {
 
     // Methods
 
-    public int getUpvotes() {
+    public int getUpVotes() {
         return upvotes;
     }
 
-    public int getDownvotes() {
+    public int getDownVotes() {
         return downvotes;
     }
 
