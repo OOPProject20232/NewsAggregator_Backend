@@ -11,7 +11,7 @@ public class Coin extends BaseModel {
 
     private String symbol;
     private String name;
-    private String marketCap;
+    private Long marketCap;
     private int rank;
     private Double btcPrice;
     private String thumbnail_image;
@@ -40,11 +40,11 @@ public class Coin extends BaseModel {
         this.name = name;
     }
 
-    public String getMarketCap() {
+    public Long getMarketCap() {
         return marketCap;
     }
 
-    public void setMarketCap(String marketCap) {
+    public void setMarketCap(Long marketCap) {
         this.marketCap = marketCap;
     }
 
