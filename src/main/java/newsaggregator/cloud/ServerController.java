@@ -28,14 +28,14 @@ import org.json.JSONObject;
  * @see Scraper
  */
 public class ServerController {
-    private static final IDatabase<Document> db = new MongoDBController();
+    private static final IDatabase<Document> DB = new MongoDBController();
 
     public static String runArticles() {
         // Articles
         Scraper<Article> articles = new RSSArticleReader();
         articles.scrape();
-        db.add("articles", articles.getDataList());
-        db.categorize("articles", articles.getDataList());
+        DB.add("articles", articles.getDataList());
+        DB.categorize("articles", articles.getDataList());
 //        db.createSearchIndex("articles", "articlesFTS");
         return new JSONObject().put("status", "success").put("message", "Articles added to database.").toString();
     }
@@ -44,8 +44,8 @@ public class ServerController {
         // Posts
         Scraper<Post> posts = new RedditReader();
         posts.scrape();
-        db.add("posts", posts.getDataList());
-        db.categorize("posts", posts.getDataList());
+        DB.add("posts", posts.getDataList());
+        DB.categorize("posts", posts.getDataList());
 //        db.createSearchIndex("posts", "postsFTS");
         return new JSONObject().put("status", "success").put("message", "Posts added to database.").toString();
     }
@@ -54,7 +54,7 @@ public class ServerController {
         // Coins
         Scraper<Coin> coins = new CoinReader();
         coins.scrape();
-        db.add("coins", coins.getDataList());
+        DB.add("coins", coins.getDataList());
         return new JSONObject().put("status", "success").put("message", "Coins added to database.").toString();
     }
 }
