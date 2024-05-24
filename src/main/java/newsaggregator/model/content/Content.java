@@ -10,7 +10,6 @@ public class Content extends BaseModel {
 
     private String link;
     private String source;
-    private String type;
     private String title;
     private String detailedContent;
     private String creationDate;
