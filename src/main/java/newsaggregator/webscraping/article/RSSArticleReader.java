@@ -19,6 +19,7 @@ import java.io.InputStream;
 import java.net.URI;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
@@ -231,17 +232,30 @@ public class RSSArticleReader extends Scraper<Article> {
         SimpleDateFormat outputFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'");
         try {
             Node dateNode = elem.getElementsByTagName("pubDate").item(0);
-            if (dateNode == null) {
-                dateNode = elem.getElementsByTagName("published").item(0);
-                SimpleDateFormat inputFormat2 = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'");
-                return outputFormat.format(inputFormat2.parse(dateNode.getTextContent()));
+            if (dateNode != null) {
+                try {
+                    SimpleDateFormat inputFormat1 = new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss Z");
+                    return outputFormat.format(inputFormat1.parse(dateNode.getTextContent().replace("GMT", "+0000")));
+                } catch (ParseException e) {
+                    try {
+                        SimpleDateFormat inputFormat3 = new SimpleDateFormat("yyyy/MM/dd HH:mm");
+                        return outputFormat.format(inputFormat3.parse(dateNode.getTextContent()));
+                    } catch (ParseException e2) {
+                        System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
+                        System.out.println("Checking for other input date formats...");
+                    }
+                }
             }
-            SimpleDateFormat inputFormat1 = new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss Z");
-            return outputFormat.format(inputFormat1.parse(dateNode.getTextContent()));
+            dateNode = elem.getElementsByTagName("published").item(0);
+            if (dateNode != null) {
+                SimpleDateFormat inputFormat3 = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'");
+                return outputFormat.format(inputFormat3.parse(dateNode.getTextContent()));
+            }
         } catch (Exception e) {
             System.out.println("\u001B[31m" + e.getMessage() + "\u001B[0m");
         }
-        return null;
+        System.out.println("Defaulting to current scraping date...");
+        return outputFormat.format(new Date());
     }
 
     private String getSummary(Element elem) {
