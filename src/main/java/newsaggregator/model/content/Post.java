@@ -8,18 +8,18 @@ public class Post extends Content {
 
     private int upvotes;
     private int downvotes;
-    private String mediaURl;
+    private String mediaURL;
 
     // Constructors
 
     public Post() {
     }
 
-    public Post(String guid, String link, String source, String type, String title, String detailedContent, String creationDate, String author, List<String> category, int upvotes, int downvotes, String mediaURl) {
+    public Post(String guid, String link, String source, String type, String title, String detailedContent, String creationDate, String author, List<String> category, int upvotes, int downvotes, String mediaURL) {
         super(guid, link, source, type, title, detailedContent, creationDate, author, category);
         this.upvotes = upvotes;
         this.downvotes = downvotes;
-        this.mediaURl = mediaURl;
+        this.mediaURL = mediaURL;
     }
 
     // Methods
@@ -33,7 +33,7 @@ public class Post extends Content {
     }
 
     public String getMediaURL() {
-        return mediaURl;
+        return mediaURL;
     }
 
     @Override
@@ -42,7 +42,7 @@ public class Post extends Content {
         super.display();
         System.out.println("Upvotes: " + upvotes);
         System.out.println("Downvotes: " + downvotes);
-        System.out.println("Media URL: " + mediaURl);
+        System.out.println("Media URL: " + mediaURL);
         System.out.println("==================================================================");
     }
 }
