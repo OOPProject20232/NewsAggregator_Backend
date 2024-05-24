@@ -86,8 +86,8 @@ public class MongoDBController implements MongoDBClient{
                     .append("creation_date", ((Content) item).getCreationDate())
                     .append("post_content", ((Content) item).getDetailedContent())
                     .append("categories", ((Content) item).getCategories())
-                    .append("up_votes", ((Post) item).getUpvotes())
-                    .append("down_votes", ((Post) item).getDownvotes())
+                    .append("up_votes", ((Post) item).getUpVotes())
+                    .append("down_votes", ((Post) item).getDownVotes())
                     .append("media_url", ((Post) item).getMediaURL());
         }
         else if (item instanceof Coin) {

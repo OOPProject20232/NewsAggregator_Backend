@@ -14,7 +14,7 @@ public class Coin extends BaseModel {
     private Long marketCap;
     private int rank;
     private Double btcPrice;
-    private String thumbnail_image;
+    private String thumbnailImage;
     private List<AbstractMap.SimpleEntry<String, String>> prices;
 
     // Constructors
@@ -65,11 +65,11 @@ public class Coin extends BaseModel {
     }
 
     public String getThumbnailImage() {
-        return thumbnail_image;
+        return thumbnailImage;
     }
 
     public void setThumbnailImage(String thumbnail_image) {
-        this.thumbnail_image = thumbnail_image;
+        this.thumbnailImage = thumbnail_image;
     }
 
     public List<AbstractMap.SimpleEntry<String, String>> getPrices() {
@@ -89,7 +89,7 @@ public class Coin extends BaseModel {
         System.out.println("Market cap: " + marketCap);
         System.out.println("Rank: " + rank);
         System.out.println("Compare to BTC: " + btcPrice + "%");
-        System.out.println("Thumbnail image: " + thumbnail_image);
+        System.out.println("Thumbnail image: " + thumbnailImage);
         System.out.println("Prices: ");
         for (AbstractMap.SimpleEntry<String, String> price : prices) {
             System.out.println("Date: " + price.getKey() + " - Price: $" + price.getValue());
