@@ -1,4 +1,4 @@
-package newsaggregator.jsonwriter;
+package newsaggregator.util;
 
 import newsaggregator.model.content.Article;
 import org.bson.Document;

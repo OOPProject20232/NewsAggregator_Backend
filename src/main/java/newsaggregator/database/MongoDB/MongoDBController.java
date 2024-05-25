@@ -14,7 +14,7 @@ import newsaggregator.model.content.Article;
 import newsaggregator.model.content.Content;
 import newsaggregator.model.content.Post;
 import newsaggregator.model.crypto.Coin;
-import newsaggregator.jsonwriter.JSONWriter;
+import newsaggregator.util.JSONWriter;
 import okhttp3.*;
 import org.bson.Document;
 import org.w3c.dom.Element;
