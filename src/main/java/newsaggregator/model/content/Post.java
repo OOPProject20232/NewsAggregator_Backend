@@ -6,8 +6,8 @@ public class Post extends Content {
 
     // Attributes
 
-    private int upvotes;
-    private int downvotes;
+    private int upVotes;
+    private int downVotes;
     private String mediaURL;
 
     // Constructors
@@ -15,21 +15,21 @@ public class Post extends Content {
     public Post() {
     }
 
-    public Post(String guid, String link, String source, String type, String title, String detailedContent, String creationDate, String author, List<String> category, int upvotes, int downvotes, String mediaURL) {
+    public Post(String guid, String link, String source, String type, String title, String detailedContent, String creationDate, String author, List<String> category, int upVotes, int downVotes, String mediaURL) {
         super(guid, link, source, type, title, detailedContent, creationDate, author, category);
-        this.upvotes = upvotes;
-        this.downvotes = downvotes;
+        this.upVotes = upVotes;
+        this.downVotes = downVotes;
         this.mediaURL = mediaURL;
     }
 
     // Methods
 
     public int getUpVotes() {
-        return upvotes;
+        return upVotes;
     }
 
     public int getDownVotes() {
-        return downvotes;
+        return downVotes;
     }
 
     public String getMediaURL() {
@@ -40,8 +40,8 @@ public class Post extends Content {
     public void display() {
         System.out.println("==================================================================");
         super.display();
-        System.out.println("Upvotes: " + upvotes);
-        System.out.println("Downvotes: " + downvotes);
+        System.out.println("Upvotes: " + upVotes);
+        System.out.println("Downvotes: " + downVotes);
         System.out.println("Media URL: " + mediaURL);
         System.out.println("==================================================================");
     }
