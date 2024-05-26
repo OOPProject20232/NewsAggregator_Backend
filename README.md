@@ -81,7 +81,7 @@ cd NewsAggregator_Backend
    RUN rm -rf ./src/main/resources/newsaggregator
    EXPOSE 8000
    CMD ["java", "-jar", "newsaggregator_backend-jar-with-dependencies.jar"]
-    ```
+   ```
    Login to Github > Settings > Developer Settings > Personal Access Token (PAT) > Create a new one with create and delete packages privilege > Save your PAT so you can use it later
 
    Then type the following command in your ide terminal:
