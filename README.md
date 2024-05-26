@@ -48,6 +48,16 @@ cd NewsAggregator_Backend
    1. Manually
   
    You can do this by running the Main.java class in package newsaggragator
+
+   Then, once the terminal having "Starting server...", go to your browser and type
+
+   ```text
+   - localhost:8000/v1/articles // to crawl articles
+   - localhost:8000/v1/posts // to crawl posts (we only support reddit.. for now)
+   - localhost:8000/v1/coins // to update coins' prices 
+   ```
+   >[!NOTE]
+   > When you want to scale the app, you can change these endpoints to whatever you like in Main.java class, or even create new endpoints
    
    2. Using Docker + cloud service
   
