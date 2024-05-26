@@ -97,7 +97,7 @@ cd NewsAggregator_Backend
    Wait for it to build a docker image, then you can choose to run it or push it to Github
 
    ```bash
-   docker push <your-app-name>:latest
+   docker push ghcr.io/<your-username>/<your-app-name>:latest
    ```
    Our team deploy the docker image on Koyeb because it is free.
 
