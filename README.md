@@ -56,8 +56,8 @@ cd NewsAggregator_Backend
    - localhost:8000/v1/posts // to crawl posts (we only support reddit.. for now)
    - localhost:8000/v1/coins // to update coins' prices 
    ```
-   >[!NOTE]
-   > When you want to scale the app, you can change these endpoints to whatever you like in Main.java class, or even create new endpoints
+>[!NOTE]
+> When you want to scale the app, you can change these endpoints to whatever you like in Main.java class, or even create new endpoints
    
    2. Using Docker + cloud service
   
