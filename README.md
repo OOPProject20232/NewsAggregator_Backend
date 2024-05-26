@@ -6,7 +6,7 @@ This project is mainly about fetching news articles from various sources and sto
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
-- Java 21 or higher
+- JDK 21 or higher
 - Maven 3.9.6
 - MongoDB 5.0.3
 - Docker
@@ -24,34 +24,32 @@ git clone https://github.com/OOPProject20232/NewsAggregator_Backend.git
 cd NewsAggregator_Backend
 ```
 
-3. Make `.env` file for the project, containing:
+3. Make `.env` file for the project:
+>[!IMPORTANT]
+> Please create a MongoDB Cluster and Database to get the following fields, must fill in all the information or else it won't work!!!
+> For more information, please take a look at <a href="https://youtu.be/Z05rVI5mhzE?si=azRuVJsPT0V4MgyY&t=334">Florian Ludwig's video</a>.
 - `MONGODB_PUBLIC_API_KEY`
 - `MONGODB_PRIVATE_API_KEY`
 - `MONGODB_DATABASE_NAME`
 - `MONGODB_CLUSTER_NAME`
 - `MONGODB_CONNECTION_STRING`
+- `MONGODB_SEARCH_INDEX_NAME`
+- `MONGODB_GROUP_ID`
+- `RAPID_API_KEY`
 
-(It will work with your own MongoDB database so you don't have to worry)
+>[!NOTE]
+> Regarding the RAPID_API_KEY, please create an account on <a href="https://rapidapi.com/hub">RapidAPI</a>.
+> Use <a href="https://rapidapi.com/Coinranking/api/coinranking1/">CoinRankingAPI</a> and copy your `X-RapidAPI-Key`
 
+> [!NOTE]
+> Why making it hard? because the project is being pushed to Github and public Google Drive so we had to hide our API keys.
+> <br> If you are a teacher from HUST and having trouble running the app, please feel free to contact us through our emails given in the project report 
 4. Run the project
    1. Manually
   
-   You can do this by running the Main.java class:
-
-   ```java
-   public class Main {
-    public static void main(String[] args) {
-        Crawler rss = new RSSReader();
-        rss.crawl();
-        IPostDataAccess db = new MongoDB();
-        db.importToDatabase(rss.getPostList());
-        db.createSearchIndex();
-        db.exportDataToJson("src/main/resources/data.json");
-        }
-    }
-    ```
+   You can do this by running the Main.java class in package newsaggragator
    
-   2. Using Docker + Crontab/ Task scheduler
+   2. Using Docker + cloud service
   
    You need to write a Dockerfile in the project root
 
@@ -60,66 +58,48 @@ cd NewsAggregator_Backend
    The example Dockerfile should be like this:
   
    ```Dockerfile
-       FROM maven:3.9.6-eclipse-temurin-21 AS builder
-       WORKDIR /app
-       COPY pom.xml .
-       COPY src ./src
-       RUN mvn package -DskipTests
-       FROM eclipse-temurin:21
-       WORKDIR /app
-       COPY --from=builder /app/target/newsaggregator_backend-jar-with-dependencies.jar .
-       COPY --from=builder /app/target/classes/rssdata/ ./src/main/resources/rssdata/
-       COPY --from=builder /app/target/classes/data.json ./src/main/resources/data.json
-       COPY --from=builder /app/target/classes/log4j.properties ./src/main/resources/log4j.properties
-       EXPOSE 8080
-       CMD ["java", "-jar", "newsaggregator_backend-jar-with-dependencies.jar"]
-    ```
+   FROM maven:3.9.6-eclipse-temurin-21 AS builder
+   WORKDIR /app
+   COPY pom.xml .
+   COPY src ./src
+   RUN mvn clean package -DskipTests
 
-      Then you can build a docker image using the following command:
-   
+   FROM eclipse-temurin:21
+   WORKDIR /app
+   COPY --from=builder /app/target/newsaggregator_backend-jar-with-dependencies.jar .
+   COPY --from=builder /app/target/classes/ ./src/main/resources/
+   RUN rm -rf ./src/main/resources/newsaggregator
+   EXPOSE 8000
+   CMD ["java", "-jar", "newsaggregator_backend-jar-with-dependencies.jar"]
+    ```
+   Login to Github > Settings > Developer Settings > Personal Access Token (PAT) > Create a new one with create and delete packages privilege > Save your PAT so you can use it later
+
+   Then type the following command in your ide terminal:
     ```bash
-    docker build -t newsaggregator_backend .
+    docker login --username <your-username> --password <PAT> ghcr.io
     ```
-   This will create a docker image named newsaggregator_backend.
+   This will login you to Github container registry.
 
-   Now you can run the docker image using the following command:
-
+   Now you can build the docker image using the following command:
 
    ```bash
-   docker runArticles -d newsaggregator_backend
+   docker build . -t ghcr.io/<your-username>/<your-app-name>:latest
    ```
-       
-      or
-      
+   Wait for it to build a docker image, then you can choose to run it or push it to Github
+
    ```bash
-   docker runArticles -d -p 5000:8000 newsaggregator_backend
+   docker push <your-app-name>:latest
    ```
-       
-      This will run docker image on port 5000 for your host machine and port 8000 for the container.
-   
-      And there you go, the project is running on your machine.
+   Our team deploy the docker image on Koyeb because it is free.
 
-      <br><b>But wait, there is more!</b>
-      
-      As you want to constantly fetch the news articles, you can use crontab on linux or Task scheduler on windows.
+   After deployment, it will give you a link to your app which you can request to crawl.
 
-      I am using Windows so i will be showing you how to do it
-   
-    - Open Task Scheduler and click on `Create Basic Task`
+   E.g: <domain>/v1/articles will trigger the server to crawl for articles
 
-    
-    ![img.png](docs/assets/Task_Scheduler_Create.png)
+   But you still have to call it manually right?
 
-    Just give it a name and description to your liking.
-    - Follow the wizard with the default settings until you reach `Action` tab
+   How about using <a href="https://cron-job.org/en/">cron-jobs.org</a>? Just create a new job and put your previously created endpoints from Koyeb and set it's interval
 
-    ![img.png](docs/assets/Task_Scheduler_Action.png)
+   Our team had set it to crawl for articles every hour, coins everyday at 8AM
 
-    Select `Start a program` and click next 
-    - In the `Program/script` field, write the path to a batch file executable
-
-    The batch file should contain the following command:
-   
-   ```bash
-       docker runArticles -d newsaggregator_backend
-   ```
+   There's a downside that we could not crawl for posts automatically regarding reddit's authentication which is complicated and time consuming
