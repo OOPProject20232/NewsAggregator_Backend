@@ -27,7 +27,7 @@ cd NewsAggregator_Backend
 3. Make `.env` file for the project:
 >[!IMPORTANT]
 > Please create a MongoDB Cluster and Database to get the following fields, must fill in all the information or else it won't work!!!
-> For more information, please take a look at <a href="https://youtu.be/Z05rVI5mhzE?si=azRuVJsPT0V4MgyY&t=334">Florian Ludwig's video</a>.
+> For more information, please take a look at <a href="https://youtu.be/Z05rVI5mhzE?si=azRuVJsPT0V4MgyY&t=334">Florian Ludewig's video</a>.
 - `MONGODB_PUBLIC_API_KEY`
 - `MONGODB_PRIVATE_API_KEY`
 - `MONGODB_DATABASE_NAME`
