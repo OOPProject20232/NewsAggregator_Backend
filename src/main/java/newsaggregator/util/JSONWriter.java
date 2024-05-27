@@ -3,6 +3,7 @@ package newsaggregator.util;
 import newsaggregator.model.content.Article;
 import org.bson.Document;
 import org.json.JSONArray;
+import org.json.JSONObject;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -29,6 +30,8 @@ public class JSONWriter {
         for (Document item : items) {
             jArray.put(item);
         }
+        JSONObject jObject = new JSONObject();
+        jObject.put("data", jArray);
         try {
             File file = new File(filePath);
             if (!file.exists()) {
@@ -36,7 +39,7 @@ public class JSONWriter {
                 file.createNewFile();
             }
             FileWriter writer = new FileWriter(file);
-            writer.write(jArray.toString());
+            writer.write(jObject.toString());
             writer.close();
             System.out.println("\u001B[32m" + "Dữ liêu đã được viết thành công!!!" + "\u001B[0m");
         }
